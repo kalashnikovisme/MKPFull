@@ -1,0 +1,40 @@
+
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="Snake"
+displayname  ="Snake MKP"
+versiondate  =06,03,2001
+mugenversion =04,01,2001
+pal.defaults =1,2
+author="Scorpion's Hell"
+
+;-------------------------------------------
+
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =snakes.sff
+anim     =snakes.air
+sound    =1.snd
+pal1=snakes_pal_1.act
+pal2=snakes_pal_2.act
+pal3=green.act
+pal4=red.act
+pal5=black.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Finishers.st
+st6=Finishers.st
+st7=Brutality.st
+
+;-------------------------------------------
+
+[Arcade]
+ending.storyboard=ending\ending.def
+

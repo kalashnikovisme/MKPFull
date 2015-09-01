@@ -1,0 +1,38 @@
+
+
+[Info]
+name ="raiden"
+displayname ="Raiden MKI"
+versiondate =06,03,2001    
+mugenversion =04,01,2001  
+pal.defaults =1,2  
+author="Minakata Moriya"
+
+;**************************************************
+
+; Files for the player
+[Files]
+cmd      =Raiden_mk1.cmd
+cns      =1.cns
+st       =1.cns 
+st6      = Finishers.st
+stcommon =common1.cns 
+sprite   =Raiden_mk1.sff   
+anim     =Raiden_mk1.air   
+sound   =1.snd   
+pal1=36.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Finishers.st
+
+
+;-------------------------------------------
+
+
+[Arcade]
+
+intro.storyboard=intro\intro.def
+ending.storyboard=end\end.def 
+

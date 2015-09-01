@@ -1,0 +1,108 @@
+[Info]
+name="MKDA drump arena"
+OriginalGame="Mortal Kombat: Deadly Alliance Inspired"
+author="Teros"
+email="inlineshadow@yahoo.com"
+versiondate=6/19/2007
+mugenversion=04,14,2001
+credits=http://mkw.mortalkombatonline.com/ & www.yahoo.com
+
+[Camera]
+startx=0
+starty=0
+boundleft=-250
+boundright=130
+boundhigh=-100
+boundlow=0
+verticalfollow= 1
+floortension=0
+tension=60
+
+[PlayerInfo]
+p1startx=-70
+p1starty=0
+p1startz=0
+p1facing=1
+p2startx=70
+p2starty=0
+p2startz=0
+p2facing=-1
+
+leftbound=-1000
+rightbound=1000
+topbound=0
+botbound=0
+
+[Scaling]
+topz=0
+botz=50
+topscale=1
+botscale=1.2
+
+[Bound]
+screenleft=15  
+screenright=15
+
+[StageInfo]
+zoffset=220
+autoturn=1
+resetBG=0
+
+[Shadow]
+color=38,38,38
+yscale=.1
+
+[Music]
+bgmusic= sound\MKWORLD II.mp3
+bgvolume = 255
+
+[BGdef]
+spr=stages/MKDA drump arena.sff
+debugbg=0
+
+[BG Sky]
+type = normal
+start = -150,280
+spriteno = 3,0
+mask = 1
+delta = 0,0
+tile = 1,0
+layerno = 0
+velocity = 0.2,0
+
+[BG Mountains]
+type=normal
+spriteno=1,0
+start=0,0
+delta=.6,.6
+mask=1
+trans = none
+
+[BG Huts]
+type=normal
+spriteno=4,0
+start=0,0
+delta=.8,.8
+mask=1
+trans = none
+
+[BG Platform]
+type=normal
+spriteno=0,0
+start=0,0
+delta=1,1
+mask=1
+trans = none
+
+
+[BG Fog]
+type = normal
+start = -150,280
+spriteno = 2,2
+mask = 1
+delta = 1,1
+trans = add
+tile = 1,0
+layerno = 1
+velocity = 1.5,0
+

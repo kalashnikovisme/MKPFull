@@ -1,0 +1,81 @@
+[Info]
+name="MKP Evil"
+author = "lin_km_yu"
+
+[Camera]
+startx=0
+starty=0
+
+boundleft=-240
+boundright=240
+boundhigh=-280
+boundlow=0
+verticalfollow=.5
+floortension=20
+tension=60
+
+[PlayerInfo]
+p1startx=-70
+p1starty=0
+p1startz=0
+p1facing=1
+
+p2startx=70
+p2starty=0
+p2startz=0
+p2facing=-1
+
+leftbound=-1000
+rightbound=1000
+topbound=0
+botbound=0
+
+[Scaling]
+topz=0
+botz=150
+topscale=1
+botscale=1.2
+
+[Bound]
+screenleft=15  
+screenright=15
+
+[StageInfo]
+zoffset=220
+autoturn=1
+resetBG=1;0
+
+[Shadow]
+color=0,0,0
+yscale=-1.35
+reflect = 0
+
+[Music]
+bgmusic= Sound/IIIym I.mp3
+bgvolume=0
+
+[BGdef]
+spr=stages/MKP Evil.sff
+debugbg=0
+
+
+[BG Background Part]
+type = normal;anim
+spriteno = 0,0
+id = 1
+;actionno = 1
+start = -400, -340
+delta = 1, 1.2
+
+[BG Neblina]
+type  = normal
+spriteno = 10, 0
+start = 0, 0
+delta = .63,1 
+tile  = 1,1;圖片是否重疊出現
+yscalestart = 100
+yscaledelta = 0
+velocity = .28
+mask = 0;1;是否清除基底色
+trans = add1;sub;none;透明化表示
+layerno = 1;反覆並排顯示

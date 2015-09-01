@@ -1,0 +1,131 @@
+[Info]
+name = "MKP Temple of the Rising Sun"
+author = "Teros"
+email = "inlineshadow@yahoo.com"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -250
+boundright = 250
+boundhigh = -90
+boundlow = 0
+verticalfollow = 1 ;.80
+floortension = 80
+tension = 60
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+color = 0,0,0
+yscale = -.35
+
+[Music]
+bgmusic = sound/MKIV Elder gods.mp3
+bgvolume = +999
+
+[BGdef]
+spr = stages/MKP Temple of the Rising Sun.sff
+debugbg = 0
+
+[BG Sun]
+type = anim
+actionno = 1
+start = 0,0
+spriteno = 3,0
+mask = 1
+delta = .1,.1
+layerno = 0
+
+[BG Mountains]
+type = normal
+spriteno = 1,1
+start = 0,0
+delta = .1,.2
+mask = 1
+trans = none
+
+[BG Temple]
+type = normal
+spriteno = 1,0
+start = 0,0
+delta = .3,.3
+mask = 1
+trans = none
+
+[BG Dragon Tower]
+type = normal
+spriteno = 0,1
+start = 0,0
+delta = .9,1.1
+mask = 1
+trans = none
+
+[BG Platform]
+type = normal
+spriteno = 0,0
+start = 0,0
+delta = 1,1
+mask = 1
+trans = none
+
+[BG Dragon]
+type = normal
+spriteno = 0,2
+start = 0,0
+delta = .9,1
+mask = 1
+layerno = 1
+trans = none
+
+[BG Dragon2]
+type = normal
+spriteno = 0,3
+start = 0,0
+delta = .9,1
+mask = 1
+layerno = 1
+trans = none
+
+[BG color]
+type = normal
+spriteno = 10,0
+start = 0,0
+delta = 0,0
+mask = 1
+layerno = 1
+trans = add
+
+[begin action 1]
+2,0, 0,0, 6
+2,1, 0,0, 6
+2,2, 0,0, 6
+2,3, 0,0, 6

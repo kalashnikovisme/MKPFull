@@ -1,0 +1,34 @@
+
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="Black_kitana"
+displayname  ="Kitana MKP"
+versiondate  =12,11,2007
+mugenversion =18,11,2007
+pal.defaults =1,2
+author="Aice-man"
+
+;-------------------------------------------
+
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =kitana.sff
+anim     =kitana.air
+sound    =1.snd
+pal1=kitana_pal_1.act
+pal2=kitana_pal_2.act
+pal3=kitana_pal_3.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Finishers.st
+st6=Brutality.st
+
+[Arcade]
+ending.storyboard = mkend/mkend.def

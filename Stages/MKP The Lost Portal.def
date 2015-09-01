@@ -1,0 +1,162 @@
+;________________________________________________________
+; Stage   : The Lost Portal_mk2r
+; Author  : Le@n
+; Web     : www.rulezzgames.mybb.ru
+; Version : 1.0
+;________________________________________________________
+
+[Info]
+name = "MKP The Lost Portal"
+;________________________________________________________
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -405
+boundright = 405
+boundhigh = -20
+boundlow =  0
+verticalfollow = .2
+;floortension = 50
+tension = 50
+;________________________________________________________
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+;________________________________________________________
+
+[Scaling]
+topz     = 0       
+botz     = 50     
+topscale = 1       
+botscale = 1.2     
+;________________________________________________________
+
+[Bound]
+screenleft = 40
+screenright = 40
+;________________________________________________________
+
+[StageInfo]
+zoffset = 226
+autoturn = 1
+resetBG = 1
+;________________________________________________________
+
+[Shadow]
+color = 100,100,100
+yscale = -.2
+reflect = 0
+;________________________________________________________
+
+[Music]
+bgmusic = sound/MKP II.mp3
+bgvolume = 255
+;________________________________________________________
+
+[BGdef]
+spr = stages/MKP The Lost Portal.sff
+debugbg = 0
+;________________________________________________________
+
+[BG Fondo1]
+type  = normal
+spriteno = 2,1
+start = 0,-2
+delta = .050,1
+
+[BG Rayo]
+type  = anim
+actionno = 0
+start = -5,5
+delta = .050,1
+
+[BG Fondo2]
+type  = parallax
+spriteno = 2,2
+start = 0,-2
+delta = .050,1
+xscale = .27, 1
+yscalestart = 100
+mask = 1
+
+[BG Luna]
+type  = normal
+spriteno = 2,3
+start = 0,-2
+delta = .050,1
+mask = 1
+
+[BG Fondo3]
+type  = normal
+spriteno = 0,12
+start = 0,-2
+delta = .8, 1
+xscale = .8, 1.05
+yscalestart = 100
+mask  = 1
+
+[BG Fondo4]
+type  = normal
+spriteno = 0,13
+start = 0,-2
+delta = .8, 1
+xscale = .8, 1.05
+yscalestart = 100
+mask  = 1
+
+[BG 1]
+type  = normal
+start = -16,0
+spriteno = 0,8
+delta = .8, 1
+xscale = .8, 1.05
+yscalestart = 100
+mask = 1
+
+[BG 2]
+type  = normal
+start = -8,0
+spriteno = 0,9
+delta = .8, 1
+xscale = .8, 1.05
+yscalestart = 100
+mask = 1
+layerno = 1
+
+[BG 3]
+type  = normal
+start = -8,0
+spriteno = 0,10
+delta = .8, 1
+mask = 1
+       
+[BG 4]
+type  = normal
+start = -8,0
+spriteno = 0,11
+delta = .8, 1
+mask = 1
+;________________________________________________________
+
+[Begin action 0]
+0,2, 0,0, 5
+0,3, 0,0, 5
+0,4, 0,0, 5
+0,5, 0,0, 5
+0,6, 0,0, 5
+0,7, 0,0, 5
+0,1, 0,0, 75

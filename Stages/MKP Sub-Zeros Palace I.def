@@ -1,0 +1,256 @@
+; Sub-Zero Stage By Binho-RJ
+; Mugenbinho@hotmail.com
+;http://mugenbinho.asteroidm.com
+
+;---------
+;Obrigado ao Silvio César por liberar os sprites de nuvem e neve ..Thanks Man ..
+
+;Adaptacion para mortal kombat Anthology por Haso3D
+
+;--------------------------------------------------------
+[Info]
+ 
+name = "MKP Sub-Zeros Palace I"
+
+;--------------------------------------------------------
+[Camera]
+
+startx = 0
+starty = 0
+
+boundleft = -250
+
+boundright = 250
+
+boundhigh = -30
+
+boundlow = 0
+
+verticalfollow = .2
+
+floortension = 0
+
+tension = 60
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -70          
+p1starty = 0            
+p1startz = 0            
+p1facing = 1            
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+ leftbound  = -1000 
+rightbound =  1000 
+topbound  =  0     
+botbound  =  0     
+
+;--------------------------------------------------------
+[Scaling]
+ 
+topz     = 0       
+botz     = 50      
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+[Bound]
+ screenleft = 15    
+screenright = 15   
+
+;--------------------------------------------------------
+[StageInfo]
+ zoffset = 220
+
+ autoturn = 1
+
+ resetBG = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+color = 100,100,100
+yscale = -.-1
+reflect = 1
+
+[Reflection]
+ ;Intensity of reflection (from 0 to 256). Set to 0 to have no
+ ;reflection. Defaults to 0.
+intensity = 95
+
+;--------------------------------------------------------
+
+[Music]
+ 
+bgmusic = sound/MKWORLD IV.mp3
+
+bgvolume = 0
+
+
+;------------------------------------
+; Background definition
+;------------------------------------
+
+
+[BGdef]
+
+spr = MKP Sub-Zeros Palace I.sff
+
+debugbg = 0
+
+;----------
+;----------
+
+[BG 0]
+
+type  = normal
+
+spriteno = 0, 0
+
+layerno = 0                
+
+start = 0, 0
+
+delta = 0,0
+
+trans = none
+
+mask  = 0
+
+tile  = 0, 0
+
+tilespacing = 0,0
+
+window = 0,0, 1000, 500
+
+windowdelta = 0,0
+
+;----------
+[BG nuven001]
+type  = normal
+spriteno = 4, 0
+layerno = 0
+start = 0, 0
+delta = 0.43, .35
+xscale = 1, 1.75
+yscalestart = 100
+tile = 1, 0
+tilespacing = 0, 0
+velocity = .2, 0
+mask = 0
+trans = add
+
+;----------
+[BG nuven002]
+type  = normal
+spriteno = 4, 1
+layerno = 0
+start = 0, 0
+delta = 0.43, .35
+xscale = 1, 1.75
+yscalestart = 100
+tile = 1, 0
+tilespacing = 0, 0
+velocity = .2, 0
+mask = 0
+trans = add
+
+
+;----------
+[BG nuven003]
+type  = normal
+spriteno = 4, 2
+layerno = 0
+start = 0, 0
+delta = 0.43, .35
+xscale = 1, 1.75
+yscalestart = 100
+tile = 1, 0
+tilespacing = 0, 0
+velocity = .2, 0
+mask = 0
+trans = add
+
+;----------
+
+;----------
+[BG neve1]
+type  = normal
+id = 1
+spriteno = 1, 0
+start = -100, 25 
+delta = 0.5, 0.5
+mask = 1
+tile = 1,1
+velocity = 0.3, 0.3
+layerno = 0
+trans = add
+;----------
+
+[BG neve2]
+type  = normal
+id = 2
+spriteno = 1, 1
+start = -100, 25 
+delta = 0.4, 0.4
+mask = 1
+tile = 1,1
+velocity = -0.4, 0.4
+layerno = 0
+trans = add
+
+;----------
+[BG Floor]
+type  = normal
+spriteno = 2,1
+start = 0, 0
+delta = .8, .75
+mask = 1
+tile = 1, 0
+
+;----------
+[BG Wall]
+type  = normal
+spriteno = 2,0
+start = 0, 0
+delta = .8, .75
+mask = 1
+tile = 1, 0
+
+;----------
+
+[BG StalactitesBig]
+start = 2, 0
+type  = normal
+spriteno = 5,0
+delta = .97, 1
+mask = 1
+
+;----------
+
+[BG Stalactites]
+type  = Normal
+spriteno = 5,1
+delta = .98, 1
+start = 0, 40
+layerno = 0
+mask = 1
+tile = 1, 0
+
+;----------
+
+[BG Top Cave]
+type  = normal
+spriteno = 5,2
+delta = .99, 1
+start = 0, 0
+layerno = 0
+mask = 1
+tile = 1, 0

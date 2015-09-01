@@ -1,0 +1,78 @@
+
+
+[Info]
+name="MKP Tomb Top"
+;Created By: Gary Fisher 
+;"Ermac" on mugenguild.com forums.
+
+[Camera]
+startx=0
+starty=0
+boundleft=-165
+boundright=130
+boundhigh=-15
+boundlow=0
+verticalfollow=.05
+floortension=0
+tension=60
+
+[PlayerInfo]
+p1startx=-70
+p1starty=0
+p1startz=0
+p1facing=1
+p2startx=70
+p2starty=0
+p2startz=0
+p2facing=-1
+
+leftbound=-1000
+rightbound=1000
+topbound=0
+botbound=0
+
+[Scaling]
+topz=0
+botz=50
+topscale=1
+botscale=1.2
+
+[Bound]
+screenleft=15  
+screenright=15
+
+
+[StageInfo]
+zoffset=220
+autoturn=1
+resetBG=0
+
+[Shadow]
+color=38,38,38
+yscale=.1
+
+[Music]
+bgmusic= sound/MKM III.mp3
+bgvolume=255
+
+[BGdef]
+spr=stages/MKP Tomb Top.sff
+debugbg=0
+
+
+[BG background] ;
+type=normal
+spriteno=0,0
+layerno = 0
+start=0,0
+delta=1,1
+mask=0
+
+
+
+
+
+
+
+
+

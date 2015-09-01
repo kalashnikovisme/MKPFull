@@ -1,0 +1,68 @@
+[Info]
+name = "MKP Reiko's Fortress"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -335
+boundright = 325
+boundhigh = -10
+boundlow = 0
+verticalfollow = .2
+floortension = 0
+tension = 50
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 215
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+intensity = 96
+color = 0,0,0
+yscale = .3
+fade.range = 0,0
+
+[Reflection]
+intensity = 0
+
+[Music]
+bgmusic = sound/MKWORLD VII.mp3
+bgvolume = 1024
+
+[BGdef]
+spr = MKP Reiko's Fortress.sff
+debugbg = 0
+
+[BG 0]
+type  = normal
+spriteno = 1, 0
+start = 0, -40
+delta = 1, 1
+mask = 0

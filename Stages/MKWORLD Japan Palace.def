@@ -1,0 +1,111 @@
+;------------------------------------------------------------------------------
+[Info]
+;--- Stage Name --- 
+name           = "MKWORLD Japan Palace"
+
+;------------------------------------------------------------------------------
+[Camera]
+startx         = 0           ;カメラのX軸位置
+starty         = 0           ;カメラのY軸位置
+                             ;sffの画像位置も0,0にしておくとわかりやすいです
+boundleft      = -210        ;ステージ左側の長さ
+boundright     = 210         ;右側の長さ,ステージの横の長さが決まる
+boundhigh      = -100        ;ステージの高さ
+boundlow       = 0           ;ステージの低さ,この2つで上下の長さが決まる
+verticalfollow = 0.5         ;カメラの動き,0で上下固定,小数点以下での変更が望ましい
+tension        = 150          ;ステージの表示限界,カメラの限界位置,不明
+
+;------------------------------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---             １プレーヤー設定
+p1startx       = -70         ;キャラの開幕の立ち位置X軸
+p1starty       = 0           ;キャラの開幕の立ち位置Y軸
+p1startz       = 0           ;キャラの開幕の立ち位置Z軸,機能していない？
+p1facing       = 1           ;キャラの向き:1=right,-1=left
+;--- Player 2 ---             ２プレーヤー設定
+p2startx       = 70          ;
+p2starty       = 0           ;
+p2startz       = 0           ;
+p2facing       = -1          ;
+;--- Common ---               変える必要はありません
+leftbound      = -1000       ;Left bound (x-movement)
+rightbound     = 1000        ;Right bound
+topbound       = 0           ;Top bound (z-movement)
+botbound       = 0           ;Bottom bound
+
+;------------------------------------------------------------------------------
+[Scaling]
+topz           = 0           ;Top z-coordinate for scaling
+botz           = 50          ;Bottom z-coordinate for scaling
+topscale       = 1           ;Scale to use at top
+botscale       = 1.2         ;Scale to use at bottom
+
+;------------------------------------------------------------------------------
+[Bound]
+screenleft     = 10          ;左側に見えない壁,0にするとキャラが半分くらいめり込みます
+screenright    = 10          ;右側に見えない壁,これで横幅の行動範囲が決まります
+
+;------------------------------------------------------------------------------
+[StageInfo]
+zoffset        = 218         ;キャラクターのY軸表示位置
+autoturn       = 1           ;自動的に相手のほうに振り向くかどうか
+;resetBG       = 1           ;不明
+
+;------------------------------------------------------------------------------
+[Shadow]
+color          = 256,256,256 ;RGB設定,0～255までで影の色が決まる
+                             ;書かない場合は(92,92,92)がデフォルト
+yscale         = 0.0         ;太陽の方向,影の向きと大きさ
+                             ;(+)で手前の影,(-)で画面奥側に影がつきます
+                             ;書かない場合は,(0.4)がデフォルト
+
+;------------------------------------------------------------------------------
+;--- Music File ---           ステージに流す音楽ファイルの設定(mid,mp3,wav)
+[Music]
+bgmusic        = sound/MKII DEVIL'S ISLAND...THE WASTED PITS.mp3
+bgvolume       = 255;ボリューム(機能していない？)
+
+;------------------------------------------------------------------------------
+;--- Picture File ---         sffファイルの指定
+[BGdef]
+spr            = stages/MKWORLD Japan Palace.sff;ここにさっき作ったSFFファイルの名前をいれます。 
+debugbg        = 0           ;1だと背景のない部分に残像が残らなくなる
+
+;------------------------------------------------------------------------------
+
+[BG back] 
+type  = normal
+spriteno = 0, 0                   
+layerno = 0                
+start = -300, 34
+mask = 0
+delta = .58,.95
+
+[BG floor] 
+type  = normal
+spriteno = 1, 0                 
+layerno = 0               
+start = -375, -110
+mask = 1
+
+[BG left fire] 
+type  = anim
+actionno = 0                
+layerno = 0               
+start = -279, 82
+mask = 1
+
+[BG right fire] 
+type  = anim
+actionno = 1                 
+layerno = 0               
+start = 73, 98
+mask = 1
+
+[Begin action 0]
+2,0.,0,0,3
+99,0.,0,0,3
+
+[Begin action 1]
+2,1.,0,0,3
+99,0.,0,0,3

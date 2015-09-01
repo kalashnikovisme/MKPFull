@@ -1,0 +1,35 @@
+
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="sub-zero_mk1"
+displayname  ="Sub-Zero MKI"
+versiondate  =06,03,2001
+mugenversion =04,01,2001
+pal.defaults =1
+author="Minakata Moriya,mod.Aice- man"
+
+;-------------------------------------------
+
+[Files]
+cmd      =sub-zero_mk1.cmd
+cns      =sub-zero_mk1.cns
+st       =sub-zero_mk1.cns
+stcommon =common1.cns
+sprite   =sub-zero_mk1.sff
+anim     =sub-zero_mk1.air
+sound    =1.snd
+pal1=1.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Finishers.st
+st6=Brutality.st
+
+;-------------------------------------------
+[Arcade]
+intro.storyboard= intro\intro.def
+ending.storyboard= end\end.def 
+

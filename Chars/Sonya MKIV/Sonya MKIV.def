@@ -1,0 +1,39 @@
+
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="Sonya"
+displayname  ="Sonya MKIV"
+versiondate  =06,03,2001
+mugenversion =04,01,2001
+author ="tem(A)" 
+pal.defaults =5,1
+
+;-------------------------------------------
+
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+;st6      = Finishers.st
+stcommon =common1.cns
+sprite   =cammy.sff
+anim     =cammy.air
+sound    =1.snd
+pal1=cammy1.act
+pal2=cammy2.act
+pal3=cammy3.act
+pal4=cammy4.act
+pal5=cammy5.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=
+
+;-------------------------------------------
+[Arcade]
+intro.storyboard=intro\intro.def
+ending.storyboard=mkend\mkend.def
+

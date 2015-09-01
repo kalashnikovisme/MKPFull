@@ -1,0 +1,245 @@
+;--------------------------------------------------------
+
+[Info]
+name           = "MKIV snake"
+
+;--------------------------------------------------------
+
+[Camera]
+startx         = 0
+starty         = 0
+boundleft      = -430;308
+boundright     =  430;308
+boundhigh      = -20
+boundlow       =  0
+verticalfollow = .10
+;floortension  = 50
+tension        = 60
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx       = -80
+p1starty       = 0
+p1startz       = 0
+p1facing       = 1
+
+p2startx       = 80
+p2starty       = 0
+p2startz       = 0
+p2facing       = -1
+
+leftbound  = -1000 
+rightbound = 1000
+topbound       =  0
+botbound       =  0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+;--------------------------------------------------------
+
+[Bound]
+screenleft  = 39
+screenright = 39
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset = 218
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+
+color = 100,100,100
+yscale = -.2
+reflect = 0       = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic        = sound/MKIV snake.mp3
+bgvolume       = 255
+loop = 1
+
+;--------------------------------------------------------
+
+[BGdef]
+spr            = MKIV.sff
+debugbg        = 0
+
+;--------------------------------------------------------
+[BG fondo negro] 
+type     = normal
+spriteno = 2, 0
+start    = -180,0
+delta    = 0,0
+
+[BG prisionero izq]
+type     = anim
+actionno = 4
+start    = -345,94
+
+[BG prisionero DER]
+type     = anim
+actionno = 5
+start    = 345,94
+
+[BG Pared]
+type  = normal
+spriteno = 30,0
+delta = 1, 1
+start = 0,0
+mask  = 1
+
+[BG bola chica izq]
+type     = anim
+actionno = 0
+start    = -200,67
+mask     = 1
+
+[BG bola chica der]
+type     = anim
+actionno = 1
+start    = 200,67
+mask     = 1
+
+[BG bola grande izq]
+type     = anim
+actionno = 2
+start    = -595,70
+mask     = 1
+
+[BG bola grande der]
+type     = anim
+actionno = 3
+start    = 595,70
+mask     = 1
+
+[BG garras izq]
+type  = normal
+spriteno = 34,0
+delta = 1, 1
+start = -550,150
+mask  = 1
+
+[BG garras der]
+type  = normal
+spriteno = 34,1
+delta = 1, 1
+start = 574,144
+mask  = 1
+
+[BG niebla]
+type  = normal
+spriteno = 35, 0
+delta = 1,1
+tile = 1,0
+velocity = .3,0
+start = 0,150
+trans = add
+mask = 1
+layerno = 1
+
+;========[ Animaciones ]=========
+
+[Begin Action 0]
+31, 0, 0, 0, 50
+31, 1, 0, 0, 7
+31, 2, 0, 0, 7
+31, 3, 0, 0, 7
+31, 4, 0, 0, 7
+31, 5, 0, 0, 7
+31, 6, 0, 0, 7
+31, 7, 0, 0, 50
+31, 6, 0, 0, 7
+31, 5, 0, 0, 7
+31, 4, 0, 0, 7
+31, 3, 0, 0, 7
+31, 2, 0, 0, 7
+31, 1, 0, 0, 7
+31, 0, 0, 0, 50
+
+[Begin Action 1]
+31, 0, 0, 0, 50, H
+31, 1, 0, 0, 7, H
+31, 2, 0, 0, 7, H
+31, 3, 0, 0, 7, H
+31, 4, 0, 0, 7, H
+31, 5, 0, 0, 7, H
+31, 6, 0, 0, 7, H
+31, 7, 0, 0, 50, H
+31, 6, 0, 0, 7, H
+31, 5, 0, 0, 7, H
+31, 4, 0, 0, 7, H
+31, 3, 0, 0, 7, H
+31, 2, 0, 0, 7, H
+31, 1, 0, 0, 7, H
+31, 0, 0, 0, 50, H
+
+[Begin Action 2]
+32, 0, 0, 0, 50
+32, 1, 0, 0, 7
+32, 2, 0, 0, 7
+32, 3, 0, 0, 7
+32, 4, 0, 0, 7
+32, 5, 0, 0, 7
+32, 6, 0, 0, 7
+32, 7, 0, 0, 50
+32, 6, 0, 0, 7
+32, 5, 0, 0, 7
+32, 4, 0, 0, 7
+32, 3, 0, 0, 7
+32, 2, 0, 0, 7
+32, 1, 0, 0, 7
+32, 0, 0, 0, 50
+
+[Begin Action 3]
+32, 0, 0, 0, 50, H
+32, 1, 0, 0, 7, H
+32, 2, 0, 0, 7, H
+32, 3, 0, 0, 7, H
+32, 4, 0, 0, 7, H
+32, 5, 0, 0, 7, H
+32, 6, 0, 0, 7, H
+32, 7, 0, 0, 50, H
+32, 6, 0, 0, 7, H
+32, 5, 0, 0, 7, H
+32, 4, 0, 0, 7, H
+32, 3, 0, 0, 7, H
+32, 2, 0, 0, 7, H
+32, 1, 0, 0, 7, H
+32, 0, 0, 0, 50, H
+
+[Begin Action 4]
+36, 0, 0, 0, 7
+36, 1, 0, 0, 7
+36, 2, 0, 0, 7
+36, 3, 0, 0, 7
+36, 4, 0, 0, 7
+36, 5, 0, 0, 7
+36, 6, 0, 0, 7
+36, 7, 0, 0, 7
+36, 8, 0, 0, 7
+36, 9, 0, 0, 7
+36, 10, 0, 0, 7
+
+[Begin Action 5]
+36, 0, 0, 0, 7, H
+36, 1, 0, 0, 7, H
+36, 2, 0, 0, 7, H
+36, 3, 0, 0, 7, H
+36, 4, 0, 0, 7, H
+36, 5, 0, 0, 7, H
+36, 6, 0, 0, 7, H
+36, 7, 0, 0, 7, H
+36, 8, 0, 0, 7, H
+36, 9, 0, 0, 7, H
+36, 10, 0, 0, 7, H

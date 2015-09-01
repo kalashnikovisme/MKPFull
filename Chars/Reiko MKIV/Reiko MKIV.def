@@ -1,0 +1,36 @@
+
+
+; Player information
+[Info]
+name ="reiko,"
+displayname ="Reiko MKIV"
+versiondate =06,03,2001
+mugenversion =04,01,2001
+pal.defaults =1
+author=""
+
+; Files for the player
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =1.sff
+anim     =1.air
+sound    =1.snd
+pal1=1.act
+pal2=orange.act
+pal3=2.act
+pal4=blue.act
+pal5=black.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+
+
+[Arcade]
+intro.storyboard = reikointro\reikointro.def
+ending.storyboard = reikoend\reikoend.def
+
+

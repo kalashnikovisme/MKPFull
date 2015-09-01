@@ -1,0 +1,35 @@
+
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="mk1_johnny_cage"
+displayname  ="Johnny Cage MKI"
+versiondate  =06,03,2001
+mugenversion =04,01,2001
+pal.defaults =1,2
+author="Reign"
+
+;-------------------------------------------
+
+[Files]
+cmd      =mk1_johnny_cage.cmd
+cns      =mk1_johnny_cage.cns
+st       =mk1_johnny_cage.cns
+stcommon =common1.cns
+sprite   =mk1_johnny_cage.sff
+anim     =mk1_johnny_cage.air
+sound    =mk1_johnny_cage.snd
+pal1=mk1_johnny_cage.act
+st1=sp.st
+st2=bmoves.st
+st3=pit.st
+st4=fatality.st
+st5=finishers.st
+st6=finishers.st
+
+;-------------------------------------------
+[Arcade]
+intro.storyboard =intro\intro.def
+ending.storyboard=mk2johnnycageend\mk2johnnycageend.def
+

@@ -1,0 +1,70 @@
+[Info]
+name="MKP Ancient Fight Arena"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -130
+boundright = 130
+boundhigh = -100
+boundlow = 0
+verticalfollow = .5
+tension = 50
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 210
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 123,123,123
+yscale = .2
+reflect = 0
+
+[Music]
+bgmusic = sound/MKWORLD II.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/MKP Ancient Fight Arena.sff
+
+
+[BG 0]
+type = normal
+spriteno = 0,0
+start = 0,240
+mask = 0
+
+[Bg 2 Neblina]
+type  = normal
+spriteno = 0,2
+start = 0,0
+tile  = 1,0
+velocity = 2.2
+mask = 1
+trans = add ;addalpha
+;alpha = 18,256

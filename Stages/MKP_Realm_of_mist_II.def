@@ -1,0 +1,352 @@
+;--------------------------------------------------------
+; The Roof - MK3 by RatonMalo <ratonmalo@gmail.com>
+;--------------------------------------------------------
+
+[Info]
+name = "MKP Realm of mist II"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -345
+boundright = 350
+boundhigh = -800
+boundlow = 0
+verticalfollow = 1
+floortension = 80
+tension = 60
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -10500
+rightbound =  10500
+topbound  = 0
+botbound  = 0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft = 22
+screenright = 22
+
+;--------------------------------------------------------
+
+[StageInfo]
+
+zoffset = 217
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+
+color = 100,100,100
+yscale = -.2
+reflect = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound/MKA Lumbermill.mp3
+bgvolume = +255
+
+;--------------------------------------------------------
+
+[BGdef]
+spr = stages/MKP_Realm_of_mist_II.sff
+debugbg = 0
+
+;--------------------------------------------------------
+
+[BG stars]
+type  = normal
+spriteno = 5, 0
+delta = .3, .3
+tile = 1, 1
+
+[bg moonmist]
+type  = normal
+spriteno = 5, 1
+delta = .3, .3
+trans = add
+
+[bg moon]
+type  = normal
+spriteno = 5, 2
+delta = .3, .3
+mask = 1
+
+[BG cloud3]
+type  = normal
+spriteno = 5,3
+layerno = 0
+delta = 1, 1
+velocity = 1
+trans = add
+xscale = 1, 0
+yscalestart = 100
+yscaledelta = 3
+tile = 1,0
+
+[BG cloud]
+type  = normal
+spriteno = 6,6
+layerno = 0
+start = 0, 181
+delta = 1, 1
+velocity = 1
+trans = add
+xscale = 1, 0
+yscalestart = 100
+yscaledelta = 3
+tile = 1,0
+
+[BG DraGrande2]
+type = anim
+actionno = 2
+delta = 1,1
+start = 300,90
+velocity = -1.3,0
+tile = 1,0
+mask = 1
+tilespacing = 1680, 0
+
+[BG Left Fire]
+type = Anim
+actionno = 1
+start = -183, 0
+mask = 1
+
+[BG Right Fire]
+type = Anim
+actionno = 1
+start = 0, 0
+mask = 1
+
+[bg r fire tray]
+type  = normal
+spriteno = 6, 9
+start = 0, 0
+mask = 1
+
+[bg l fire tray]
+type  = normal
+spriteno = 6, 9
+start = -183, 0
+mask = 1
+
+[bg sat]
+type  = normal
+spriteno = 6, 7
+mask = 1
+
+[bg sat1]
+type  = normal
+spriteno = 6, 8
+mask = 1
+
+[BG Floor mist1]
+type  = normal
+spriteno = 6,5
+layerno = 1
+start = 0, 181
+delta = 1, 1
+velocity = 1,0
+trans = add
+xscale = 1, 0
+yscalestart = 100
+yscaledelta = 3
+tile = 1,0
+
+[BG PLATFORM]
+type  = normal
+spriteno = 5, 4
+delta = 1,1
+mask  = 1
+
+[BG pot of acid]
+type  = normal
+spriteno = 7, 10
+mask  = 1
+
+
+[BG Reptiletrono]
+type  = Normal
+spriteno = 8,0
+delta = 1, 1
+mask = 1
+
+[BG Close Forest Fog0]
+type  = normal
+spriteno = 9,0 
+start = 0, 180
+trans = add
+delta = 1.1, 1.1
+tile = 1,0
+tilespacing = 179, 0
+layerno = 1
+velocity = -.4, 0
+
+[BG Close Forest Fog]
+type  = normal
+spriteno = 9,0
+start = 0, 230
+trans = add
+delta = 1.1, 1.1
+tile = 1,0
+tilespacing = 179, 0
+layerno = 1
+velocity = -.6, 0
+
+
+[BG Close Forest Fog2]
+type  = normal
+spriteno = 9,0
+start = 40, 250
+trans = add
+delta = 1.5, 1.5
+tile = 1,0
+layerno = 1
+velocity = -.8, 0
+
+[BG Septar]
+type  = anim
+actionno = 11
+delta = .9, .9
+trans = add
+start = 90, 210
+mask = 1
+
+;------------------------ controls
+[BGCtrlDef 1] ;morcego 1
+CtrlID = 7   
+looptime = 1000
+
+[BGCtrl 1.2]
+type = Enable
+time = 0
+value = 1
+
+[BGCtrl 1.3]
+type = PosSet
+time = 0
+x = -2000
+y = 80
+
+[BGCtrl 1.3]
+type = VelSet
+time >= 1
+x = 6.2
+
+;--------------------------------------------------------
+
+[Begin action 2]
+5,9, 0,0, 6
+6,0, 0,0, 6
+6,1, 0,0, 6
+6,2, 0,0, 6
+6,3, 0,0, 6
+6,4, 0,0, 6
+
+[Begin action 1]
+6,10,0,0, 5
+6,11,0,0, 5
+6,12,0,0, 5
+6,13,0,0, 5
+6,14,0,0, 5
+6,10,0,0, 5
+6,11,0,0, 5
+6,12,0,0, 5
+6,13,0,0, 5
+6,14,0,0, 5
+6,10,0,0, 5
+6,11,0,0, 5
+6,12,0,0, 5
+6,13,0,0, 4
+6,14,0,0, 4
+6,10,0,0, 3
+6,11,0,0, 3
+6,12,0,0, 3
+6,13,0,0, 3
+6,14,0,0, 3
+
+[Begin action 4] 
+7,4, 0,0, 3,,S
+7,5, 0,0, 3,,S
+7,6, 0,0, 3,,S
+
+[Begin Action 11]
+
+11,1,0,0,5
+11,111,0,0,5
+11,2,0,0,5
+11,3,0,0,5
+11,4,0,0,5
+11,3,0,0,5
+11,2,0,0,5
+11,111,0,0,5
+11,1,0,0,5
+11,111,0,0,5
+11,2,0,0,5
+11,3,0,0,5
+11,4,0,0,5
+11,3,0,0,5
+11,2,0,0,5
+11,111,0,0,5
+11,1,0,0,5
+11,111,0,0,5
+11,2,0,0,5
+11,3,0,0,5
+11,4,0,0,10
+11,3,0,0,5
+11,2,0,0,5
+11,111,0,0,5
+11,1,0,0,5
+11,111,0,0,5
+11,2,0,0,5
+11,3,0,0,5
+11,4,0,0,5
+11,4,0,0,5
+11,3,0,0,5
+11,2,0,0,5
+11,111,0,0,5
+11,1,0,0,5
+11,111,0,0,5
+11,2,0,0,5
+11,3,0,0,5
+11,4,0,0,20
+11,3,0,0,5
+11,2,0,0,5
+11,111,0,0,5
+11,1,0,0,5
+11,111,0,0,5
+11,2,0,0,5
+11,3,0,0,5
+11,4,0,0,5
+11,3,0,0,5
+11,2,0,0,5
+11,111,0,0,5
+
+;--------------------------------------------------------

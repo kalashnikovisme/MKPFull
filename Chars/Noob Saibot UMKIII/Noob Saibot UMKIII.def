@@ -1,0 +1,38 @@
+
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="noob saibot"
+displayname  ="Noob Saibot UMKIII"
+versiondate  =06,03,2001
+mugenversion =04,01,2001
+pal.defaults =1,2
+author=""
+
+;-------------------------------------------
+
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =noob_saibot.sff
+anim     =noob_saibot.air
+sound    =1.snd
+pal1=noob_saibot_pal_1.act
+pal2=noob_saibot_pal_2.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Finishers.st
+
+;-------------------------------------------
+[Arcade]
+intro.storyboard  = mk3noobintro\mk3noobintro.def
+ending.storyboard = noobsaibotend\noobsaibotend.def
+;-------------------------------------------
+
+
+

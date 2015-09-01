@@ -1,0 +1,116 @@
+[Info]
+name           = "MKWORLD roof blue"
+
+[Camera]
+startx         = 0
+starty         = 0
+boundleft      = -140
+boundright     = 140
+boundhigh      = -200
+boundlow       = 0   
+verticalfollow = 0.5
+tension	       = 50
+
+[PlayerInfo]
+p1startx       = -70        
+p1starty       = 0       
+p1startz       = 0         
+p1facing       = 1          
+p2startx       = 70         
+p2starty       = 0
+p2startz       = 0 
+p2facing       = -1
+leftbound      = -1000      
+rightbound     = 1000      
+topbound       = 0           
+botbound       = 0    
+
+[Scaling]
+topz	       = 0
+botz           = 50
+topscale       = 1
+botscale       = 1.2
+
+[Bound]
+screenleft     = 15
+screenright    = 15
+
+[StageInfo]
+zoffset        = 210
+autoturn       = 1 
+resetBG        = 0
+
+[Shadow]
+color	       = 128,128,128
+yscale	       = 0.4
+
+[Music]
+bgmusic	       = sound/Good (9).mp3
+bgvolume       = 255
+
+[BGdef]
+spr             = stages/MKWORLD roof blue.sff
+debugbg		= 1
+
+[BG 0]
+type            = normal
+spriteno        = 1, 0
+layerno         = 0
+start           = -300,-185
+delta           = 1,0.9
+trans           = None
+mask            = 1
+
+[BG 1]
+type            = normal
+spriteno        = 0, 0
+layerno         = 0
+start           = -300,-120
+delta           = 1,1
+trans           = None
+mask            = 1
+
+[BG hatameki 1]
+type            = anim
+layerno         = 0
+actionno        = 2
+start           =
+delta           = 1,1
+trans           = None
+mask            = 1
+
+[Begin action 2]
+2,1, -194,-35, 6
+2,2, -194,-35, 6
+2,3, -194,-35, 6
+2,4, -194,-35, 6
+
+[BG hatameki 2]
+type            = anim
+layerno         = 0
+actionno        = 3
+start           =
+delta           = 1,1
+trans           = None
+mask            = 1
+
+[Begin action 3]
+3,1, 26,-37, 6
+3,2, 26,-37, 6
+3,3, 26,-37, 6
+3,4, 26,-37, 6
+
+[BG hatameki 3]
+type            = anim
+layerno         = 0
+actionno        = 4
+start           =
+delta           = 1,1
+trans           = None
+mask            = 1
+
+[Begin action 4]
+4,1, 196,57, 6
+4,2, 196,57, 6
+4,3, 196,57, 6
+4,4, 196,57, 6

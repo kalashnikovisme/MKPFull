@@ -1,0 +1,237 @@
+;mortal kombat Deception the lower mines stage version 0.1  released on 7 May 2005
+;
+;special thanks:
+;- Mugenfury for hosting my creations on their website www.mugenfury.com
+;- Midway for creating the mortal kombat fighting game series.
+;- Mortal Kombat mugen team for bringing Mortal Kombat to Mugen.
+;
+;
+;You are free in using this stage any way You like, just give me credit for the 
+;original work! enjoy this stage.
+;
+;Keep mugen alive!!
+
+[Info]
+name="MKD the lower mines"
+author="rugal2"
+
+[Camera]
+startx=0
+starty=0
+boundleft=-165
+boundright=130
+boundhigh=-15
+boundlow=0
+verticalfollow=.05
+floortension=0
+tension=60
+
+[PlayerInfo]
+p1startx=-70
+p1starty=0
+p1startz=0
+p1facing=1
+p2startx=70
+p2starty=0
+p2startz=0
+p2facing=-1
+
+leftbound=-1000
+rightbound=1000
+topbound=0
+botbound=0
+
+[Scaling]
+topz=0
+botz=50
+topscale=1
+botscale=1.2
+
+[Bound]
+screenleft=15  
+screenright=15
+
+
+[StageInfo]
+zoffset=220
+autoturn=1
+resetBG=0
+
+[Shadow]
+color=38,38,38
+yscale=.1
+
+[Music]
+bgmusic= sound\MK LK.mp3
+bgvolume=255
+
+[BGdef]
+spr=stages/MKD the lower mines.sff
+debugbg=0
+
+
+[BG background] ;lower mines wall
+type=normal
+spriteno=0,0
+layerno = 0
+start=0,0
+delta=.7,1
+mask=0
+
+[BG Anim A] ;main background
+type  = anim
+actionno = 0
+start = 0, 0
+delta = .9,1
+mask = 0
+
+[BG Anim B] ;rolling rock right
+type  = anim
+actionno = 1
+start = 0, 0
+delta = .9,1
+mask = 0
+
+
+[BG Anim C] ;rolling rock left
+type  = anim
+actionno = 2
+start = 0, 0
+delta = .9,1
+mask = 0
+
+
+[BG Anim D] ;transport right
+type  = anim
+actionno = 3
+start = 0, 0
+delta = .9,1
+mask = 0
+
+[BG Anim E] ;transport left
+type  = anim
+actionno = 4
+start = 0, 0
+delta = .9,1
+mask = 0
+
+[BG Anim F] ;grinder (lower teeth)
+type  = anim
+actionno = 5
+start = 0, 0
+delta = .9,1
+mask = 0
+
+[BG Anim G] ;lower mines floor
+type  = anim
+actionno = 6
+start = 0, 0
+delta = 1,1
+mask = 0
+
+;-------------------------------------
+; Put animation data here:
+
+;Anim A (main background)
+[Begin Action 0]
+0,1, 0,0, -1
+
+;Anim B (rolling rock right)
+[Begin Action 1]
+0,6, 0,0, 10
+0,7, -10,0, 10
+0,8, -20,0, 10
+0,9, -30,0, 10
+0,6, -40,0, 10
+0,7, -50,10, 10
+0,8, -60,15, 10
+0,9, -70,20, 10
+0,6, -80,25, 10
+0,7, -90,30, 10
+0,8, -100,35,10
+0,9, -110,40,10
+0,6, -120,45,10
+0,7, -130,45,10
+0,8, -140,45,10
+0,9, -150,40,10
+0,6, -160,35,10
+0,7, -170,35,10
+0,8, -180,35,10
+0,9, -190,35,10
+0,6, -200,35,10
+0,7, -210,35,10
+0,8, -220,35,10
+0,9, -230,40,10
+0,6, -240,50,10
+0,7, -250,60,10
+0,8, -260,70,10
+0,9, -270,80,10
+0,6, -280,90,10
+0,7, -280,100,10
+0,8, -280,110,10
+0,9, -280,120,10
+0,6, -280,130,10
+0,7, -280,140,10
+0,2, 0,0, 80
+
+
+;Anim C (rolling rock left)
+[Begin Action 2]
+0,3, 0,0, 100
+0,10, 0,0, 10
+0,11, 10,0, 10
+0,12, 20,0, 10
+0,13, 30,0, 10
+0,10, 40,0, 10
+0,11, 50,10, 10
+0,12, 60,15, 10
+0,13, 70,20, 10
+0,10, 80,25, 10
+0,11, 90,30, 10
+0,12, 100,35,10
+0,13, 110,40,10
+0,10, 120,45,10
+0,11, 130,45,10
+0,12, 140,45,10
+0,13, 150,40,10
+0,10, 160,35,10
+0,11, 170,30,10
+0,12, 180,30,10
+0,13, 190,30,10
+0,10, 200,30,10
+0,11, 210,30,10
+0,12, 220,30,10
+0,13, 230,35,10
+0,10, 240,35,10
+0,11, 250,35,10
+0,12, 260,35,10
+0,13, 270,40,10
+0,10, 280,50,10
+0,11, 290,60,10
+0,12, 295,70,10
+0,13, 300,80,10
+0,10, 310,90,10
+0,11, 310,100,10
+0,12, 310,110,10
+
+
+;Anim D (transport right)
+[Begin Action 3]
+0,2, 0,0, -1
+
+;Anim E (transport left)
+[Begin Action 4]
+0,3, 0,0, -1
+
+;Anim F (grinder (lower teeth))
+[Begin Action 5]
+0,4, 0,0, -1
+
+;Anim G (lower mines floor)
+[Begin Action 6]
+0,5, 0,0, -1
+
+
+
+
+

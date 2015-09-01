@@ -1,0 +1,35 @@
+
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="S Sub-Zero_mk2"
+displayname  ="Super Sub-Zero MKII"
+versiondate  =06,03,2008
+mugenversion =09,03,2008
+pal.defaults =1
+author="Kazmer13 sprites, Haso3d, Kay SecondMod.Aice-Man, MK Model"
+
+;-------------------------------------------
+
+[Files]
+cmd      =Sub-Zero_mk2.cmd
+cns      =Sub-Zero_mk2.cns
+st       =Sub-Zero_mk2.cns
+stcommon =common1.cns
+sprite   =Sub-Zero_mk2.sff
+anim     =Sub-Zero_mk2.air
+sound    =Sub-Zero_mk2.snd
+pal1=subzero5.act
+;pal2=subzero.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Finishers.st
+st6=Brutality.st
+
+;-------------------------------------------
+[Arcade]
+ending.storyboard= mkend\mkend.def
+

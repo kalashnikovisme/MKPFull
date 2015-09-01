@@ -1,0 +1,34 @@
+;--------------------------------------------
+[SceneDef]
+;--------------------------------------------
+
+spr = logo.sff
+
+;--------------------------------------------
+[Scene 0]
+
+fadein.time  = 60
+fadeout.time = 60
+clearcolor   = 0,0,0
+layerall.pos = 0,0
+layer0.anim  =  0
+end.time     = 300
+
+;[Scene 1]
+
+;fadein.time  = 60
+;fadeout.time = 60
+;clearcolor   = 0,0,0
+;layerall.pos = 0,0
+;layer0.anim  =  1
+;end.time     = 300
+
+;--------------------------------------------
+
+[Begin Action 0]
+0,1, 0,0, -1
+
+;[Begin Action 1]
+;0,2, 0,0, -1
+
+;--------------------------------------------

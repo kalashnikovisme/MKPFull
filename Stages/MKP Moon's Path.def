@@ -1,0 +1,265 @@
+[Info]
+name = "MKP Moon's Path"
+author = EXShadow
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -200
+boundright = 200
+boundhigh = -120
+verticalfollow = .75
+floortension = 40
+tension = 60
+boundlow = 0
+
+[PlayerInfo]
+p1startx = -70          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+[PlayerInfo]
+p1startx = -70          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+ ;No need to change these values
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1.0   ;Scale to use at top
+botscale = 1.4   ;Scale to use at bottom
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15 ;Dist from left of screen that player can move to
+screenright = 15 ;Right edge
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 210
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+ ;This controls the darkness of the shadow. Valid values range
+ ;from 0 (lightest) to 256 (darkest). Defaults to 128 if omitted.
+intensity = 64
+
+ ;This is the shadow color given in r,g,b. Valid values for each
+ ;range from 0 (lightest) to 255 (darkest).
+ ;Defaults to 0,0,0 if omitted.
+ ;intensity and color's effects add up to give the final shadow
+ ;result.
+color = 0,0,0
+
+ ;This is the scale factor of the shadow. Use a big scale factor
+ ;to make the shadow longer. You can use a NEGATIVE scale factor
+ ;to make the shadow fall INTO the screen.
+ ;Defaults to 0.4 if omitted.
+yscale = -.1
+
+ ;This parameter lets you set the range over which the shadow is
+ ;visible. The first value is the high level, and the second is
+ ;the middle level. Both represent y-coordinates of the player.
+ ;A shadow is invisible if the player is above the high level,
+ ;and fully visible if below the middle level. The shadow is
+ ;faded in between the two levels. This gives an effect of the
+ ;shadow fading away as the player gets farther away from the
+ ;ground. If omitted, defaults to no level effects (shadow is
+ ;always fully visible).
+fade.range = -400,-100
+
+;--------------------------------------------------------
+[Reflection]
+ ;Intensity of reflection (from 0 to 256). Set to 0 to have no
+ ;reflection. Defaults to 0.
+intensity = 128
+
+;--------------------------------------------------------
+[Music]
+bgmusic = sound/MKWORLD IV.mp3
+bgvolume = 255
+
+;-------------------------------------
+; Main background definition
+[BGdef]
+spr = MKP Moon's Path.sff
+debugbg = 0
+[BG 0]
+type  = normal
+spriteno = 2, 0
+layerno = 0                
+start = 0, 0
+delta = 1, 0
+trans = none
+mask  = 0
+tile  = 1, 0
+tilespacing = 0,0
+window = 0,0, 319, 239
+
+[BG 0]
+type  = normal
+spriteno = 0, 0
+layerno = 0                
+start = 0, 0
+delta = 1, 0
+trans = none
+mask  = 0
+tile  = 1, 0
+tilespacing = 0,0
+window = 0,0, 319, 239
+
+[BG 1]
+type  = normal
+spriteno = 0, 1
+delta = 1, 1
+
+[BG 2]
+type  = normal
+spriteno = 0, 2
+delta = 1, 1
+
+[BG 3]
+type  = normal
+spriteno = 0, 3
+delta = 1, 1
+
+[BG 4]
+type  = normal
+spriteno = 0, 4
+delta = 1, 1
+
+[BG 5]
+type  = normal
+spriteno = 0, 5
+delta = 1, 1
+
+[BG 6]
+type  = normal
+spriteno = 0, 6
+delta = 1, 1
+
+[BG 7]
+type  = normal
+spriteno = 0, 7
+delta = 1, 1
+
+[BG 8]
+type  = normal
+spriteno = 0, 8
+delta = 1, 1
+
+[BG 9]
+type  = normal
+spriteno = 0, 9
+delta = 1, 1
+
+[BG 10]
+type  = normal
+spriteno = 0, 10
+delta = 1, 1
+
+[BG 11]
+type  = normal
+spriteno = 0, 11
+delta = 1, 1
+
+[BG 12]
+type  = normal
+spriteno = 0, 12
+delta = 1, 1
+
+[BG moon]
+type  = normal
+spriteno = 4, 0
+delta = 1.1, 1
+trans = addalpha
+alpha = 256,256
+mask  = 0
+layerno = 0
+
+[BG line]
+type  = normal
+spriteno = 5, 0
+delta = 1, 1
+trans = none
+mask  = 1
+
+[BG line2]
+type  = normal
+spriteno = 5, 1
+delta = 1, 1
+trans = none
+mask  = 1
+
+[BG floor]
+type  = normal
+spriteno = 1, 0
+delta = 1, 1
+trans = none
+mask  = 1
+
+[BG line3]
+type  = normal
+spriteno = 7, 0
+delta = 1, 1
+trans = none
+mask  = 1
+layerno = 1
+
+[BG line4]
+type  = normal
+spriteno = 7, 1
+delta = 1, 1
+trans = none
+mask  = 1
+layerno = 1
+
+[BG fog3]
+type  = normal
+spriteno = 6, 0
+start = -100, 210
+delta = .4,.4
+mask = 1
+velocity = .5, 0
+tile = 1, 0
+trans = addalpha
+alpha = 230,256
+
+[BG fog4]
+type  = normal
+spriteno = 6, 0
+start = -100, 240
+delta = .4,1
+mask = 1
+velocity = -.5, 0
+tile = 1, 0
+trans = addalpha
+alpha = 230,256
+layerno = 1

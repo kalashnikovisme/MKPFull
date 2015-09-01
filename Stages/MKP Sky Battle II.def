@@ -1,0 +1,178 @@
+;sky_battle
+;by gwa_pao
+;email me at pao_pao_mb@hotmail.com
+;and thanks to sonicx and ughwtf
+
+
+
+[Info]
+ ;Name of the stage.
+name = "MKP Sky Battle II"
+
+[Camera]
+startx = 0
+starty = 0
+
+boundleft = -1300
+boundright = 1300
+boundhigh = -90
+boundlow = 0
+verticalfollow = 1
+floortension = 70
+tension = 50
+
+[PlayerInfo]
+p1startx = -70        
+p1starty = 0           
+p1startz = 0            
+p1facing = 1           
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+leftbound  = -2000 
+rightbound =  2000 
+topbound  =  0     
+botbound  =  0     
+
+[Scaling]
+topz     = 0      
+botz     = 50      
+topscale = 1       
+botscale = 1.2    
+
+[Bound]
+screenleft = 15   
+screenright = 15  
+
+[StageInfo]
+zoffset = 215
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+intensity = 96
+color = 0,0,0
+yscale = .1
+fade.range = 0,0
+
+[Reflection]
+intensity = 0
+
+[Music]
+bgmusic = sound/Good (15).mp3
+bgvolume = 255
+
+[BGdef]
+spr = MKP Sky Battle II.sff
+debugbg = 0
+
+;----------
+[BG 1] ;cloud
+type  = normal
+spriteno = 0,0
+start = 0, 185
+delta = 1,1
+tile = 1,1
+velocity = -1
+
+[BG 2] ;cloud
+type  = normal
+spriteno = 0,2
+start = 0, 185
+delta = 1,1
+tile = 1,1
+velocity = -.5
+trans = add
+
+[BG 3] ;mist
+type  = normal
+spriteno = 2,0
+start = 0, 175
+delta = 1, 1
+mask = 1
+tile = 1,0
+velocity = -.8
+trans = addalpha
+alpha = 100,256
+
+[BG 4] ;mist
+type  = normal
+spriteno = 2,0
+start = 150, 175
+delta = 1, 1
+mask = 1
+tile = 1,0
+velocity = -.5
+trans = addalpha
+alpha = 100,256
+
+[BG 5] ;mist
+type  = normal
+spriteno = 2,0
+start = 200, 175
+delta = 1, 1
+mask = 1
+tile = 1,0
+velocity = -.2
+trans = addalpha
+alpha = 100,256
+
+[BG 6] ;bridge
+type  = normal
+spriteno = 0, 1
+start = 0, 195
+delta = 1, 1
+mask = 1
+tile = 1,0
+
+[BG 7] ;bridge2
+type  = normal
+spriteno = 1,0
+start = 0, 195
+delta = 1, 1
+mask = 1
+tile = 1,0
+layerno = 1
+
+[BG 8] ;mist
+type  = normal
+spriteno = 2,0
+start = 0, 195
+delta = 1, 1
+mask = 1
+tile = 1,0
+layerno = 1
+velocity = -.8
+trans = addalpha
+alpha = 100,256
+
+[BG 9] ;mist
+type  = normal
+spriteno = 2,0
+start = 150, 195
+delta = 1, 1
+mask = 1
+tile = 1,0
+layerno = 1
+velocity = -.5
+trans = addalpha
+alpha = 100,256
+
+[BG 10] ;mist
+type  = normal
+spriteno = 2,0
+start = 200, 195
+delta = 1, 1
+mask = 1
+tile = 1,0
+layerno = 1
+velocity = -.2
+trans = addalpha
+alpha = 100,256
+
+

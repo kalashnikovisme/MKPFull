@@ -1,0 +1,458 @@
+; ____________________________________
+;|The Punk Strike Night ::..          |
+;|Stage Made by: Kurai Naito ::..     |
+;|Version: Beta 1 - ??/??/?? ::..     |
+;|Oficial WebSite:                    |
+;|http://darktemple.paodemugen.com.br |
+;|____________________________________|
+
+[Info]
+name = "MKP MERGE OF THE WORLDS"
+
+[Camera]
+startx = 0
+starty = -1000 ;0
+
+boundleft = -33
+boundright = 34
+
+boundhigh = -56
+boundlow = 0
+
+verticalfollow = .3
+
+tension = 50
+
+[PlayerInfo]
+
+p1startx = -90
+p1starty = 0
+p1startz = 0
+p1facing = -1
+
+p2startx = 90
+p2starty = 0
+p2startz = 0
+p2facing = 1
+
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+[Scaling]
+
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+
+screenleft = 27
+screenright = 27
+
+[StageInfo]
+
+zoffset = 225
+
+autoturn = 1
+
+resetBG = 1
+
+[Shadow]
+
+color = 128,128,128
+
+yscale = -.1
+
+reflect = 0
+
+[Music]
+
+bgmusic = sound/MKWORLD IV.mp3
+bgvolume = 1000
+
+[BGdef]
+
+spr = stages/MKP MERGE OF THE WORLDS.sff
+debugbg = 0
+
+;-----------------------------------------------------------------------------------------------
+
+[BG z]
+type = dummy
+start = 0, 0
+id = 1
+
+[BGCtrlDef z]
+looptime = -1
+ctrlID = 0,1
+
+[BGCtrl TREME]
+type = SinY
+time = 1800 
+value = 3,7,0
+
+[BGCtrl PARA]
+type = SinY
+time = 2040
+value = 0,0,0 
+
+
+[BG Fundo]
+
+type = normal
+spriteno = 1,0
+start = -197,-70 
+delta = 1.1, 1.4
+mask = 0
+trans = none
+layerno = 0
+velocity = 0,0
+tile = 0,0
+tilespacing = 0,0
+
+[Bg Relâmpago]
+type=anim
+layerno=0
+start=0,0
+delta=0,0
+actionno = 2
+mask=0
+
+[BG Chão]
+
+type = normal
+spriteno = 0,0
+start = -197,170
+delta = 1.1, 1.1
+mask = 1
+trans = none
+layerno = 0
+velocity = 0,0
+tile = 0,0
+tilespacing = 0,0
+
+[BG Névoa 1]
+
+type  = normal
+spriteno = 14,0
+start = -100, 125
+trans = add
+tile = 1,0
+velocity = -3, 0
+layerno = 1
+
+[BG Névoa 2]
+
+type  = normal
+spriteno = 14,0
+start = -100, 75
+trans = sub
+tile = 1,0
+velocity = -1.5, 0
+layerno = 1
+
+[BG Névoa 3]
+
+type  = normal
+spriteno = 14,0
+start = -100, 35
+trans = add
+tile = 1,0
+velocity = -1, 0
+layerno = 1
+
+[BG Névoa 4]
+
+type  = normal
+spriteno = 14,0
+start = -100, -25
+trans = sub
+tile = 1,0
+velocity = -0.5, 0
+layerno = 1
+
+[BG Névoa 5]
+
+type  = normal
+spriteno = 14,0
+start = -100, -75
+trans = add
+tile = 1,0
+velocity = -0.5, 0
+layerno = 1
+
+[BG Nuvens]
+type  = normal
+spriteno = 20,0
+start = -100, -120
+mask = 1
+trans = add
+tile = 1,0
+velocity = -1, 0
+layerno = 0
+
+[BG Lua]
+
+type = normal
+spriteno = 13,0
+start = -150,-40
+delta = 1.1, 1.1
+mask = 1
+trans = none
+layerno = 0
+velocity = 0,0
+tile = 0,0
+tilespacing = 0,0
+
+;---------------------------------------------------------
+
+[BG rain1D]
+type  = anim
+actionno = 1
+layerno = 0
+start = -450, -75
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain1D]
+type  = anim
+actionno = 1
+layerno = 0
+start = 150, -75
+delta = 1.1, 1.1
+mask = 1
+;----------
+[BG rain1C]
+type  = anim
+actionno = 1
+layerno = 1
+start = -500, 20
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain1C]
+type  = anim
+actionno = 1
+layerno = 1
+start = 50, 20
+delta = 1.1, 1.1
+mask = 1
+;----------
+[BG rain1B]
+type  = anim
+actionno = 1
+layerno = 1
+start = -300, 20
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain1B]
+type  = anim
+actionno = 1
+layerno = 1
+start = 200, 20
+delta = 1.1, 1.1
+mask = 1
+;----------
+[BG rain1A]
+type  = anim
+actionno = 1
+start = -400, 10
+delta = 1.1, 1.1
+mask = 1
+layerno = 1
+
+[BG rain1A]
+type  = anim
+actionno = 1
+start = 150, 10
+delta = 1.1, 1.1
+mask = 1
+layerno = 1
+
+;----------------------------------------------------------------
+
+[BG rain1D]
+type  = anim
+actionno = 1
+layerno = 0
+start = -450, -25
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain1D]
+type  = anim
+actionno = 1
+layerno = 0
+start = 150, -25
+delta = 1.1, 1.1
+mask = 1
+;----------
+[BG rain1C]
+type  = anim
+actionno = 1
+layerno = 1
+start = -500, -10
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain1C]
+type  = anim
+actionno = 1
+layerno = 1
+start = 50, -10
+delta = 1.1, 1.1
+mask = 1
+;----------
+[BG rain1B]
+type  = anim
+actionno = 1
+layerno = 1
+start = -300, 0
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain1B]
+type  = anim
+actionno = 1
+layerno = 1
+start = 200, 0
+delta = 1.1, 1.1
+mask = 1
+;----------
+[BG rain1A]
+type  = anim
+actionno = 1
+start = -400, 10
+delta = 1.1, 1.1
+mask = 1
+layerno = 1
+
+[BG rain1A]
+type  = anim
+actionno = 1
+start = 150, 10
+delta = 1.1, 1.1
+mask = 1
+layerno = 1
+
+;[BG Baterista Gordo]
+type = anim
+layerno = 0
+actionno = 5
+start = -77,200
+mask = 1
+tile = 0
+
+;[BG Guitarrista Gordo]
+type = anim
+layerno = 0
+actionno = 4
+start = -107,200
+mask = 1
+tile = 0
+
+;[BG Guitarrista Gordo 2]
+type = anim
+layerno = 0
+actionno = 7
+start = 40,200
+mask = 1
+tile = 0
+
+;[BG Vocalista Gordo]
+type = anim
+layerno = 0
+actionno = 6
+start = -7,200
+mask = 1
+tile = 0
+
+;[BG Zumbi Punk]
+type = anim
+layerno = 1
+actionno = 8
+start = 140,240
+mask = 1
+tile = 0
+
+[Begin Action 1] 
+19,0, 0,0, 1,,A
+19,1, 0,0, 1,,A
+19,2, 0,0, 1,,A
+19,3, 0,0, 1,,A
+19,4, 0,0, 1,,A
+19,5, 0,0, 1,,A
+19,6, 0,0, 1,,A
+19,7, 0,0, 1,,A
+19,8, 0,0, 1,,A
+
+[Begin Action 2]
+16,1, -150,0, 4
+16,2, -150,0, 4
+16,3, -150,0, 4
+16,4, -150,0, 4
+16,5, -150,0, 4
+16,6, -150,-30, 330
+16,1, -50,-30, 6
+16,2, -50,-30, 6
+16,3, -50,-30, 6
+16,4, -50,-30, 6
+16,5, -50,-30, 6
+16,6,  150,-30, 400
+16,1,  100,-10, 5
+16,2,  100,-10, 5
+16,3,  100,-10, 5
+16,4,  100,-10, 5
+16,5,  100,-10, 5
+16,6,  100,-10, 400
+
+[Begin Action 4]
+4,0, 0,0, 5
+4,1, 0,0, 5
+4,2, 0,0, 5
+4,3, 0,0, 5
+4,4, 0,0, 5
+4,5, 0,0, 5
+
+[Begin Action 5]
+5,0, 0,0, 5
+5,1, 0,0, 5
+5,2, 0,0, 5
+5,3, 0,0, 5
+5,4, 0,0, 5
+5,5, 0,0, 5
+5,6, 0,0, 5
+5,7, 0,0, 5
+
+[Begin Action 6]
+7,0, 0,0, 5
+7,1, 0,0, 5
+7,2, 0,0, 5
+7,3, 0,0, 5
+7,4, 0,0, 5
+7,5, 0,0, 5
+7,6, 0,0, 5
+7,7, 0,0, 5
+7,8, 0,0, 5
+7,9, 0,0, 5
+7,10, 0,0, 5
+7,11, 0,0, 5
+
+[Begin Action 7]
+6,0, 0,0, 5
+6,1, 0,0, 5
+6,2, 0,0, 5
+6,3, 0,0, 5
+6,4, 0,0, 5
+6,5, 0,0, 5
+6,6, 0,0, 5
+6,7, 0,0, 5
+
+[Begin Action 8]
+15,0, 0,0, 10
+15,1, 0,0, 10
+15,2, 0,0, 10

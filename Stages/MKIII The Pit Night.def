@@ -1,0 +1,154 @@
+[Info]
+Name = "MKIII The Pit Night"
+Author = "Tao Len"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -420
+boundright = 400
+;boundleft = -397
+;boundright = 381
+boundhigh = -10
+boundlow = 0
+verticalfollow = .2
+;floortension = 50
+tension = 50
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -81
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 81
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 
+rightbound =  1000 
+topbound  =  0
+botbound  =  0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0       
+botz     = 50     
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft = 35
+screenright = 35
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset = 200
+autoturn = 1
+resetBG = 1
+
+
+-----------------------------------------------------------------------
+[Bound]
+screenleft = 35
+screenright = 35
+-----------------------------------------------------------------------
+
+
+[StageInfo]
+zoffset        = 0
+zoffsetlink    = 1
+autoturn       = 1
+resetBG        = 1
+  
+;--------------------------------------------------------
+
+[Shadow]
+color = 100,100,100
+yscale = -.2
+reflect = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound\Good (7).mp3
+;bgmusic = sound\Good (7).mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+
+[BGdef]
+spr = stages/MKIII The Pit Night.sff
+debugbg = 0
+
+;--------------------------------------------------------
+
+
+[BG z]
+type  = dummy
+start = 0, 205     ; <-------- initial Z-Offset = 220
+id = 1
+
+[BGCtrl stageID 1]
+type = PosSet
+time = 1
+y = 9797
+ctrlID = 1
+
+; Back to normal
+[BGCtrl stageID 2]
+type = PosSet
+time = 4
+y = -2
+ctrlID = 1
+
+[BG 1]
+type  = normal
+spriteno = 0, 0
+delta = .1, 1
+tile = 1, 1
+
+[BG 2]
+type  = normal
+spriteno = 1, 0
+delta = .4, 1
+mask  = 1
+
+[BG 3]
+type  = anim
+actionno = 1
+delta = .4, 1
+
+[BG 4]
+type  = normal
+spriteno = 2, 0
+delta = .2, 1
+mask  = 1
+
+[BG 5]
+type  = normal
+spriteno = 2, 0
+start = 138, 0
+delta = .2, 1
+mask  = 1
+
+
+[BG 6]
+type  = normal
+spriteno = 3, 0
+mask  = 1
+
+[BG 7]
+type  = normal
+spriteno = 4, 0
+mask  = 1
+
+[Begin Action 1]
+1,0, 0,0, -1, H

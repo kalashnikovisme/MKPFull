@@ -1,0 +1,146 @@
+;===========================================================
+; "KOF2K-Factory"From The King of Fighters 2000    by M.M.R.
+;                                                 2001.11.07
+;===========================================================
+
+;--------------------------------------------------------
+[Info]
+name = "MKWORLD Factory II"
+
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -216
+boundright = 216
+boundhigh = -8
+boundlow =  0
+verticalfollow = .2
+floortension = 0
+tension = 60
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+ ;Don't change these values.
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+ ;No need to change these values
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15
+screenright = 15
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 215
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+color = 120,120,120
+yscale = 1.2
+reflect = 0
+
+;--------------------------------------------------------
+[Music]
+bgmusic = sound/MKA Lumbermill.mp3
+bgvolume = 255
+
+;-------------------------------------
+; Main background definition
+[BGdef]
+spr = stages/MKWORLD Factory II.sff
+debugbg = 0
+
+[BG 0]
+type  = normal
+spriteno = 0, 0
+layerno = 0
+start = -177,-8
+delta = .928, 1
+trans = none
+mask  = 0
+
+;--------------
+[BG 1]
+type = anim
+actionno = 10
+layerno = 0
+start = -360,-8
+delta = .928, 1
+trans = none
+mask = 0
+
+;--------------
+[BG 2]
+type = anim
+actionno = 20
+layerno = 0
+start = 56,-8
+delta = .928, 1
+trans = none
+mask = 0
+
+;--------------
+[BG 3]
+type = normal
+spriteno = 100, 0
+layerno = 0
+start = -376,-8
+delta = 1, 1
+trans = none
+mask = 1
+
+
+;----------------------------------
+; Defines Animations
+;----------------------------------
+;
+[Begin Action 10]
+10,0,0,0,2
+10,1,0,0,3
+10,2,0,0,5
+10,3,0,0,2
+10,4,0,0,3
+10,5,0,0,5
+10,6,0,0,2
+10,7,0,0,3
+10,8,0,0,5
+10,9,0,0,2
+10,10,0,0,3
+10,11,0,0,5
+
+;
+[Begin Action 20]
+20,0,0,0,4
+20,1,0,0,4
+20,2,0,0,4
+20,3,0,0,4
+20,4,0,0,4
+20,5,0,0,4
+20,6,0,0,4
+20,7,0,0,4

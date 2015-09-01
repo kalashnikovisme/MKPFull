@@ -1,0 +1,40 @@
+; Definition file for Acid
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name ="Reptile Cyborg"
+displayname ="Reptile Cyborg MKP"
+versiondate =06,03,2001
+mugenversion =04,01,2001
+pal.defaults =1,2   
+author=""
+
+; Files for the player
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =1.sff
+anim     =1.air
+sound   =1.snd
+pal1=1.act
+pal2=2.act
+pal3=3.act
+pal4=4.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=finishers.st
+st6=finishers.st
+st7=brutality.st
+;pal3     = 3.act   ;Palettes 
+;pal4     = 4.act   ;Palettes 
+
+;-------------------------------------------
+
+[Arcade]
+ending.storyboard=mkend\mkend.def
+

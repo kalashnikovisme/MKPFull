@@ -1,0 +1,89 @@
+;-------------------------------------------------------------------------------------------
+; cerisier présente:
+; "alley"
+; une conversion de stage tirée du jeu capoeira fighters II
+;-------------------------------------------------------------------------------------------
+; note sur la conversion:
+; _il ne manque que les persos animés. ceux ci sont les mêmes sur tous les stages.
+;  ce n'est pas la peine de demander, je ne les ripperai pas. 
+;  (ils ne sont pas très beaux de toute façon)
+;-------------------------------------------------------------------------------------------
+; note sur capoeira fighters II:
+; les images originales sont disponibles sur le site du jeu. celui-ci est pas mal réalisé.
+; à noter qu'une version test est directement disponible sur internet. il est possible de
+; jouer sans même la télécharger. Les persos sont en shockwave, mais bon...
+; (je me souviens plus de l'adresse: la première qui apparaît avec google...)
+;-------------------------------------------------------------------------------------------
+; contact & autorisation:
+; cerisier_mugen@hotmail.fr (en français, in english & auf Deutsch)
+; vous pouvez distribuer ou modifier librement mes données. 
+; (ce serait tout de même sympa de m'inclure dans les crédits dans ce dernier cas!
+;  et puis de m'envoyer votre travail aussi!!) 
+;-------------------------------------------------------------------------------------------
+; un grand merci à mike werewolf sans les conseils & didacticiels duquel ce stage ne serait 
+; pas ce qu'il est!
+; ce stage a été posté pour la première fois sur son site: http://mike.mugen.free.fr/
+; bon vent et salut à toute la communauté. 
+; cerisier
+;-------------------------------------------------------------------------------------------
+[Info]
+name="MKWORLD Trap"
+;-------------------------------------------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -28
+boundright = 28
+boundhigh = -18
+boundlow = 0
+verticalfollow = 0.2
+tension = 65
+;-------------------------------------------------------------------------------------------
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+;-------------------------------------------------------------------------------------------
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+;-------------------------------------------------------------------------------------------
+[Bound]
+screenleft = 15
+screenright = 15
+;-------------------------------------------------------------------------------------------
+[StageInfo]
+zoffset = 225
+autoturn = 1
+resetBG = 1
+;-------------------------------------------------------------------------------------------
+[Shadow]
+color = 32,32,32
+yscale = -.1
+reflect = 0
+;-------------------------------------------------------------------------------------------
+[Music]
+bgmusic = sound/MKIV Elder gods.mp3
+bgvolume = 255 
+;-------------------------------------------------------------------------------------------
+[BGdef]
+spr = stages/MKWORLD Trap.sff
+debugbg = 0
+;-------------------------------------------------------------------------------------------
+[BG salle]
+type = normal
+spriteno = 0,0
+start = 0, 0
+trans = none
+layerno = 0

@@ -1,0 +1,663 @@
+
+;----------------------------------------------------
+[Characters]
+;----------------------------------------------------
+Smoke MKII,order = 2
+Chameleon MKI,order = 2
+Rain MKII,order = 2
+Sub-Zero MKI,order = 2
+Scorpion MKI,order = 2
+Reptile MKI,order = 2
+Ermac MKI,order = 2
+Chameleon MKA,order = 2
+Dark MKP,order = 2
+Chameleon MKII,order = 2
+Ermac MKII,order = 2
+Reptile MKII,order = 2
+Scorpion MKII,order = 2
+Sub-Zero MKII,order = 2
+Super Sub-Zero MKII,order = 2
+Rain MKI,order = 2
+Chameleon MKII Inv,order = 2
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+Liu Kang MKI,order = 2
+Liu Kang MKII,order = 2
+Liu Kang MKIII,order = 2
+Hornbuckle MKIII,order = 2
+Mileena MKII,order = 2
+Jade MKII,order = 2
+Kitana MKII,order = 2
+Hornbuckle MKII,order = 2
+Shang Tsung MKIII,stages/MKDA_Shang_Tsung_Palace.def,order = 2
+Shang Tsung MKII,stages/MKDA_Shang_Tsung_Palace.def,order = 2
+Shang Tsung MKI,order = 2
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+Zombie Liu Kang MKA,order = 2
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+Water God MKM,order = 2
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+Fire God MKM,order = 2
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+Classic Blaze MKP,order = 2
+Inferno MKBS,order = 2
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+Sindel MKIII,order = 2
+Nightwolf MKIII,order = 2
+Johnny Cage MKT,order = 2
+Johnny Cage MKII,order = 2
+Johnny Cage MKI,order = 2
+Reiko MKIV,order = 2
+Baraka MKII,order = 2
+Frost MKDA,order = 2
+Nightmare MKP,order = 2
+Kenshi MKDA,order = 2
+Sheeva MKIII,order = 2
+Tremor MKIII,order = 2
+Sonya MKI,order = 2
+Sonya MKIII,order = 2
+Sonya MKIV,order = 2
+Stryker MKIII,order = 2
+Kabal MKIII,order = 2
+BLANK
+BLANK
+BLANK
+BLANK
+Jax MKIII,order = 2
+Kung Lao MKIII,order = 2
+Kano MKIII,order = 2
+Raiden MKII,stages/MKIV_wind.def,order = 3
+Tremor Cyborg MKP,order = 2
+LK-52 MKP,order = 2
+Cyrax Cyborg MKIII,order = 2
+Sektor MKA,order = 2
+Chameleon Cyborg,stages/MKII_The_Blue_Portal.def,order = 4
+Sektor MKIII,order = 2
+Hydro Cyborg MKP,order = 2
+Leviathan MKBS,order = 2
+Smoke Cyborg MKIII,order = 2
+Raiden MKI,stages/MKIV_wind.def,order = 3
+Kano MKI,order = 2
+Kung Lao MKII,order = 2
+Jax MKII,order = 2
+BLANK
+BLANK
+BLANK
+BLANK
+RANDOMSELECT
+Toxic MKP,order = 2
+Kitana MKP,order = 2
+Hydro MKP,order = 2
+Khameleon MKT,order = 2
+Mileena UMKIII,order = 2
+Sub-Zero MKIII,order = 2
+Goro MKI,stages/MKI_Goro_Lair.def,order = 5
+Motaro MKIII,stages/MKIII_The_Balcony.def,order = 5
+Kintaro MKII,stages/MKP_kintaro_lair.def,order = 5
+Flame MKP,stages/MKII_The_Orange_Portal.def,order = 4 
+Kitana UMKIII,order = 2
+Smoke Woman MKP,order = 2
+Tremor UMKIII,order = 2
+Tanya MKIV,order = 2
+Reptile Cyborg MKP,order = 2
+RANDOMSELECT
+BLANK
+BLANK
+BLANK
+BLANK
+Noob Saibot MKIV,order = 2
+Ruby MKP I,order = 2
+Cyrax MKP I,order = 2
+Chameleon MKT,stages/MKP_THE_OTHER_SIDE..._BLUE_PORTAL.def,order = 4
+Noob Smoke MKD,order = 2
+Snake MKP,order = 2
+Ermac UMKIII,order = 2
+Reptile UMKIII,order = 2
+Shao Kahn,stages/pit_II.def,order = 6
+Rain UMKIII,order = 2
+Scorpion MKIV,order = 2 
+Smoke MKT,order = 2
+Sub-Zero MKIV,order = 2
+Smoke MKP,order = 2
+Magnectro MKP,order = 2
+Jade UMKIII,order = 2
+Noob Saibot UMKIII,order = 2
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+Ruby MKP II,order = 2
+Cyrax MKP II,order = 2
+Chameleon MKP,stages/MKWORLD_Night_Field.def,order = 4
+BLANK
+BLANK
+Ermac MKD,order = 2
+BLANK
+Avenger MKP,order = 2
+BLANK
+Scorpion UMKIII,order = 2
+BLANK
+Sub-Zero UMKIII,order = 2
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+Nightspirits MKP,order = 2
+BLANK
+Scorpion UMKIII Unmasked,order = 2
+BLANK
+Sub-Zero MKDA,order = 2
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+Guile MKP,order = 2
+BLANK
+BLANK
+BLANK
+BLANK
+BLANK
+;----------------------------------------------------
+[EXTRASTAGES]
+;----------------------------------------------------
+
+;----------------------------------------------------
+;[=MKI Stage=]
+;----------------------------------------------------
+
+
+stages/MKI_Goro_Lair.def
+stages/MKI Palace Gates.def
+stages/MKI Pit Bottom.def
+stages/MKI The Courtyard I.def
+stages/MKI The Courtyard II.def
+stages/MKI The Pit.def
+stages/MKI Throne Room I.def 
+stages/MKI Throne Room II.def
+stages/MKI Warriors Shrine.def
+
+;----------------------------------------------------
+;[=MKII Stage=]
+;----------------------------------------------------
+
+stages/MKII Armory.def
+stages/MKII Dead Pool.def
+stages/MKII Devils Island.def 
+stages/MKII_Kahn_Arena.def
+stages/MKII Kahn Sits on Arena.def
+stages/MKII Kombat Tomb I.def
+stages/MKII Kombat Tomb I Night.def
+stages/MKII Kombat Tomb II.def
+stages/MKII Living Forest.def
+stages/MKII_The_Blue_Portal.def
+stages/MKII_The_Orange_Portal.def 
+stages/MKII The Pit.def
+stages/MKII The Portal.def
+stages/MKII The Tower.def
+stages/MKII Wasteland.def
+
+;----------------------------------------------------
+;[=MKIII Stage=]
+;----------------------------------------------------
+
+stages/MKIII_The_Balcony.def
+stages/MKIII Bell Tower.def
+stages/MKIII Graveyard.def
+stages/MKIII Noobs Dorfen.def
+stages/MKIII The Bank.def
+stages/MKIII The Bank - Roof.def
+stages/MKIII The Bridge.def
+stages/MKIII The Bridge Night.def
+stages/MKIII The Pit.def
+stages/MKIII The Pit Night.def
+stages/MKIII The Portal I.def 
+stages/MKIII The Portal II.def
+stages/MKIII The Soul Chamber.def
+stages/MKIII THE STREET.def
+stages/MKIII The Subway.def
+stages/MKIII The Subway Blue.def 
+stages/MKIII The Temple.def 
+
+;----------------------------------------------------
+;[=UMKIII Stage=]
+;----------------------------------------------------
+
+stages/UMKIII Blue Portal.def
+stages/UMKIII jade desert.def
+stages/UMKIII Scorpions Lair.def
+stages/UMKIII The Cave.def
+stages/UMKIII Water Front I.def
+stages/UMKIII Water Front II.def 
+
+;----------------------------------------------------
+;[=MKIV Stage=]
+;----------------------------------------------------
+
+stages/MKIV Elder gods.def
+stages/MKIV GORO LAIR.def 
+stages/MKIV Ice pit.def
+stages/MKIV prison.def
+stages/MKIV shaolin temple.def
+stages/MKIV shaolin temple Evil.def
+stages/MKIV shaolin temple Rain.def 
+stages/MKIV snake.def
+stages/MKIV The Tomb I.def
+stages/MKIV The Tomb II.def 
+stages/MKIV The Well I.def
+stages/MKIV The Well II.def
+stages/MKIV_wind.def
+
+;----------------------------------------------------
+;[=MKG Stage=]
+;----------------------------------------------------
+
+stages/MKG_Church.def 
+stages/MKG Netherrealm Throne.def 
+;----------------------------------------------------
+;[=MK-Mitologies Stage=]
+;----------------------------------------------------
+
+stages/MKFD Blood Wall.def
+stages/MKFD Red Desert.def 
+;----------------------------------------------------
+;[=MK-Mitologies Stage=]
+;----------------------------------------------------
+
+stages/MKM FIRE PIT.def 
+stages/MKM Labyrinth.def 
+stages/MKM prison bridge.def 
+stages/MKM Quan Chi Pit.def
+stages/MKM SHAOLIN.def 
+stages/MKM WATER I.def 
+stages/MKM WATER II.def 
+stages/MKM WATER PIT.def 
+
+;----------------------------------------------------
+;[=MKDA Stage=]
+;----------------------------------------------------
+
+stages/MKDA drump arena.def 
+stages/MKDA drump arena night.def 
+stages/MKDA_Shang_Tsung_Palace.def
+stages/MKDA wu shi academy.def
+;----------------------------------------------------
+;[=MKD Stage=]
+;----------------------------------------------------
+stages/MKD Dragon King's Temple.def
+stages/MKD hells foundry.def
+stages/MKD Prison.def
+stages/MKD slaughter house.def
+stages/MKD the lower mines.def
+stages/MKD_THE_PIT.def 
+stages/MKD yin yang island.def
+
+;----------------------------------------------------
+;[=MKA Stage=]
+;----------------------------------------------------
+
+stages/MKA_Battle_Arena.def
+stages/MKA_Lumbermill.def  
+stages/MKA_Meteor_Storm_Arena.def 
+
+;----------------------------------------------------
+;[=MKT-N64-PS Stage=]
+;----------------------------------------------------
+
+stages/MKT after pit.def
+stages/MKT Dead Pool.def
+stages/MKT Kahn's Caves.def
+stages/MKT Star Bridge.def
+stages/MKT The Bank.def 
+stages/MKT The Pit I.def
+stages/MKT The Pit II.def 
+
+;----------------------------------------------------
+;[=MKSM Stage=]
+;----------------------------------------------------
+
+stages/MKSM_PORTAL.def
+
+;----------------------------------------------------
+;[=MKP Stage=]
+;----------------------------------------------------
+stages/MKP Ancient Fight Arena.def 
+stages/MKP ANCIENT TEMPLE.def 
+stages/MKP ARMORY I.def
+stages/MKP ARMORY II.def
+stages/MKP Attic Top I.def
+stages/MKP Attic Top II.def
+stages/MKP Battle Square Arena.def 
+stages/MKP Bell Tower I.def
+stages/MKP Bell Tower II.def 
+stages/MKP Black night.def
+stages/MKP Blue Desert.def
+stages/MKP Bog.def
+stages/MKP Burning Factory.def
+stages/MKP Caged Ice I.def
+stages/MKP Caged Ice II.def
+stages/MKP cathedral I.def
+stages/MKP cathedral II.def
+stages/MKP Cave Tunnel.def
+stages/MKP Clouds.def 
+stages/MKP Corridor of Death.def 
+stages/MKP Dark Prison.def
+stages/MKP Dead pool.def
+stages/MKP Dead pool Entrance I.def 
+stages/MKP Dead pool Entrance II.def 
+stages/MKP Dead Pool Evil.def 
+stages/MKP Deadly Woods.def
+stages/MKP Demension Castle.def 
+stages/MKP Desert.def
+stages/MKP Desert night.def
+stages/MKP Desert Train.def 
+stages/MKP DISTORTION.def
+stages/MKP Eclipse Cannon.def 
+stages/MKP Edenia.def
+stages/MKP Egypt.def 
+stages/MKP Eternal rest.def 
+stages/MKP Evil.def 
+stages/MKP Evil tower.def
+stages/MKP Eyedol's Crypt.def
+stages/MKP Filthy Forest I.def
+stages/MKP Filthy Forest II.def
+stages/MKP Firedung.def 
+stages/MKP FOREST.def 
+stages/MKP Forest of pain.def
+stages/MKP Gideons Lair.def 
+stages/MKP Glacius stage.def 
+stages/MKP Golden Desert.def 
+stages/MKP Golden Stage.def
+stages/MKP Goro Lair.def
+stages/MKP Goro Lair Rain I.def 
+stages/MKP Goro Lair Rain II.def 
+stages/MKP Graveyard Rain.def 
+stages/MKP Ground Floor I.def
+stages/MKP Ground Floor II.def 
+stages/MKP harbor portal.def
+stages/MKP Ice Dominius.def 
+stages/MKP Inferno Portal.def
+stages/MKP Infinity Moon.def 
+stages/MKP Inside The Blue Portal.def
+stages/MKP Iperion Castle.def 
+stages/MKP Japan Temple.def 
+stages/MKP Johnny Cage Outworld Scene.def 
+stages/MKP Jungle Antics.def
+stages/MKP Kahn Hall.def
+stages/MKP Kahn Shrine.def 
+stages/MKP_kintaro_lair.def
+stages/MKP lava shrine.def
+stages/MKP Lin Kuei Temple.def
+stages/MKP living forest I.def 
+stages/MKP living forest II.def
+stages/MKP lost tomb.def 
+stages/MKP Mechanical Decension.def
+stages/MKP Mechanical Orb.def
+stages/MKP MERGE OF THE WORLDS.def
+stages/MKP Moon's Path.def 
+stages/MKP nexus.def
+stages/MKP night forest.def
+stages/MKP Outworld I.def
+stages/MKP outworld II.def
+stages/MKP Outworld III.def
+stages/MKP Outworld Sewers.def
+stages/MKP Palace Mountain.def 
+stages/MKP palace walls.def
+stages/MKP Phantom Castle Night.def 
+stages/MKP Pit I.def
+stages/MKP Pit II.def
+stages/MKP Pit III.def
+stages/MKP Portal of Time.def 
+stages/MKP Prison.def
+stages/MKP_Realm_of_fire_I.def
+stages/MKP_Realm_of_fire_II.def 
+stages/MKP_Realm_of_mist_I.def
+stages/MKP_Realm_of_mist_II.def
+stages/MKP_Realm_of_rain_I.def 
+stages/MKP_Realm_of_rain_II.def 
+stages/MKP Red portal.def 
+stages/MKP Reiko's Fortress.def 
+stages/MKP Ritualis.def
+stages/MKP Riverside I.def
+stages/MKP Riverside II.def
+stages/MKP Route to Hell.def
+stages/MKP Ruin Tower.def 
+stages/MKP Rundown back alley.def 
+stages/MKP Sacred Ground.def 
+stages/MKP sarah.def
+stages/MKP Satan's Path.def 
+stages/MKP Satan's Trench.def
+stages/MKP Shadow Temple.def 
+stages/MKP shadows.def 
+stages/MKP shang tsung island.def
+stages/MKP shaolin temples.def 
+stages/MKP Shin Gouki's Cave I.def 
+stages/MKP Shin Gouki's Cave II.def 
+stages/MKP Shion Stage.def
+stages/MKP sierra.def
+stages/MKP Sky Battle I.def
+stages/MKP Sky Battle II.def 
+stages/MKP Sky Temple.def
+stages/MKP Snow Dunes.def
+stages/MKP Soul Bridge.def
+stages/MKP speed dead.def 
+stages/MKP Speed Fortress.def
+stages/MKP spiked dark.def 
+stages/MKP spiked press.def
+stages/MKP storm.def
+stages/MKP Storm Clouds.def 
+stages/MKP Street.def
+stages/MKP Sub-Zeros Palace I.def
+stages/MKP Sub-Zeros Palace II.def
+stages/MKP Sun.def
+stages/MKP Sunset.def 
+stages/MKP Sunset of Evil.def
+stages/MKP Super Rain Tower.def 
+stages/MKP Tavern.def 
+stages/MKP Temple of the Rising Sun.def
+stages/MKP Temple of the Shadows.def
+stages/MKP The City Of The Elder Gods.def
+stages/MKP The Fire Pit.def
+stages/MKP the Guiana highland.def 
+stages/MKP The Hightop.def
+stages/MKP The Lost Portal.def 
+stages/MKP The Netherrealm Pit.def
+stages/MKP The over Shrine.def 
+stages/MKP_THE_OTHER_SIDE..._BLUE_PORTAL.def
+stages/MKP The Rain Pit.def
+stages/MKP the ship I.def
+stages/MKP the ship II.def 
+stages/MKP The Snow Temple.def 
+stages/MKP Theizen Layer.def 
+stages/MKP Tiger Shrine.def
+stages/MKP Tomb Top.def 
+stages/MKP Tower I.def
+stages/MKP Tower II.def
+stages/MKP treehouse.def
+stages/MKP Underground cavern.def
+stages/MKP Underground Hell.def 
+stages/MKP Venezuela.def 
+stages/MKP view over earth.def 
+stages/MKP Warriors Shrine I.def
+stages/MKP Warriors Shrine II.def
+stages/MKP Your Shadow.def 
+
+
+;----------------------------------------------------
+;[=Another Stage=]
+;----------------------------------------------------
+
+stages/MKWORLD Ancient arena.def 
+stages/MKWORLD Aries Temple.def 
+stages/MKWORLD Asylum at Night.def
+stages/MKWORLD Asylum of Id I.def
+stages/MKWORLD Asylum of Id II.def 
+stages/MKWORLD Australian outback.def
+stages/MKWORLD Battlefield.def
+stages/MKWORLD Beach I.def
+stages/MKWORLD Beach II.def 
+stages/MKWORLD Beach Sunset.def
+stages/MKWORLD BLAZE WORLD.def 
+stages/MKWORLD Black Death's Room.def
+stages/MKWORLD Bloody Glade.def 
+stages/MKWORLD Citadel of Flame.def
+stages/MKWORLD Clock Tower.def 
+stages/MKWORLD Cry Tower.def
+stages/MKWORLD Edenia Butterflies field.def 
+stages/MKWORLD Factory I.def 
+stages/MKWORLD Factory II.def
+stages/MKWORLD Factory II Snow.def
+stages/MKWORLD Factory III.def 
+stages/MKWORLD Fog.def 
+stages/MKWORLD Forgotten Cathedral.def 
+stages/MKWORLD Guardian temple.def
+stages/MKWORLD Japan Palace.def
+stages/MKWORLD JUNGLE.def
+stages/MKWORLD Lost City.def
+stages/MKWORLD Mountains.def 
+stages/MKWORLD_Night_Field.def
+stages/MKWORLD Night of the Assassin.def 
+stages/MKWORLD Night Sand.def 
+stages/MKWORLD Portal.def 
+stages/MKWORLD Rain in forest.def 
+stages/MKWORLD Rest.def 
+stages/MKWORLD Rivers of Blood.def 
+stages/MKWORLD Road to Palace.def 
+stages/MKWORLD roof blue.def
+stages/MKWORLD roof RED.def 
+stages/MKWORLD Route to Hell.def 
+stages/MKWORLD Ruins I.def 
+stages/MKWORLD Ruins II Buddha.def
+stages/MKWORLD Secrets of the Sabre.def 
+stages/MKWORLD Sheeva temple.def 
+stages/MKWORLD Shinto.def 
+stages/MKWORLD Sword Bridge.def 
+stages/MKWORLD Temple Under the Sky.def 
+stages/MKWORLD Tibet's Mountains I.def 
+stages/MKWORLD Tibet's Mountains II.def 
+stages/MKWORLD Trap.def 
+stages/MKWORLD Warzone.def 
+stages/MKWORLD Water house.def 
+stages/MKWORLD Waterfall.def 
+stages/MKWORLD Waterfall bridge.def 
+stages/MKWORLD Waterfall Night.def 
+
+
+;----------------------------------------------------
+[Options]
+;----------------------------------------------------
+
+arcade.maxmatches=10,9,8,7,6,5,4,3,2,1
+team.maxmatches=10,9,8,7,6,5,4,3,2,1
+
+;---------------------------------------------------

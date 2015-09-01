@@ -1,0 +1,102 @@
+[Info]
+name     = "MKP Ritualis"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -216
+boundright = 216
+boundhigh = -20
+boundlow =  0
+verticalfollow = .2
+;floortension = 50
+tension = 80
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 
+rightbound =  1000 
+topbound  =  0
+botbound  =  0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0       
+botz     = 50     
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft = 35
+screenright = 35
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset        = 220
+zoffsetlink    = 1
+autoturn       = 1
+resetBG        = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+color = 0,0,0
+yscale = 0
+reflect = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound/MKP 3.mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+
+[BGdef]
+spr = stages/MKP Ritualis.sff
+debugbg = 0
+
+;--------------------------------------------------------
+
+[BG SKY]
+type  = normal
+spriteno = 1,1
+delta = 0.5,0.5
+mask  = 1
+start = 0, 60
+tile = 1,0
+velocity = 0.3,0
+
+[BG FLOOR]
+type  = normal
+spriteno = 0,0
+delta = 1,1
+mask  = 1
+start = 0, 110
+
+[BG WALL]
+type  = normal
+spriteno = 1,0
+delta = 1,1
+mask  = 1
+start = 0, 110
+
+
+;--------------------------------------------------------

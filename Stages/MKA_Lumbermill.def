@@ -1,0 +1,77 @@
+ The lumbermill stage. FROM MORTAL KOMBAT ARMAGEDDON/EDITS
+MADE BY FIREBOY 
+HOME PAGE
+
+http://fireboymugen.webs.com/
+
+[Info]
+name = "MKA Lumbermill"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -215
+boundright = 131
+boundhigh = -8
+boundlow = -3
+verticalfollow = .1
+tension = 60
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 5
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 215
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+color = 70,70,70
+yscale = 0.15
+reflect = 0
+
+;--------------------------------------------------------
+[Music]
+bgmusic = sound/MKA Lumbermill.mp3
+bgvolume = 400
+
+
+[BGdef]
+spr = stages/MKA_Lumbermill.sff
+
+
+debugbg = 0
+
+;----------
+[BG 1]
+type  = normal
+spriteno = 0,1
+start = -375, -8
+xscale = 1, 1.75
+yscalestart = 100
+yscaledelta = 1.2
+mask = 1

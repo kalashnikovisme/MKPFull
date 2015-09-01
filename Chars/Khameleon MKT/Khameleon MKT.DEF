@@ -1,0 +1,48 @@
+;----------------------------------------------
+; Character       : MK - Khameleon (only works on mkmugen projectversion 4.0!)
+; Program+sprites : Mortal Kombat project team
+; notes           : Khamelon voices+ACT file added by Rugal2
+;                   versus screen sprite by Bman
+;----------------------------------------------
+;----------------------------------------------
+;----------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="jade"
+displayname  ="Khameleon MKT"
+versiondate  =06,03,2001
+mugenversion =04,01,2001
+pal.defaults =1,2,3
+author="Fly"
+
+;-------------------------------------------
+
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =khameleon.sff
+anim     =khameleon.air
+sound    =1.snd
+pal1     =Dark.act
+pal2     =Light.act
+pal3     =Light.act
+pal4     =Light.act
+pal5     =Light.act
+pal7	 =Normal.act
+pal8	 =Normal.act
+pal9	 =Normal.act
+pal10	 =Dark.act
+pal11	 =Dark.act
+pal12	 =Light.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Finishers.st
+
+[Arcade]
+intro.storyboard = mkkhameleonintro/mkkhameleonintro.def
+ending.storyboard = mkkhameleonend/mkkhameleonend.def

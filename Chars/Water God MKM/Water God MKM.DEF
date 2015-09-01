@@ -1,0 +1,35 @@
+
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="watergod"
+displayname  ="Water God MKM"
+versiondate  =28,05,2008
+mugenversion =04,01,2001
+pal.defaults =1,2
+author="FIREBOY"
+
+;-------------------------------------------
+
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =MKCOMMON1.CNS
+sprite   =watergod.sff
+anim     =watergod.air
+sound    =1.snd
+
+st1=sp.st
+st2=watergod.st
+st3=Pit.st
+st4=Fatality.st
+st5=Finishers.st
+st6=Finishers.st
+
+[Arcade]
+;intro.storyboard=
+ending.storyboard = mk2end\mk2end.def
+
+;-------------------------------------------

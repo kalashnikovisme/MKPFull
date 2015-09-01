@@ -1,0 +1,146 @@
+[Info]
+name     = "MKP Soul Bridge"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -216
+boundright = 216
+boundhigh = -20
+boundlow =  0
+verticalfollow = .2
+;floortension = 50
+tension = 80
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 
+rightbound =  1000 
+topbound  =  0
+botbound  =  0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0       
+botz     = 50     
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft = 35
+screenright = 35
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset        = 0
+zoffsetlink    = 1
+autoturn       = 1
+resetBG        = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+color = 0,0,0
+yscale = 0
+reflect = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound/MKP 3.mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+
+[BGdef]
+spr = stages/MKP Soul Bridge.sff
+debugbg = 0
+
+;--------------------------------------------------------
+
+[BG z]
+type  = dummy
+start = 0, 220     ; <-------- initial Z-Offset = 220
+id = 1
+
+[BGCtrl stageID 1]
+type = PosSet
+time = 1
+y = 9794
+ctrlID = 1
+
+; Back to normal
+[BGCtrl stageID 2]
+type = PosSet
+time = 4
+y = -14
+ctrlID = 1
+
+
+[BG city bg ]
+type  = normal
+spriteno = 0,3
+delta = .11,-0.5
+mask  = 0
+
+
+[BG sky]
+type  = normal
+spriteno = 4,0
+delta = .20,-0.4
+trans = add
+mask  = 1
+velocity = 0.15,0
+tile  = 1,1
+
+[BG city]
+type  = normal
+spriteno = 0,1
+delta = .40,-0.3
+mask  = 1
+
+[BG sky2]
+type  = normal
+spriteno = 4,0
+delta = .50,-0.2
+trans = add
+mask  = 1
+velocity = 0.5,0
+tile  = 1,1
+start = 0, 40
+
+[BG 2]
+type  = normal
+spriteno = 0,2
+delta = 1,1
+mask  = 1
+start = 0, 12
+
+[BG 2 edge]
+type  = normal
+spriteno = 0,9
+delta = 1,1
+layerno = 1
+mask  = 1
+
+
+
+
+;--------------------------------------------------------

@@ -1,0 +1,959 @@
+;--------------------------------------------------------
+
+[Info]
+name = "MKP Realm of fire I"
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -300
+boundright = 300
+boundhigh = -56
+boundlow =  0
+verticalfollow = .20
+floortension = 0
+tension = 80
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -600
+rightbound = 840
+topbound  =  0
+botbound  =  0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0       
+botz     = 50     
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft = 50
+screenright = 50
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+color = 100,100,100
+yscale = -.2
+reflect = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound/MKA Battle Arena.mp3
+bgvolume = 255
+
+[BGdef]
+spr = MKP_Realm_of_fire_I.sff
+debugbg = 0
+
+[BG stars]
+type  = normal
+spriteno = 0, 3
+delta = .3, .3
+tile = 1, 1
+
+[BG wall]
+type  = normal
+spriteno = 10,1
+delta = .1,1
+start = 0,0
+tile = 1
+tilespacing = -0,0
+
+[BG Floor mist2]
+type  = normal
+spriteno = 2,4
+start = 10,80
+delta = .1,1
+velocity = 1,0
+trans = add
+xscale = 1, 0
+yscalestart = 100
+yscaledelta = 3
+tile = 1,0
+
+[BG column5]
+type = normal
+spriteno = 5,5
+delta = .1,1
+mask = 1
+
+[BG evil01]
+type = anim
+spriteno = 4,1
+actionno = 15
+delta = .1,1
+start = -0,0
+trans = add
+tile = 6,1
+velocity = -0, 4.0
+mask = 1
+tilespacing = 670000
+
+[BG evil02]
+type = anim
+spriteno = 4,1
+actionno = 15
+delta = .1,1
+start = -100,6
+trans = add
+tile = 6,1
+velocity = -0, 2.0
+mask = 1
+tilespacing = 1000
+
+[BG evil03]
+type = anim
+spriteno = 4,1
+actionno = 15
+delta = .1,1
+start = -200,6
+trans = add
+tile = 6,1
+velocity = -0, 3.0
+mask = 1
+tilespacing = 890
+
+[BG evil04]
+type = anim
+spriteno = 4,1
+actionno = 15
+delta = .1,1
+start = -300,15
+trans = add
+tile = 6,1
+velocity = -0, 2.0
+mask = 1
+tilespacing = 4000
+
+[BG evil05]
+type = anim
+spriteno = 4,1
+actionno = 15
+delta = .1,1
+start = -400,9
+trans = add
+tile = 6,1
+velocity = -0, 3.0
+mask = 1
+tilespacing = 2000
+
+[BG evil06]
+type = anim
+spriteno = 4,1
+actionno = 15
+delta = .1,1
+start = -500,0
+trans = add
+tile = 6,1
+velocity = -0, 4.0
+mask = 1
+tilespacing = 690
+
+[BG evil07]
+type = anim
+spriteno = 4,1
+actionno = 15
+delta = .1,1
+start = -600,6
+trans = add
+tile = 6,1
+velocity = -0, 2.0
+mask = 1
+tilespacing = 1000
+
+[BG evil08]
+type = anim
+spriteno = 4,1
+actionno = 15
+delta = .1,1
+start = 0,6
+trans = add
+tile = 6,1
+velocity = -0, 3.0
+mask = 1
+tilespacing = 880
+
+[BG evil09]
+type = anim
+spriteno = 4,1
+actionno = 15
+delta = .1,1
+start = 100,15
+trans = add
+tile = 6,1
+velocity = -0, 2.0
+mask = 1
+tilespacing = 1000
+
+[BG evil010]
+type = anim
+spriteno = 4,1
+actionno = 15
+delta = .1,1
+start = 200,9
+trans = add
+tile = 6,1
+velocity = -0, 3.0
+mask = 1
+tilespacing = 3000
+
+[BG evil011]
+type = anim
+spriteno = 4,1
+actionno = 15
+delta = .1,1
+start = 300,6
+trans = add
+tile = 6,1
+velocity = -0, 3.0
+mask = 1
+tilespacing = 900
+
+[BG evil012]
+type = anim
+spriteno = 4,1
+actionno = 15
+delta = .1,1
+start = 400,15
+trans = add
+tile = 6,1
+velocity = -0, 2.0
+mask = 1
+tilespacing = 1000
+
+[BG evil013]
+type = anim
+spriteno = 4,1
+actionno = 15
+delta = .1,1
+start = 500,18
+trans = add
+tile = 6,1
+velocity = -0, 3.0
+mask = 1
+tilespacing = 500
+
+[BG evil014]
+type = anim
+spriteno = 4,1
+actionno = 15
+delta = .1,1
+start = 600,13
+trans = add
+tile = 6,1
+velocity = -0, 3.0
+mask = 1
+tilespacing = 800
+
+[BG column4]
+type = normal
+spriteno = 5,4
+delta = .2,1
+mask = 1
+
+[BG Floor mist3]
+type  = normal
+spriteno = 2,4
+start = 90,50
+delta = .1,1
+velocity = 1,0
+trans = add
+xscale = 1, 0
+yscalestart = 100
+yscaledelta = 3
+tile = 1,0
+
+[BG column3]
+type = normal
+spriteno = 5,3
+delta = .3,1
+mask = 1
+
+[BG column2]
+type = normal
+spriteno = 5,2
+delta = .5,1
+mask = 1
+
+[BG evil1]
+type = anim
+spriteno = 4,1
+actionno = 14
+delta = .5,1
+trans = add
+tile = 6,1
+velocity = -0, 7.0
+mask = 1
+tilespacing = 4000
+
+[BG man05]
+type = anim
+spriteno = 8,8
+actionno = 19
+delta = .5,1
+trans = add
+tile = 6,1
+velocity = -0, 7.0
+mask = 1
+tilespacing = 4000
+
+[BG evil2]
+type = anim
+spriteno = 4,1
+actionno = 14
+delta = .5,1
+start = -150,0
+trans = add
+tile = 6,1
+velocity = -0, 9.0
+mask = 1
+tilespacing = 5000
+
+[BG man04]
+type = anim
+spriteno = 8,8
+actionno = 19
+delta = .5,1
+start = -150,0
+trans = add
+tile = 6,1
+velocity = -0, 9.0
+mask = 1
+tilespacing = 5000
+
+[BG evil9]
+type = anim
+spriteno = 4,1
+actionno = 14
+delta = .5,1
+start = -210,0
+trans = add
+tile = 6,1
+velocity = -0, 5.0
+mask = 1
+tilespacing = 4000
+
+[BG evil9]
+type = anim
+spriteno = 8,8
+actionno = 19
+delta = .5,1
+start = -210,0
+trans = add
+tile = 6,1
+velocity = -0, 5.0
+mask = 1
+tilespacing = 4000
+
+[BG evil10]
+type = anim
+spriteno = 4,1
+actionno = 14
+delta = .5,1
+start = 220,20
+trans = add
+tile = 6,1
+velocity = -0, 8.0
+mask = 1
+tilespacing = 8000
+
+[BG man03]
+type = anim
+spriteno = 8,8
+actionno = 19
+delta = .5,1
+start = 220,20
+trans = add
+tile = 6,1
+velocity = -0, 8.0
+mask = 1
+tilespacing = 8000
+
+[BG evil12]
+type = anim
+spriteno = 4,1
+actionno = 14
+delta = .5,1
+start = 289,10
+trans = add
+tile = 6,1
+velocity = -0, 8.0
+mask = 1
+tilespacing = 6000
+
+[BG man02]
+type = anim
+spriteno = 8,8
+actionno = 19
+delta = .5,1
+start = 289,10
+trans = add
+tile = 6,1
+velocity = -0, 8.0
+mask = 1
+tilespacing = 6000
+
+[BG evil13]
+type = anim
+spriteno = 4,1
+actionno = 14
+delta = .5,1
+start = -289,50
+trans = add
+tile = 6,1
+velocity = -0, 6.0
+mask = 1
+tilespacing = 7000
+
+[BG man01]
+type = anim
+spriteno = 8,8
+actionno = 19
+delta = .5,1
+start = -289,50
+trans = add
+tile = 6,1
+velocity = -0, 6.0
+mask = 1
+tilespacing = 7000
+
+[BG column1]
+type = normal
+spriteno = 5, 1
+delta = .7,1
+mask = 1
+tile = 1,0
+
+[BG evil]
+type = anim
+spriteno = 4,1
+actionno = 13
+delta = .7,1
+start = -0,30
+trans = add
+tile = 6,1
+velocity = -0, 6.0
+mask = 1
+tilespacing = 6000 
+
+[BG man]
+type = anim
+spriteno = 4,1
+actionno = 17
+delta = .7,1
+start = -0,30
+tile = 6,1
+velocity = -0, 6.0
+mask = 1
+tilespacing = 6000
+
+[BG evil11]
+type = anim
+spriteno = 4,1
+actionno = 13
+delta = .7,1
+start = -270,80
+tile = 6,1
+velocity = -0, 6.0
+mask = 1
+tilespacing = 5000
+
+[BG man1]
+type = anim
+spriteno = 8,7
+actionno = 18
+delta = .7,1
+start = -270,80
+tile = 6,1
+velocity = -0, 6.0
+mask = 1
+tilespacing = 5000
+
+[BG Flama 0]
+type = anim
+actionno = 9
+start = 100,5
+delta = 1,1
+mask = 1
+
+[BG Flama 1]
+type = anim
+actionno = 9
+start = 200,45
+delta = 1,1
+mask = 1
+
+[BG Flama 2]
+type = anim
+actionno = 9
+start = 150,15
+delta = 1,1
+mask = 1
+
+[BG Flama 3]
+type = anim
+actionno = 9
+start = 50,50
+delta = 1,1
+mask = 1
+
+[BG Flama 16]
+type = anim
+actionno = 9
+start = -0,30
+delta = 1,1
+mask = 1
+
+[BG Flama 4]
+type = anim
+actionno = 9
+start = -50,-45
+delta = 1,1
+mask = 1
+
+[BG Flama 5]
+type = anim
+actionno = 9
+start = -100,38
+delta = 1,1
+mask = 1
+
+[BG Flama 6]
+type = anim
+actionno = 9
+start = -150,-42
+delta = 1,1
+mask = 1
+
+[BG Flama 7]
+type = anim
+actionno = 9
+start = -200,54
+delta = 1,1
+mask = 1
+
+[BG Flama 8]
+type = anim
+actionno = 9
+start = -250,26
+delta = 1,1
+mask = 1
+
+[BG Flama 9]
+type = anim
+actionno = 9
+start = -300,-50
+delta = 1,1
+mask = 1
+
+[BG Flama 10]
+type = anim
+actionno = 9
+start = -350,51
+delta = 1,1
+mask = 1
+
+[BG Flama 11]
+type = anim
+actionno = 9
+start = -500,39
+delta = 1,1
+mask = 1
+
+[BG Flama 12]
+type = anim
+actionno = 9
+start = -450,26
+delta = 1,1
+mask = 1
+
+
+[BG Flama 13]
+type = anim
+actionno = 9
+start = -550,-41
+delta = 1,1
+mask = 1
+
+[BG Flama 14]
+type = anim
+actionno = 9
+start = -400,52
+delta = 1,1
+mask = 1
+
+[BG Flama 15]
+type = anim
+actionno = 9
+start = -600,37
+delta = 1,1
+mask = 1
+
+[BG Flama 0]
+type = anim
+actionno = 9
+start = 100,5
+delta = 1,1
+mask = 1
+
+[BG Flama 1]
+type = anim
+actionno = 9
+start = 200,45
+delta = 1,1
+mask = 1
+
+[BG Flama 2]
+type = anim
+actionno = 9
+start = 150,15
+delta = 1,1
+mask = 1
+
+[BG Flama 3]
+type = anim
+actionno = 9
+start = 50,50
+delta = 1,1
+mask = 1
+
+[BG Flama 16]
+type = anim
+actionno = 9
+start = -0,30
+delta = 1,1
+mask = 1
+
+[BG Flama 4]
+type = anim
+actionno = 9
+start = -50,-45
+delta = 1,1
+mask = 1
+
+[BG Flama 5]
+type = anim
+actionno = 9
+start = -100,38
+delta = 1,1
+mask = 1
+
+[BG Flama 6]
+type = anim
+actionno = 9
+start = -150,-42
+delta = 1,1
+mask = 1
+
+[BG Flama 7]
+type = anim
+actionno = 9
+start = -200,54
+delta = 1,1
+mask = 1
+
+[BG Flama 8]
+type = anim
+actionno = 9
+start = -250,26
+delta = 1,1
+mask = 1
+
+[BG Flama 9]
+type = anim
+actionno = 9
+start = -300,-50
+delta = 1,1
+mask = 1
+
+[BG Flama 10]
+type = anim
+actionno = 9
+start = -350,51
+delta = 1,1
+mask = 1
+
+[BG Flama 11]
+type = anim
+actionno = 9
+start = -500,39
+delta = 1,1
+mask = 1
+
+[BG Flama 12]
+type = anim
+actionno = 9
+start = -450,26
+delta = 1,1
+mask = 1
+
+[BG Flama 13]
+type = anim
+actionno = 9
+start = -550,-41
+delta = 1,1
+mask = 1
+
+[BG Flama 14]
+type = anim
+actionno = 9
+start = -400,52
+delta = 1,1
+mask = 1
+
+[BG Flama 15]
+type = anim
+actionno = 9
+start = -600,37
+delta = 1,1
+mask = 1
+
+[BG 1]
+type = normal
+spriteno = 0,2
+mask = 1
+
+[BG Piso]
+type = normal
+spriteno = 0,1
+layerno = 0
+mask = 1
+
+[BG scop]
+type = normal
+spriteno = 8,6
+layerno = 0
+mask = 1
+
+[BG stat]
+type = normal
+spriteno = 2,3
+layerno = 0
+mask = 1
+
+[BG Floor mist1]
+type  = normal
+spriteno = 2,4
+layerno = 1
+start = 0, 181
+delta = 1, 1
+velocity = 1,0
+trans = add
+xscale = 1, 0
+yscalestart = 100
+yscaledelta = 3
+tile = 1,0
+
+[BG stat1]
+type = normal
+spriteno = 2,3
+start = -290,0
+layerno = 0
+mask = 1
+
+[BG skullfire]
+type = anim
+actionno = 16
+trans = add1
+start = -161,-24
+delta = 1,1
+mask = 1
+
+[BG skullfire]
+type = anim
+actionno = 16
+trans = add1
+start = 129,-24
+delta = 1,1
+mask = 1
+
+[BG Piso 2]
+type = normal
+spriteno = 2,0
+mask = 1
+
+[BG skulls]
+type = normal
+spriteno = 2,1
+mask = 1
+
+[BG Piso 2]
+type = normal
+spriteno = 7,0
+layerno = 0
+mask = 1
+start = 0,0
+
+[BG Piso 3]
+type = normal
+spriteno = 7,1
+layerno = 0
+mask = 1
+start = -290,0
+
+[BG rside skull]
+type = normal
+spriteno = 1,0
+layerno = 0
+mask = 1
+start = 400,0
+
+[BG lside skull]
+type = normal
+spriteno = 1,1
+layerno = 0
+mask = 1
+start = -400,0
+
+[Begin Action 9]
+loopstart
+12,0, 0,0, 1, ,A
+12,1, 0,0, 1, ,A
+12,2, 0,0, 1, ,A
+12,3, 0,0, 1, ,A
+12,4, 0,0, 1, ,A
+12,5, 0,0, 1, ,A
+12,6, 0,0, 1, ,A
+12,7, 0,0, 1, ,A
+12,8, 0,0, 1, ,A
+12,9, 0,0, 1, ,A
+12,10, 0,0, 1, ,A
+12,11, 0,0, 1, ,A
+12,12, 0,0, 2, ,A
+12,13, 0,0, 2, ,A
+12,14, 0,0, 2, ,A
+12,15, 0,0, 2, ,A
+12,16, 0,0, 2, ,A
+12,17, 0,0, 2, ,A
+12,18, 0,0, 2, ,A
+12,19, 0,0, 2, ,A
+12,20, 0,0, 2, ,A
+12,21, 0,0, 2, ,A
+12,22, 0,0, 2, ,A
+12,23, 0,0, 2, ,A
+12,24, 0,0, 2, ,A
+12,25, 0,0, 2, ,A
+12,26, 0,0, 2, ,A
+12,27, 0,0, 2, ,A
+12,28, 0,0, 2, ,A
+12,29, 0,0, 2, ,A
+12,30, 0,0, 2, ,A
+12,31, 0,0, 2, ,A
+12,32, 0,0, 2, ,A
+12,33, 0,0, 2, ,A
+12,34, 0,0, 2, ,A
+12,35, 0,0, 2, ,A
+12,36, 0,0, 2, ,A
+12,37, 0,0, 2, ,A
+12,38, 0,0, 2, ,A
+12,39, 0,0, 2, ,A
+12,40, 0,0, 2, ,A
+12,41, 0,0, 2, ,A
+12,42, 0,0, 2, ,A
+12,43, 0,0, 2, ,A
+12,44, 0,0, 2, ,A
+12,45, 0,0, 2, ,A
+12,46, 0,0, 2, ,A
+12,47, 0,0, 2, ,A
+12,48, 0,0, 2, ,A
+12,49, 0,0, 2, ,A
+12,50, 0,0, 2, ,A
+12,51, 0,0, 2, ,A
+12,52, 0,0, 2, ,A
+12,53, 0,0, 2, ,A
+12,54, 0,0, 2, ,A
+12,55, 0,0, 2, ,A
+12,56, 0,0, 2, ,A
+12,57, 0,0, 2, ,A
+12,58, 0,0, 2, ,A
+12,59, 0,0, 2, ,A
+12,60, 0,0, 2, ,A
+12,61, 0,0, 2, ,A
+12,62, 0,0, 2, ,A
+12,63, 0,0, 2, ,A
+12,64, 0,0, 2, ,A
+12,65, 0,0, 2, ,A
+12,66, 0,0, 2, ,A
+12,67, 0,0, 2, ,A
+12,68, 0,0, 2, ,A
+12,69, 0,0, 2, ,A
+12,70, 0,0, 2, ,A
+12,71, 0,0, 2, ,A
+12,72, 0,0, 2, ,A
+12,73, 0,0, 2, ,A
+12,74, 0,0, 2, ,A
+12,75, 0,0, 2, ,A
+12,76, 0,0, 2, ,A
+12,77, 0,0, 2, ,A
+12,78, 0,0, 2, ,A
+12,79, 0,0, 2, ,A
+12,80, 0,0, 2, ,A
+12,81, 0,0, 2, ,A
+
+[Begin Action 13]
+Loopstart
+3, 1, 0, 0, 1, , a
+3, 2, 0, 0, 1, , a
+3, 3, 0, 0, 1, , a
+3, 4, 0, 0, 1, , a
+3, 5, 0, 0, 1, , a
+3, 6, 0, 0, 1, , a
+3, 7, 0, 0, 1, , a
+3, 8, 0, 0, 1, , a
+
+[Begin Action 14]
+Loopstart
+6, 1, 0, 0, 1, , a
+6, 2, 0, 0, 1, , a
+6, 3, 0, 0, 1, , a
+6, 4, 0, 0, 1, , a
+
+[Begin Action 15]
+Loopstart
+6, 5, 0, 0, 1, , a
+6, 6, 0, 0, 1, , a
+6, 7, 0, 0, 1, , a
+6, 8, 0, 0, 1, , a
+
+[Begin Action 16]
+8,1, 0,0, 3, ,a1
+8,2, 0,0, 3, ,a1
+8,3, 0,0, 3, ,a1
+8,4, 0,0, 3, ,a1
+8,5, 0,0, 3,,a1
+
+[Begin Action 17]
+4, 1, 0, 0, 1, , 
+
+[Begin Action 18]
+8, 7, 0, 0, 1, , 
+
+[Begin Action 19]
+8, 8, 0, 0, 1, , 
+

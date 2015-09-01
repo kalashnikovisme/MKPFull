@@ -1,0 +1,45 @@
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name ="Hydro"
+displayname ="Hydro Cyborg MKP"
+versiondate =19,9,2005
+mugenversion =11,01,2001
+pal.defaults =1,2
+author="RAM"
+
+; Files for the player
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+st1      =sp.st
+st2      =bmoves.st
+st3      =Pit.st
+st4      =Fatality.st
+st5      =Finishers.st
+st6      =kombos.st
+st7      =ultimate.st
+;st8      =ai.st
+;st9      = ai.cmd
+stcommon =common1.cns
+sprite   =1.SFF
+sprite2   =2.sff
+anim     =1.air
+sound    =1.snd
+pal1     =1.act 
+pal2     =2.act 
+
+;pal3     = 3.act   ;Palettes 
+;pal4     = 4.act   ;Palettes 
+
+; Arcade mode
+
+[Arcade]
+intro.storyboard = mkhydrointro\mkhydrointro.def
+ending.storyboard = mkhydroend\mkhydroend.def
+
+
+intro.storyboard=
+ending.storyboard=

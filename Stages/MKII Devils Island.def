@@ -1,0 +1,153 @@
+
+;Public release
+
+ DEVIL´S ISLAND...THE WASTED PITS FROM MORTAL KOMBAT/EDITS
+MADE BY FIREBOY 
+HOME PAGE
+
+http://www.fireboymugen.rg3.net/
+
+http://fireboymugen.zip.net/
+;--------------------------------------------------------
+
+[Info]
+name     = "MKII Devils Island"
+
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -215
+boundright = 215
+boundhigh = -95
+boundlow = 0
+verticalfollow = .3
+floortension = 0
+tension = 60
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -80          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+;--- Player 2 ---
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+
+;--- Common ---
+leftbound  = -1500 ;Left bound (x-movement)
+rightbound =  1500 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+;--------------------------------------------------------
+[Bound]
+screenleft = 35    ;Dist from left of screen that player can move to
+screenright = 35   ;Right edge
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 210
+autoturn = 1
+resetBG = 0
+;--------------------------------------------------------
+[Shadow]
+color = 0,0,0
+yscale = 0
+reflect = 0
+;--------------------------------------------------------
+
+
+[Music]
+bgmusic = sound/MKM III.mp3
+bgvolume = 255
+
+
+;--------------------------------------------------------
+
+
+[BGdef]
+spr = stages/MKII Devils Island.sff
+debugbg = 0
+
+[BG 1]
+type = normal
+spriteno = 0,0
+mask = 0
+start = 0, 240
+delta = .6
+
+[BG Water Anim]
+type = anim
+actionno = 1
+mask = 1
+start = 0, 240
+delta = .6
+
+; Water Glistening
+[Begin Action 1]
+1,0, 0,0, 12
+1,1, 0,0, 12
+1,2, 0,0, 12
+1,3, 0,0, 12
+1,4, 0,0, 12
+1,5, 0,0, 12
+1,6, 0,0, 12
+1,7, 0,0, 12
+
+
+[BG Water Anim]
+type = anim
+actionno = 33
+mask = 1
+start = 0, 240
+delta = .6
+
+; Water Glistening
+[Begin Action 33]
+1,0, 0,0, 12,H
+1,1, 0,0, 12,H
+1,2, 0,0, 12,H
+1,3, 0,0, 12,H
+1,4, 0,0, 12,H
+1,5, 0,0, 12,H
+1,6, 0,0, 12,H
+1,7, 0,0, 12,H
+
+[BG 3]
+type = normal
+spriteno = 3,0
+mask = 1
+start = 0, 240
+delta = .8
+
+[BG espinho]
+type  = normal
+spriteno = 9,4
+delta = 1,1
+mask  = 1
+layerno = 1
+
+
+[BG 5]
+
+type  = normal
+spriteno = 5,0
+delta = 1,1
+mask  = 1
+
+
+[BG Moon]
+type  = normal
+spriteno = 9,5
+delta = .10,1
+mask  = 1
+

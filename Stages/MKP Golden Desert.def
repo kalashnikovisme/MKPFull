@@ -1,0 +1,153 @@
+;--------------------------------------------------------
+; Stage   : The Golden Desert 2
+; Version : 1.0
+; Autor   : Ermac - 210 & Ruben_Kombat
+; Mail    : ermac210@gmail.com, Rube_1297@hotmail.com
+; Sprites : Ratonmalo 
+;--------------------------------------------------------
+
+[Info]
+name     = "MKP Golden Desert"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -250
+boundright = 250
+boundhigh = -20
+boundlow =  0
+verticalfollow = .2
+;floortension = 50
+tension = 80
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 
+rightbound =  1000 
+topbound  =  0
+botbound  =  0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0       
+botz     = 50     
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft = 35
+screenright = 35
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset        = 0
+zoffsetlink    = 1
+autoturn       = 1
+resetBG        = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+color = 0,0,0
+yscale = 0
+reflect = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound/MKWORLD VII.mp3
+bgvolume = 300
+
+;--------------------------------------------------------
+
+[BGdef]
+spr = stages/MKP Golden Desert.sff
+debugbg = 0
+
+;--------------------------------------------------------
+
+[BG z]
+type  = dummy
+start = 0, 235     ; <-------- initial Z-Offset = 235
+id = 1
+
+[BGCtrl stageID 1]
+type = PosSet
+time = 1
+y = 9794
+ctrlID = 1
+
+; Back to normal
+[BGCtrl stageID 2]
+type = PosSet
+time = 4
+y = -14
+ctrlID = 1
+
+[BG Cielo]
+type  = normal
+spriteno = 4,0
+delta = .1,1
+mask  = 0
+
+[BG 1] ;La luna
+type  = normal
+spriteno = 0,3
+delta = .10,1
+mask  = 1
+
+[BG Otras dunas] ;Dunas de Desierto
+type  = normal
+spriteno = 0,0
+start = -595,0
+delta = .8,1
+mask  = 1
+
+[BG 2] ;La Taficasita
+type  = normal
+spriteno = 0,2
+delta = 1,1
+mask  = 1
+
+[BG 2] ;Dunas de Desierto
+type  = normal
+spriteno = 0,0
+delta = 1,1
+mask  = 1
+
+[BG 3] ;Suelo de piedra
+type  = normal
+spriteno = 0,1
+delta = 1,1
+mask  = 1
+
+
+[BG 4] ;Arena
+type  = normal
+spriteno = 5,0
+delta = 1,1
+tile = 1,0
+tilespacing = 0.2,0
+trans = add
+mask  = 1
+layerno = 1
+velocity = 1,0
+
+;--------------------------------------------------------

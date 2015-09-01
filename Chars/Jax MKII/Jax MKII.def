@@ -1,0 +1,39 @@
+
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="jax"
+displayname  ="Jax MKII"
+versiondate  =06,03,2001
+mugenversion =04,01,2001
+pal.defaults =1,2
+author="Fë£¡z Å§§äµ£† W¡ñ†ägë",mod.Aice Man"
+
+;-------------------------------------------
+
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =jax.sff
+anim     =jax.air
+sound    =1.snd
+pal1=jax_pal_1.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Finishers.st
+st6=Kombos.st
+st7=Kombos.st
+;pal2     = jax_pal_2.act
+
+;-------------------------------------------
+[Arcade]
+intro.storyboard  = intro/intro.def
+ending.storyboard= mk2jaxend/mk2jaxend.def
+;-------------------------------------------
+
+

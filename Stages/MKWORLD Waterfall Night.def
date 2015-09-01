@@ -1,0 +1,98 @@
+【餓狼MOTW】　牙刀ステージ（夜） for Win　By.Nyankoro
+
+[Info]
+name =  "MKWORLD Waterfall Night"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -152
+boundright = 152
+boundhigh = -118
+boundlow = 0
+verticalfollow = .4
+tension = 50
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0            
+p1startz = 0           
+p1facing = 1            
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0    
+botbound  =  0   
+
+[Scaling]
+topz     = 0      
+botz     = 50    
+topscale = 1      
+botscale = 1.2    
+
+[Bound]
+screenleft = 15
+screenright = 15  
+
+[StageInfo]
+zoffset   = 220
+autoturn  = 1 
+resetBG = 1   
+
+;--------------------------------------------------------
+[Shadow]
+ ;from 0 (lightest) to 256 (darkest). Defaults to 128
+intensity = 40
+
+ ;range from 0 (lightest) to 255 (darkest). Defaults to 0,0,0
+color = 40,40,50
+
+ ;Defaults to 0.4
+yscale = 0.6
+
+fade.range = -400,-100
+
+[Reflection]
+ ;from 0 to 256. Defaults to 0.
+intensity = 130
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound/River.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/MKWORLD Waterfall Night.sff
+;debugbg = 0 
+
+[BG 1]
+type  = anim  
+spriteno = 0, 0
+start =  0, -97
+delta = 0.85, 0.82
+mask = 1
+actionno = 2
+
+[BG 2]
+type  = anim
+start = 0, -119
+delta = 1,1
+mask = 1
+actionno = 1
+
+[Begin action 1]
+0,0,0,0, 6
+0,1,0,0, 6
+0,2,0,0, 6
+0,3,0,0, 6
+
+[Begin action 2]
+1,0,0,0, 12
+1,1,0,0, 12
+1,2,0,0, 12
+1,3,0,0, 12

@@ -1,0 +1,167 @@
+;Updated by BlackJack (fixed a palette-sharing bug)
+;Public release
+
+[Info]
+name = "MKP Prison"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -180
+boundright = 180
+boundhigh = 0
+boundlow = 0
+verticalfollow = .2
+;floortension = 50
+tension = 50
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound = 1000
+topbound  = 0
+botbound  = 0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+;--------------------------------------------------------
+
+[StageInfo]
+
+zoffset        = 0
+zoffsetlink    = 1
+autoturn       = 1
+resetBG        = 1
+;--------------------------------------------------------
+
+[Shadow]
+
+color = 64,64,64
+yscale = -1.2
+reflect = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound/Prison.mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+
+[BGdef]
+spr = stages/MKP Prison.sff
+debugbg = 0
+
+;--------------------------------------------------------
+
+[BG z]
+type  = dummy
+start = 0, 182     ; <-------- initial Z-Offset = 220
+id = 1
+
+[BGCtrl stageID 1]
+type = PosSet
+time = 1
+y = 9821
+ctrlID = 1
+
+; Back to normal
+[BGCtrl stageID 2]
+type = PosSet
+time = 4
+y = 14
+ctrlID = 1
+
+[BG 0]
+type  = normal
+spriteno = 0, 1
+tile = 10,0
+start = -500,0
+;tilespacing = 1
+mask  = 1
+
+[BG 1]
+type  = anim
+actionno = 1
+delta = .9 ,0
+mask  = 1
+
+[BG 2jax]
+type  = normal
+spriteno = 1, 0
+delta = .9 ,0
+mask  = 1
+
+
+[BG 2DRAGON]
+type  = normal
+spriteno = 1, 1
+delta = .9 ,0
+mask  = 1
+
+[BG w430]
+type  = normal
+spriteno = 0, 1
+mask  = 1
+
+[BG 2SHINNOK]
+type  = normal
+spriteno = 1, 2
+delta = .9 ,0
+mask  = 1
+
+
+[BG 2]
+type  = normal
+spriteno = 0, 0
+mask  = 1
+
+[Begin Action 1]
+0, 2, 0, 0, 140
+0, 3, 0, 0, 6
+0, 4, 0, 0, 6
+0, 5, 0, 0, 20
+0, 4, 0, 0, 7
+0, 3, 0, 0, 10
+0, 4, 0, 0, 6
+0, 5, 0, 0, 20
+0, 4, 0, 0, 8
+0, 3, 0, 0, 8
+0, 2, 258, -5, 100, H
+0, 3, 0, 0, 7
+0, 4, 0, 0, 7
+0, 5, 0, 0, 30
+0, 4, 0, 0, 8
+0, 3, 0, 0, 6
+0, 4, 0, 0, 6
+0, 5, 0, 0, 20
+0, 4, 0, 0, 7
+0, 3, 0, 0, 7
+
+
+;--------------------------------------------------------

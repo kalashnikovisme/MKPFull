@@ -1,0 +1,131 @@
+;--------------------------------------------------------
+;MK4-TOMB-3 por shammahalfa1
+;--------------------------------------------------------
+;e-mail:  shammahnissi@hotmail.com
+
+;--------------------------------------------------------
+
+[Info]
+name =  "MKIV The Tomb II"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -248
+boundright = 248
+boundhigh = -210
+boundlow = 0
+verticalfollow = 1.50
+floortension = 100
+tension = 100
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0            
+p1startz = 0           
+p1facing = 1            
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0    
+botbound  =  0   
+
+[Scaling]
+topz     = 0      
+botz     = 50    
+topscale = 1      
+botscale = 1.2    
+
+[Bound]
+screenleft = 25
+screenright = 25
+
+[StageInfo]
+zoffset   = 210
+autoturn  = 1  
+resetBG  = 0       
+  
+
+[Shadow]
+intensity =128,128,128
+colour = 0,0,0
+yscale = .2
+ 
+[reflection]
+intensity = 0
+
+
+[Music]
+
+bgmusic =sound/MKIV The Tomb.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/MKIV The Tomb II.sff
+debugbg = 0   
+
+
+
+
+
+[BG paisaje Netherealm  ]
+type  =normal
+spriteno = 0,0       
+start = 0, 0
+delta =  .50,.95
+mask  = 0
+
+
+
+[BG tomb ]
+type  =normal
+spriteno = 1,0       
+start = 0, 0
+delta =  .90,.95
+mask  = 1
+
+
+
+
+
+[BG   fuego 1 ]
+type  =anim
+actionno = 2       
+start = 0, 0
+delta =  .90,.95
+mask  = 0
+
+
+
+
+[Begin action 2]
+2,0,0,0,8
+2,1,0,0,8
+2,2,0,0,8
+2,3,0,0,8
+2,4,0,0,8
+
+
+
+
+[BG   fuego 2 ]
+type  =anim
+actionno = 3       
+start = -1, 0
+delta =  .90,.95
+mask  = 0
+
+
+
+
+[Begin action 3]
+2,0,0,0,8, H
+2,1,0,0,8, H
+2,2,0,0,8, H
+2,3,0,0,8, H
+2,4,0,0,8, H

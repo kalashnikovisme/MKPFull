@@ -1,0 +1,36 @@
+
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="ermac!"
+displayname  ="Ermac UMKIII"
+versiondate  =06,03,2001
+mugenversion =11,01,2001
+pal.defaults =1,2
+author=""
+
+;-------------------------------------------
+
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =ermac.sff
+anim     =ermac.air
+sound    =1.snd
+pal1=ermac_pal_1.act
+pal2=ermac_pal_2.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Brutality.st
+st6=Finishers.st
+
+;-------------------------------------------
+[Arcade]
+intro.storyboard= mk3ermacintro\mk3ermacintro.def 
+ending.storyboard= mk3ermacend\mk3ermacend.def
+

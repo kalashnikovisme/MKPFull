@@ -1,0 +1,305 @@
+[Info]
+name = "MKP Jungle Antics"
+author = "Teros"
+email = "inlineshadow@yahoo.com"
+credits = FR33DOM for the awesome waterfall effects, thanks buddy!
+;http://mkw.mortalkombatonline.com
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -330
+boundright = 330
+boundhigh = -146
+boundlow = 0
+verticalfollow = .75
+floortension = 40
+tension = 60
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+;----------------;
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+;----------------;
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+intensity = 64
+color = 15,15,15
+yscale = .4
+
+[Music]
+bgmusic = sound/MKWORLD IV.mp3
+bgvolume = +999
+
+[BGdef]
+spr = stages/MKP Jungle Antics.sff
+debugbg = 0
+
+[BG Sky]
+type = normal
+start = 0,0
+spriteno = 3,0
+mask = 1
+delta = .5,.5
+tile = 1,0
+layerno = 0
+
+[BG Light]
+type = normal
+start = 0,0
+spriteno = 6,0
+mask = 1
+delta = .6,.5
+layerno = 1
+trans = addalpha
+alpha = 130,256
+
+[BG Sun Ray1]
+type = normal
+start = 0,0
+spriteno = 6,1
+mask = 1
+delta = .4,1
+layerno = 1
+trans = addalpha
+alpha = 130,256
+
+[BG Sun Ray1]
+type = normal
+start = 0,0
+spriteno = 6,2
+mask = 1
+delta = .3,.9
+layerno = 1
+trans = addalpha
+alpha = 130,256
+
+[BG Green2]
+type  = normal
+layerno = 0
+start = -150,0
+spriteno = 4,0
+delta = 1,1
+velocity = 0,-.5
+tile = 1,1
+mask = 1
+trans = addalpha
+alpha = 150,256
+
+[BG Statue]
+type = normal
+spriteno = 2,1
+start = 0,0
+delta = .7,.8
+mask = 1
+
+[BG Waterfall]
+type = anim
+actionno = 5
+start = 0,0
+spriteno = 6,0
+mask = 1
+delta = .7,.8
+layerno = 0
+
+;-----------Waterfall-----------;
+[begin action 5]
+5,0, 0,0, 1, ,as96d256
+5,1, 0,0, 1, ,as96d256
+5,2, 0,0, 1, ,as96d256
+5,3, 0,0, 1, ,as96d256
+5,4, 0,0, 1, ,as96d256
+5,5, 0,0, 1, ,as96d256
+5,6, 0,0, 1, ,as96d256
+5,7, 0,0, 1, ,as96d256
+5,8, 0,0, 1, ,as96d256
+5,9, 0,0, 1, ,as96d256
+5,10, 0,0, 1, ,as96d256
+5,11, 0,0, 1, ,as96d256
+5,12, 0,0, 1, ,as96d256
+5,13, 0,0, 1, ,as96d256
+5,14, 0,0, 1, ,as96d256
+5,15, 0,0, 1, ,as96d256
+5,16, 0,0, 1, ,as96d256
+5,17, 0,0, 1, ,as96d256
+5,18, 0,0, 1, ,as96d256
+5,19, 0,0, 1, ,as96d256
+5,20, 0,0, 1, ,as96d256
+5,21, 0,0, 1, ,as96d256
+5,22, 0,0, 1, ,as96d256
+5,23, 0,0, 1, ,as96d256
+5,24, 0,0, 1, ,as96d256
+5,25, 0,0, 1, ,as96d256
+5,26, 0,0, 1, ,as96d256
+5,27, 0,0, 1, ,as96d256
+5,28, 0,0, 1, ,as96d256
+5,29, 0,0, 1, ,as96d256
+5,30, 0,0, 1, ,as96d256
+5,31, 0,0, 1, ,as96d256
+5,32, 0,0, 1, ,as96d256
+5,33, 0,0, 1, ,as96d256
+5,34, 0,0, 1, ,as96d256
+5,35, 0,0, 1, ,as96d256
+5,36, 0,0, 1, ,as96d256
+5,37, 0,0, 1, ,as96d256
+5,38, 0,0, 1, ,as96d256
+5,39, 0,0, 1, ,as96d256
+5,40, 0,0, 1, ,as96d256
+5,41, 0,0, 1, ,as96d256
+5,42, 0,0, 1, ,as96d256
+5,43, 0,0, 1, ,as96d256
+5,44, 0,0, 1, ,as96d256
+5,45, 0,0, 1, ,as96d256
+5,46, 0,0, 1, ,as96d256
+5,47, 0,0, 1, ,as96d256
+5,48, 0,0, 1, ,as96d256
+5,49, 0,0, 1, ,as96d256
+5,50, 0,0, 1, ,as96d256
+5,51, 0,0, 1, ,as96d256
+5,52, 0,0, 1, ,as96d256
+5,53, 0,0, 1, ,as96d256
+5,54, 0,0, 1, ,as96d256
+5,55, 0,0, 1, ,as96d256
+5,56, 0,0, 1, ,as96d256
+5,57, 0,0, 1, ,as96d256
+5,58, 0,0, 1, ,as96d256
+5,59, 0,0, 1, ,as96d256
+5,60, 0,0, 1, ,as96d256
+5,61, 0,0, 1, ,as96d256
+5,62, 0,0, 1, ,as96d256
+5,63, 0,0, 1, ,as96d256
+5,64, 0,0, 1, ,as96d256
+5,65, 0,0, 1, ,as96d256
+5,66, 0,0, 1, ,as96d256
+5,67, 0,0, 1, ,as96d256
+5,68, 0,0, 1, ,as96d256
+5,69, 0,0, 1, ,as96d256
+5,70, 0,0, 1, ,as96d256
+5,71, 0,0, 1, ,as96d256
+5,72, 0,0, 1, ,as96d256
+5,73, 0,0, 1, ,as96d256
+5,74, 0,0, 1, ,as96d256
+5,75, 0,0, 1, ,as96d256
+5,76, 0,0, 1, ,as96d256
+5,77, 0,0, 1, ,as96d256
+5,78, 0,0, 1, ,as96d256
+5,79, 0,0, 1, ,as96d256
+5,80, 0,0, 1, ,as96d256
+5,81, 0,0, 1, ,as96d256
+5,82, 0,0, 1, ,as96d256
+5,83, 0,0, 1, ,as96d256
+5,84, 0,0, 1, ,as96d256
+5,85, 0,0, 1, ,as96d256
+5,86, 0,0, 1, ,as96d256
+5,87, 0,0, 1, ,as96d256
+5,88, 0,0, 1, ,as96d256
+5,89, 0,0, 1, ,as96d256
+5,90, 0,0, 1, ,as96d256
+5,91, 0,0, 1, ,as96d256
+5,92, 0,0, 1, ,as96d256
+5,93, 0,0, 1, ,as96d256
+5,94, 0,0, 1, ,as96d256
+5,95, 0,0, 1, ,as96d256
+5,96, 0,0, 1, ,as96d256
+5,97, 0,0, 1, ,as96d256
+5,98, 0,0, 1, ,as96d256
+5,99, 0,0, 1, ,as96d256
+5,100, 0,0, 1, ,as96d256
+5,101, 0,0, 1, ,as96d256
+5,102, 0,0, 1, ,as96d256
+5,103, 0,0, 1, ,as96d256
+5,104, 0,0, 1, ,as96d256
+5,105, 0,0, 1, ,as96d256
+5,106, 0,0, 1, ,as96d256
+5,107, 0,0, 1, ,as96d256
+5,108, 0,0, 1, ,as96d256
+5,109, 0,0, 1, ,as96d256
+5,110, 0,0, 1, ,as96d256
+5,111, 0,0, 1, ,as96d256
+5,112, 0,0, 1, ,as96d256
+5,113, 0,0, 1, ,as96d256
+5,114, 0,0, 1, ,as96d256
+5,115, 0,0, 1, ,as96d256
+5,116, 0,0, 1, ,as96d256
+5,117, 0,0, 1, ,as96d256
+5,118, 0,0, 1, ,as96d256
+5,119, 0,0, 1, ,as96d256
+
+
+[BG Pillars]
+type = normal
+spriteno = 2,0
+start = 0,0
+delta = .8,.9
+mask = 1
+
+[BG Gate]
+type = normal
+spriteno = 1,0
+start = 0,0
+delta = .9,.9
+mask = 1
+
+[BG Platform]
+type = parallax
+spriteno = 0,0
+start = 0,0
+delta = .900, 1
+xscale = 1.37, 1.75
+yscalestart = 100
+yscaledelta = 0
+mask = 1
+
+[BG Barrier Front]
+type = normal
+spriteno = 0,1
+start = 0,0
+delta = 1.3,1.3
+tile = 1,0
+mask = 1
+layerno = 1
+
+[BG Barrier Back]
+type = normal
+spriteno = 0,2
+start = 0,0
+delta = .9,1
+tile = 1,0
+mask = 1
+
+[BG Green]
+type  = normal
+layerno = 1
+start = 0,0
+spriteno = 4,0
+delta = 1,1
+velocity = 0,-1
+tile = 1,1
+mask = 1
+trans = addalpha
+alpha = 150,256

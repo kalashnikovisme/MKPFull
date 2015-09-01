@@ -1,0 +1,41 @@
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         = "Human cyrax"
+displayname  = "Cyrax MKP II"
+versiondate  = 19,9,2005
+mugenversion = 11,01,2001
+author	     = "Xebas Tsung"
+pal.defaults = 1,2,3
+
+;-------------------------------------------
+
+[Files]
+cmd      = hcyrax.cmd
+cns      = 1.cns
+st       = 1.cns
+st2      = sp.st
+st3      = bmoves.st
+st4      = Pit.st
+st5      = Fatality.st
+st6      = Finishers.st
+st7      = Kombos.st
+st8      = brutality.st
+;st9	 = 2.st
+stcommon = common1.cns
+sprite   = 1.sff
+anim     = 1.air
+sound    = 1.snd
+pal1     = hcyrax_pal1.act
+pal2     = hcyrax_pal2.act
+;pal3	 = hcyrax_pal3.act
+
+;-------------------------------------------
+[Arcade]
+;-------------------------------------------
+
+;intro.storyboard  = intro.def
+;ending.storyboard = ending.def
+
+;-------------------------------------------

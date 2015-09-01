@@ -1,0 +1,36 @@
+
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="Real Toxic"
+displayname  ="Toxic MKP"
+versiondate  =06,03,2001
+mugenversion =04,01,2001
+pal.defaults =1,2
+author="WingsOfMind"
+
+;-------------------------------------------
+
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =real.sff
+anim     =real.air
+sound    =1.snd
+pal1=real_pal_1.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Finishers.st
+st6=Kombos.st
+
+;-------------------------------------------
+[Arcade]
+;intro.storyboard  = intro.def
+;ending.storyboard = ending.def
+
+;-------------------------------------------

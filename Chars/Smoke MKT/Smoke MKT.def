@@ -1,0 +1,43 @@
+
+;-------------------------------------------
+[Info]
+;Version 4.0/4.1 Original by the MKP staff
+;Intro & Endings by Rugal2
+;Completed by Liquid Jake for use on MKP 4.1
+;-------------------------------------------
+
+name         ="human smoke"
+displayname  ="Smoke MKT"
+versiondate  =10,21,2007
+mugenversion =04,01,2001
+pal.defaults =1,2
+author=""
+
+;-------------------------------------------
+
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+st8      = brutality.st
+stcommon =common1.cns
+sprite   =human_smoke.sff
+anim     =human_smoke.air
+sound    =1.snd
+pal1=human_smoke_pal_1.act
+pal2=human_smoke_pal_2.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Finishers.st
+st6=Kombos.st
+st7=brutality.st
+
+;-------------------------------------------
+[Arcade]
+;-------------------------------------------
+
+intro.storyboard  = mk3hsmokeintro\mk3hsmokeintro.def
+ending.storyboard = mk3hsmokeend\mk3hsmokeend.def
+

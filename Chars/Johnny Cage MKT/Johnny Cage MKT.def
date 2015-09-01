@@ -1,0 +1,42 @@
+
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="johnny cage"
+displayname  ="johnny cage mkT"
+versiondate  =06,03,2001
+mugenversion =04,01,2001
+pal.defaults =1,2
+authors = Mautek ,Haso3D & Kay second
+author=""
+
+;-------------------------------------------
+
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =cageMKT.sff
+anim     =cageMKT.air
+sound    =1.snd
+pal1=cage00.act
+pal2=cage01.act
+pal3=cage02.act
+pal4=cage03.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Finishers.st
+st6=Finishers.st
+;pal5     = cage04.act
+;pal6     = cage05.act
+
+;-------------------------------------------
+[Arcade]
+intro.storyboard= intro\intro.def
+ending.storyboard= end\end.def 
+;-------------------------------------------
+

@@ -1,0 +1,40 @@
+
+;-------------------------------------------
+[info]
+;-------------------------------------------
+
+name         ="mileena"
+displayname  ="Frost MKDA"
+versiondate  =06,03,2001
+mugenversion =04,01,2001
+pal.defaults =1,2
+author       ="lord shao kahn, reptile"
+
+;-------------------------------------------
+
+[files]
+
+cmd      =1.cmd
+cns      =mist.cns
+st       =mist.cns
+stcommon =common1.cns
+sprite   =new.sff
+anim     =frost.air
+sound    =1.snd
+pal1=1.act
+pal2=2.act
+st1=sp.st
+st2=bmoves.st
+st3=pit.st
+st4=fatality.st
+st5=finishers.st
+st6=
+
+
+
+;-------------------------------------------
+
+[arcade]
+
+intro.storyboard= intro\intro.def
+ending.storyboard=mkend\mkend.def

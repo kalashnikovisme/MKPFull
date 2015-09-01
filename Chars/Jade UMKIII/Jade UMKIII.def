@@ -1,0 +1,38 @@
+
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         = "Jade"
+displayname  = "Jade UMKIII"
+versiondate  = 06,03,2001
+mugenversion = 04,01,2001
+pal.defaults = 1,2
+
+;-------------------------------------------
+
+[Files]
+cmd      = 1.cmd
+cns      = 1.cns
+st       = 1.cns
+st2      = sp.st
+st3      = bmoves.st
+st4      = Pit.st
+st5      = Fatality.st
+st6      = Finishers.st
+stcommon = common1.cns
+sprite   = jade.sff
+anim     = jade.air
+sound    = 1.snd
+pal1     = jade_pal_1.act
+pal2     = jade_pal_2.act
+pal3     = jade_pal_3.act
+
+;-------------------------------------------
+[Arcade]
+;-------------------------------------------
+
+intro.storyboard  = mk3jadeintro/mk3jadeintro.def
+ending.storyboard = mk3jadeend/mk3jadeend.def
+
+;-------------------------------------------

@@ -1,0 +1,237 @@
+;--------------------------------------------------------
+; The Tower - MK2 by RatonMalo <elratonmalo@hotmail.com>
+;Updated by BlackJack (fixed a palette-sharing bug)
+;Public release
+; Re elavorado como multiple level by RAM
+;--------------------------------------------------------
+
+[Info]
+name = "MKII The Tower"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft      = -410
+boundright     = 410
+boundhigh      = -330
+boundlow       = 0
+verticalfollow = .2
+;floortension  = 50
+tension        = 50
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1100
+rightbound = 1100
+topbound   = 0
+botbound   = 0
+
+;--------------------------------------------------------
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft  = 35
+screenright = 35
+
+[StageInfo]
+zoffset     = 0
+zoffsetlink = 1
+autoturn    = 1
+resetBG     = 1
+
+[Shadow]
+color   = 100,100,100
+yscale  = -.2
+reflect = 0
+
+[Music]
+bgmusic  = sound/Good (12).mp3
+bgvolume = 255
+loop = 1
+
+[BGdef]
+spr = MKII The Tower.sff
+debugbg = 0
+
+;--------------------------------------------------------
+[BG z]
+type  = dummy
+start = 0, 10310
+id    = 1
+
+[BGCtrl stageID 2]
+type = PosSet
+time = 4
+y    = -10081
+ctrlID = 1
+
+;---------------fondo
+
+[BG fondo]
+type     = normal
+spriteno = 0,5
+delta    = 0,0
+mask     = 0
+
+[BG Cielo1]
+type     = Normal
+spriteno = 0,6
+tile     = 1,0
+velocity = 3, 0
+delta    = 0,0
+mask     = 1
+
+[BG Cielo2]
+type     = Normal
+spriteno = 0,6
+tile     = 1,0
+velocity = 2, 0
+delta    = 0,0
+mask     = 1
+start    = 0, 42
+
+;--------------tower2
+[BG Piso]
+type        = parallax
+spriteno    = 0,1
+delta       = .80, 1
+xscale      = .8, 1.05
+yscalestart = 100
+mask        = 0
+start       = 0,-310
+
+;[BG pared];arriba
+;type     = normal
+;spriteno = 10, 0
+;start    = 6, -245
+;delta    = .83, 1
+;mask     = 1
+
+;[BG luz];arriba
+;type     = normal
+;spriteno = 10, 1
+;start    = 10, -350
+;mask     = 1
+;layerno  = 1
+
+[BG pared]
+type     = normal
+spriteno = 4, 0
+start    = 0, -300
+delta    = .83, 1
+mask     = 1
+
+[BG fueguito]
+type     = anim
+actionno = 2
+start    = -6,-205
+delta    = .83, 1
+mask     = 1
+
+;-----------------The Tower MK2
+
+[BG Piso]
+type        = parallax
+spriteno    = 0,1
+delta       = .80, 1
+xscale      = .8, 1.05
+yscalestart = 100
+mask        = 0
+
+[BG Pared]
+type        = normal
+spriteno    = 0, 0
+delta       = .83, 1
+mask        = 1
+
+[BG Columna]
+type        = normal
+spriteno    = 0, 2
+delta       = .83,1
+mask        = 1
+
+[BG Monje]
+type        = anim
+actionno    = 12
+delta       = .83.1
+
+;---------------------
+[BG P];entrepiso
+type        = normal
+spriteno    = 7,0
+delta       = 1, 1
+mask        = 1
+start       = 0,63
+tile        = 1,0
+
+;---------------------------
+[Begin action 12]
+1,0, 0,0, 8
+1,1, 0,-1, 8
+1,2, 0,-2, 8
+1,3, 0,-3, 8
+1,4, 0,-4, 8
+1,5, 0,-5, 8
+1,6, 0,-6, 8
+1,0, 0,-7, 8
+1,1, 0,-8, 8
+1,2, 0,-9, 8
+1,3, 0,-10, 8
+1,4, 0,-10, 8
+1,5, 0,-9, 8
+1,6, 0,-8, 8
+1,0, 0,-7, 8
+1,1, 0,-6, 8
+1,2, 0,-5, 8
+1,3, 0,-4, 8
+1,4, 0,-3, 8
+1,5, 0,-2, 8
+1,6, 0,-1, 8
+1,0, 0,0, 8
+1,1, 0,1, 8
+1,2, 0,2, 8
+1,3, 0,3, 8
+1,4, 0,4, 8
+1,5, 0,5, 8
+1,6, 0,6, 8
+1,0, 0,7, 8
+1,1, 0,8, 8
+1,2, 0,9, 8
+1,3, 0,10, 8
+1,4, 0,10, 8
+1,5, 0,9, 8
+1,6, 0,8, 8
+1,0, 0,7, 8
+1,1, 0,6, 8
+1,2, 0,5, 8
+1,3, 0,4, 8
+1,4, 0,3, 8
+1,5, 0,2, 8
+1,6, 0,1, 8
+
+[Begin Action 2]
+5, 0, 0, 0, 3
+5, 1, 0, 0, 3
+5, 2, 0, 0, 3
+5, 3, 0, 0, 3
+5, 4, 0, 0, 3
+5, 5, 0, 0, 3
+5, 6, 0, 0, 3
+5, 7, 0, 0, 3

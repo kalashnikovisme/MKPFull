@@ -1,0 +1,39 @@
+;----------------------------------------------
+; Character   : MK1 - Kano (only works on mkmugen project!)
+; Program     : bWWd&rugal2
+; notes       : You are free to improve this character since I do not
+;               know how to program characters at all, just give me credit for
+;               the editing of the sprites (not the programming that was Bwwd!) 
+;----------------------------------------------
+
+[Info]
+name ="Kano"
+displayname  ="Kano MKI"
+versiondate  =9,04,2005
+mugenversion =04,01,2001
+pal.defaults =1   
+author=""
+
+;----------------------------------------------
+
+[Files]
+cmd          =1.cmd
+cns          =1.cns
+st           =1.cns
+st5          = Fatality.st
+stcommon     =common1.cns
+sprite       =kano.sff
+anim         =1.air
+sound        =1.snd
+pal1=pal1.act
+st1=sp.st
+st2=Pit.st
+st3=Fatality.st
+
+;----------------------------------------------
+
+[Arcade]
+intro.storyboard  =mk1kanointro\mk1kanointro.def
+ending.storyboard =mk1kanoend\mk1kanoend.def
+
+;----------------------------------------------

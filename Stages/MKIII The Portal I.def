@@ -1,0 +1,85 @@
+;________________________________________________________
+; Stage   : The Blue Portal_umk3
+; Author  : Le@n
+; Web     : www.rulezzgames.mybb.ru
+; Version : 1.0
+;________________________________________________________
+
+[Info]
+name = "MKIII The Portal I"
+;________________________________________________________
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -310
+boundright = 310
+boundhigh = -15
+boundlow =  -1
+verticalfollow = .2
+;floortension = 50
+tension = 50
+;________________________________________________________
+
+[PlayerInfo]
+p1startx = -81
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 81
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 
+rightbound =  1000 
+topbound  =  0
+botbound  =  0
+;________________________________________________________
+
+[Scaling]
+topz     = 0       
+botz     = 50     
+topscale = 1       
+botscale = 1.2     
+;________________________________________________________
+
+[Bound]
+screenleft = 35
+screenright = 35
+;________________________________________________________
+
+[StageInfo]
+zoffset = 200
+autoturn = 1
+resetBG = 1
+;________________________________________________________
+
+[Shadow]
+color = 150,150,150
+yscale = -.1
+;________________________________________________________
+
+[Music]
+bgmusic = sound/Good (16).mp3
+bgvolume = 255
+;________________________________________________________
+
+[BGdef]
+spr = stages/MKIII The Portal I.sff
+debugbg = 0
+;________________________________________________________
+
+[BG Fondo]
+type  = norm
+spriteno = 0,0
+delta = .110,1
+mask = 0
+
+[BG Piso]
+type = norm
+spriteno = 0, 1 
+delta = 1,1
+tile = 1,0
+mask = 1

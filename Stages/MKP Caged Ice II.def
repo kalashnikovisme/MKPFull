@@ -1,0 +1,160 @@
+[Info]
+name ="MKP Caged Ice II"
+author =""
+email = "inlineshadow@yahoo.com"
+versiondate =02/03/2008
+mugenversion =04,14,2001
+credits = Special thanks to Fr33dom for the snow effects, http://mkw.mortalkombatonline.com
+displayname="Caged Ice 2"
+pal.defaults=1,2,3,4,5
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -250
+boundright = 220
+boundhigh = -70
+boundlow = 0
+verticalfollow = 1
+floortension = 0
+tension = 60
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+color = 100,100,100
+yscale = -.-1
+reflect = 1
+
+[Reflection]
+ ;Intensity of reflection (from 0 to 256). Set to 0 to have no
+ ;reflection. Defaults to 0.
+intensity = 95
+
+[Music]
+bgmusic = sound/MKP III.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/MKP Caged Ice II.sff
+debugbg = 0
+
+[BG Sky]
+type = normal
+start = -150,280
+spriteno = 3,0
+mask = 1
+delta = 0,0
+tile = 1,0
+layerno = 0
+
+[BG Pillars]
+type = normal
+spriteno = 4,0
+start = 0,0
+delta = .8,.8
+mask = 1
+trans = none
+
+[BG Platform]
+type = normal
+spriteno = 0,0
+start = 0,0
+delta = 1,1
+mask = 1
+trans = none
+
+
+[BG Fog]
+type = normal
+start = -150,280
+spriteno = 2,2
+mask = 1
+delta = 1,1
+trans = add
+tile = 1,0
+layerno = 1
+velocity = 1.5,0
+
+[BG Snow]
+type  = normal
+layerno = 1
+start = 50, 20
+spriteno = 5,0
+delta = 1, 1
+velocity = 2.3, 2
+tile = 1,1
+mask = 1
+trans = add
+
+
+[BG neve2]
+type  = normal
+id = 2
+spriteno = 4, 1
+start = -100, 25 
+delta = 0.4, 0.4
+mask = 1
+tile = 1,1
+velocity = -0.4, 0.4
+layerno = 0
+trans = add
+
+
+;----------
+[BG nuven001]
+type  = normal
+spriteno = 5, 0
+layerno = 0
+start = 0, 0
+delta = 0.43, .35
+xscale = 1, 1.75
+yscalestart = 100
+tile = 1, 0
+tilespacing = 0, 0
+velocity = .2, 0
+mask = 0
+trans = add
+
+
+[BG Trono]
+type  = Normal
+spriteno = 6,0
+delta = 1, 1
+mask = 1
+
+
+[BG Bloque de Hielo]
+type  = Normal
+spriteno = 7,0
+delta = 1, 1
+mask = 1
+trans = add

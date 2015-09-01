@@ -1,0 +1,113 @@
+;--------------------------------------------------------
+; Stage   : The Bank MKT
+; Autor   : Phil
+;--------------------------------------------------------
+
+[Info]
+name = "MKT The Bank"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -335
+boundright = 335
+boundhigh = -20
+boundlow = 0
+verticalfollow = .2
+;floortension = 50
+tension = 50
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound = 1000
+topbound  = 0
+botbound  = 0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft = 35
+screenright = 35
+
+;--------------------------------------------------------
+
+[StageInfo]
+
+zoffset = 220
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+
+color = 100,100,100
+yscale = -.2
+reflect = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound/MKIII The Bank.mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+
+[BGdef]
+spr = stages/MKT The Bank.sff
+debugbg = 0
+
+;--------------------------------------------------------
+
+[BG Cielo]
+type  = Normal
+spriteno = 0,5
+delta = .6,1
+mask = 0
+
+[BG Pared]
+type  = normal
+spriteno = 0, 1
+delta = 1, 1
+mask  = 1
+
+;[BG Piso]
+;type  = normal
+;spriteno = 0,2
+;delta = 1, 1
+;mask = 0
+
+[BG P]
+type  = parallax
+spriteno = 0,2
+delta = 1, 1
+;Ã¸E˚M ÅEÅEÅEÚ¸ ÅE‡ÅEÚ ˙¸   xscale = .7, .8   ·Û‰ÂÅE˝ÙÙÂÍÅE(ÅEÅEÅEÃ “)
+;ﬂ ˙BÚ‡‚ËÅEÅE˜ÚÅEÅEÅEÅEÃ – (xscale = .8, .66)
+xscale = .8, .74
+yscalestart = 100
+mask = 0
+
+
+;--------------------------------------------------------

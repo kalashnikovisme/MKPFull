@@ -1,0 +1,161 @@
+;mortal kombat Deception nexus stage version 0.1  released on 23 March 2005
+;
+;special thanks:
+;- Mugenfury for hosting my creations on their website www.mugenfury.com
+;- Midway for creating the mortal kombat fighting game series.
+;
+;
+;You are free in using this stage any way You like, just give me credit for the 
+;original work! enjoy this stage.
+;
+;Keep mugen alive!!
+
+[Info]
+name="MKP nexus"
+author="rugal2"
+
+[Camera]
+startx=0
+starty=0
+boundleft=-165
+boundright=130
+boundhigh=-15
+boundlow=0
+verticalfollow=.05
+floortension=0
+tension=60
+
+[PlayerInfo]
+p1startx=-70
+p1starty=0
+p1startz=0
+p1facing=1
+p2startx=70
+p2starty=0
+p2startz=0
+p2facing=-1
+
+leftbound=-1000
+rightbound=1000
+topbound=0
+botbound=0
+
+[Scaling]
+topz=0
+botz=50
+topscale=1
+botscale=1.2
+
+[Bound]
+screenleft=15  
+screenright=15
+
+
+[StageInfo]
+zoffset=220
+autoturn=1
+resetBG=0
+
+[Shadow]
+color=38,38,38
+yscale=.1
+
+[Music]
+bgmusic= sound\Good (11).mp3
+bgvolume=255
+
+[BGdef]
+spr=stages/MKP nexus.sff
+debugbg=0
+
+
+[BG background] ;
+type=normal
+spriteno=0,0
+layerno = 0
+start=0,0
+delta=.7,1
+mask=0
+
+[BG Anim A] ;flames first right
+type  = anim
+actionno = 0
+start = 0, 0
+delta = 1,1
+mask = 0
+
+[BG Anim B] ;flames middle right
+type  = anim
+actionno = 1
+start = 0, 0
+delta = 1,1
+mask = 0
+
+[BG Anim C] ;flames middle left
+type  = anim
+actionno = 2
+start = 0, 0
+delta = 1,1
+mask = 0
+
+[BG Anim D] ;flames first left
+type  = anim
+actionno = 3
+start = 0, 0
+delta = 1,1
+mask = 0
+
+[BG Anim E] ;foreground
+type  = anim
+actionno = 4
+start = 0, 0
+delta = 1,1
+mask = 0
+
+
+
+
+;-------------------------------------
+; Put animation data here:
+
+;Anim A (flames first right)
+[Begin Action 0]
+0,01, 0,-3, 4
+0,02, 0,-3, 4
+0,03, 0,-3, 4
+0,04, 0,-3, 4
+0,05, 0,-3, 4
+
+;Anim B (flames middle right)
+[Begin Action 1]
+0,01, -150,-3, 4
+0,02, -150,-3, 4
+0,03, -150,-3, 4
+0,04, -150,-3, 4
+0,05, -150,-3, 4
+
+
+;Anim C (flames middle left)
+[Begin Action 2]
+0,01, -298,-3, 4
+0,02, -298,-3, 4
+0,03, -298,-3, 4
+0,04, -298,-3, 4
+0,05, -298,-3, 4
+
+;Anim D (flames first left)
+[Begin Action 3]
+0,01, -445,-3, 4
+0,02, -445,-3, 4
+0,03, -445,-3, 4
+0,04, -445,-3, 4
+0,05, -445,-3, 4
+
+;Anim E (foreground)
+[Begin Action 4]
+0,06, 0,0, -1
+
+
+
+
+

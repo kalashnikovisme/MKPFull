@@ -1,0 +1,178 @@
+; Butterflies Heaven
+; Original stage created by Mike Werewolf.
+
+[Info]
+name = "MKWORLD Edenia Butterflies field"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -40
+boundright = 40
+boundhigh = -60
+boundlow = 0
+verticalfollow = 0.2
+floortension = 0
+tension = 50
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing=1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 205
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 50,50,50
+yscale = 0.3
+reflect = 0
+
+[Music]
+bgmusic = sound/Good (24).mp3
+bgvolume = 255
+
+[BGdef]
+;Filename of sprite data
+spr = stages/MKWORLD Edenia Butterflies field.sff
+
+[BG fond]
+type = normal
+spriteno = 0,0
+start = -200,0
+delta = 1,1
+
+[BG multipap-1]
+type = anim
+actionno = 10
+start = -120,35
+delta = 1,1
+
+[BG multipap-2]
+type = Anim
+actionno = 10
+start = 30, 25
+delta = 1,1
+
+[BG lonepap-1]
+type = Anim
+actionno = 20
+start = -220,180
+layerno = 1
+delta = 1,1
+ID = 20
+sin.y = 10,50,0
+velocity = -1.0,0
+
+[BG lonepap-2]
+type = Anim
+actionno = 30
+start = 220,100
+layerno = 1
+delta = 1,1
+ID = 25
+sin.y = 10,80,0
+velocity = 1.0,0
+
+[BG Brume]
+type = normal
+spriteno = 1,0
+start = -200,0
+delta = 1,1
+layerno = 1
+tile = 1,1
+velocity = 2.8341,0
+trans = add
+
+[BG Brume]
+type = normal
+spriteno = 1,0
+start = -200,0
+delta = 1,1
+layerno = 1
+tile = 1,1
+velocity = .5317,0
+trans = add
+
+[BG Brume 2]
+type = normal
+spriteno = 1,0
+start = -200,0
+delta = 1,1
+layerno = 1
+tile = 1,1
+velocity = -1.1879,0
+trans = add
+
+[BG Brume 2]
+type = normal
+spriteno = 1,0
+start = -200,0
+delta = 1,1
+layerno = 1
+tile = 1,1
+velocity = -2.3445,0
+trans = add
+
+[Begin Action 10]
+3,0,0,0,5
+3,1,0,0,5
+3,2,0,0,5
+3,3,0,0,5
+3,4,0,0,5
+3,5,0,0,5
+
+[Begin Action 20]
+2,0,0,0,5
+2,1,0,0,5
+2,2,0,0,5
+2,3,0,0,5
+2,4,0,0,5
+2,5,0,0,5
+
+[Begin Action 30]
+2,0,0,0,5,H
+2,1,0,0,5,H
+2,2,0,0,5,H
+2,3,0,0,5,H
+2,4,0,0,5,H
+2,5,0,0,5,H
+
+[BGCtrlDef Pap1]
+looptime = -1
+ctrlID = 20,25
+
+[BGCtrl Pap_1]
+type = PosAdd
+time = 0,0,500
+ctrlID = 20
+x = 500
+
+[BGCtrl Pap_2]
+type = PosAdd
+time = 0,0,610
+ctrlID = 25
+x = -610

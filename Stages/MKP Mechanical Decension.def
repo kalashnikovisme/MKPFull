@@ -1,0 +1,221 @@
+;--------------------------------------------------------
+[Info]
+name = "MKP Mechanical Decension"
+
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -220
+boundright = 312
+boundhigh = -80
+boundlow = 0
+verticalfollow = .6
+tension = 90
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -90          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+;--- Player 2 ---
+p2startx = 90
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+leftbound  = -220 ;Left bound (x-movement)
+rightbound =  800 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 0 ;50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1    ;Scale to use at bottom
+;--------------------------------------------------------
+[Bound]
+screenleft = 30
+screenright = 30
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 192
+autoturn = 1
+resetBG = 1
+;--------------------------------------------------------
+[Shadow]
+intensity = 85
+yscale = .15
+
+;--------------------------------------------------------
+[Music]
+bgmusic = sound/MK 4.mp3
+bgvolume = 255
+;--------------------------------------------------------
+
+[BGdef]
+spr = stages/MKP Mechanical Decension.sff
+debugbg = 1
+loop = 1
+
+[BG Scroll]
+type  = Normal
+spriteno = 0, 0
+tile = 1,1
+start = 0,0
+velocity = 0,-.7
+delta = .7,.7
+
+[BG Beams Left]
+type  = Normal
+spriteno = 0, 10
+start = -175,0
+mask = 1
+tile = 0,1
+velocity = 0,-1
+delta = .9,.9
+
+[BG Beams Right]
+type  = Normal
+spriteno = 0, 10
+start = 130,0
+mask = 1
+tile = 0,1
+velocity = 0,-1
+delta = .9,.9
+
+[BG RopeBottomLight]
+type  = Normal
+spriteno = 0, 3
+tile = 1,0
+velocity = 1.5,0
+start = -380,231
+delta = 1.1,1.1
+mask = 1
+
+[BG RopeBottomDark]
+type  = Normal
+spriteno = 0, 4
+tile = 1,0
+velocity = -.3,0
+start = -380,221
+delta = .9,1.1
+mask = 1
+
+[BG Rope Dark Left]
+type  = Normal
+spriteno = 0, 2
+tile = 0,1
+velocity = 0,-.3
+start = -292,0
+delta = .9,1
+mask = 1
+
+[BG Rope Dark Right]
+type  = Normal
+spriteno = 0, 2
+tile = 0,1
+velocity = 0,.3
+start = 368,0
+delta = .9,1
+mask = 1
+
+[BG Ladder Left]
+type  = Normal
+spriteno = 0, 6
+tile = 0,1
+start = -383,0
+mask = 1
+layerno = 1
+
+[BG Ladder Right]
+type  = Normal
+spriteno = 0, 6
+tile = 0,1
+start = 411,0
+mask = 1
+layerno = 1
+
+[BG Rope Light Left]
+type  = Normal
+spriteno = 0, 1
+tile = 0,1
+velocity = 0,1.5
+start = -387,0
+delta = 1.1,1
+mask = 1
+layerno = 1
+
+[BG Rope Light Right]
+type  = Normal
+spriteno = 0, 1
+tile = 0,1
+velocity = 0,-1.5
+start = 478,0
+delta = 1.1,1
+mask = 1
+layerno = 1
+
+[BG Rail Back]
+type  = Normal
+spriteno = 0, 13
+tile = 2,0
+tilespacing = 360,0
+start = -260,170
+delta = .9,1
+mask = 1
+
+[BG Floor]
+type  = Normal
+spriteno = 0, 5
+start = -403,168
+mask = 1
+
+[BG Rail Front]
+type  = Normal
+spriteno = 0, 13
+tile = 2,0
+tilespacing = 400,0
+start = -290,184
+delta = 1.1,1
+mask = 1
+layerno = 1
+
+[BG Block Left]
+type  = Normal
+spriteno = 0, 9
+start = -380,215
+mask = 1
+layerno = 1
+
+[BG Block Right]
+type  = Normal
+spriteno = 0, 8
+start = 392,215
+mask = 1
+layerno = 1
+
+[BG Pipes Left]
+type  = Normal
+spriteno = 0, 12
+start = 0,215
+tile = 0,1
+velocity = 0,-.8
+delta = 1.3,1.3
+mask = 1
+layerno = 1
+
+[BG Pipes Left 2]
+type  = Normal
+spriteno = 0, 11
+start = 100,215
+tile = 0,1
+velocity = 0,-1
+delta = 1.2,1.2
+mask = 1
+layerno = 1

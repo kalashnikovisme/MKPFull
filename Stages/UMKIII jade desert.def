@@ -1,0 +1,137 @@
+; Definition of The Desert
+; By Lord-S in Ago\2003
+
+;--------------------------------------------------------
+
+[Info]
+name = "UMKIII jade desert"
+
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -341
+boundright = 341
+boundhigh = -20        
+boundlow =  0  
+tension = 50
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+
+p1startx = -80   ;115   ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+[Scaling]
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+
+
+;--------------------------------------------------------
+
+
+[Bound]
+screenleft = 36    ;Dist from left of screen that player can move to
+screenright = 36   ;Right edge
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset   = 218   
+autoturn  = 1      
+resetBG   = 0
+
+
+
+[Shadow]
+color = 100,100,100
+yscale = -.2
+
+;--------------------------------------------------------
+
+[Music]
+
+;bgmusic = 02.da
+bgmusic =sound/Good (15).mp3
+bgvolume = 20
+
+;-------------------------------------
+; Main background definition
+[BGdef]
+ ;Filename of sprite data
+spr = stages/UMKIII jade desert.sff
+debugbg = 0
+
+;----------
+
+[BG 0] ;bg ceu
+type  = normal
+spriteno = 4, 0
+start = -199, 205 
+delta = 0.1, 0.67
+mask = 1
+layerno = 0
+
+[BG 1] ;bg areia 2
+type  = normal
+spriteno = 3, 0
+start = -252, 199 
+delta = .265, .85
+mask = 1
+layerno = 0
+
+[BG 2] ; bg areia 1
+type  = normal
+spriteno = 2, 0
+start = -401, 195
+delta = 0.705, .95       
+mask = 1
+layerno = 0
+
+[BG 3] ; bg muro
+type  = normal
+spriteno = 1, 0
+start = -501, 200
+delta = 1, 1     
+mask = 1
+layerno = 0
+
+[BG 4] ; bg chao parallax
+type  = parallax
+spriteno = 0,0
+start = -1, 200
+delta = 1, 1
+mask = 0
+xscale = 1, 1.21 
+yscalestart = 100
+yscaledelta = 0
+
+[BG 5] ; cyrax
+type = anim
+actionno = 1
+layerno = 0
+start = -401, 195
+delta = 0.705, .95
+mask = 1
+
+[Begin Action 1]
+5,0, 0,0, 10
+5,1, 0,0, 10
+5,2, 0,0, 10
+5,1, 0,0, 10

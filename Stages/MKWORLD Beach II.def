@@ -1,0 +1,411 @@
+; Escenario "Playa" por Javier Carracedo
+;--------------------------------------------------------
+
+[Info]
+name = "MKWORLD Beach II"
+
+;--------------------------------------------------------
+[Camera]
+;Camera starting position: Usually 0 for both
+startx = 0
+starty = 0
+
+;Left and right bound of camera
+boundleft = -190
+boundright = 190
+
+;High and low bound of camera
+boundhigh = -80
+boundlow = 0
+
+ ;This is how much the camera will move vertically towards the
+ ;highest player. Valid values are from 0 to 1. A value of 0 will mean
+ ;the camera does not move up at all. A value of 1 will makes the camera
+ ;follow the highest player.
+ ;Typically .2 for normal-sized backgrounds. You may need to pull this
+ ;value up for taller backgrounds.
+
+verticalfollow = .3
+
+ ;Minimum vertical distance the highest player has to be from the floor,
+ ;before the camera starts to move up to follow him. For extremely
+ ;tall stages, a floor tension of about 20-30 coupled with a
+ ;vertical-follow of .8 allows the camera to follow the action.
+
+floortension = 0
+
+ ;Horizontal distance player is from edge before camera starts to move
+ ;left or right. Typically 50 or 60.
+
+tension = 60
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+ ;Player 1 starting coordinates.
+ ;p1startx is typically -70 and p2startx is 70.
+ ;p1starty and p1startz should be 0.
+p1startx = -70          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+ ;Don't change these values.
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+ ;No need to change these values
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+
+;--------------------------------------------------------
+[Bound]
+ ;Distance from left/right edge of screen that player can move to
+ ;Typically 15
+screenleft = 15    ;Dist from left of screen that player can move to
+screenright = 15   ;Right edge
+
+;--------------------------------------------------------
+[StageInfo]
+ ;Z offset for drawing
+ ;Adjust this value to move the ground level up/down in the screen.
+ ;It's the position where the players stand at.
+ ;Up - smaller, Down - larger
+ ;***
+zoffset = 210
+
+ ;Leave this at 1. It makes the players face each other
+autoturn = 1
+
+ ;Set the following to 1 to have the background be reset between
+ ;rounds.
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+color = 32,32,32  ;color de la sombra en R,G,B
+yscale = 0.3      ;factor de escalado
+reflect = 0       ;efecto de reflejo
+
+;--------------------------------------------------------
+[Music]
+bgmusic = sound/Sea.mp3  ;archivo de sonido
+bgvolume = 255                           ;volumen (negativo=atenuar)
+
+;--------------------------------------------------------
+; Definición de los fondos
+[BGdef]
+
+spr = stages/MKWORLD Beach II.sff   ;Archivo con los sprites
+debugbg = 0              ;activar/desactivar debug
+
+
+;--------------------------------------------------------
+
+[BG Cielo]
+id = 0
+type = normal
+spriteno = 2,1
+start = 0,70
+delta = 0.1,0.1
+trans = none
+mask = 0
+tile = 0,0
+
+[BG Playa1]
+id = 1
+type  = parallax
+spriteno = 1,1
+start = 0,70
+delta = 0.1,0.1    ;lo q avanza el plano al andar
+xscale = 0.15,1.5  ;avances en x al fondo y en el frente (1,1 = imagen fija)
+yscalestart = 100  ;escala en y en condiciones normales
+yscaledelta = 0.5  ;lo q se deforma el plano al saltar (0.4)
+
+[BG Playa2]
+id = 2
+type  = parallax
+spriteno = 1,2
+start = 0,70
+delta = 0.1,0.1
+xscale = 0.15,1.5
+yscalestart = 100
+yscaledelta = 0.5
+
+[BG Playa3]
+id = 3
+type  = parallax
+spriteno = 1,3
+start = 0,70
+delta = 0.1,0.1
+xscale = 0.15,1.5
+yscalestart = 100
+yscaledelta = 0.5
+
+[BG Playa4]
+id = 4
+type  = parallax
+spriteno = 1,4
+start = 0,70
+delta = 0.1,0.1
+xscale = 0.15,1.5
+yscalestart = 100
+yscaledelta = 0.5
+
+[BG Playa5]
+id = 5
+type  = parallax
+spriteno = 1,5
+start = 0,70
+delta = 0.1,0.1
+xscale = 0.15,1.5
+yscalestart = 100
+yscaledelta = 0.5
+
+[BG Playa6]
+id = 6
+type  = parallax
+spriteno = 1,6
+start = 0,70
+delta = 0.1,0.1
+xscale = 0.15,1.5
+yscalestart = 100
+yscaledelta = 0.5
+
+[BG Playa7]
+id = 7
+type  = parallax
+spriteno = 1,7
+start = 0,70
+delta = 0.1,0.1
+xscale = 0.15,1.5
+yscalestart = 100
+yscaledelta = 0.5
+
+[BG Playa8]
+id = 8
+type  = parallax
+spriteno = 1,8
+start = 0,70
+delta = 0.1,0.1
+xscale = 0.15,1.5
+yscalestart = 100
+yscaledelta = 0.5
+
+[BG Playa9]
+id = 9
+type  = parallax
+spriteno = 1,9
+start = 0,70
+delta = 0.1,0.1
+xscale = 0.15,1.5
+yscalestart = 100
+yscaledelta = 0.5
+
+[BG Playa10]
+id = 10
+type  = parallax
+spriteno = 1,10
+start = 0,70
+delta = 0.1,0.1
+xscale = 0.15,1.5
+yscalestart = 100
+yscaledelta = 0.5
+
+;--------------------------------------------------------
+;controles para la animacion
+
+[BGCtrlDef animacion]            
+looptime = 115       ;la animación dura 10*10 = 100 frames = 1.7 segundos 
+
+[BGCtrl Playa1.0]  
+type = visible       ; Este BGCtrl asegura que la animación comienza con el frame 1 
+value = 1            ; visible. Además, vuelve de nuevo visible al frame 1 cuando la 
+time = 0             ; animación vuelve a empezar.
+ctrlID = 1
+
+[BGCtrl Playa1.1]
+type = visible       ; Al cabo de 40 tics este otro BGCtrl vuelve invisible al frame 1,
+value = 0            ; mostrando al otro elemento parallax que hay debajo, es decir, el
+time = 15            ; frame 2.
+ctrlID = 1
+
+[BGCtrl Playa2.0]
+type = visible
+value = 1
+time = 15
+ctrlID = 2
+
+[BGCtrl Playa2.1]
+type = visible
+value = 0
+time = 30
+ctrlID = 2
+
+[BGCtrl Playa3.0]
+type = visible
+value = 1
+time = 30
+ctrlID = 3
+
+[BGCtrl Playa3.1]
+type = visible
+value = 0
+time = 45
+ctrlID = 3
+
+[BGCtrl Playa4.0]
+type = visible
+value = 1
+time = 45
+ctrlID = 4
+
+[BGCtrl Playa4.1]
+type = visible
+value = 0
+time = 55
+ctrlID = 4
+
+[BGCtrl Playa5.0]
+type = visible
+value = 1
+time = 55
+ctrlID = 5
+
+[BGCtrl Playa5.1]
+type = visible
+value = 0
+time = 65
+ctrlID = 5
+
+[BGCtrl Playa6.0]
+type = visible
+value = 1
+time = 65
+ctrlID = 6
+
+[BGCtrl Playa6.1]
+type = visible
+value = 0
+time = 75
+ctrlID = 6
+
+[BGCtrl Playa7.0]
+type = visible
+value = 1
+time = 75
+ctrlID = 7
+
+[BGCtrl Playa7.1]
+type = visible
+value = 0
+time = 85
+ctrlID = 7
+
+[BGCtrl Playa8.0]
+type = visible
+value = 1
+time = 85
+ctrlID = 8
+
+[BGCtrl Playa8.1]
+type = visible
+value = 0
+time = 95
+ctrlID = 8
+
+[BGCtrl Playa9.0]
+type = visible
+value = 1
+time = 95
+ctrlID = 9
+
+[BGCtrl Playa9.1]
+type = visible
+value = 0
+time = 105
+ctrlID = 9
+
+[BGCtrl Playa10.0]
+type = visible
+value = 1
+time = 105
+ctrlID = 10
+
+[BGCtrl Playa10.1]
+type = visible
+value = 0
+time = 0
+ctrlID = 10
+
+;-------------------------------------------
+;Controles para la inicialización (primer ciclo)
+
+[BGCtrl Inicial10]
+type = visible
+value = 0
+time = 0
+ctrlID = 10
+
+[BGCtrl Inicial9]
+type = visible
+value = 0
+time = 0
+ctrlID = 9
+
+[BGCtrl Inicial8]
+type = visible
+value = 0
+time = 0
+ctrlID = 8
+
+[BGCtrl Inicial7]
+type = visible
+value = 0
+time = 0
+ctrlID = 7
+
+[BGCtrl Inicial6]
+type = visible
+value = 0
+time = 0
+ctrlID = 6
+
+[BGCtrl Inicial5]
+type = visible
+value = 0
+time = 0
+ctrlID = 5
+
+[BGCtrl Inicial4]
+type = visible
+value = 0
+time = 0
+ctrlID = 4
+
+[BGCtrl Inicial3]
+type = visible
+value = 0
+time = 0
+ctrlID = 3
+
+[BGCtrl Inicial2]
+type = visible
+value = 0
+time = 0
+ctrlID = 2
+

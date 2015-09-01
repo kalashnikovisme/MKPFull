@@ -1,0 +1,211 @@
+
+[Info]
+name = "MKWORLD Aries Temple"
+[Camera]
+startx = 0
+starty = -300
+boundleft = -185
+boundright = 185
+boundhigh = -400
+boundlow = 10
+verticalfollow = .38
+floortension = 0
+tension = 80
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 200
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+intensity = 120
+color = 0,10,0
+yscale = -.15
+fade.range = -400,-100
+
+[Music]
+bgmusic = sound/MKM III.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/MKWORLD Aries Temple.sff
+debugbg = 0
+
+[BG ciel]
+type = normal
+spriteno = 0,1
+tile = 1,1
+delta = 0.8,1
+start = 0,10
+
+[BG star1]
+type = normal
+spriteno = 0,3
+id = 1
+trans = add
+mask = 1
+
+[BG star2]
+type = normal
+spriteno = 0,3
+start = -100,0
+id = 1
+trans = add
+mask = 1
+
+[BG monts]
+type = normal
+spriteno = 0,2
+start = 0,50
+delta = .6, 1.1
+mask = 1
+
+[BG MainFloor]
+type  = parallax
+spriteno = 1, 0
+start = 0,23
+delta = .78, 1
+tile = 1,0
+width = 230,558
+yscalestart = 140 ;160
+yscaledelta =  0  ;0.5
+
+[BG Marches]
+type  = normal
+spriteno = 3, 0
+start = 0,0
+delta = .78, 1
+mask = 1
+
+[BG fondnoir]
+type = normal
+spriteno = 2,0
+start = 0,0
+delta = .78, 1
+mask = 1
+
+[BG cache]
+type  = normal
+spriteno = 1, 1
+start = 0,0
+delta = .78, 1
+
+[BG sol]
+type  = normal
+spriteno = 2, 8
+start = 0,55
+delta = .78, 1
+
+[BG piliers0]
+type = normal
+spriteno = 2,6
+start = 0,0
+delta = .46, .89
+mask = 1
+
+[BG piliers1]
+type = normal
+spriteno = 2,5
+start = 0,0
+delta = .54, .91
+mask = 1
+
+[BG piliers2]
+type = normal
+spriteno = 2,2
+start = 0,0
+delta = .62, .94
+mask = 1
+
+
+[BG piliers3]
+type = normal
+spriteno = 2,1
+start = 0,0
+delta = .7, .97
+mask = 1
+
+[BG facade]
+type = normal
+spriteno = 2,3
+start = 0,0
+delta = .78, 1
+mask = 1
+
+
+[BG title]
+type = normal
+spriteno = 6,0
+id = 2
+start = 0,0
+trans = add
+mask = 1
+
+[BGCtrlDef Star1]
+CtrlID = 1
+looptime = 1000
+
+[BGCtrl 1.1]
+type = velset
+time = 0
+x = -4.1
+y = 4
+
+[BGCtrl 1.2]
+type = Posset
+time = 500
+y = 0
+x = 0
+
+
+[BGCtrlDef Title]
+CtrlID = 2
+
+[BGCtrl 2.1]
+type = posset
+time = 0
+x = 0
+y = 240
+
+[BGCtrl 2.2]
+type = velset
+time = 30
+x = 0
+y = -.8
+
+[BGCtrl 2.3]
+type = velset
+time = 50
+x = 0
+y = 0
+
+[BGCtrl 2.4]
+type = velset
+time = 200
+x = 0
+y = .8

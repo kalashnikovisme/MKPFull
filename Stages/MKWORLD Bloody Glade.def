@@ -1,0 +1,248 @@
+;-------------------------------------
+; Bloody Gouki's Lair By Mantovão from Street Fighter III - 3rd Strike
+; Sprites Source by Joram
+; EFX By Mantovão
+; RMX Track for BGM By DJ-VAN
+; For Win/Dos Mugen
+;-------------------------------------
+
+
+[Info]
+name = "MKWORLD Bloody Glade"
+
+[Camera]
+startx = 0            
+starty = 0            
+boundleft = -288   
+boundright = 288
+boundhigh = 0 ;-269     
+boundlow = 0          
+verticalfollow = .7
+tension = 70          
+
+[PlayerInfo]
+p1startx = -70         
+p1starty = 0          
+p1startz = 0          
+p1facing = 1          
+p2startx = 70         
+p2starty = 0          
+p2startz = 0          
+p2facing = -1         
+
+leftbound = -1000      
+rightbound = 1000     
+topbound = 0  
+botbound = 0          
+
+[Scaling]
+topz = 0               
+botz = 50             
+topscale = 1          
+botscale = 1.2        
+
+[Bound]
+screenleft = 15        
+screenright = 15    
+
+[StageInfo]
+zoffset = 230          
+autoturn = 1         
+resetBG = 0           
+
+[Shadow]
+color = 92,92,92      
+yscale = .2        
+
+[Music]
+bgmusic = sound/Storm.mp3
+bgvolume = 255       
+
+[BGdef]
+spr = stages/MKWORLD Bloody Glade.sff
+debugbg = 0            
+
+[BG - ClearBG]                  
+type = normal           
+spriteno = 9,0                       
+start = 0, 240      
+delta = 1,1
+mask = 0
+
+[BG - Moon]                  
+type = normal           
+spriteno = 0,0                       
+start = 0, 158
+delta = .4,.6
+mask = 0
+
+[BG - Woods]                  
+type = normal           
+spriteno = 1,0                       
+start = 0, 194
+delta = .7,.8
+mask = 1
+
+[BG - Floor & trees]                  
+type = normal           
+spriteno = 2,0                       
+start = 0, 240      
+delta = 1, 1
+mask = 1
+
+[BG - rain1]
+type  = anim
+actionno = 4
+layerno = 0
+start = -450, -25
+delta = 1, .1
+mask = 1
+trans = add
+
+[BG - rain1]
+type  = anim
+actionno = 4
+layerno = 0
+start = 150, -25
+delta = 1, .1
+mask = 1
+trans = add
+
+
+[BG - rain1]
+type  = anim
+actionno = 4
+layerno = 1
+start = -500, -10
+delta = 1, .1
+mask = 1
+trans = add
+
+
+[BG - rain1]
+type  = anim
+actionno = 4
+layerno = 1
+start = 50, -10
+delta = 1, .1
+mask = 1
+trans = add
+
+
+[BG - rain1]
+type  = anim
+actionno = 4
+layerno = 1
+start = -300, 0
+delta = 1, .1
+mask = 1
+trans = add
+
+
+[BG - rain1]
+type  = anim
+actionno = 4
+layerno = 1
+start = 200, 0
+delta = 1, .1
+mask = 1
+trans = add
+
+
+[BG - rain1]
+type  = anim
+actionno = 4
+start = -400, 10
+delta = 1, .1
+mask = 1
+layerno = 1
+trans = add
+
+
+[BG - rain1]
+type  = anim
+actionno = 4
+start = 150, 10
+delta = 1, .1
+mask = 1
+layerno = 1
+trans = add
+
+
+[BG - rain2]
+type  = anim
+actionno = 5
+start = -400, 0
+delta = 1, .1
+mask = 1
+layerno = 1
+
+
+[BG - rain2]
+type  = anim
+actionno = 5
+start = 100, 0
+delta = 1.1, .1
+mask = 1
+layerno = 1
+
+
+[BG - rain2]
+type  = anim
+actionno = 4
+start = 100, 0
+delta = 1.1, .1
+mask = 1
+layerno = 1
+trans = add
+
+[BG - Front Fog]                  
+type = normal           
+spriteno = 3,0            
+start = 0, 200
+delta = .8,.8
+trans = add
+tile = 1,0
+tilespacing = 0,0
+mask = 0
+velocity = 1,0
+layerno = 1
+
+[BG - Thunder]                  
+type = anim
+actionno = 1      
+start = 0, 240      
+delta = 1, 1
+mask = 0
+layerno = 1
+
+[Begin Action 1] 
+11,0, 0,0, 300
+10,0, 0,0, 4
+11,0, 0,0, 8
+10,0, 0,0, 4
+11,0, 0,0, 2
+9,0, 0,0, 1
+
+[Begin Action 4] 
+4,0, 0,0, 3,,A
+4,1, 0,0, 3,,A
+4,2, 0,0, 3,,A
+4,3, 0,0, 3,,A
+4,4, 0,0, 3,,A
+4,5, 0,0, 3,,A
+4,6, 0,0, 3,,A
+4,7, 0,0, 3,,A
+4,8, 0,0, 3,,A
+
+[Begin Action 5] 
+5,0, 0,0, 5,,A
+5,1, 0,0, 5,,A
+5,2, 0,0, 5,,A
+5,3, 0,0, 5,,A
+5,4, 0,0, 5,,A
+5,5, 0,0, 5,,A
+5,6, 0,0, 5,,A
+5,7, 0,0, 5,,A
+5,8, 0,0, 5,,A
+5,9, 0,0, 5,,A

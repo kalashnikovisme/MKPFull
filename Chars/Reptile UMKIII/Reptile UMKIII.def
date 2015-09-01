@@ -1,0 +1,39 @@
+;Edited by PhoboSS
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="reptile"
+displayname  ="Reptile UMKIII"
+versiondate  =06,03,2001
+mugenversion =04,01,2001
+pal.defaults =1,2,3
+author=""
+
+;-------------------------------------------
+
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =reptile.sff
+anim     =reptile.air
+sound    =1.snd
+pal1=reptile_pal_1.act
+pal2=reptile_pal_2.act
+pal3=reptile_pal_3.act
+st1=sp.st
+st2=Basic_Moves.st
+st3=Stage_Finishers.st
+st4=Fatality.st
+st5=Finishers.st
+st6=Combos.st
+st7=Brutality.st
+
+;-------------------------------------------
+[Arcade]
+intro.storyboard  = mk3reptileintro\mk3reptileintro.def
+ending.storyboard = mk3reptileend\mk3reptileend.def
+
+;-------------------------------------------

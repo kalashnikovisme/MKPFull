@@ -1,0 +1,38 @@
+
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="cshang_tsung"
+displayname  ="Shang Tsung MKI"
+versiondate  =06,03,2001
+mugenversion =04,01,2001
+pal.defaults =1,2
+author=""
+
+;-------------------------------------------
+
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =shang_tsung.sff
+anim     =shang_tsung.air
+sound    =1.snd
+pal1=shang_tsung_pal_1.act
+pal2=shang_tsung_pal_2.act
+pal3=shang_tsung_pal_3.act
+pal4=shang_tsung_pal_4.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Finishers.st
+
+;-------------------------------------------
+
+[Arcade]
+
+ending.storyboard= mkend\mkend.def 
+

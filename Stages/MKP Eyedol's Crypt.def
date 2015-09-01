@@ -1,0 +1,82 @@
+ The Eyedol's Crypt. Stage FROM KILLER INSTINTIC_ARCADE/EDITS
+MADE BY FIREBOY 
+HOME PAGE
+
+http://www.fireboymugen.rg3.net/
+
+http://fireboymugen.zip.net/
+
+[Info]
+name = "MKP Eyedol's Crypt"
+
+[Camera]
+startx = 0
+starty = 0
+startx = 0
+starty = 0
+boundleft = -102400
+boundright = 102400
+boundhigh = -10
+boundlow  = -10
+verticalfollow = .2
+tension = 50
+
+
+
+[PlayerInfo]
+p1startx = -80        
+p1starty = 0        
+p1startz = 0
+p1facing = 1           
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound = -102400 
+rightbound = 102400 
+
+topbound  =  0
+botbound  =  0    
+
+[Scaling]
+topz     = 0      
+botz     = 40    
+topscale = 1      
+botscale =  1  
+
+[Bound]
+screenleft = 15    
+screenright = 15  
+
+[StageInfo]
+zoffset = 210
+zoffsetlink = 30 
+autoturn = 1
+resetBG = 1
+match.wins = 1
+
+[Shadow]
+color = 50,50,50
+yscale = 0.3
+reflect = 0
+
+
+[Music]
+bgmusic = sound/Good.mp3
+bgvolume = 400
+
+
+
+[BGdef]
+spr = stages/MKP Eyedol's Crypt.sff
+
+[BG 0] 
+type = normal
+spriteno = 0,0
+layerno = 0
+start = -672,180
+delta = 1,1
+trans = none
+mask = 1
+tile  = 1, 0
+

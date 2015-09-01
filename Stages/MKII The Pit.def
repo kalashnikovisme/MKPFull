@@ -1,0 +1,209 @@
+;--------------------------------------------------------
+; Stage   : The Pit 2 MK2
+; Version : 1.1
+; Autor   : RatonMalo
+; Mail    : elratonmalo@hotmail.com
+; Web     : http://www.geocities.jp/ratonmalo_ar/
+;Updated by BlackJack (fixed a palette-sharing bug)
+;Public release
+; Re elavorado by RAM
+;--------------------------------------------------------
+
+[Info]
+name     = "MKII The Pit"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -600;-225
+boundright = 600;225
+boundhigh = -15
+boundlow =  480
+verticalfollow = 1
+;verticalfollow = .2
+;floortension = 50
+tension = 80
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 
+rightbound =  1000 
+topbound  =  0
+botbound   =  720
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0       
+botz     = 50     
+topscale = 1       
+botscale = 1    
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft = 35
+screenright = 35
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset        = 0
+zoffsetlink    = 1
+autoturn       = 1
+resetBG        = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+color = 0,0,0
+yscale = 0
+reflect = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound/Good (11).mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+
+[BGdef]
+spr = MKII The Pit.sff
+debugbg = 0
+
+;--------------------------------------------------------
+[BG z]
+type  = dummy
+start = 0, 10012
+id    = 1
+
+[BGCtrl stageID 2]
+type   = PosSet
+time   = 4
+y      = -9798
+ctrlID = 1
+;--------------------------------------------------------
+[BG Cielo]
+type  = normal
+spriteno = 0,0
+delta = 0,0;.1,0
+mask  = 0
+
+[BG luna]
+type  = normal
+spriteno = 0,3
+delta = 0,0;.10,0;1
+mask  = 1
+
+[BG nube atras]
+type  = normal
+spriteno = 5,0
+delta = .1,0
+mask  = 1
+start = 40, 165
+tile = 1,0
+
+[BG puente atras]
+type  = normal
+spriteno = 0,1
+delta = .17,0.1
+mask  = 1
+start = 10,0
+
+[BG torch]
+type  = anim
+actionno = Torch
+delta = .17,0.1
+start = 10,0
+
+[BG nube adelante]
+type  = normal
+spriteno = 5,1
+delta = .4,0
+mask  = 1
+start = -200, 180
+tile = 1,0
+
+[BG fuego centro]
+type  = anim
+actionno = 1
+delta = 1,1
+start = -2, 167
+mask = 1
+
+[BG fuego izq]
+type  = anim
+actionno = 1
+delta = 1,1
+start = -373, 167
+mask = 1
+
+[BG fuego muy izq]
+type  = anim
+actionno = 1
+delta = 1,1
+start = -742, 167
+mask = 1
+
+[BG fuego der]
+type  = anim
+actionno = 1
+delta = 1,1
+start = 367, 167
+mask = 1
+
+[BG fuego muy der]
+type  = anim
+actionno = 1
+delta = 1,1
+start = 738, 167
+mask = 1
+
+[BG puente principal]
+type  = normal
+spriteno = 0,2
+delta = 1,1
+mask  = 1
+tile = 1,0
+
+[BG frente]
+type  = normal
+spriteno = 0,4
+delta = 1,1
+mask  = 1
+layerno = 1
+
+;--------------------------------------------------------
+
+[Begin action Torch]
+3,0, 1,0, 8
+3,1, 1,0, 8
+3,2, 1,0, 8
+3,3, 1,0, 8
+3,4, 1,0, 8
+3,5, 1,0, 8
+3,6, 1,0, 8
+
+[Begin Action 1]
+4, 0, 0, 0, 7
+4, 1, 0, 0, 7
+4, 2, 0, 0, 7
+4, 3, 0, 0, 7
+4, 4, 0, 0, 7
+4, 5, 0, 0, 7
+4, 6, 0, 0, 7
+4, 7, 0, 0, 7

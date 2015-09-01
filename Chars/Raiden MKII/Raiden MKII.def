@@ -1,0 +1,37 @@
+; Edited by PhoboSS & Borg117
+; Player information
+
+[Info]
+name ="raiden"
+displayname ="Raiden MKII"
+versiondate =06,03,2001
+mugenversion =04,01,2001
+pal.defaults =1,2,3,4,5  
+author="" 
+
+; Files for the player
+[Files]
+cmd      =Raiden.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =Raiden.sff
+anim     =Raiden.air
+sound   =Raiden.snd
+pal1=raiden_pal_1.act
+pal2=raiden_pal_0.act
+pal3=raiden_pal_2.act
+pal4=raiden_pal_3.act
+pal5=raiden_pal_4.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Finishers.st
+st6=sp2.st
+st7=brutality.st
+; Arcade mode
+
+[Arcade]
+intro.storyboard = mk3raidenintro\mk3raidenintro.def
+ending.storyboard = mk3raidenend\mk3raidenend.def

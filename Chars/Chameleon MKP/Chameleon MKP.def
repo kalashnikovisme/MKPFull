@@ -1,0 +1,37 @@
+
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="Chameleon"
+displayname  ="Chameleon MKP"
+versiondate  =10,11,2006
+mugenversion =04,01,2001
+pal.defaults =1,2,3,4
+author="PhoboSS"
+
+;-------------------------------------------
+
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =chameleon.sff
+anim     =chameleon.air
+sound    =1.snd
+pal1=chameleon_noob.act
+pal2=chameleon_smoke.act
+pal3=chameleon_reptile.act
+pal4=chameleon_ermac.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Finishers.st
+st6=Brutality.st
+
+;-------------------------------------------
+
+[Arcade]
+ending.storyboard=mkend\mkend.def

@@ -1,0 +1,35 @@
+
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="liu_kang_mk1"
+displayname  ="Liu Kang MKI"
+versiondate  =06,03,2001
+mugenversion =04,01,2001
+pal.defaults =1,2
+author="kintarogorrro"
+
+;-------------------------------------------
+
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =liu_kang.sff
+anim     =liu_kang.air
+sound    =1.snd
+pal1=liu_kang_pal_1.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Fatality.st
+st6=Finishers.st
+
+;-------------------------------------------
+[Arcade]
+intro.storyboard= intro\intro.def
+ending.storyboard= end\end.def 
+

@@ -1,0 +1,453 @@
+; Definition of EVE stage
+; *** denotes values you should change/check for each stage.
+; The term "background" is used to mean both backgrounds and foregrounds.
+
+;--------------------------------------------------------
+[Info]
+ ;Name of the stage.
+name = "MKP Inside The Blue Portal"
+author = "Shinra358 in respect to DJVan and his EVE S/P"
+
+;--------------------------------------------------------
+[Camera]
+ ;Camera starting position: Usually 0 for both
+startx = 0
+starty = 0
+
+ ;Left and right bound of camera
+ ;You may want to fiddle a bit with these values to make sure the
+ ;background doesn't move too far or too little
+ ;***
+boundleft = -500
+boundright = 500.
+
+ ;High and low bound of camera
+ ;High is a negative number. Make is more negative if you want to
+ ;camera to be able to move higher.
+ ;Low should usually be 0
+ ;If omitted, defaults to -25 and 0 respectively
+ ;***
+boundhigh = 0
+boundlow = 0
+
+ ;This is how much the camera will move vertically towards the
+ ;highest player. Valid values are from 0 to 1. A value of 0 will mean
+ ;the camera does not move up at all. A value of 1 will makes the camera
+ ;follow the highest player.
+ ;Typically .2 for normal-sized backgrounds. You may need to pull this
+ ;value up for taller backgrounds.
+verticalfollow = 1
+
+ ;Minimum vertical distance the highest player has to be from the floor,
+ ;before the camera starts to move up to follow him. For extremely
+ ;tall stages, a floor tension of about 20-30 coupled with a
+ ;vertical-follow of .8 allows the camera to follow the action.
+floortension = 20
+
+ ;Horizontal distance player is from edge before camera starts to move
+ ;left or right. Typically 50 or 60.
+tension = 60
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+ ;Player 1 starting coordinates.
+ ;p1startx is typically -70 and p2startx is 70.
+ ;p1starty and p1startz should be 0.
+p1startx = -100          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 100
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+ ;Don't change these values.
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+ ;No need to change these values
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+
+;--------------------------------------------------------
+[Bound]
+ ;Distance from left/right edge of screen that player can move to
+ ;Typically 15
+screenleft = 15    ;Dist from left of screen that player can move to
+screenright = 15   ;Right edge
+
+;--------------------------------------------------------
+[StageInfo]
+ ;Z offset for drawing
+ ;Adjust this value to move the ground level up/down in the screen.
+ ;It's the position where the players stand at.
+ ;Up - smaller, Down - larger
+ ;***
+zoffset = 220
+
+ ;Leave this at 1. It makes the players face each other
+autoturn = 1
+
+ ;Set the following to 1 to have the background be reset between
+ ;rounds.
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+ ;This controls the darkness of the shadow. Valid values range
+ ;from 0 (lightest) to 256 (darkest). Defaults to 128 if omitted.
+intensity = 64
+
+ ;This is the shadow color given in r,g,b. Valid values for each
+ ;range from 0 (lightest) to 255 (darkest).
+ ;Defaults to 0,0,0 if omitted.
+ ;intensity and color's effects add up to give the final shadow
+ ;result.
+color = 0,0,0
+
+ ;This is the scale factor of the shadow. Use a big scale factor
+ ;to make the shadow longer. You can use a NEGATIVE scale factor
+ ;to make the shadow fall INTO the screen.
+ ;Defaults to 0.4 if omitted.
+yscale = -.1
+
+ ;This parameter lets you set the range over which the shadow is
+ ;visible. The first value is the high level, and the second is
+ ;the middle level. Both represent y-coordinates of the player.
+ ;A shadow is invisible if the player is above the high level,
+ ;and fully visible if below the middle level. The shadow is
+ ;faded in between the two levels. This gives an effect of the
+ ;shadow fading away as the player gets farther away from the
+ ;ground. If omitted, defaults to no level effects (shadow is
+ ;always fully visible).
+fade.range = -400,-100
+
+;--------------------------------------------------------
+[Reflection]
+ ;Intensity of reflection (from 0 to 256). Set to 0 to have no
+ ;reflection. Defaults to 0.
+intensity = 0
+
+;--------------------------------------------------------
+[Music]
+ ;Put a filename for a MOD, MP3 or MIDI here, or just leave it
+ ;blank if you don't want music. If an invalid filename is
+ ;given, then no music will play. To play CD audio, put
+ ;the track number followed by ".da". Using a track number of
+ ;0 will play a random audio track. For example, to play
+ ;track 3 from a music CD, use:
+ ;  bgmusic = 3.da
+;bgmusic = sound/IIIym I.mp3
+bgmusic = sound/IIIym I.mp3
+
+ ;Adjust the volume. 0 is normal, negative for softer, and
+ ;positive for louder (only for mp3, mods and CDA)
+bgvolume = 255
+
+;========================================================
+;--------------------------------------------------------
+; Background definition
+; ***
+;-------------------------------------
+; [BG x]
+; type = ?       "Normal"/"Parallax"  (def: "normal")
+; spriteno = ?, ? Sprite group and number: groupno, imgno  (req'd)
+; start = ?, ?   Starting location (integer)  (def: 0, 0)
+; delta = ?, ?   Change in location per camera unit moved (float)  (def: 1,1)
+; trans = ?      Transparency settings: "none"/"add"/"add1"/"sub"/"addalpha" (def: "none")
+; alpha = ?, ?   (only for trans=addalpha) Source,dest alpha (def: 256,0)
+; mask = ?       Masking (int): 0 - off, 1 - on  (def: 0)
+; velocity = ?, ? Velocity: x, y (float): speed background moves (def: 0, 0)
+; tile = ?, ?    Tiling: xtile, ytile (int): 0 - off, 1 - infinite,
+;                        >1 - tile that number of times  (def: 0, 0) - only for Normal BG
+; tilespacing = ?, ? Tiling: x, y (int) : space between tiles (def: 0, 0)
+;  Parallax-only:
+; xscale = ?, ?    Top xscale, bottom xscale (float)
+; width = ?, ?     Top width, bottom width (int)  (use either this or above, but not both)
+; yscalestart = ?  Starting y-scale (float, in percent)  (def: 100)
+; yscaledelta = ?  Change in y-scale per unit (float, in percent)  (def: 0)
+;-------------------------------------
+
+;background definition
+[BGdef]
+spr = stages/MKP Inside The Blue Portal.sff
+debugbg = 0
+bgclearcolor = 0,0,0
+
+[BG 0,haze]
+type = parallax;normal
+layerno = 0
+spriteno = 300,1
+start = 160,0
+mask = 0
+trans = add
+velocity = 1.05625;0.8125
+tile = 1,0
+width = 300,25
+yscalestart = 110;  Starting y-scale (float, in percent)  (def: 100)
+yscaledelta = 5;?  Change in y-scale per unit (float, in percent)  (def: 0)
+
+[BG 0,haze3]
+type = parallax;normal
+layerno = 0
+spriteno = 300,3
+start = -160,120
+mask = 0
+velocity = 0.11125;0.1625
+tile = 1,0
+width = 20,300;20
+yscalestart = 100;  Starting y-scale (float, in percent)  (def: 100)
+yscaledelta = 5;?  Change in y-scale per unit (float, in percent)  (def: 0)
+
+[BG 0,haze bg]
+type = normal
+layerno = 0
+spriteno = 300,4
+start = -160,113
+mask = 0
+velocity = 0.08
+tile = 1,0
+
+[BG 0,haze5]
+type = normal
+layerno = 0
+spriteno = 300,5
+start = -160,240
+velocity = 1.5;0.8125
+tile = 1,1
+mask = 0
+trans = add
+;------------ Lightning ---------------
+
+[BG 0a] ;lightning (top right side)
+type  = anim
+actionno = 350
+layerno = 0
+start = 20,-40
+trans = add
+delta = .006,006
+
+[BG 0a] ;lightning (top left side)
+type  = anim
+actionno = 351
+layerno = 0
+start = -20,-40
+trans = add
+delta = .006,006
+
+[BG 0a] ;lightning (bottom right side)
+type  = anim
+actionno = 352
+layerno = 0
+start = 10,245
+trans = add
+delta = .006,006
+
+[BG 0a] ;lightning (bottom left side)
+type  = anim
+actionno = 353
+layerno = 0
+start = -10,245
+trans = add
+delta = .006,006
+
+[BG 0] ;BLUE SWIRL
+type = normal
+layerno = 0
+spriteno = 50,0
+start = -160,0
+mask = 0
+trans = add
+delta = .006,006
+
+[Begin Action 750] ;BLUE VORTEX ANIMATION
+loopstart
+75,0, 0,0, 2
+75,1, 0,0, 2
+75,2, 0,0, 2
+75,3, 0,0, 2
+75,4, 0,0, 2
+75,5, 0,0, 2
+75,6, 0,0, 2
+75,7, 0,0, 2
+75,8, 0,0, 2
+75,9, 0,0, 2
+75,10, 0,0, 2
+75,11, 0,0, 2
+75,12, 0,0, 2
+75,13, 0,0, 2
+75,14, 0,0, 2
+
+[Begin Action 770]  ;CLOUD VORTEX ANIMATION
+loopstart
+77,0, 0,0, 1, ,A
+77,1, 0,0, 1, ,A
+77,2, 0,0, 1, ,A
+77,3, 0,0, 1, ,A
+77,4, 0,0, 1, ,A
+77,5, 0,0, 1, ,A
+77,6, 0,0, 1, ,A
+77,7, 0,0, 1, ,A
+77,8, 0,0, 1, ,A
+77,9, 0,0, 1, ,A
+77,10, 0,0, 1, ,A
+77,11, 0,0, 1, ,A
+77,12, 0,0, 1, ,A
+77,13, 0,0, 1, ,A
+77,14, 0,0, 1, ,A
+77,15, 0,0, 1, ,A
+77,16, 0,0, 1, ,A
+77,17, 0,0, 1, ,A
+77,18, 0,0, 1, ,A
+77,19, 0,0, 1, ,A
+77,20, 0,0, 1, ,A
+77,21, 0,0, 1, ,A
+77,22, 0,0, 1, ,A
+77,23, 0,0, 1, ,A
+77,24, 0,0, 1, ,A
+77,25, 0,0, 1, ,A
+77,26, 0,0, 1, ,A
+77,27, 0,0, 1, ,A
+77,28, 0,0, 1, ,A
+77,29, 0,0, 1, ,A
+77,30, 0,0, 1, ,A
+77,31, 0,0, 1, ,A
+77,32, 0,0, 1, ,A
+77,33, 0,0, 1, ,A
+77,34, 0,0, 1, ,A
+77,35, 0,0, 1, ,A
+77,36, 0,0, 1, ,A
+77,37, 0,0, 1, ,A
+77,38, 0,0, 1, ,A
+77,39, 0,0, 1, ,A
+
+[Begin Action 780]  ;CLOUD VORTEX ANIMATION
+loopstart
+78,0, 0,0, 3, ,A
+78,1, 0,0, 3, ,A
+78,2, 0,0, 3, ,A
+78,3, 0,0, 3, ,A
+78,4, 0,0, 3, ,A
+78,5, 0,0, 3, ,A
+78,6, 0,0, 3, ,A
+78,7, 0,0, 3, ,A
+78,8, 0,0, 3, ,A
+78,9, 0,0, 3, ,A
+78,10, 0,0, 3, ,A
+78,11, 0,0, 3, ,A
+78,12, 0,0, 3, ,A
+78,13, 0,0, 3, ,A
+78,14, 0,0, 3, ,A
+78,15, 0,0, 3, ,A
+78,16, 0,0, 3, ,A
+78,17, 0,0, 3, ,A
+78,18, 0,0, 3, ,A
+78,19, 0,0, 3, ,A
+78,20, 0,0, 3, ,A
+78,21, 0,0, 3, ,A
+78,22, 0,0, 3, ,A
+78,23, 0,0, 3, ,A
+78,24, 0,0, 3, ,A
+78,25, 0,0, 3, ,A
+78,26, 0,0, 3, ,A
+78,27, 0,0, 3, ,A
+78,28, 0,0, 3, ,A
+78,29, 0,0, 3, ,A
+78,30, 0,0, 3, ,A
+78,31, 0,0, 3, ,A
+78,32, 0,0, 3, ,A
+78,33, 0,0, 3, ,A
+78,34, 0,0, 3, ,A
+78,35, 0,0, 3, ,A
+78,36, 0,0, 3, ,A
+78,37, 0,0, 3, ,A
+78,38, 0,0, 3, ,A
+78,39, 0,0, 3, ,A
+
+[begin action 350] ; Lightning 1 (top right side)
+-1,-1,0,0,82;Blank
+350,0,0,0,2, ,A
+-1,-1,0,0,2;Blank
+350,0,0,0,2, ,A
+350,1,0,0,2, ,A
+-1,-1,0,0,2;Blank
+350,1,0,0,2, ,A
+
+[begin action 351] ; Lightning 2 (top left side)
+350,0,0,0,2,H ,A
+-1,-1,0,0,2;Blank
+350,0,0,0,2,H ,A
+350,1,0,0,2,H ,A
+-1,-1,0,0,2;Blank
+350,1,0,0,2,H ,A
+-1,-1,0,0,112;Blank
+
+[begin action 352] ; Lightning 2 (bottom right side)
+-1,-1,0,0,61;Blank
+350,0,0,0,2,V ,A
+-1,-1,0,0,2;Blank
+350,0,0,0,2,V ,A
+350,1,0,0,2,V ,A
+-1,-1,0,0,2;Blank
+350,1,0,0,2,V ,A
+-1,-1,0,0,61;Blank
+
+[begin action 353] ; Lightning 2 (bottom left side)
+-1,-1,0,0,36;Blank
+350,0,0,0,2,VH ,A
+-1,-1,0,0,2;Blank
+350,0,0,0,2,VH ,A
+350,1,0,0,2,VH ,A
+-1,-1,0,0,2;Blank
+350,1,0,0,2,VH ,A
+-1,-1,0,0,66;Blank
+
+[begin action 350] ; Lightning 1 (top right side)
+-1,-1,0,0,70;Blank
+350,0,0,0,3, ,A
+-1,-1,0,0,3;Blank
+350,0,0,0,3, ,A
+350,1,0,0,3, ,A
+-1,-1,0,0,3;Blank
+350,1,0,0,3, ,A
+
+[begin action 351] ; Lightning 2 (top left side)
+350,0,0,0,3,H ,A
+-1,-1,0,0,3;Blank
+350,0,0,0,3,H ,A
+350,1,0,0,3,H ,A
+-1,-1,0,0,3;Blank
+350,1,0,0,3,H ,A
+-1,-1,0,0,100;Blank
+
+[begin action 352] ; Lightning 2 (bottom right side)
+-1,-1,0,0,55;Blank
+350,0,0,0,3,V ,A
+-1,-1,0,0,3;Blank
+350,0,0,0,3,V ,A
+350,1,0,0,3,V ,A
+-1,-1,0,0,3;Blank
+350,1,0,0,3,V ,A
+-1,-1,0,0,55;Blank
+
+[begin action 353] ; Lightning 2 (bottom left side)
+-1,-1,0,0,30;Blank
+350,0,0,0,3,VH ,A
+-1,-1,0,0,3;Blank
+350,0,0,0,3,VH ,A
+350,1,0,0,3,VH ,A
+-1,-1,0,0,3;Blank
+350,1,0,0,3,VH ,A
+-1,-1,0,0,60;Blank

@@ -1,0 +1,186 @@
+;MKP
+;Sprites:      Markoss <markossokram3@hotmail.com>
+;Programación: RAM     <driverram@hotmail.com>   
+;--------------------------------------------------------
+[Info]
+name = "MKIV Elder gods"
+
+;--------------------------------------------------------
+[Camera]
+
+startx = 0
+starty = 0
+
+boundleft = -280
+boundright = 280
+boundhigh = -15;42
+boundlow = 0
+tension = 50
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+;--- Player 2 ---
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+;--------------------------------------------------------
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 40
+screenright = 40
+
+;--------------------------------------------------------
+[StageInfo]
+
+zoffset = 210
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+
+color = 99,99,99
+yscale = -.1
+
+;--------------------------------------------------------
+[Music]
+bgmusic =sound/MKIV Elder gods.mp3
+bgvolume = 255
+
+;-------------------------------------
+; Main background definition
+[BGdef]
+
+spr = MKIV.sff
+debugbg = 0
+
+;----------
+
+[BG fondo negro] 
+type     = normal
+spriteno = 2,0
+start    = -180,-180
+delta    = 0,1
+
+[BG Fuego izq]
+type  = anim
+actionno = 2
+start = -96,36
+mask = 1
+
+[BG Fuego der]
+type  = anim
+actionno = 3
+start = 87,62
+mask = 1
+
+
+[BG cara izq]
+type  = anim
+actionno = 0
+start = -340,43
+mask = 1
+
+[BG cara der]
+type  = anim
+actionno = 1
+start = 340,43
+mask = 1
+
+[BG pared]
+type = normal
+spriteno = 60,0
+start = 7,23
+mask = 1
+
+;========[ Animaciones ]=========
+
+[Begin Action 0]
+61, 0, 0, 0, 100
+61, 1, 0, 0, 5
+61, 2, 0, 0, 5
+61, 3, 0, 0, 5
+61, 4, 0, 0, 5
+61, 5, 0, 0, 5
+61, 6, 0, 0, 20
+61, 5, 0, 0, 5
+61, 4, 0, 0, 5
+61, 3, 0, 0, 5
+61, 2, 0, 0, 5
+61, 1, 0, 0, 10
+61, 2, 0, 0, 5
+61, 3, 0, 0, 5
+61, 4, 0, 0, 5
+61, 5, 0, 0, 5
+61, 6, 0, 0, 50
+61, 5, 0, 0, 5
+61, 4, 0, 0, 5
+61, 3, 0, 0, 5
+61, 2, 0, 0, 5
+61, 1, 0, 0, 5
+61, 0, 0, 0, 10
+
+[Begin Action 1]
+61, 0, 0, 0, 10, H
+61, 1, 0, 0, 5, H
+61, 2, 0, 0, 5, H
+61, 3, 0, 0, 5, H
+61, 4, 0, 0, 5, H
+61, 5, 0, 0, 5, H
+61, 6, 0, 0, 20, H
+61, 5, 0, 0, 5, H
+61, 4, 0, 0, 5, H
+61, 3, 0, 0, 5, H
+61, 2, 0, 0, 5, H
+61, 1, 0, 0, 10, H
+61, 2, 0, 0, 5, H
+61, 3, 0, 0, 5, H
+61, 4, 0, 0, 5, H
+61, 5, 0, 0, 5, H
+61, 6, 0, 0, 50, H
+61, 5, 0, 0, 5, H
+61, 4, 0, 0, 5, H
+61, 3, 0, 0, 5, H
+61, 2, 0, 0, 5, H
+61, 1, 0, 0, 5, H
+61, 0, 0, 0, 100, H
+
+[Begin Action 2]
+62, 0, 0, 0, 5
+62, 1, 0, 0, 5
+62, 2, 0, 0, 5
+62, 3, 0, 0, 5
+62, 4, 0, 0, 5
+62, 5, 0, 0, 5
+62, 6, 0, 0, 5
+62, 7, 0, 0, 5
+62, 8, 0, 0, 5
+
+[Begin action 3]
+24,0, 0,0, 8
+24,1, 0,0, 8
+24,2, 0,0, 8
+24,3, 0,0, 8
+24,4, 0,0, 8
+24,5, 0,0, 8

@@ -1,0 +1,123 @@
+;________________________________________________________
+; Stage   : The Pit 2_mkt
+; Author  : Le@n
+; Web     : www.rulezzgames.mybb.ru
+; Version : 1.2
+;________________________________________________________
+
+[Info]
+name     = "MKT Star Bridge"
+;________________________________________________________
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -600;-225
+boundright = 600;225
+boundhigh = -15
+boundlow =  480
+verticalfollow = 1
+;verticalfollow = .2
+;floortension = 50
+tension = 80
+;________________________________________________________
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 
+rightbound =  1000 
+topbound  =  0
+botbound   =  720
+;________________________________________________________
+
+[Scaling]
+topz     = 0       
+botz     = 50     
+topscale = 1       
+botscale = 1    
+;________________________________________________________
+
+[Bound]
+screenleft = 35
+screenright = 35
+;________________________________________________________
+
+[StageInfo]
+zoffset        = 0
+zoffsetlink    = 1
+autoturn       = 1
+resetBG        = 0
+;________________________________________________________
+
+[Shadow]
+color = 0,0,0
+yscale = 0
+reflect = 0
+;________________________________________________________
+
+[Music]
+bgmusic = sound/Good (15).mp3
+bgvolume = 255
+;________________________________________________________
+
+[BGdef]
+spr = stages/MKT Star Bridge.sff
+debugbg = 0
+;________________________________________________________
+
+[BG z]
+type  = dummy
+start = 0, 220     ; <-------- initial Z-Offset = 220
+id = 1
+
+; Back to normal
+[BGCtrl stageID 2]
+type = PosSet
+time = 4
+y = -14
+ctrlID = 1
+;________________________________________________________
+
+[BG Cielo]
+type  = normal
+spriteno = 0,10
+delta = 0,0;.1,0
+mask  = 0
+
+[BG puente atras]
+type  = normal
+spriteno = 0,1
+delta = .17,0.2
+mask  = 1
+start = 10,0
+
+[BG nube adelante]
+type  = normal
+spriteno = 5,1
+delta = .4,0.2
+mask  = 1
+start = -200, 180
+tile = 1,0
+
+[BG puente principal]
+type  = normal
+spriteno = 0,2
+delta = 1,.8
+mask  = 1
+tile = 1,0
+
+[BG frente]
+type  = normal
+spriteno = 0,4
+delta = 1,.8
+mask  = 1
+layerno = 1

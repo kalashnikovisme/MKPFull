@@ -1,0 +1,226 @@
+;--------------------------------------------------------
+; Stage   : Soul Chamber MK3 y The Balcony MK3
+; Version : 1.0
+; Autor   : RatonMalo
+; Mail    : elratonmalo@hotmail.com
+; Web     : http://www.geocities.jp/ratonmalo_ar/
+; Re elavorado: "The Subway- The Street" by RAM
+;--------------------------------------------------------
+[Info]
+name = "MKIII The Soul Chamber"
+;--------------------------------------------------------
+
+[Camera]
+startx         = 0
+starty         = 0
+boundleft      = -320
+boundright     = 320
+boundhigh      = -330
+boundlow       =  0
+verticalfollow = .2
+;floortension  = 50
+tension        = 100
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -460
+rightbound = 780
+topbound   =  0
+botbound   =  0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0       
+botz     = 50     
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft  = 55
+screenright = 55
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset     = 0
+zoffsetlink = 1
+autoturn    = 1
+resetBG     = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+color   = 100,100,100
+yscale  = -.2
+reflect = 0
+
+[Music]
+bgmusic  = sound/MKIII The Soul Chamber.mp3
+bgvolume = 400
+
+[BGdef]
+spr      = MKIII The Soul Chamber.sff
+debugbg  = 0
+
+;--------------------------------------------------------
+[BG z]
+type  = dummy
+start = 0, 10322
+id    = 1
+
+[BGCtrl stageID 2]
+type   = PosSet
+time   = 4
+y      = -10105
+ctrlID = 1
+;--------------------------------------------------------
+[BG fondo]
+type     = normal
+spriteno = 3,0
+start    = 0,1
+delta    = 1,1
+tile     = 1,0
+
+[BG Craneo]
+type        = normal
+spriteno    = 3,1
+start       = -207,112
+delta       = .85,1
+mask        = 1
+tile        = 1,0
+tilespacing = 214,0
+
+[BG Escenario]
+type           = normal
+spriteno       = 0,3
+start          = 0,0
+delta          = .90,1
+mask           = 1
+
+[BG Almas]
+type           = anim
+actionno       = 3
+delta          = .90,1
+
+[BG caras]
+type           = normal
+spriteno       = 0,0
+start          = 0,0
+delta          = .94,1
+mask           = 1
+
+[BG piso]
+type           = normal
+spriteno       = 0,7
+start          = 0,0
+delta          = 1,1
+mask           = 1
+
+[BG 222]
+type        = parallax
+spriteno    = 0,8
+delta       = 1, 1
+xscale      = 1, 1.5
+yscalestart = 100
+mask        = 1
+
+[BG Candelabro]
+type     = normal
+spriteno = 6,0
+start    = 0,-300
+delta    = .70,1
+mask     = 0
+
+[BG columna]
+type     = normal
+spriteno = 6,1
+start    = 0,-300
+delta    = .87,1
+mask     = 1
+
+[BG poso]
+type     = normal
+spriteno = 4,1
+start    = 0,-301
+delta    = .9,1
+mask     = 0
+
+[BG Piso]
+type     = normal
+spriteno = 4,2
+start    = 0,-300
+delta    = 0.84,1
+mask     = 1
+
+[BG Pared]
+type     = normal
+spriteno = 4,0
+start    = 0,-300
+delta    = 0.84,1
+mask     = 1
+
+[BG Fuego2]
+type     = anim
+actionno = 2
+start    = 0, -300
+delta    = 0.84,1
+mask     = 0
+
+[BG Fuego1]
+type     = anim
+actionno = 1
+start    = -2, -300
+delta    = 0.84,1
+mask     = 0
+
+[BG P];entrepiso
+type     = normal
+spriteno = 7,0
+delta    = 1, 1
+mask     = 1
+start    = 0,51
+tile     = 1,0
+
+;--------------------------------------------------------
+[Begin action 1]
+5,0, 1,4, 5, h
+5,1, 1,4, 5, h
+5,2, 1,4, 5, h
+5,3, 1,4, 5, h
+5,4, 1,4, 5, h
+5,5, 1,4, 5, h
+
+[Begin action 2]
+5,0, 1,4, 5
+5,1, 1,4, 5
+5,2, 1,4, 5
+5,3, 1,4, 5
+5,4, 1,4, 5
+5,5, 1,4, 5
+
+[Begin action 3]
+1,0, 0,0, 6
+1,1, 0,0, 6
+1,2, 0,0, 6
+1,3, 0,0, 6
+1,4, 0,0, 6
+1,5, 0,0, 6
+1,6, 0,0, 6
+1,7, 0,0, 6
+1,8, 0,0, 6
+1,9, 0,0, 6
+1,10, 0,0, 6
+1,11, 0,0, 6

@@ -1,0 +1,40 @@
+HELL SCORPION MORTAL KOMBAT                 
+MADE BY FIREBOY
+
+HOME PAGE
+
+http://fireboymugen.webs.com/
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="scorpion"
+displayname  ="Scorpion UMKIII Unmasked"
+versiondate  =17,06,2008
+mugenversion =04,01,2001
+pal.defaults =1,2
+author="FIRE BOY"
+
+;-------------------------------------------
+
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =MKCOMMON1.CNS
+sprite   =scorpion.sff
+anim     =scorpion.air
+sound    =1.snd
+pal1=scorpion_pal_1.act
+pal2=scorpion_pal_2.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Finishers.st
+st6=Finishers.st
+
+
+[Arcade]
+intro.storyboard  = mk3scorpionintro\mk3scorpionintro.def
+ending.storyboard = mk3scorpionend\mk3scorpionend.def

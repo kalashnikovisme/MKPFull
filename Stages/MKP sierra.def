@@ -1,0 +1,93 @@
+; ____________________________
+;/     ____      ____    ______          \
+;|     |       \__/      |   |_       _|          |
+;|     |                   |     |      |    ®      |
+;|     |       |\_/|       |     |      |            |
+;|     |____|    |____|     |___|            |
+;|     M U G E N     T O O N S        |  
+;| Hacemos... Lo que Queremos |
+;\___________________________/
+;   http://mt.mugenhispania.info/
+;---------------------------------------------------
+;------------------
+[Info]
+name ="MKP sierra"
+displayname="MKP sierra"
+author="Mugen Toons"
+;------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -50
+boundright = 50
+boundhigh = -50
+boundlow = 0
+verticalfollow = 1
+floortension = 50
+tension = 50
+;------------------
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+;------------------
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1
+;------------------
+[Bound]
+screenleft = 15  
+screenright = 15
+;------------------
+[StageInfo]
+zoffset = 210
+autoturn = 1
+resetBG = 0
+;------------------
+[Shadow]
+color = 38,38,38
+yscale = .2
+;------------------
+[Music]
+bgmusic = sound/River.mp3
+bgvolume = 255
+;------------------
+[BGdef]
+spr = stages/MKP sierra.sff
+debugbg = O
+;------------------
+
+[BG stage]
+type  = normal
+spriteno = 0,0
+start = 0,240
+mask = 1
+layerno = 0
+;------------------
+[BG catarata]
+type  = anim
+actionno = 2
+start = -10,202
+
+[Begin action 2] 
+2,0, 10,0, 4
+2,1, 10,0, 4
+2,2, 10,0, 4
+2,3, 10,0, 4
+2,4, 10,0, 4
+2,5, 10,0, 4
+2,6, 10,0, 4
+2,7, 10,0, 4
+;------------------

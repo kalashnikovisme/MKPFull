@@ -1,0 +1,40 @@
+
+
+; Player information
+[Info]
+name ="Hcyrax"
+displayname ="Cyrax MKP I"
+versiondate =06,03,2001
+mugenversion =04,01,2001
+pal.defaults =1,2   
+author=""
+
+; Files for the player
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =human.sff
+anim     =1.air
+sound   =1.snd
+pal1=coward.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Finishers.st
+st6=Finishers.st
+;pal2=Cyrax_Pal_2.act
+;pal3=Cyrax_Pal_3.act
+
+
+
+
+
+; Arcade mode
+
+[Arcade]
+ending.storyboard = mkend/mkend.def
+
+

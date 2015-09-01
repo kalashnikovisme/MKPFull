@@ -1,0 +1,144 @@
+[Info]
+name = "MKP Theizen Layer"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -200
+boundright = 200
+boundhigh = -20
+boundlow =  0
+verticalfollow = .30
+floortension = 0
+tension = 50
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -700 
+rightbound = 700
+topbound  =  0
+botbound  =  0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0       
+botz     = 50     
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft = 30
+screenright = 30
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset = 230
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+color = 100,100,100
+yscale = -.2
+reflect = 0
+
+[Music]
+bgmusic = sound\MKP 3.mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+
+[BGdef]
+spr = stages/MKP Theizen Layer.sff
+debugbg = 0
+
+;--------------------------------------------------------
+
+
+[BG Main]
+type  = normal
+spriteno = 2, 0
+layerno = 0
+start = 0, 0
+delta = 1, 1
+trans = none
+mask  = 0
+tile  = 1, 0
+window = 0,0, 720, 240
+
+[BG Red Haze]
+type  = normal
+spriteno = 3, 0
+layerno = 
+start = 0, 0
+delta = 1, 1
+trans = add
+mask  = 1
+tile  = 1, 0
+window = 0,0, 720, 240
+
+[BG Red Haze_Layer1]
+type  = normal
+spriteno = 4, 0
+layerno = 1
+start = 0, 0
+delta = 1, 1
+trans = add
+mask  = 1
+velocity = 2,0
+tile  = 1, 0
+window = 0,0, 720, 240
+
+[BG Floor]
+type  = normal
+spriteno = 1, 0
+layerno = 0
+start = 0, 0
+delta = 1, 1
+trans = none
+mask  = 1
+tile  = 1, 0
+window = 0,0, 720, 240
+
+[BG Red Haze_Layer2]
+type  = normal
+spriteno = 5, 0
+layerno = 0
+start = 0, 0
+delta = 1, 1
+trans = add
+mask  = 1
+velocity = 1,0
+tile  = 1, 0
+window = 0,0, 720, 240
+
+[BG Red Haze_Layer3]
+type  = normal
+spriteno = 6, 0
+layerno = 0
+start = 0, 0
+delta = 1, 1
+trans = add
+mask  = 1
+velocity = 0.5,0
+tile  = 1, 0
+window = 0,0, 720, 240
+

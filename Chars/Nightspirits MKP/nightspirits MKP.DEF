@@ -1,0 +1,34 @@
+
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         = "nightspirits"
+displayname  = "Nightspirits MKP"
+versiondate  = 06,03,2001
+mugenversion = 04,01,2001
+pal.defaults = 1,2
+
+;-------------------------------------------
+
+[Files]
+cmd      = 1.cmd
+cns      = 1.cns
+st       = 1.cns
+st2      = sp.st
+st3      = bmoves.st
+st4      = Pit.st
+st5      = Fatality.st
+st6      = Finishers.st   
+stcommon = common1.cns
+sprite   = evil_thief.sff
+anim     = evil_thief.air
+sound    = 1.snd
+pal1     = evil_thief_pal_1.act
+pal2     = evil_thief_pal_2.act
+
+;-------------------------------------------
+
+[Arcade]
+ending.storyboard=mkend\mkend.def
+

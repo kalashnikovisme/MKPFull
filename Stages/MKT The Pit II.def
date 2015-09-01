@@ -1,0 +1,131 @@
+;________________________________________________________
+; Stage   : The Pit I_mkt
+; Author  : Le@n
+; Web     : www.rulezzgames.mybb.ru
+; Version : 1.0
+;________________________________________________________
+
+[Info]
+name = "MKT The Pit II"
+;________________________________________________________
+
+[Camera]
+startx         = 0
+starty         = 0
+boundleft      = -353
+boundright     =  413
+boundhigh      = -15
+boundlow       =  0
+verticalfollow = .1
+;floortension  = 50
+tension        = 50
+;________________________________________________________
+
+[PlayerInfo]
+p1startx       = -80
+p1starty       = 0
+p1startz       = 0
+p1facing       = 1
+
+p2startx       = 80
+p2starty       = 0
+p2startz       = 0
+p2facing       = -1
+
+leftbound  = -1000 
+rightbound = 1000
+topbound       =  0
+botbound       =  0
+;________________________________________________________
+
+[Scaling]
+topz           = 0       
+botz           = 50     
+topscale       = 1       
+botscale       = 1.2     
+;________________________________________________________
+
+[Bound]
+screenleft     = 35
+screenright    = 35
+;________________________________________________________
+
+[StageInfo]
+zoffset        = 0
+zoffsetlink    = 1
+autoturn       = 1
+resetBG        = 1
+;________________________________________________________
+
+[Shadow]
+color          = 0,0,0
+yscale         = 0
+reflect        = 0
+;________________________________________________________
+
+[Music]
+bgmusic = sound\Good.mp3
+bgvolume       = 255
+loop = 1
+;________________________________________________________
+
+[BGdef]
+spr = stages/MKT The Pit II.sff
+debugbg = 0
+;________________________________________________________
+
+[BG z]
+type  = dummy
+start = 0, 224     ; <-------- initial Z-Offset = 220
+id = 1
+
+[BGCtrl stageID 1]
+type = PosSet
+time = 1
+y = 9776
+ctrlID = 1
+
+; Back to normal
+[BGCtrl stageID 2]
+type = PosSet
+time = 4
+y = -13
+ctrlID = 1
+;________________________________________________________
+
+[BG Cielo1]
+type  = normal
+spriteno = 1,0
+delta = .15,0;.1,0
+mask  = 0
+
+[BG Cielo2]
+type  = normal
+spriteno = 1,10
+delta = .17,0;.1,0
+mask  = 1
+
+[BG Cielo3]
+type  = normal
+spriteno = 1,20
+delta = .19,0;.1,0
+mask  = 1
+
+[BG Cielo4]
+type  = normal
+spriteno = 1,30
+delta = .21,0;.1,0
+mask  = 1
+
+[BG Luna]
+type  = normal
+spriteno = 1,1
+delta = .15,0;.10,0;1
+mask  = 1
+
+[BG Montaña]
+type  = normal
+spriteno = 1,2
+start = 0,-2
+delta = .19,0;.1,0
+mask  = 1

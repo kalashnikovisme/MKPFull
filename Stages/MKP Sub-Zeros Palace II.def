@@ -1,0 +1,79 @@
+; Sub-Zero's Palace
+; Mortal Kombat
+; Editado por nino - http://createandplay.free.fr
+; ? - Interrogation
+; manicssj6[arroba]msn.com
+
+
+[Info] 
+name = "MKP Sub-Zeros Palace II" 
+author= "?"
+
+[Camera] 
+startx = 0 
+starty = 0 
+boundleft = -284.5
+boundright = 284.5
+boundhight =  -33
+boundlow = 0 
+verticalfollow = .1
+floortension = 0 
+tension = 50 
+ 
+[PlayerInfo]
+p1startx = -70          
+p1starty = 0            
+p1startz = 0            
+p1facing = 1            
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound  = -1000 
+rightbound =  1000 
+topbound  =  0     
+botbound  =  0    
+
+[Scaling]
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+
+[Bound]
+screenleft = 15   
+screenright = 15   
+ 
+[StageInfo] 
+zoffset =  220 
+autoturn = 1 
+resetBG = 1 
+ 
+[Shadow] 
+color = 2,2,2 
+yscale = 2 
+reflect = 0 
+ 
+[Music] 
+bgmusic = sound/MKWORLD XIV.mp3
+bgvolume = 255 
+ 
+[BGdef] 
+spr = stages/MKP Sub-Zeros Palace II.sff
+debugbg = 0 
+ 
+
+
+[BG 1]
+type  = normal
+spriteno = 0,0
+start = 0, 0
+delta = 1, 1
+mask = 0
+velocity = 0, 0
+tile = 0, 0
+tilespacing = 0, 0
+trans = none
+
+
+

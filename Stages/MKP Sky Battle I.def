@@ -1,0 +1,176 @@
+;BY: 	Doorhenge
+;EMAIL:	doorhenge@hotmail.com
+[Info]
+name = "MKP Sky Battle I"
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -500
+boundright = 500
+boundhigh = -90
+boundlow = 0
+verticalfollow = 1
+floortension = 80
+tension = 60
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound  = -10500
+rightbound =  10500
+topbound  =  0
+botbound  =  0
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+[Bound]
+screenleft = 15
+screenright = 15
+[StageInfo]
+zoffset = 200
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+yscale = 0
+
+[Music]
+bgmusic = sound/Good (16).mp3
+bgvolume = 1024
+
+[BGdef]
+spr = stages/MKP Sky Battle I.sff
+debugbg = 0
+
+[BG stars]
+type  = normal
+spriteno = 5, 0
+delta = .3, .3
+tile = 1, 1
+
+[Begin Action 7]
+7,0, 0,0, 5,,A
+7,1, 0,0, 5,,A
+7,2, 0,0, 5,,A
+7,3, 0,0, 5,,A
+7,4, 0,0, 5,,A
+7,5, 0,0, 5,,A
+7,6, 0,0, 5,,A
+7,7, 0,0, 5,,A
+7,8, 0,0, 5,,A
+7,9, 0,0, 5,,A
+7,10, 0,0, 5,,A
+7,9, 0,0, 5,,A
+7,8, 0,0, 5,,A
+7,7, 0,0, 5,,A
+7,6, 0,0, 5,,A
+7,5, 0,0, 5,,A
+7,4, 0,0, 5,,A
+7,3, 0,0, 5,,A
+7,2, 0,0, 5,,A
+7,1, 0,0, 5,,A
+
+[BG shootingstar]
+type = anim
+actionno = 7
+delta = .3, .3
+tile = 1, 1
+tilespacing = 500
+velocity = -4, 1.4
+
+[BG shootingstar1]
+type = anim
+actionno = 7
+delta = .3, .3
+start = 240, 0
+tile = 1, 1
+tilespacing = 400
+velocity = -6, 3.1
+
+[BG shootingstar2]
+type = anim
+actionno = 7
+delta = .3, .3
+start = 240, 0
+tile = 1, 1
+tilespacing = 600
+velocity = -2, .3
+
+[bg bigstar]
+type  = normal
+spriteno = 6, 0
+delta = .3, .3
+trans = add
+
+[bg moonmist]
+type  = normal
+spriteno = 4, 0
+delta = .3, .3
+trans = add
+
+[bg moon]
+type  = normal
+spriteno = 4, 1
+delta = .3, .3
+mask = 1
+
+[bg backcloudsfar]
+type  = normal
+spriteno = 3, 1
+delta = .4, .4
+tile = 1, 0
+mask = 1
+
+[bg backclouds]
+type  = normal
+spriteno = 3, 0
+delta = .5, .5
+tile = 1, 0
+mask = 1
+
+[bg backclouds0]
+type  = normal
+spriteno = 2, 0
+delta = .6, .6
+start = 0, -40
+tile = 1, 0
+trans = add
+alpha = 128,0
+
+[bg floor]
+type  = normal
+spriteno = 1, 0
+delta = 1, 1
+tile = 1, 0
+mask = 1
+
+[bg floorshine]
+type  = normal
+spriteno = 1, 1
+trans = add
+delta = 1, 1
+tile = 1, 0
+tilespacing = 315, 0
+
+[bg clouds]
+type  = normal
+spriteno = 2, 0
+delta = 1.2, 1.2
+tile = 1, 0
+layerno = 1
+trans = add
+
+[bg cloudssideright]
+type  = normal
+spriteno = 2, 1
+delta = 1.2, 1.2
+layerno = 1
+trans = add

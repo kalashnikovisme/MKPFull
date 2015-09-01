@@ -1,0 +1,882 @@
+
+
+;--------------------------------------------------------
+[Info]
+ ;Name of the stage.
+name = "MKWORLD Battlefield"
+;--------------------------------------------------------
+[Camera]
+ ;Camera starting position: Usually 0 for both
+startx = 0
+starty = 0
+
+ ;Left and right bound of camera
+ ;You may want to fiddle a bit with these values to make sure the
+ ;background doesn't move too far or too little
+ ;***
+boundleft = -824
+boundright = 565
+
+ ;High and low bound of camera
+ ;High is a negative number. Make is more negative if you want to
+ ;camera to be able to move higher.
+ ;Low should usually be 0.
+ ;If omitted, defaults to -25 and 0 respectively
+ ;***
+boundhigh = -100
+boundlow = 0
+
+ ;This is how much the camera will move vertically towards the
+ ;highest player. Valid values are from 0 to 1. A value of 0 will mean
+ ;the camera does not move up at all. A value of 1 will makes the camera
+ ;follow the highest player.
+ ;Typically .2 for normal-sized backgrounds. You may need to pull this
+ ;value up for taller backgrounds.
+verticalfollow = .9
+
+ ;Minimum vertical distance the highest player has to be from the floor,
+ ;before the camera starts to move up to follow him. For extremely
+ ;tall stages, a floor tension of about 20-30 coupled with a
+ ;vertical-follow of .8 allows the camera to follow the action.
+floortension = 35
+
+ ;Horizontal distance player is from edge before camera starts to move
+ ;left or right. Typically 50 or 60.
+tension = 50
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+ ;Player 1 starting coordinates.
+ ;p1startx is typically -70 and p2startx is 70.
+ ;p1starty and p1startz should be 0.
+p1startx = -70          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+ ;Don't change these values.
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+ ;No need to change these values
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+
+;--------------------------------------------------------
+[Bound]
+ ;Distance from left/right edge of screen that player can move to
+ ;Typically 15
+screenleft = 15    ;Dist from left of screen that player can move to
+screenright = 15   ;Right edge
+
+;--------------------------------------------------------
+[StageInfo]
+ ;Z offset for drawing
+ ;Adjust this value to move the ground level up/down in the screen.
+ ;It's the position where the players stand at.
+ ;Up - smaller, Down - larger
+ ;***
+zoffset = 215
+
+ ;Leave this at 1. It makes the players face each other
+autoturn = 1
+
+ ;Set the following to 1 to have the background be reset between
+ ;rounds.
+resetBG = 0
+
+;--------------------------------------------------------
+[Shadow]
+ ;This is the shadow darkening intensity. Valid values range from
+ ;0 (lightest) to 256 (darkest). Defaults to 128 if omitted.
+intensity = 128
+
+ ;This is the shadow color given in r,g,b. Valid values for each
+ ;range from 0 (lightest) to 255 (darkest).
+ ;Defaults to 0,0,0 if omitted.
+ ;intensity and color's effects add up to give the final shadow
+ ;result.
+color = 0,0,0
+
+ ;This is the scale factor of the shadow. Use a big scale factor
+ ;to make the shadow longer. You can use a NEGATIVE scale factor
+ ;to make the shadow fall INTO the screen.
+ ;Defaults to 0.4 if omitted.
+yscale = .1
+
+ ;This parameter lets you set the range over which the shadow is
+ ;visible. The first value is the high level, and the second is
+ ;the middle level. Both represent y-coordinates of the player.
+ ;A shadow is invisible if the player is above the high level,
+ ;and fully visible if below the middle level. The shadow is
+ ;faded in between the two levels. This gives an effect of the
+ ;shadow fading away as the player gets farther away from the
+ ;ground. If omitted, defaults to no level effects (shadow is
+ ;always fully visible).
+fade.range = 50,25
+
+;--------------------------------------------------------
+[Reflection]
+ ;Intensity of reflection (from 0 to 256). Set to 0 to have no
+ ;reflection. Defaults to 0.
+intensity = 0
+
+
+;--------------------------------------------------------
+[Music]
+ ;Put a filename for a MOD, MP3 or MIDI here, or just leave it
+ ;blank if you don't want music. If an invalid filename is
+ ;given, then no music will play. To play CD audio, put
+ ;the track number followed by ".da". Using a track number of
+ ;0 will play a random audio track. For example, to play
+ ;track 3 from a music CD, use:
+ ;  bgmusic = 3.da
+bgmusic = sound\MK 5.mp3
+
+ ;Adjust the volume. 0 is normal, negative for softer, and
+ ;positive for louder (only for mp3, mods and CDA)
+bgvolume = 255
+bgm.loop = 1
+
+[BGdef]
+spr=MKWORLD Battlefield.sff
+
+[BG Ufloor1]
+type = normal
+start = 0,12000
+spriteno = 1,1
+mask = 1
+layerno = 0
+
+[BG sky]
+type = normal
+spriteno = 2,1
+mask = 0
+layerno = 0
+start = 0,120
+delta = 0.1,0.1
+
+[BG sunBall]
+type = normal
+mask = 1
+start = 75,-30
+delta = 0.1,0.1
+spriteno = 11,1
+layerno = 0
+trans = add
+
+[BG sun]
+type = anim
+mask = 1
+start = 75,-30
+delta = 0.1,0.1
+actionno = 21
+
+[BG clouds]
+type = normal
+mask = 1
+layerno = 0
+delta = 0.2,0.2
+start = 0,0
+spriteno = 13,1
+velocity = 0.5
+tile = 1
+tilespacing = 180
+
+[BG clouds1]
+type = normal
+mask = 1
+layerno = 0
+delta = 0.1,1
+start = 0,120
+spriteno = 13,2
+velocity = 0.25
+tile = 1
+tilespacing = 220
+
+[BG city_line]
+type = normal
+mask = 0
+layerno = 0
+delta = 0.6,1
+spriteno = 12,2
+start = 200,220
+
+[BG city]
+type = normal
+mask = 1
+start = 200,120
+delta = 0.6,1
+layerno = 0
+spriteno = 12,1
+
+;--------------------------- brimstone remains ------------
+
+[BG brimstone]
+type = normal
+spriteno = 14,1
+start = 0,0
+mask = 1
+layerno = 0
+velocity = -3,2
+tile = 1,1
+tilespacing = 0,0
+
+[BG brimstone1]
+type = normal
+spriteno = 14,1
+start = 0,0
+mask = 1
+layerno = 0
+velocity = -3,2
+tile = 1,1
+tilespacing = 0,0
+
+[BG brimstone1]
+type = normal
+spriteno = 14,1
+start = 0,0
+mask = 1
+layerno = 0
+velocity = -3,2
+tile = 1,1
+tilespacing = 0,0
+trans = sub
+
+[BG brimstone1]
+type = normal
+spriteno = 14,1
+start = 0,0
+mask = 1
+layerno = 0
+velocity = -1.5,2
+tile = 1,1
+tilespacing = 0,0
+
+[BG brimstone1]
+type = normal
+spriteno = 14,1
+start = 0,0
+mask = 1
+layerno = 0
+velocity = -1.5,2
+tile = 1,1
+tilespacing = 0,0
+trans = sub
+
+;--------------------------- layerno0 explods---------------
+
+[BG E4]
+type = anim
+start = -900,0
+actionno = 8
+mask = 1
+layerno = 0
+delta = 0.8,0.8
+
+[BG E4]
+type = anim
+start = -750,0
+actionno = 7
+mask = 1
+layerno = 0
+delta = 0.8,0.8
+
+[BG E4]
+type = anim
+start = -600,0
+actionno = 4
+mask = 1
+layerno = 0
+delta = 0.8,0.8
+
+[BG E0]
+type = anim
+start = -450,0
+actionno = 5
+mask = 1
+layerno = 0
+delta = 0.8,0.8
+
+[BG E1]
+type = anim
+start = -300,0
+actionno = 1
+mask = 1
+layerno = 0
+delta = 0.8,0.8
+
+[BG E2]
+type = anim
+start = -150,0
+actionno = 2
+mask = 1
+layerno = 0
+delta = 0.8,0.8
+
+[BG E3]
+type = anim
+start = 0,0
+actionno = 3
+mask = 1
+layerno = 0
+delta = 0.8,0.8
+
+[BG E4]
+type = anim
+start = 150,0
+actionno = 4
+mask = 1
+layerno = 0
+delta = 0.8,0.8
+
+[BG E5]
+type = anim
+start = 300,0
+actionno = 5
+mask = 1
+layerno = 0
+delta = 0.8,0.8
+
+[BG E6]
+type = anim
+start = 450,0
+actionno = 6
+mask = 1
+layerno = 0
+delta = 0.8,0.8
+
+[BG E7]
+type = anim
+start = 600,0
+actionno = 7
+mask = 1
+layerno = 0
+delta = 0.8,0.8
+
+[BG E8]
+type = anim
+start = 750,0
+actionno = 8
+mask = 1
+layerno = 0
+delta = 0.8,0.8
+
+[BG E9]
+type = anim
+start = 900,0
+actionno = 3
+mask = 1
+layerno = 0
+delta = 0.8,0.8
+
+;--------------------------- fire brim
+
+[BG brimstone1]
+type = normal
+spriteno = 14,2
+start = 0,0
+mask = 1
+layerno = 0
+velocity = -2.5,3
+tile = 1,1
+tilespacing = 0,0
+trans = add
+
+[BG brimstone1]
+type = normal
+spriteno = 14,2
+start = 0,0
+mask = 1
+layerno = 1
+velocity = -0.5,2
+tile = 1,1
+tilespacing = 0,0
+trans = add
+
+;--------------------------- desert stones )))))))))))))))))
+
+[BG stonez]
+type = normal
+spriteno = 12,3
+start = 0,165
+mask = 1
+layerno = 0
+delta = 0.7,1
+
+[BG stonez]
+type = normal
+spriteno = 12,4
+start = 1003,165
+mask = 1
+layerno = 0
+delta = 0.7,1
+
+[BG stonez]
+type = normal
+spriteno = 12,4
+start = -1003,165
+mask = 1
+layerno = 0
+delta = 0.7,1
+
+;--------------------------- layerno1 explods---------------
+
+[BG E0]
+type = anim
+start = -1050,20
+actionno = 6
+mask = 1
+layerno = 1
+delta = 1.2,1.2
+
+
+
+[BG E0]
+type = anim
+start = -750,20
+actionno = 2
+mask = 1
+layerno = 1
+delta = 1.2,1.2
+
+
+
+[BG E0]
+type = anim
+start = -350,20
+actionno = 5
+mask = 1
+layerno = 1
+delta = 1.2,1.2
+
+
+
+[BG E2]
+type = anim
+start = -50,20
+actionno = 2
+mask = 1
+layerno = 1
+delta = 1.2,1.2
+
+
+
+[BG E4]
+type = anim
+start = 250,20
+actionno = 4
+mask = 1
+layerno = 1
+delta = 1.2,1.2
+
+
+
+[BG E6]
+type = anim
+start = 550,20
+actionno = 6
+mask = 1
+layerno = 1
+delta = 1.2,1.2
+
+
+
+[BG E8]
+type = anim
+start = 850,20
+actionno = 8
+mask = 1
+layerno = 1
+delta = 1.2,1.2
+
+
+
+;-----------------------------------------------------------
+
+[BG floor1]
+type = normal
+start = 0,220
+spriteno = 1,1
+mask = 1
+layerno = 0
+tile = 1
+tilespacing = 400,0
+delta = 1,1
+
+[BG floor-1]
+type = normal
+spriteno = 1,2
+mask = 1
+layerno = 0
+tile = 1
+tilespacing = 400,0
+start = 400,220
+delta = 1,1
+
+;---------------------------------------------------------------------
+
+[Begin action 21]
+11,0,0,0,1,,A
+11,1,0,0,1,,A
+
+[Begin action 1]
+3,0,0,0,3
+3,1,0,0,3
+3,2,0,0,3
+3,3,0,0,3
+3,4,0,0,3
+3,5,0,0,3
+3,6,0,0,3
+3,7,0,0,3
+3,8,0,0,3
+3,9,0,0,3
+3,10,0,0,3
+3,11,0,0,3
+3,12,0,0,3
+3,13,0,0,3
+3,14,0,0,3
+3,15,0,0,3
+3,16,0,0,3
+3,17,0,0,3
+3,18,0,0,3
+3,19,0,0,3
+3,20,0,0,3
+3,21,0,0,3
+3,22,0,0,3
+3,23,0,0,3
+3,24,0,0,3
+3,25,0,0,3
+3,26,0,0,3
+3,27,0,0,3
+3,28,0,0,3
+3,29,0,0,3
+3,30,0,0,3
+3,31,0,0,3
+3,32,0,0,3
+3,33,0,0,3
+3,34,0,0,3
+3,35,0,0,3
+3,36,0,0,3
+3,37,0,0,3
+3,38,0,0,3
+3,39,0,0,3
+3,40,0,0,3
+
+
+[Begin action 2]
+4,0,0,0,6
+4,1,0,0,3
+4,2,0,0,3
+4,3,0,0,3
+4,4,0,0,3
+4,5,0,0,3
+4,6,0,0,3
+4,7,0,0,3
+4,8,0,0,3
+4,9,0,0,3
+4,10,0,0,3
+4,11,0,0,3
+4,12,0,0,3
+4,13,0,0,3
+4,14,0,0,3
+4,15,0,0,3
+4,16,0,0,3
+4,17,0,0,3
+4,18,0,0,3
+4,19,0,0,3
+4,20,0,0,3
+4,21,0,0,3
+4,22,0,0,3
+4,23,0,0,3
+4,24,0,0,3
+4,25,0,0,3
+4,26,0,0,3
+4,27,0,0,3
+4,28,0,0,3
+4,29,0,0,3
+4,30,0,0,3
+4,31,0,0,3
+4,32,0,0,3
+4,33,0,0,3
+4,34,0,0,3
+4,35,0,0,3
+4,36,0,0,3
+4,37,0,0,3
+4,38,0,0,3
+4,39,0,0,3
+4,40,0,0,3
+
+[Begin action 3]
+5,0,0,0,9
+5,1,0,0,3
+5,2,0,0,3
+5,3,0,0,3
+5,4,0,0,3
+5,5,0,0,3
+5,6,0,0,3
+5,7,0,0,3
+5,8,0,0,3
+5,9,0,0,3
+5,10,0,0,3
+5,11,0,0,3
+5,12,0,0,3
+5,13,0,0,3
+5,14,0,0,3
+5,15,0,0,3
+5,16,0,0,3
+5,17,0,0,3
+5,18,0,0,3
+5,19,0,0,3
+5,20,0,0,3
+5,21,0,0,3
+5,22,0,0,3
+5,23,0,0,3
+5,24,0,0,3
+5,25,0,0,3
+5,26,0,0,3
+5,27,0,0,3
+5,28,0,0,3
+5,29,0,0,3
+5,30,0,0,3
+5,31,0,0,3
+5,32,0,0,3
+5,33,0,0,3
+5,34,0,0,3
+5,35,0,0,3
+5,36,0,0,3
+5,37,0,0,3
+5,38,0,0,3
+5,39,0,0,3
+5,40,0,0,3
+
+[Begin action 4]
+6,0,0,0,12
+6,1,0,0,3
+6,2,0,0,3
+6,3,0,0,3
+6,4,0,0,3
+6,5,0,0,3
+6,6,0,0,3
+6,7,0,0,3
+6,8,0,0,3
+6,9,0,0,3
+6,10,0,0,3
+6,11,0,0,3
+6,12,0,0,3
+6,13,0,0,3
+6,14,0,0,3
+6,15,0,0,3
+6,16,0,0,3
+6,17,0,0,3
+6,18,0,0,3
+6,19,0,0,3
+6,20,0,0,3
+6,21,0,0,3
+6,22,0,0,3
+6,23,0,0,3
+6,24,0,0,3
+6,25,0,0,3
+6,26,0,0,3
+6,27,0,0,3
+6,28,0,0,3
+6,29,0,0,3
+6,30,0,0,3
+6,31,0,0,3
+6,32,0,0,3
+6,33,0,0,3
+6,34,0,0,3
+6,35,0,0,3
+6,36,0,0,3
+6,37,0,0,3
+6,38,0,0,3
+6,39,0,0,3
+6,40,0,0,3
+
+[Begin action 5]
+7,0,0,0,15
+7,1,0,0,3
+7,2,0,0,3
+7,3,0,0,3
+7,4,0,0,3
+7,5,0,0,3
+7,6,0,0,3
+7,7,0,0,3
+7,8,0,0,3
+7,9,0,0,3
+7,10,0,0,3
+7,11,0,0,3
+7,12,0,0,3
+7,13,0,0,3
+7,14,0,0,3
+7,15,0,0,3
+7,16,0,0,3
+7,17,0,0,3
+7,18,0,0,3
+7,19,0,0,3
+7,20,0,0,3
+7,21,0,0,3
+7,22,0,0,3
+7,23,0,0,3
+7,24,0,0,3
+7,25,0,0,3
+7,26,0,0,3
+7,27,0,0,3
+7,28,0,0,3
+7,29,0,0,3
+7,30,0,0,3
+7,31,0,0,3
+7,32,0,0,3
+7,33,0,0,3
+7,34,0,0,3
+7,35,0,0,3
+7,36,0,0,3
+7,37,0,0,3
+7,38,0,0,3
+7,39,0,0,3
+7,40,0,0,3
+
+
+[Begin action 6]
+8,0,0,0,18
+8,1,0,0,3
+8,2,0,0,3
+8,3,0,0,3
+8,4,0,0,3
+8,5,0,0,3
+8,6,0,0,3
+8,7,0,0,3
+8,8,0,0,3
+8,9,0,0,3
+8,10,0,0,3
+8,11,0,0,3
+8,12,0,0,3
+8,13,0,0,3
+8,14,0,0,3
+8,15,0,0,3
+8,16,0,0,3
+8,17,0,0,3
+8,18,0,0,3
+8,19,0,0,3
+8,20,0,0,3
+8,21,0,0,3
+8,22,0,0,3
+8,23,0,0,3
+8,24,0,0,3
+8,25,0,0,3
+8,26,0,0,3
+8,27,0,0,3
+8,28,0,0,3
+8,29,0,0,3
+8,30,0,0,3
+8,31,0,0,3
+8,32,0,0,3
+8,33,0,0,3
+8,34,0,0,3
+8,35,0,0,3
+8,36,0,0,3
+8,37,0,0,3
+8,38,0,0,3
+8,39,0,0,3
+8,40,0,0,3
+
+[Begin action 7]
+9,0,0,0,21
+9,1,0,0,3
+9,2,0,0,3
+9,3,0,0,3
+9,4,0,0,3
+9,5,0,0,3
+9,6,0,0,3
+9,7,0,0,3
+9,8,0,0,3
+9,9,0,0,3
+9,10,0,0,3
+9,11,0,0,3
+9,12,0,0,3
+9,13,0,0,3
+9,14,0,0,3
+9,15,0,0,3
+9,16,0,0,3
+9,17,0,0,3
+9,18,0,0,3
+9,19,0,0,3
+9,20,0,0,3
+9,21,0,0,3
+9,22,0,0,3
+9,23,0,0,3
+9,24,0,0,3
+9,25,0,0,3
+9,26,0,0,3
+9,27,0,0,3
+9,28,0,0,3
+9,29,0,0,3
+9,30,0,0,3
+9,31,0,0,3
+9,32,0,0,3
+9,33,0,0,3
+9,34,0,0,3
+9,35,0,0,3
+9,36,0,0,3
+9,37,0,0,3
+9,38,0,0,3
+9,39,0,0,3
+9,40,0,0,3
+
+[Begin action 8]
+10,0,0,0,24
+10,1,0,0,3
+10,2,0,0,3
+10,3,0,0,3
+10,4,0,0,3
+10,5,0,0,3
+10,6,0,0,3
+10,7,0,0,3
+10,8,0,0,3
+10,9,0,0,3
+10,10,0,0,3
+10,11,0,0,3
+10,12,0,0,3
+10,13,0,0,3
+10,14,0,0,3
+10,15,0,0,3
+10,16,0,0,3
+10,17,0,0,3
+10,18,0,0,3
+10,19,0,0,3
+10,20,0,0,3
+10,21,0,0,3
+10,22,0,0,3
+10,23,0,0,3
+10,24,0,0,3
+10,25,0,0,3
+10,26,0,0,3
+10,27,0,0,3
+10,28,0,0,3
+10,29,0,0,3
+10,30,0,0,3
+10,31,0,0,3
+10,32,0,0,3
+10,33,0,0,3
+10,34,0,0,3
+10,35,0,0,3
+10,36,0,0,3
+10,37,0,0,3
+10,38,0,0,3
+10,39,0,0,3
+10,40,0,0,3

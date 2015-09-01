@@ -1,0 +1,35 @@
+
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="mileena"
+displayname  ="Mileena MKII"
+versiondate  =06,03,2001
+mugenversion =04,01,2001
+pal.defaults =1,2
+author="Fly, Aice Man"
+
+;-------------------------------------------
+
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =mileena_mk2.sff
+anim     =mileena_mk2.air
+sound    =1.snd
+pal1=mileena_mk2_pal1.act
+pal2=mileena_mk2_pal2.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Finishers.st
+
+;-------------------------------------------
+[Arcade]
+intro.storyboard= intro\intro.def
+ending.storyboard= end\end.def 
+

@@ -1,0 +1,69 @@
+[Info]
+name = "MKWORLD Warzone"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -224
+boundright = 224
+boundhigh = -155
+boundlow = 0
+verticalfollow = .1
+tension = 89
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 3
+screenright = 3
+[StageInfo]
+zoffset = 215
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+color = 128,128,128
+yscale = .3
+
+[Music]
+bgmusic = sound/MKWORLD Tibet's Mountains.mp3
+bgvolume = 255
+
+[BGDef]
+spr = stages/MKWORLD Warzone.sff
+
+[BG 0]
+type = Anim
+actionno = 0
+start = 0,240
+delta = 0.645,1
+
+
+[Begin Action 0]
+0,0,0,0,3 
+0,1,0,0,3
+0,2,0,0,3
+
+
+
+

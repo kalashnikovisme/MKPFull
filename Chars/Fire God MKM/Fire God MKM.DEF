@@ -1,0 +1,41 @@
+FIRE GOD MORTAL KOMBAT         
+MADE BY FIREBOY
+
+
+HOME PAGE
+
+http://fireboymugen.webs.com/
+
+
+RELEASED 10/11/08
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         = "FIRE GOD"
+displayname  = "Fire God MKM"
+versiondate  = 06,11,2008
+mugenversion = 04,01,2001
+pal.defaults = 1
+author="FIRE BOY"
+;-------------------------------------------
+
+[Files]
+cmd      = LHK003.ARM
+cns      = TFM.MDF
+st       = TFM.MDF
+st2      = TXF.MD
+st3      = LHK001.ROOT
+st4      = TXP.MDX
+st5      = LHK004.AR
+st6      = LHK005.BR
+stcommon = FK.SK
+sprite   = LHK008.SFF
+anim     = LHK002.LFL
+sound    = XW.SND
+pal1     = FG.SK
+
+
+[Arcade]
+ending.storyboard= mkend\mkend.def
+

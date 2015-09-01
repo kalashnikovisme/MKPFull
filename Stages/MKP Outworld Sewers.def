@@ -1,0 +1,64 @@
+[Info]
+name = "MKP Outworld Sewers"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -130
+boundright = 430
+boundhigh = -90
+boundlow = 0
+verticalfollow = .9
+floortension = 0
+tension = 50
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 170
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 64,64,64
+yscale = -1.2
+reflect = 0
+
+[Music]
+bgmusic = sound/Good (24).mp3
+bgvolume = 1024
+
+[BGdef]
+spr = MKP Outworld Sewers.sff
+debugbg = 0
+
+[BG 0]
+type  = normal
+spriteno = 1, 0
+start = 0, -40
+delta = 1, 1
+mask = 0

@@ -1,0 +1,39 @@
+; Player information
+[Info]
+name ="Nightwolf"
+displayname ="Nightwolf MKIII"
+versiondate =06,03,2001
+mugenversion =04,01,2001
+pal.defaults =1,2,3,4,5,7  
+author=""
+
+; Files for the player
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =nightwolf.sff
+anim     =nightwolf.air
+sound   =1.snd
+pal1=nightwolf_p1.act
+pal2=nightwolf_p2.act
+pal3=Nightwolf_p3_red.act
+pal4=Nightwolf_p4_green.act
+pal5=Nightwolf_p5_moon1.act
+pal6=Nightwolf_p6_moon2.act
+pal7=Nightwolf_p6_moon2.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Finishers.st
+st6=Kombos.st
+st7=sp2.st
+
+; Arcade mode
+
+[Arcade]
+intro.storyboard = mk3nightwolfintro\mk3nightwolfintro.def
+ending.storyboard = mk3nightwolfend\mk3nightwolfend.def
+

@@ -1,0 +1,264 @@
+
+;stage wind
+
+;By Markos -----------markossokram3@hotmail.com
+
+
+;thanks to kyo-k for the rain.
+
+[Info]
+NAME = "MKIV wind"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -159
+boundright = 175
+boundhigh = -15;0
+boundlow = 10
+verticalfollow = .2;3
+
+;verticalfollow = .6
+floortension = 2
+tension = 50
+
+[PlayerInfo]
+p1startx = -83
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 83
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 35
+screenright = 35
+
+[StageInfo]
+zoffset = 204
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 128,128,128
+yscale = 1
+
+[Music]
+bgmusic = sound/RAIN.mp3
+bgvolume = 255
+
+
+[BGdef]
+spr = stages/MKIV_wind.sff
+
+
+
+
+;----------
+[BG fondo] 
+type  = normal
+spriteno = 0, 1
+start = -180,0;0, 250
+delta = 0,0;
+;mask  = 1
+
+
+
+[BG rayos]
+type  = anim
+actionno = 3
+start = 0,90
+mask = 1
+
+[BG rayos]
+type  = anim
+actionno = 4
+start = 0,90
+mask = 1
+
+[BG rayos]
+type  = anim
+actionno = 5
+start = 0,90
+mask = 1
+
+[BG Floor] 
+type  = normal
+spriteno = 0, 0
+layerno = 0               
+start = 0, 250
+delta = 1
+mask  = 1
+
+
+[BG rain7]
+type  = anim
+actionno = 1
+start = -400, 10
+delta = 1.1, 1.1
+mask = 1
+layerno = 1
+
+[BG rain8]
+type  = anim
+actionno = 1
+start = 150, 10
+delta = 1.1, 1.1
+mask = 1
+layerno = 1
+
+[BG rain9]
+type  = anim
+actionno = 1
+layerno = 0
+start = -450, -25
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain10]
+type  = anim
+actionno = 1
+layerno = 0
+start = 150, -25
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain11]
+type  = anim
+actionno = 1
+layerno = 1
+start = -500, -10
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain12]
+type  = anim
+actionno = 1
+layerno = 1
+start = 50, -10
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain13]
+type  = anim
+actionno = 1
+layerno = 1
+start = -300, 0
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain14]
+type  = anim
+actionno = 1
+layerno = 1
+start = 200, 0
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain15]
+type  = anim
+actionno = 1
+start = -400, 10
+delta = 1.1, 1.1
+mask = 1
+layerno = 1
+
+[BG rain16]
+type  = anim
+actionno = 1
+start = 150, 10
+delta = 1.1, 1.1
+mask = 1
+layerno = 1
+
+[BG rain1]
+type  = anim
+actionno = 1
+layerno = 0
+start = -450, -75
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain2]
+type  = anim
+actionno = 1
+layerno = 0
+start = 150, -75
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain3]
+type  = anim
+actionno = 1
+layerno = 1
+start = -500, 20
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain4]
+type  = anim
+actionno = 1
+layerno = 1
+start = 50, 20
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain5]
+type  = anim
+actionno = 1
+layerno = 1
+start = -300, 20
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain6]
+type  = anim
+actionno = 1
+layerno = 1
+start = 200, 20
+delta = 1.1, 1.1
+mask = 1
+
+[Begin Action 1] 
+30,0, 0,0, 1,,A
+30,1, 0,0, 1,,A
+30,2, 0,0, 1,,A
+30,3, 0,0, 1,,A
+30,4, 0,0, 1,,A
+30,5, 0,0, 1,,A
+30,6, 0,0, 1,,A
+30,7, 0,0, 1,,A
+
+[Begin Action 3]
+8, 0, 0, 0, 70
+1, 1, 112, 0, 15, , A
+8, 0, 0, 0, 65
+1, 0, -194, 0, 18, H, A
+
+[Begin Action 4]
+8, 0, 0, 0, 90
+1, 1, -110, 0, 18, H, A
+8, 0, 0, 0, 80
+1, 0, 176, 1, 17, , A
+
+[Begin Action 5]
+8, 0, 0, 0, 30
+1, 0, 0, 0, 16, , A
+8, 0, 0, 0, 120
+1, 1, 0, 0, 15, H, A
+8, 0, 0, 0, 60
+

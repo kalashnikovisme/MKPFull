@@ -1,0 +1,241 @@
+[Info]
+name = "MKP Satan's Trench"
+Author = "EXShadow"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -150
+boundright = 150
+boundhigh = -170
+verticalfollow = .75
+floortension = 40
+tension = 50
+boundlow = 0
+
+[PlayerInfo]
+p1startx = -75          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+p2startx = 75
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+[PlayerInfo]
+p1startx = -70          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+ ;No need to change these values
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1.0   ;Scale to use at top
+botscale = 1.4   ;Scale to use at bottom
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 15 ;Dist from left of screen that player can move to
+screenright = 15 ;Right edge
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 200
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+ ;This controls the darkness of the shadow. Valid values range
+ ;from 0 (lightest) to 256 (darkest). Defaults to 128 if omitted.
+intensity = 0
+
+ ;This is the shadow color given in r,g,b. Valid values for each
+ ;range from 0 (lightest) to 255 (darkest).
+ ;Defaults to 0,0,0 if omitted.
+ ;intensity and color's effects add up to give the final shadow
+ ;result.
+color = 0,0,0
+
+ ;This is the scale factor of the shadow. Use a big scale factor
+ ;to make the shadow longer. You can use a NEGATIVE scale factor
+ ;to make the shadow fall INTO the screen.
+ ;Defaults to 0.4 if omitted.
+yscale = -.1
+
+ ;This parameter lets you set the range over which the shadow is
+ ;visible. The first value is the high level, and the second is
+ ;the middle level. Both represent y-coordinates of the player.
+ ;A shadow is invisible if the player is above the high level,
+ ;and fully visible if below the middle level. The shadow is
+ ;faded in between the two levels. This gives an effect of the
+ ;shadow fading away as the player gets farther away from the
+ ;ground. If omitted, defaults to no level effects (shadow is
+ ;always fully visible).
+fade.range = -400,-100
+
+;--------------------------------------------------------
+[Reflection]
+ ;Intensity of reflection (from 0 to 256). Set to 0 to have no
+ ;reflection. Defaults to 0.
+intensity = 100
+
+;--------------------------------------------------------
+[Music]
+bgmusic = sound/IIIym I.mp3
+bgvolume = 1555
+
+;-------------------------------------
+; Main background definition
+[BGdef]
+spr = MKP Satan's Trench.sff
+debugbg = 0
+[BG black]
+type  = normal
+spriteno = 0, 0
+delta = 1, 1
+mask = 0
+tile = 1, 1
+layerno = 0
+
+[BG tree]
+type  = normal
+spriteno = 5, 0
+delta = .85, 1
+mask = 1
+layerno = 0
+
+[BG tree]
+type  = normal
+spriteno = 5, 1
+delta = .85, 1
+mask = 1
+layerno = 0
+
+[BG tree]
+type  = normal
+spriteno = 5, 2
+delta = .85, 1
+mask = 1
+layerno = 0
+
+[BG tree]
+type  = normal
+spriteno = 5, 3
+delta = .85, 1
+mask = 1
+layerno = 0
+
+[BG skulls]
+type  = normal
+spriteno = 6, 0
+delta = .85, 1
+mask = 1
+tile = 1, 1
+trans = addalpha
+alpha = 200,256
+velocity = 0,-1.2
+layerno = 0
+
+[BG fog]
+type  = normal
+spriteno = 8, 0
+delta = .4,1
+mask = 1
+velocity = -.40, 0
+tile = 1, 0
+trans = addalpha
+alpha = 150,256
+layerno = 0
+
+[BG fog1]
+type  = normal
+spriteno = 8, 0
+delta = .4,1
+mask = 1
+velocity = .40, 0
+tile = 1, 0
+trans = addalpha
+alpha = 120,256
+layerno = 0
+
+[BG fogx]
+type  = normal
+spriteno = 7, 0
+delta = .4,1
+mask = 1
+velocity = 2, 0
+tile = 1, 0
+trans = none
+layerno = 1
+
+[BG fogx1]
+type  = normal
+spriteno = 2, 0
+delta = .4,1
+mask = 1
+velocity = 3, 0
+tile = 1, 0
+trans = addalpha
+alpha = 170,256
+layerno = 1
+
+[BG GRASS]
+type  = normal
+spriteno = 3, 0
+delta = 1, 1
+mask = 1
+tile = 1, 0
+layerno = 0
+
+[BG peice]
+type  = normal
+spriteno = 4, 1
+delta = 1, 1
+mask = 0
+tile = 1, 0
+layerno = 0
+
+[BG FLOOR]
+type  = normal
+spriteno = 1, 0
+delta = 1, 1
+mask = 0
+tile = 1, 0
+layerno = 0
+
+[BG trees]
+type  = normal
+spriteno = 9, 0
+delta = 1, 1
+mask = 1
+layerno = 1
+
+[BG peice]
+type  = normal
+spriteno = 4, 0
+delta = 1, 1
+mask = 0
+tile = 1, 0
+layerno = 1

@@ -1,0 +1,109 @@
+;--------------------------------------------------------
+;stage MK-MYTHO-FIRE-1 por shammahalfa1
+;--------------------------------------------------------
+;e-mail:  shammahnissi@hotmail.com
+
+;--------------------------------------------------------
+
+[Info]
+name =  "MKM FIRE PIT"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -267
+boundright = 267
+boundhigh = -220
+boundlow = 0
+verticalfollow = 1.50
+floortension = 100
+tension = 100
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0            
+p1startz = 0           
+p1facing = 1            
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0    
+botbound  =  0   
+
+[Scaling]
+topz     = 0      
+botz     = 50    
+topscale = 1      
+botscale = 1.2    
+
+[Bound]
+screenleft = 25
+screenright = 25
+
+[StageInfo]
+zoffset   = 210
+autoturn  = 1  
+resetBG  = 0       
+  
+
+[Shadow]
+intensity =128,128,128
+colour = 0,0,0
+yscale = .2
+ 
+[reflection]
+intensity = 0
+
+
+[Music]
+
+bgmusic =sound/MKM III.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/MKM FIRE PIT.sff
+debugbg = 0   
+
+
+
+
+[BG   rocas de fuego ]
+type  =anim
+actionno = 0      
+start = 0, 0
+delta =.65,.95
+mask  = 0
+
+
+
+[Begin action 0]
+0,0,0,0,10
+0,1,0,0,10
+
+
+
+
+[BG   puente ]
+type  =normal
+spriteno = 1,0      
+start = 0, 0
+delta =.90,.95
+mask  = 1
+
+
+
+
+[BG  frente ]
+type  =normal
+spriteno = 2,0
+layerno=1       
+start = 0, 0
+delta =  .90,.95
+mask  = 1
+
+

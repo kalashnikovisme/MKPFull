@@ -1,0 +1,103 @@
+
+
+[Info]
+name="MKP Dead pool Entrance I"
+;Created By: Gary Fisher 
+;"Ermac" on mugenguild.com forums.
+
+[Camera]
+startx=0
+starty=0
+boundleft=-35
+boundright=35
+boundhigh=-15
+boundlow=0
+verticalfollow=0
+floortension=0
+tension=60
+
+[PlayerInfo]
+p1startx=-70
+p1starty=0
+p1startz=0
+p1facing=1
+p2startx=70
+p2starty=0
+p2startz=0
+p2facing=-1
+
+leftbound=-1000
+rightbound=500
+topbound=0
+botbound=0
+
+[Scaling]
+topz=0
+botz=50
+topscale=1
+botscale=1.2
+
+[Bound]
+screenleft=15  
+screenright=15
+
+
+[StageInfo]
+zoffset=220
+autoturn=1
+resetBG=0
+
+[Shadow]
+color=38,38,38
+yscale=.1
+
+[Music]
+
+bgmusic= sound/MKIV Elder gods.mp3
+bgvolume=255
+
+[BGdef]
+spr=stages/MKP Dead pool Entrance I.sff
+debugbg=0
+
+
+[BG background] ;
+type=anim
+actionno=1
+layerno = 0
+start=0,0
+delta=1,1
+mask=1
+
+[BG floor] ;
+type=anim
+actionno=0
+layerno = 0
+start=0,0
+delta=1,1
+mask=1
+
+
+[Begin Action 0]
+0,0,0,0,15
+0,1,0,0,15
+0,2,0,0,15
+0,3,0,0,15
+0,4,0,0,15
+0,5,0,0,15
+0,6,0,0,15
+0,7,0,0,15
+0,8,0,0,15
+0,9,0,0,15
+
+[Begin Action 1]
+1,0,0,0,5
+1,1,0,0,5
+1,2,0,0,5
+1,3,0,0,5
+1,4,0,0,5
+1,5,0,0,5
+1,6,0,0,5
+1,7,0,0,5
+1,8,0,0,5
+1,9,0,0,5

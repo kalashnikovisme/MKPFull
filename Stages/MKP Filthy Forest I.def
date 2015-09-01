@@ -1,0 +1,214 @@
+;--------------------------------------------------------
+[Info]
+name = "MKP Filthy Forest I"
+
+;--------------------------------------------------------
+[Camera]
+startx = 100
+starty = 0
+boundleft = -530
+boundright = 530
+boundhigh = 0
+boundlow = 0
+verticalfollow = .6
+tension = 90
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -20          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+;--- Player 2 ---
+p2startx = 140 ;180
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+leftbound  = -970 ;Left bound (x-movement)
+rightbound =  1500 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+;--------------------------------------------------------
+[Bound]
+screenleft = 30    ;Dist from left of screen that player can move to
+screenright = 30   ;Right edge
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 225
+autoturn = 1
+resetBG = 0
+;--------------------------------------------------------
+[Shadow]
+yscale = .3
+color = 0,0,0
+intensity = 60
+;--------------------------------------------------------
+[Music]
+bgmusic = sound/MKWORLD VII.mp3
+bgvolume = 255
+;--------------------------------------------------------
+
+[BGdef]
+spr = stages/MKP Filthy Forest I.sff
+debugbg = 0
+
+[BG Black]
+type  = Normal
+spriteno = 0, 7
+start = 0,0
+tile = 1, 1
+mask = 1
+
+[BG Trees Back]
+type  = Normal
+spriteno = 0, 11
+start = -205, -70
+tile = 0, 0
+delta = .1, .1
+
+[BG Farest Fog]
+type  = Normal
+spriteno = 0, 5
+start = 0, -25
+tile = 1, 1
+velocity = -1, 0
+trans = add1
+delta = 1, 1
+layerno = 0
+
+[BG Trees Farest]
+type  = Normal
+spriteno = 0, 10
+start = -494, -120
+tile = 0, 0
+delta = .3, .3
+mask = 1
+
+[BG Trees Far]
+type  = Normal
+spriteno = 0, 4
+start = -494, -80
+tile = 1, 0
+delta = .5, .5
+mask = 1
+
+[BG Trees]
+type  = Normal
+spriteno = 0, 3
+start = -494, -150
+tile = 1, 0
+delta = .6, .6
+mask = 1
+
+[BG Fire Flies 1]
+type  = anim
+actionno = 1
+trans = add1
+start = -100, 75
+tile = 1, 1
+tilespacing = 400,400
+velocity = .15, .3
+delta = 1, 1
+mask = 1
+layerno = 1
+
+[BG Trees Near]
+type  = Normal
+spriteno = 0, 2
+start = -440, -110
+tile = 0, 0
+delta = .8, 1
+mask = 1
+
+[BG Floor/Trees]
+type  = Normal
+spriteno = 0, 3
+start = -180, -110
+tile = 1, 0
+delta = 1, 1
+mask = 1
+
+[BG Fire Flies 2]
+type  = anim
+actionno = 2
+trans = add1
+start = 0, 145
+tile = 1, 1
+tilespacing = 400,400
+velocity = .25, -.2
+delta = 1, 1
+mask = 1
+layerno = 0
+
+[BG Fire Flies 3]
+type  = anim
+actionno = 1
+trans = add1
+start = -200, 75
+tile = 1, 1
+tilespacing = 400,400
+velocity = -.2, -.5
+delta = 1, 1
+mask = 1
+layerno = 0
+
+[BG Closest Fog]
+type  = Normal
+spriteno = 0, 9
+trans = add
+start = 0, 175
+tile = 1, 0
+velocity = -.5, 0
+delta = 1, 1
+mask = 1
+layerno = 1
+
+[BG Closest Fog2]
+type  = Normal
+spriteno = 0, 9
+trans = add
+start = 200, 145
+tile = 1, 0
+velocity = -1.2, 0
+delta = 1, 1
+mask = 1
+layerno = 1
+
+[BG Trees In Front]
+type  = Normal
+spriteno = 0, 1
+start = -300, -110
+tile = 1, 0
+delta = 1.4, 1.4
+mask = 1
+layerno = 1
+
+[Begin Action 1]
+99,99,99,99,70
+1,4,0,0,3,,a
+1,3,0,0,3,,a
+1,2,0,0,3,,a
+1,1,0,0,20,,a
+1,2,0,0,3,,a
+1,3,0,0,3,,a
+1,4,0,0,3,,a
+
+[Begin Action 2]
+99,99,99,99,90
+1,4,0,0,4,,a
+1,3,0,0,4,,a
+1,2,0,0,4,,a
+1,1,0,0,17,,a
+1,2,0,0,4,,a
+1,3,0,0,4,,a
+1,4,0,0,4,,a

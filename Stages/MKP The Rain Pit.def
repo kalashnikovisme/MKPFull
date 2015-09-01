@@ -1,0 +1,390 @@
+;--------------------------------------------------------
+; Stage   : The Rain Pit
+; Version : 1.0
+; Autor   : RatonMalo, Ermac-210
+; Mail    : elratonmalo@hotmail.com
+; Web     : http://www.geocities.jp/ratonmalo_ar/
+;--------------------------------------------------------
+
+[Info]
+name           = "MKP The Rain Pit"
+
+;--------------------------------------------------------
+
+[Camera]
+startx         = 0
+starty         = 0
+boundleft      = -351
+boundright     =  404
+boundhigh      = -15
+boundlow       =  0
+verticalfollow = .1
+;floortension  = 50
+tension        = 50
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx       = -80
+p1starty       = 0
+p1startz       = 0
+p1facing       = 1
+
+p2startx       = 80
+p2starty       = 0
+p2startz       = 0
+p2facing       = -1
+
+leftbound  = -1000 
+rightbound = 1000
+topbound       =  0
+botbound       =  0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz           = 0       
+botz           = 50     
+topscale       = 1       
+botscale       = 1.2     
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft     = 35
+screenright    = 35
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset        = 0
+zoffsetlink    = 1
+autoturn       = 1
+resetBG        = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+color          = 0,0,0
+yscale         = 0
+reflect        = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic        = sound/RAIN.mp3
+bgvolume       = 255
+loop = 1
+
+;--------------------------------------------------------
+
+[BGdef]
+spr            = stages/MKP The Rain Pit.sff
+debugbg        = 0
+
+;--------------------------------------------------------
+[BG z]
+type  = dummy
+start = 0, 223     ; <-------- initial Z-Offset = 220
+id = 1
+
+[BGCtrl stageID 1]
+type = PosSet
+time = 1
+y = 9776
+ctrlID = 1
+
+; Back to normal
+[BGCtrl stageID 2]
+type = PosSet
+time = 4
+y = -13
+ctrlID = 1
+
+[BG Fondo]
+type  = normal
+spriteno = 1,0
+delta = 1,1
+mask  = 0
+tile = 1,0
+
+[BG Puente]
+type  = normal
+spriteno = 1,7
+delta = 1,1
+mask  = 1
+
+[BG Puente]
+type  = normal
+spriteno = 1,6
+delta = 1,1
+mask  = 1
+layerno = 1
+;###################
+;    LLUVIA
+;###################
+[BG rain7]
+type  = anim
+actionno = 1
+start = -400, 0
+delta = 1.1, 1.1
+mask = 1
+layerno = 1
+
+[BG rain8]
+type  = anim
+actionno = 1
+start = 150, 0
+delta = 1.1, 1.1
+mask = 1
+layerno = 1
+
+[BG rain11]
+type  = anim
+actionno = 1
+layerno = 1
+start = -500, 3
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain12]
+type  = anim
+actionno = 1
+layerno = 1
+start = 50, -3
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain13]
+type  = anim
+actionno = 1
+layerno = 1
+start = -300, 3
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain14]
+type  = anim
+actionno = 1
+layerno = 1
+start = 200, 3
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain15]
+type  = anim
+actionno = 1
+start = -400, 3
+delta = 1.1, 1.1
+mask = 1
+layerno = 1
+
+[BG rain16]
+type  = anim
+actionno = 1
+start = 150, 3
+delta = 1.1, 1.1
+mask = 1
+layerno = 1
+
+[BG rain3]
+type  = anim
+actionno = 1
+layerno = 1
+start = -500, 5
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain4]
+type  = anim
+actionno = 1
+layerno = 1
+start = 50, 5
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain5]
+type  = anim
+actionno = 1
+layerno = 1
+start = -300, 5
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain6]
+type  = anim
+actionno = 1
+layerno = 1
+start = 200, 5
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain11]
+type  = anim
+actionno = 1
+layerno = 1
+start = -500, 3
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain12]
+type  = anim
+actionno = 1
+layerno = 1
+start = 50, -3
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain13]
+type  = anim
+actionno = 1
+layerno = 1
+start = -300, 3
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain14]
+type  = anim
+actionno = 1
+layerno = 1
+start = 200, 3
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain15]
+type  = anim
+actionno = 1
+start = -400, 3
+delta = 1.1, 1.1
+mask = 1
+layerno = 1
+
+[BG rain16]
+type  = anim
+actionno = 1
+start = 150, 3
+delta = 1.1, 1.1
+mask = 1
+layerno = 1
+
+[BG rain3]
+type  = anim
+actionno = 1
+layerno = 1
+start = 800, 5
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain4]
+type  = anim
+actionno = 1
+layerno = 1
+start = 350, 5
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain5]
+type  = anim
+actionno = 1
+layerno = 1
+start = 850, 5
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain6]
+type  = anim
+actionno = 1
+layerno = 1
+start = 900, 5
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain11]
+type  = anim
+actionno = 1
+layerno = 1
+start = 875, 3
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain12]
+type  = anim
+actionno = 1
+layerno = 1
+start = 999, -3
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain13]
+type  = anim
+actionno = 1
+layerno = 1
+start = 999, 3
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain14]
+type  = anim
+actionno = 1
+layerno = 1
+start = 925, 3
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain15]
+type  = anim
+actionno = 1
+start = 875, 3
+delta = 1.1, 1.1
+mask = 1
+layerno = 1
+
+[BG rain16]
+type  = anim
+actionno = 1
+start = 968, 3
+delta = 1.1, 1.1
+mask = 1
+layerno = 1
+
+[BG rain3]
+type  = anim
+actionno = 1
+layerno = 1
+start = 800, 5
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain4]
+type  = anim
+actionno = 1
+layerno = 1
+start = 850, 5
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain5]
+type  = anim
+actionno = 1
+layerno = 1
+start = 985, 5
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain6]
+type  = anim
+actionno = 1
+layerno = 1
+start = 975, 5
+delta = 1.1, 1.1
+mask = 1
+;--------------------------------------------------------
+[Begin Action 1]
+2,0, 0,0, 4,,A
+2,1, 0,0, 4,,A
+2,2, 0,0, 4,,A
+2,3, 0,0, 4,,A
+2,4, 0,0, 4,,A
+2,5, 0,0, 4,,A
+2,6, 0,0, 4,,A
+2,7, 0,0, 4,,A

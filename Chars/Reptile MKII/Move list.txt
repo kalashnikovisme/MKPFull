@@ -1,0 +1,55 @@
+Reptile MKII ganhou novos movimentos e novas animações
+fara seu combo que esta de arrassar,modificações
+por Aice-Man!
+
+REPTILE MKII
+---------------
+
+Slide Kick = a + b
+
+Elbow Drop = B,F + b
+
+Acid Spit = F,F + x
+
+Slow Acid Ball = B,B + a
+
+Fast Acid Ball = F,F + a
+
+Invisible = D, D + y
+
+TeleportReptile = F,F + b( pode ser veio durante o
+pulo)
+
+Combos:
+-------
+
+HK,HK,HP,HP,HP,HP
+
+HK,HK,HP,HP, (N) LP
+
+HP,HP, (N) LP
+
+HP,HP, (N) D + HP
+
+HP,HP, (N) F,F + HP'
+
+HP,HP, (N) LP + LK
+
+HK,HK,HP,HP, (N) F,F + HP
+
+HK,HK,HP,HP, (N) D + HP
+
+HK,HK,HP,HP, (N) LP + LK
+
+HK,HK,HP,HP, (N) HK,HK, Back + HK
+
+HK,HK,HP,HP, (N) HK,HK,HP,HP, (N)..........Infinite
+
+HK,HK, Back + HK
+
+Fatality:
+---------
+
+D,U (a dois passos)(sweep range)
+
+B,D,B(a media distancia)( decapitacion)

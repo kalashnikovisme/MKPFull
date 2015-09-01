@@ -1,0 +1,420 @@
+
+REALM OF MIST V2 by ATHEIS
+;--------------------------------------------------------
+
+[Info]
+name = "MKP Realm of mist I"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -345
+boundright = 350
+boundhigh = -800
+boundlow = 0
+verticalfollow = 1
+floortension = 80
+tension = 60
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -10500
+rightbound =  10500
+topbound  = 0
+botbound  = 0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft = 22
+screenright = 22
+
+;--------------------------------------------------------
+
+[StageInfo]
+
+zoffset = 217
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+
+color = 100,100,100
+yscale = -.2
+reflect = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound\MKA Lumbermill.mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+
+[BGdef]
+spr = MKP_Realm_of_mist_I.sff
+debugbg = 0
+
+;--------------------------------------------------------
+
+[BG stars]
+type  = normal
+spriteno = 5, 0
+delta = .3, .3
+tile = 1, 1
+
+[bg moonmist]
+type  = normal
+spriteno = 5, 1
+delta = .3, .3
+trans = add
+
+[bg moon]
+type  = normal
+spriteno = 5, 2
+delta = .3, .3
+mask = 1
+
+[BG cloud3]
+type  = normal
+spriteno = 5,3
+layerno = 0
+delta = 1, 1
+velocity = 1
+trans = add
+xscale = 1, 0
+yscalestart = 100
+yscaledelta = 3
+tile = 1,0
+
+[BG cloud]
+type  = normal
+spriteno = 6,6
+layerno = 0
+start = 0, 181
+delta = 1, 1
+velocity = 1
+trans = add
+xscale = 1, 0
+yscalestart = 100
+yscaledelta = 3
+tile = 1,0
+
+[BG crows]
+type = anim
+actionno = 2
+delta = 1,1
+start = 300,90
+velocity = -1.3,0
+tile = 1,0
+mask = 1
+tilespacing = 1680, 0
+
+[BG Left Fire]
+type = Anim
+actionno = 1
+trans = add
+start = -183, 0
+mask = 1
+
+[BG Right Fire]
+type = Anim
+actionno = 1
+trans = add
+start = 0, 0
+mask = 1
+
+[bg r fire tray]
+type  = normal
+spriteno = 6, 9
+start = 0, 0
+mask = 1
+
+[bg l fire tray]
+type  = normal
+spriteno = 6, 9
+start = -183, 0
+mask = 1
+
+[bg sat]
+type  = normal
+spriteno = 6, 7
+mask = 1
+
+[bg sat1]
+type  = normal
+spriteno = 6, 8
+mask = 1
+
+[BG Floor mist2]
+type  = normal
+spriteno = 11,0
+layerno = 1
+start =  0, 1650
+delta = 1, 1
+velocity = 1,0
+trans = add
+xscale = 1, 0
+yscalestart = 100
+yscaledelta = 3
+tile = 1,0
+
+[BG Floor mist1]
+type  = normal
+spriteno = 11,0
+layerno = 1
+start = 0, 181
+delta = 1, 1
+velocity = 1,0
+trans = add
+xscale = 1, 0
+yscalestart = 100
+yscaledelta = 3
+tile = 1,0
+
+[BG PLATFORM]
+type  = normal
+spriteno = 5, 4
+delta = 1,1
+mask  = 1
+
+[BG demon]
+type  = normal
+spriteno = 5, 10
+delta = 1,1
+mask  = 1
+
+[BG demon1]
+type  = normal
+spriteno = 5, 10
+start = -417, 0
+delta = 1,1
+mask  = 1
+
+[BG stat3]
+type  = normal
+spriteno = 8, 0
+mask  = 1
+
+[BG acid cloud]
+type = anim
+actionno = 3
+delta = 1, 1
+trans = add
+mask  = 0
+
+[BG pot of acid]
+type  = normal
+spriteno = 7, 10
+mask  = 1
+layerno = 0
+
+[BG acid mist]
+type  = anim
+spriteno = 10,10
+actionno = 7
+delta = 1,1
+start = -133,40
+trans = add
+xscale = 1, 0
+yscalestart = 100
+yscaledelta = 3
+
+[Begin action 2]
+6,0, 0,0, 4
+6,1, 0,0, 4
+6,2, 0,0, 4
+6,3, 0,0, 4
+6,4, 0,0, 4
+6,5, 0,0, 4
+
+[Begin action 1]
+6,10,0,0, 5, , a
+6,11,0,0, 5, , a
+6,12,0,0, 5, , a
+6,13,0,0, 5, , a
+6,14,0,0, 5, , a
+6,10,0,0, 5, ,a
+6,11,0,0, 5, , a
+6,12,0,0, 5, , a
+6,13,0,0, 5, , a
+6,14,0,0, 5, , a
+6,10,0,0, 5, , a
+6,11,0,0, 5, , a
+6,12,0,0, 5, , a
+6,13,0,0, 4, , a
+6,14,0,0, 4, , a
+6,10,0,0, 3, , a
+6,11,0,0, 3, , a
+6,12,0,0, 3, , a
+6,13,0,0, 3, , a
+6,14,0,0, 3, , a
+
+[Begin action 3]
+9,1,0,0, 4, ,a
+9,2,0,0, 4, ,a
+9,3,0,0, 4, ,a
+9,4,0,0, 4, ,a
+9,5,0,0, 4, ,a
+9,6,0,0, 4, ,a
+9,7,0,0, 4, ,a
+9,8,0,0, 4, ,a
+9,1,0,0, 4, ,a
+9,2,0,0, 4, ,a
+9,3,0,0, 4, ,a
+9,4,0,0, 4, ,a
+9,5,0,0, 4, ,a
+9,6,0,0, 4, ,a
+9,7,0,0, 4, ,a
+9,8,0,0, 4, ,a
+9,1,0,0, 4, ,a
+9,2,0,0, 4, ,a
+9,3,0,0, 4, ,a
+9,4,0,0, 4, ,a
+9,5,0,0, 4, ,a
+9,6,0,0, 4, ,a
+9,7,0,0, 4, ,a
+9,8,0,0, 4, ,a
+9,1,0,0, 4, ,a
+9,2,0,0, 4, ,a
+9,3,0,0, 4, ,a
+9,4,0,0, 4, ,a
+9,5,0,0, 4, ,a
+9,6,0,0, 4, ,a
+9,7,0,0, 4, ,a
+9,8,0,0, 4, ,a
+
+[Begin action 6]
+9,9,0,0, 6, ,a
+9,10,0,0, 6, ,a
+9,11,0,0, 6, ,a
+9,12,0,0, 6, ,a
+9,9,0,0, 6, ,a
+9,10,0,0, 6, ,a
+9,11,0,0, 6, ,a
+9,12,0,0, 6, ,a
+9,9,0,0, 6, ,a
+9,10,0,0, 6, ,a
+9,11,0,0, 6, ,a
+9,12,0,0, 6, ,a
+
+[Begin action 4] 
+7,4, 0,0, 3,,S
+7,5, 0,0, 3,,S
+7,6, 0,0, 3,,S
+
+[Begin Action 7]
+10, 20, 0, 0, 3, , a
+10, 21, 0, 0, 3, , a
+10, 22, 0, 0, 3, , a
+10, 23, 0, 0, 3, , a
+10, 24, 0, 0, 3, , a
+10, 25, 0, 0, 3, , a
+10, 26, 0, 0, 3, , a
+10, 27, 0, 0, 3, , a
+10, 28, 0, 0, 3, , a
+10, 29, 0, 0, 3, , a
+10, 31, 0, 0, 3, , a
+10, 32, 0, 0, 3, , a
+10, 34, 0, 0, 3, , a
+10, 36, 0, 0, 3, , a
+10, 37, 0, 0, 3, , a
+10, 38, 0, 0, 3, , a
+10, 40, 0, 0, 3, , a
+10, 41, 0, 0, 3, , a
+10, 42, 0, 0, 3, , a
+10, 43, 0, 0, 3, , a
+10, 44, 0, 0, 3, , a
+10, 46, 0, 0, 3, , a
+10, 47, 0, 0, 3, , a
+10, 49, 0, 0, 3, , a
+10, 50, 0, 0, 3, , a
+10, 51, 0, 0, 3, , a
+10, 53, 0, 0, 3, , a
+10, 54, 0, 0, 3, , a
+10, 55, 0, 0, 3, , a
+10, 56, 0, 0, 3, , a
+10, 57, 0, 0, 3, , a
+10, 58, 0, 0, 3, , a
+10, 59, 0, 0, 3, , a
+10, 60, 0, 0, 3, , a
+10, 61, 0, 0, 3, , a
+10, 62, 0, 0, 3, , a
+10, 63, 0, 0, 3, , a
+10, 64, 0, 0, 3, , a
+10, 65, 0, 0, 3, , a
+10, 66, 0, 0, 3, , a
+10, 67, 0, 0, 3, , a
+10, 68, 0, 0, 3, , a
+10, 69, 0, 0, 3, , a
+10, 70, 0, 0, 3, , a
+10, 71, 0, 0, 3, , a
+10, 72, 0, 0, 3, , a
+10, 73, 0, 0, 3, , a
+10, 74, 0, 0, 3, , a
+10, 75, 0, 0, 3, , a
+10, 77, 0, 0, 3, , a
+10, 78, 0, 0, 3, , a
+10, 79, 0, 0, 3, , a
+10, 82, 0, 0, 3, , a
+10, 83, 0, 0, 3, , a
+10, 84, 0, 0, 3, , a
+10, 85, 0, 0, 3, , a
+10, 86, 0, 0, 3, , a
+10, 87, 0, 0, 3, , a
+10, 88, 0, 0, 3, , a
+10, 89, 0, 0, 3, , a
+10, 90, 0, 0, 3, , a
+10, 91, 0, 0, 3, , a
+10, 92, 0, 0, 3, , a
+10, 93, 0, 0, 3, , a
+10, 94, 0, 0, 3, , a
+10, 105, 0, 0, 3, , a
+10, 107, 0, 0, 3, , a
+10, 108, 0, 0, 3, , a
+10, 109, 0, 0, 3, , a
+10, 110, 0, 0, 3, , a
+10, 111, 0, 0, 3, , a
+10, 112, 0, 0, 3, , a
+10, 114, 0, 0, 3, , a
+10, 115, 0, 0, 3, , a
+10, 116, 0, 0, 3, , a
+10, 117, 0, 0, 3, , a
+10, 118, 0, 0, 3, , a
+10, 119, 0, 0, 3, , a
+10, 120, 0, 0, 3, , a
+10, 121, 0, 0, 3, , a
+10, 122, 0, 0, 3, , a
+10, 124, 0, 0, 3, , a
+10, 126, 0, 0, 3, , a
+10, 126, 0, 0, 3, , a
+10, 127, 0, 0, 3, , a
+10, 128, 0, 0, 3, , a
+10, 129, 0, 0, 2, , a
+10, 130, 0, 0, 1, , a
+
+
+;--------------------------------------------------------

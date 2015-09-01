@@ -1,0 +1,88 @@
+[Info]
+name = "MKP Attic Top I"
+;author = "MadkaT"
+;web = "www.madkatmedia.tk"
+
+[Camera]
+startx = 0              
+starty = 0
+boundleft = -291
+boundright = 291
+boundhigh = -10
+boundlow = 0
+verticalfollow = 0.4
+tension = 50
+floortension = 100
+
+[PlayerInfo]
+
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  25
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 195
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 80,80,80
+yscale = -0.1
+reflect = 0
+intensity = 64
+fade.range = -365,-35   
+
+[Reflection]
+intensity = 0
+
+[Music]
+bgmusic = sound/Good (25).mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/MKP Attic Top I.sff     
+debugbg = 0
+
+[BG 0]
+type        = normal
+spriteno    = 1,1
+layerno     = 0                
+delta       = .6,1
+
+[BG 1]
+type        = normal
+spriteno    = 1,0
+mask = 1
+delta       = 1,.8
+
+[BG 2]
+type        = normal
+spriteno    = 1,2
+mask = 1
+
+[BG 3]
+type        = normal
+spriteno    = 1,3
+mask = 1
+layerno = 1

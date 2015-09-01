@@ -1,0 +1,136 @@
+[Info]
+name = "MKP Ground Floor II"
+;author = "MadkaT"
+;web = "www.madkatmedia.tk"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -320
+boundright = 320
+boundhigh = -10
+boundlow = 0
+verticalfollow = 0.4
+tension = 50
+floortension = 100
+
+[PlayerInfo]
+
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  100
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 210
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 80,80,80
+yscale = -0.3
+reflect = 0
+intensity = 64
+fade.range = -365,-35
+
+[Reflection]
+intensity = 0
+
+[Music]
+bgmusic = sound/MK 8.mp3
+bgvolume = 255
+
+
+[BGdef]
+spr = stages/MKP Ground Floor II.sff
+debugbg = 0
+
+[BG 0]
+type        = normal
+spriteno    = 1,6
+layerno     = 0                
+start       = 0,-30
+delta       = .6,.4
+
+[BG 1]
+type        = normal
+spriteno    = 1,2
+layerno     = 0                
+start       = 0,175
+mask = 1
+
+[BG 8]
+type        = normal
+spriteno    = 1,1
+layerno     = 0               
+start       = 0,-360
+mask = 1
+
+[BG 9]
+type        = normal
+spriteno    = 1,1
+layerno     = 0               
+start       = 200,-360
+mask = 1
+
+[BG 10]
+type        = normal
+spriteno    = 1,1
+layerno     = 0               
+start       = -200,-360
+mask = 1
+
+[BG 2]
+type        = normal
+spriteno    = 1,7
+layerno     = 0                
+start       = 0,175
+mask = 1
+
+[BG 3]
+type        = normal
+spriteno    = 1,0
+layerno     = 0                
+start       = -510,-150
+mask = 1
+
+[BG 5]
+type        = normal
+spriteno    = 1,3
+layerno     = 0                
+start       = 425,-95
+mask = 1
+
+[BG 7]
+type        = normal
+spriteno    = 1,8
+layerno     = 1                
+start       = 434,-125
+mask = 1
+
+[BG 11]
+type        = normal
+spriteno    = 1,9
+layerno     = 1                
+start       = -510,-150
+mask = 1

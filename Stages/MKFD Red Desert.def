@@ -1,0 +1,105 @@
+;--------------------------------------------------------
+; Mortal Kombat: Full Destruction Stage
+; Coding - Mortal Hero
+; Sprite Ripping - armand
+;--------------------------------------------------------
+
+[Info]
+name = "MKFD Red Desert"
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -370
+boundright = 370
+boundhigh = -40
+boundlow = 0
+verticalfollow = .4
+floortension = 0
+tension = 100
+boundhigh = -180
+boundlow = 100
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+;--- Player 2 ---
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+;--- Common ---
+leftbound  = -1100
+rightbound =  1100
+topbound  =  0
+botbound  =  0
+;--------------------------------------------------------
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+;--------------------------------------------------------
+[Bound]
+screenleft = 37
+screenright = 37
+;--------------------------------------------------------
+[StageInfo]
+zoffset        = 0
+zoffsetlink    = 1
+autoturn       = 1
+resetBG        = 1
+;--------------------------------------------------------
+[Shadow]
+color = 40,40,40
+yscale = -0.15
+reflect = 144
+
+[Reflection]
+intensity = 50
+
+;--------------------------------------------------------
+[Music]
+bgmusic = sound\IIIym II.mp3
+bgvolume = 255
+;-------------------------------------
+[BGdef]
+spr = stages/MKFD Red Desert.sff
+debugbg = 0
+;-------------------------------------
+[BG z]
+type  = dummy
+start = 0, 220
+id = 1
+
+[BGCtrl stageID 1]
+type = PosSet
+time = 1
+y = 97842
+ctrlID = 1
+
+[BGCtrl stageID 2]
+type = PosSet
+time = 4
+y = -20
+ctrlID = 1
+
+[BG Sky]
+type  = normal
+spriteno = 4, 1
+delta = .5, 1
+mask = 0
+
+[BG Floor]
+type  = parallax
+spriteno = 4,0
+delta = .75, 1
+xscale = .5, 1
+yscalestart = 100
+mask = 0
+
+;-------------------------------------------------
+;By the way, Valik is fucked with Motaro's dick! |
+;-------------------------------------------------

@@ -1,0 +1,125 @@
+ The Shin Gouki's Cave FROM STREET FIGHTER ZERO 3/EDITS 
+
+MADE BY FIREBOY 
+HOME PAGE
+
+http://www.fireboymugen.rg3.net/
+
+http://fireboymugen.zip.net/
+
+[Info]
+name = "MKP Shin Gouki's Cave I"
+
+[Camera]
+startx = 0
+starty = 25
+boundleft = -122
+boundright = 249
+boundhigh = -0
+boundlow = 0
+verticalfollow = 1
+tension = 180
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 255,255,255
+yscale = -.2
+reflect = 0
+
+[Music]
+bgmusic = sound/MKM I.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/MKP Shin Gouki's Cave I.SFF
+debugbg = 1
+
+[BG 01]
+type = anim
+spriteno = 10,0
+start = 0,0
+delta = .30.4
+mask = 1
+actionno = 11
+
+[BG 02]
+type = normal
+spriteno = 12,0
+start = 0,0
+delta = .85,1
+mask = 1
+xscale = 1,
+yscalestart = 100
+yscaledelta = 1
+
+[BG 03]
+type = normal
+spriteno = 13,0
+start = -20
+delta = .85,1
+mask = 1
+xscale = 1,
+yscalestart = 100
+yscaledelta = 1
+
+[BG 04]
+type = anim
+spriteno = 11,0
+start = 0,0
+mask = 1
+actionno = 12
+
+[BG 05]
+type = normal
+spriteno = 14,0
+start = 0,0
+mask = 1
+
+[BG 06]
+type = anim
+spriteno = 15,0
+start = 0,0
+mask = 1
+actionno= 14
+
+[Begin Action 11]
+10,1,0,0,2
+10,0,0,0,2
+
+[Begin Action 12]
+11,0,0,0,1
+11,1,0,0,1
+
+[Begin Action 14]
+15,0,0,0,1
+15,1,0,0,1

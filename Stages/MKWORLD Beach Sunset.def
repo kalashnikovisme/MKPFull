@@ -1,0 +1,175 @@
+;--------------------------------------------------------
+[Info]
+name = "MKWORLD Beach Sunset"
+author = Mû/McCready
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -140
+boundright = 150
+boundhigh = -70
+boundlow = 0
+verticalfollow = 1
+tension = 50
+
+;--------------------------------------------------------
+[PlayerInfo]
+p1startx = -75          
+p1starty = 0            
+p1startz = 0           
+p1facing = 1          
+p2startx = 75
+p2starty = 0
+p2startz = 0
+p2facing = -1
+;--- Common ---
+leftbound  = -1000 
+rightbound =  1000 
+topbound  =  0     
+botbound  =  0   
+  
+;--------------------------------------------------------
+[Scaling]
+topz     = 0       
+botz     = 50    
+topscale = 1     
+botscale = 1.2  
+   
+;--------------------------------------------------------
+[Bound]
+screenleft = 15   
+screenright = 15  
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 222
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+color = 100,100,100
+yscale = .2
+
+;--------------------------------------------------------
+[Music]
+bgmusic = sound/Sea.mp3
+bgvolume = 255
+
+
+;-------------------------------------
+[BGdef]
+spr = stages/MKWORLD Beach Sunset.sff
+debugbg = 0
+
+;----------
+[BG Sky]
+type  = normal
+spriteno = 1, 0
+start = 0,160
+mask = 0
+tile = 1,0
+delta = 1,1
+velocity = -.15
+
+[BG Beach]
+type  = Anim
+actionno = 0
+start =0,0
+mask = 1
+trans = none
+layerno = 0
+velocity = 0,0
+delta = 1,1
+tile = 0
+
+[Begin Action 0]
+0,0, 0,0, 15
+0,1, 0,0, 15
+0,2, 0,0, 15
+0,3, 0,0, 20
+0,4, 0,0, 20
+0,5, 0,0, 20
+
+[BG Sun]
+type  = normal
+spriteno = 2, 0
+layerno = 0
+start = -50,159
+trans = add
+mask = 1
+delta = 1,1
+
+[BG Cloud]
+type  = normal
+spriteno = 3, 0
+layerno = 0
+start = 0,60
+mask = 1
+tile = 1,0
+delta = 1,1
+velocity = -.17
+
+[BG Sun Reflects]
+type  = normal
+spriteno = 2, 1
+layerno = 0
+start = -50,159
+trans = add
+mask = 1
+delta = 1,1
+
+[BG Cloud Reflects]
+type  = normal
+spriteno = 4, 0
+layerno = 0
+start = 0,60
+trans = add
+mask = 1
+tile = 1,0
+delta = 1,1
+velocity = -.17
+
+[BG cross]
+type  = anim
+actionno = 5
+start =-110, 0
+delta = 1.01, 1.01
+mask = 1
+
+[Begin Action 5] 
+5,0, 0, 0,28,H
+5,1, 0, 0,15,H
+5,2, 0, 0,20,H
+5,1, 0, 0,15,H
+5,0, 0, 0,34,H
+5,1, 0, 0,15,H
+5,2, 0, 0,20,H
+5,1, 0, 0,15,H
+5,0, 0, 0,20,H
+5,1, 0, 0,15,H
+5,2, 0, 0,20,H
+5,1, 0, 0,15,H
+5,0, 0, 0,25,H
+5,1, 0, 0,15,H
+5,3, 0, 0,18,H
+5,1, 0, 0,15,H
+
+[BG Cross Light]
+type  = normal
+spriteno = 6, 0
+layerno = 0
+start = -110,0
+trans = add
+mask = 1
+delta = 1.01,1.01
+
+[BG Cross Shadow]
+type  = normal
+spriteno = 6, 1
+layerno = 0
+start = -110,0
+trans = sub
+mask = 1
+delta = 1.01,1.01

@@ -1,0 +1,4369 @@
+[Info]
+name = "MKWORLD Forgotten Cathedral"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -160
+boundright = 160
+boundhigh = -48
+boundlow = 0
+verticalfollow = .3
+floortension = 0
+tension = 60
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 216
+autoturn = 1
+resetBG = 0
+
+[Music]
+bgmusic = sound/IIIym I.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/MKWORLD Forgotten Cathedral.sff
+
+[BG Normal]
+type = normal
+spriteno = 0,0
+start = -320,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,1
+start = -304,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,2
+start = -288,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,3
+start = -272,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,4
+start = -256,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,5
+start = -240,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,6
+start = -224,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,7
+start = -208,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,8
+start = -192,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,9
+start = -176,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,10
+start = -160,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,11
+start = -144,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,12
+start = -128,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,13
+start = -112,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,14
+start = -96,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,15
+start = -80,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,16
+start = -64,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,17
+start = -48,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,18
+start = -32,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,19
+start = -16,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,20
+start = 0,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,21
+start = 16,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,22
+start = 32,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,23
+start = 48,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,24
+start = 64,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,25
+start = 80,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,26
+start = 96,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,27
+start = 112,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,28
+start = 128,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,29
+start = 144,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,30
+start = 160,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,31
+start = 176,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,32
+start = 192,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,33
+start = 208,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,34
+start = 224,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,35
+start = 240,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,36
+start = 256,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,37
+start = 272,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,38
+start = 288,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,39
+start = 304,-48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,40
+start = -320,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,41
+start = -304,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,42
+start = -288,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,43
+start = -272,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,44
+start = -256,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,45
+start = -240,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,46
+start = -224,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,47
+start = -208,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,48
+start = -192,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,49
+start = -176,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,50
+start = -160,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,51
+start = -144,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,52
+start = -128,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,53
+start = -112,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,54
+start = -96,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,55
+start = -80,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,56
+start = -64,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,57
+start = -48,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,58
+start = -32,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,59
+start = -16,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,60
+start = 0,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,61
+start = 16,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,62
+start = 32,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,63
+start = 48,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,64
+start = 64,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,65
+start = 80,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,66
+start = 96,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,67
+start = 112,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,68
+start = 128,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,69
+start = 144,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,70
+start = 160,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,71
+start = 176,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,72
+start = 192,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,73
+start = 208,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,74
+start = 224,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,75
+start = 240,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,76
+start = 256,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,77
+start = 272,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,78
+start = 288,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,79
+start = 304,-32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,80
+start = -320,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,81
+start = -304,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,82
+start = -288,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,83
+start = -272,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,84
+start = -256,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,85
+start = -240,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,86
+start = -224,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,87
+start = -208,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,88
+start = -192,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,89
+start = -176,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,90
+start = -160,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,91
+start = -144,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,92
+start = -128,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,93
+start = -112,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,94
+start = -96,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,95
+start = -80,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,96
+start = -64,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,97
+start = -48,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,98
+start = -32,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,99
+start = -16,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,100
+start = 0,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,101
+start = 16,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,102
+start = 32,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,103
+start = 48,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,104
+start = 64,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,105
+start = 80,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,106
+start = 96,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,107
+start = 112,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,108
+start = 128,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,109
+start = 144,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,110
+start = 160,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,111
+start = 176,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,112
+start = 192,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,113
+start = 208,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,114
+start = 224,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,115
+start = 240,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,116
+start = 256,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,117
+start = 272,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,118
+start = 288,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,119
+start = 304,-16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,120
+start = -320,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,121
+start = -304,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,122
+start = -288,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,123
+start = -272,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,124
+start = -256,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,125
+start = -240,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,126
+start = -224,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,127
+start = -208,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,128
+start = -192,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,129
+start = -176,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,130
+start = -160,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,131
+start = -144,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,132
+start = -128,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,133
+start = -112,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,134
+start = -96,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,135
+start = -80,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,136
+start = -64,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,137
+start = -48,-0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,138
+start = -32,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,139
+start = -16,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,140
+start = 0,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,141
+start = 16,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,142
+start = 32,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,143
+start = 48,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,144
+start = 64,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,145
+start = 80,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,146
+start = 96,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,147
+start = 112,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,148
+start = 128,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,149
+start = 144,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,150
+start = 160,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,151
+start = 176,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,152
+start = 192,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,153
+start = 208,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,154
+start = 224,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,155
+start = 240,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,156
+start = 256,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,157
+start = 272,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,158
+start = 288,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,159
+start = 304,0
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,160
+start = -320,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,161
+start = -304,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,162
+start = -288,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,163
+start = -272,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,164
+start = -256,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,165
+start = -240,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,166
+start = -224,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,167
+start = -208,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,168
+start = -192,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,169
+start = -176,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,170
+start = -160,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,171
+start = -144,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,172
+start = -128,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,173
+start = -112,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,174
+start = -96,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,175
+start = -80,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,176
+start = -64,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,177
+start = -48,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,178
+start = -32,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,179
+start = -16,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,180
+start = 0,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,181
+start = 16,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,182
+start = 32,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,183
+start = 48,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,184
+start = 64,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,185
+start = 80,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,186
+start = 96,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,187
+start = 112,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,188
+start = 128,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,189
+start = 144,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,190
+start = 160,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,191
+start = 176,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,192
+start = 192,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,193
+start = 208,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,194
+start = 224,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,195
+start = 240,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,196
+start = 256,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,197
+start = 272,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,198
+start = 288,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,199
+start = 304,16
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,200
+start = -320,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,201
+start = -304,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,202
+start = -288,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,203
+start = -272,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,204
+start = -256,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,205
+start = -240,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,206
+start = -224,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,207
+start = -208,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,208
+start = -192,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,209
+start = -176,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,210
+start = -160,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,211
+start = -144,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,212
+start = -128,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,213
+start = -112,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,214
+start = -96,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,215
+start = -80,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,216
+start = -64,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,217
+start = -48,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,218
+start = -32,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,219
+start = -16,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,220
+start = 0,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,221
+start = 16,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,222
+start = 32,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,223
+start = 48,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,224
+start = 64,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,225
+start = 80,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,226
+start = 96,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,227
+start = 112,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,228
+start = 128,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,229
+start = 144,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,230
+start = 160,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,231
+start = 176,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,232
+start = 192,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,233
+start = 208,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,234
+start = 224,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,235
+start = 240,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,236
+start = 256,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,237
+start = 272,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,238
+start = 288,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,239
+start = 304,32
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,240
+start = -320,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,241
+start = -304,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,242
+start = -288,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,243
+start = -272,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,244
+start = -256,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,245
+start = -240,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,246
+start = -224,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,247
+start = -208,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,248
+start = -192,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,249
+start = -176,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,250
+start = -160,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,251
+start = -144,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,252
+start = -128,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,253
+start = -112,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,254
+start = -96,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,255
+start = -80,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,256
+start = -64,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,257
+start = -48,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,258
+start = -32,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,259
+start = -16,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,260
+start = 0,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,261
+start = 16,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,262
+start = 32,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,263
+start = 48,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,264
+start = 64,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,265
+start = 80,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,266
+start = 96,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,267
+start = 112,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,268
+start = 128,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,269
+start = 144,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,270
+start = 160,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,271
+start = 176,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,272
+start = 192,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,273
+start = 208,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,274
+start = 224,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,275
+start = 240,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,276
+start = 256,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,277
+start = 272,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,278
+start = 288,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,279
+start = 304,48
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,280
+start = -320,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,281
+start = -304,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,282
+start = -288,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,283
+start = -272,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,284
+start = -256,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,285
+start = -240,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,286
+start = -224,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,287
+start = -208,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,288
+start = -192,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,289
+start = -176,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,290
+start = -160,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,291
+start = -144,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,292
+start = -128,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,293
+start = -112,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,294
+start = -96,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,295
+start = -80,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,296
+start = -64,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,297
+start = -48,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,298
+start = -32,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,299
+start = -16,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,300
+start = 0,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,301
+start = 16,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,302
+start = 32,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,303
+start = 48,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,304
+start = 64,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,305
+start = 80,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,306
+start = 96,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,307
+start = 112,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,308
+start = 128,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,309
+start = 144,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,310
+start = 160,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,311
+start = 176,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,312
+start = 192,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,313
+start = 208,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,314
+start = 224,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,315
+start = 240,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,316
+start = 256,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,317
+start = 272,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,318
+start = 288,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,319
+start = 304,64
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,320
+start = -320,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,321
+start = -304,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,322
+start = -288,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,323
+start = -272,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,324
+start = -256,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,325
+start = -240,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,326
+start = -224,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,327
+start = -208,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,328
+start = -192,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,329
+start = -176,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,330
+start = -160,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,331
+start = -144,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,332
+start = -128,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,333
+start = -112,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,334
+start = -96,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,335
+start = -80,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,336
+start = -64,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,337
+start = -48,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,338
+start = -32,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,339
+start = -16,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,340
+start = 0,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,341
+start = 16,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,342
+start = 32,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,343
+start = 48,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,344
+start = 64,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,345
+start = 80,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,346
+start = 96,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,347
+start = 112,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,348
+start = 128,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,349
+start = 144,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,350
+start = 160,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,351
+start = 176,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,352
+start = 192,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,353
+start = 208,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,354
+start = 224,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,355
+start = 240,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,356
+start = 256,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,357
+start = 272,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,358
+start = 288,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,359
+start = 304,80
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,360
+start = -320,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,361
+start = -304,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,362
+start = -288,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,363
+start = -272,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,364
+start = -256,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,365
+start = -240,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,366
+start = -224,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,367
+start = -208,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,368
+start = -192,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,369
+start = -176,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,370
+start = -160,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,371
+start = -144,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,372
+start = -128,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,373
+start = -112,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,374
+start = -96,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,375
+start = -80,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,376
+start = -64,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,377
+start = -48,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,378
+start = -32,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,379
+start = -16,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,380
+start = 0,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,381
+start = 16,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,382
+start = 32,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,383
+start = 48,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,384
+start = 64,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,385
+start = 80,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,386
+start = 96,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,387
+start = 112,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,388
+start = 128,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,389
+start = 144,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,390
+start = 160,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,391
+start = 176,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,392
+start = 192,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,393
+start = 208,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,394
+start = 224,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,395
+start = 240,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,396
+start = 256,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,397
+start = 272,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,398
+start = 288,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,399
+start = 304,96
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,400
+start = -320,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,401
+start = -304,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,402
+start = -288,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,403
+start = -272,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,404
+start = -256,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,405
+start = -240,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,406
+start = -224,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,407
+start = -208,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,408
+start = -192,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,409
+start = -176,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,410
+start = -160,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,411
+start = -144,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,412
+start = -128,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,413
+start = -112,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,414
+start = -96,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,415
+start = -80,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,416
+start = -64,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,417
+start = -48,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,418
+start = -32,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,419
+start = -16,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,420
+start = 0,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,421
+start = 16,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,422
+start = 32,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,423
+start = 48,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,424
+start = 64,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,425
+start = 80,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,426
+start = 96,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,427
+start = 112,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,428
+start = 128,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,429
+start = 144,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,430
+start = 160,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,431
+start = 176,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,432
+start = 192,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,433
+start = 208,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,434
+start = 224,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,435
+start = 240,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,436
+start = 256,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,437
+start = 272,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,438
+start = 288,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,439
+start = 304,112
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,440
+start = -320,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,441
+start = -304,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,442
+start = -288,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,443
+start = -272,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,444
+start = -256,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,445
+start = -240,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,446
+start = -224,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,447
+start = -208,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,448
+start = -192,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,449
+start = -176,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,450
+start = -160,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,451
+start = -144,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,452
+start = -128,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,453
+start = -112,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,454
+start = -96,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,455
+start = -80,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,456
+start = -64,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,457
+start = -48,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,458
+start = -32,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,459
+start = -16,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,460
+start = 0,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,461
+start = 16,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,462
+start = 32,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,463
+start = 48,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,464
+start = 64,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,465
+start = 80,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,466
+start = 96,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,467
+start = 112,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,468
+start = 128,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,469
+start = 144,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,470
+start = 160,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,471
+start = 176,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,472
+start = 192,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,473
+start = 208,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,474
+start = 224,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,475
+start = 240,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,476
+start = 256,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,477
+start = 272,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,478
+start = 288,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,479
+start = 304,128
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,480
+start = -320,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,481
+start = -304,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,482
+start = -288,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,483
+start = -272,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,484
+start = -256,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,485
+start = -240,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,486
+start = -224,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,487
+start = -208,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,488
+start = -192,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,489
+start = -176,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,490
+start = -160,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,491
+start = -144,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,492
+start = -128,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,493
+start = -112,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,494
+start = -96,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,495
+start = -80,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,496
+start = -64,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,497
+start = -48,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,498
+start = -32,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,499
+start = -16,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,500
+start = 0,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,501
+start = 16,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,502
+start = 32,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,503
+start = 48,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,504
+start = 64,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,505
+start = 80,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,506
+start = 96,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,507
+start = 112,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,508
+start = 128,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,509
+start = 144,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,510
+start = 160,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,511
+start = 176,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,512
+start = 192,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,513
+start = 208,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,514
+start = 224,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,515
+start = 240,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,516
+start = 256,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,517
+start = 272,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,518
+start = 288,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,519
+start = 304,144
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,520
+start = -320,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,521
+start = -304,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,522
+start = -288,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,523
+start = -272,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,524
+start = -256,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,525
+start = -240,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,526
+start = -224,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,527
+start = -208,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,528
+start = -192,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,529
+start = -176,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,530
+start = -160,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,531
+start = -144,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,532
+start = -128,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,533
+start = -112,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,534
+start = -96,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,535
+start = -80,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,536
+start = -64,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,537
+start = -48,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,538
+start = -32,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,539
+start = -16,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,540
+start = 0,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,541
+start = 16,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,542
+start = 32,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,543
+start = 48,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,544
+start = 64,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,545
+start = 80,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,546
+start = 96,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,547
+start = 112,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,548
+start = 128,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,549
+start = 144,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,550
+start = 160,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,551
+start = 176,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,552
+start = 192,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,553
+start = 208,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,554
+start = 224,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,555
+start = 240,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,556
+start = 256,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,557
+start = 272,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,558
+start = 288,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,559
+start = 304,160
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,560
+start = -320,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,561
+start = -304,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,562
+start = -288,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,563
+start = -272,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,564
+start = -256,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,565
+start = -240,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,566
+start = -224,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,567
+start = -208,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,568
+start = -192,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,569
+start = -176,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,570
+start = -160,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,571
+start = -144,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,572
+start = -128,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,573
+start = -112,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,574
+start = -96,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,575
+start = -80,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,576
+start = -64,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,577
+start = -48,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,578
+start = -32,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,579
+start = -16,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,580
+start = 0,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,581
+start = 16,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,582
+start = 32,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,583
+start = 48,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,584
+start = 64,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,585
+start = 80,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,586
+start = 96,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,587
+start = 112,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,588
+start = 128,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,589
+start = 144,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,590
+start = 160,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,591
+start = 176,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,592
+start = 192,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,593
+start = 208,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,594
+start = 224,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,595
+start = 240,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,596
+start = 256,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,597
+start = 272,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,598
+start = 288,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,599
+start = 304,176
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,600
+start = -320,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,601
+start = -304,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,602
+start = -288,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,603
+start = -272,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,604
+start = -256,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,605
+start = -240,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,606
+start = -224,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,607
+start = -208,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,608
+start = -192,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,609
+start = -176,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,610
+start = -160,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,611
+start = -144,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,612
+start = -128,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,613
+start = -112,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,614
+start = -96,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,615
+start = -80,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,616
+start = -64,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,617
+start = -48,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,618
+start = -32,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,619
+start = -16,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,620
+start = 0,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,621
+start = 16,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,622
+start = 32,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,623
+start = 48,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,624
+start = 64,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,625
+start = 80,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,626
+start = 96,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,627
+start = 112,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,628
+start = 128,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,629
+start = 144,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,630
+start = 160,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,631
+start = 176,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,632
+start = 192,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,633
+start = 208,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,634
+start = 224,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,635
+start = 240,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,636
+start = 256,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,637
+start = 272,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,638
+start = 288,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,639
+start = 304,192
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,640
+start = -320,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,641
+start = -304,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,642
+start = -288,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,643
+start = -272,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,644
+start = -256,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,645
+start = -240,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,646
+start = -224,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,647
+start = -208,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,648
+start = -192,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,649
+start = -176,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,650
+start = -160,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,651
+start = -144,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,652
+start = -128,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,653
+start = -112,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,654
+start = -96,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,655
+start = -80,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,656
+start = -64,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,657
+start = -48,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,658
+start = -32,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,659
+start = -16,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,660
+start = 0,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,661
+start = 16,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,662
+start = 32,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,663
+start = 48,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,664
+start = 64,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,665
+start = 80,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,666
+start = 96,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,667
+start = 112,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,668
+start = 128,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,669
+start = 144,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,670
+start = 160,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,671
+start = 176,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,672
+start = 192,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,673
+start = 208,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,674
+start = 224,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,675
+start = 240,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,676
+start = 256,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,677
+start = 272,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,678
+start = 288,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,679
+start = 304,208
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,680
+start = -320,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,681
+start = -304,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,682
+start = -288,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,683
+start = -272,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,684
+start = -256,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,685
+start = -240,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,686
+start = -224,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,687
+start = -208,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,688
+start = -192,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,689
+start = -176,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,690
+start = -160,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,691
+start = -144,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,692
+start = -128,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,693
+start = -112,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,694
+start = -96,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,695
+start = -80,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,696
+start = -64,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,697
+start = -48,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,698
+start = -32,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,699
+start = -16,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,700
+start = 0,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,701
+start = 16,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,702
+start = 32,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,703
+start = 48,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,704
+start = 64,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,705
+start = 80,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,706
+start = 96,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,707
+start = 112,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,708
+start = 128,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,709
+start = 144,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,710
+start = 160,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,711
+start = 176,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,712
+start = 192,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,713
+start = 208,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,714
+start = 224,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,715
+start = 240,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,716
+start = 256,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,717
+start = 272,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,718
+start = 288,224
+delta = 1,1
+
+[BG Normal]
+type = normal
+spriteno = 0,719
+start = 304,224
+delta = 1,1

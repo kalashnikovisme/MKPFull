@@ -1,0 +1,37 @@
+;Edited by PhoboSS
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="Kung Lao"
+displayname  ="Kung Lao MKIII"
+versiondate  =06,03,2001
+mugenversion =04,01,2001
+pal.defaults =1,3,2
+author=""
+
+;-------------------------------------------
+
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =kung_lao.sff
+anim     =kung_lao.air
+sound    =1.snd
+pal1=kung_lao_pal_1.act
+pal2=kung_lao_pal_2.act
+pal3=kung_lao_pal_3.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Brutality.st
+
+;-------------------------------------------
+[Arcade]
+intro.storyboard  = mk3laointro\mk3laointro.def
+ending.storyboard = mk3kunglaoend\mk3kunglaoend.def
+
+;-------------------------------------------

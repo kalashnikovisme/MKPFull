@@ -1,0 +1,509 @@
+STAGE FROM MORTAL KOMBAT SHAOLIN SHAOLIN MONKS/EDITS
+
+MADE BY FIREBOY 
+HOME PAGE
+
+http://fireboymugen.webs.com/
+
+
+
+;--------------------------------------------------------
+[Info]
+ ;Name of the stage.
+name = "MKSM THE PORTAL"
+
+;--------------------------------------------------------
+[Camera]
+ ;Camera starting position: Usually 0 for both
+startx = 0
+starty = 0
+
+
+boundleft = -423
+boundright = 4888
+
+ 
+ 
+boundhigh = -90
+boundlow = 0
+
+ 
+verticalfollow = 1
+
+
+tension = 60
+
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+ ;Player 1 starting coordinates.
+ ;p1startx is typically -70 and p2startx is 70.
+ ;p1starty and p1startz should be 0.
+p1startx = -100          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 100
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+ ;Don't change these values.
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  10000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+ 
+topz     = 0       
+botz     = 50      
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+[Bound]
+ 
+ ;Typically 15
+screenleft = 15    ;
+screenright = 15   
+
+;--------------------------------------------------------
+[StageInfo]
+
+zoffset = 220
+
+ 
+autoturn = 1
+
+ 
+ ;rounds.
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+ 
+intensity = 64
+
+
+color = 0,0,0
+
+ ;
+yscale = -.1
+
+ 
+fade.range = -400,-100
+
+;--------------------------------------------------------
+[Reflection]
+ ;Intensity of reflection (from 0 to 256). Set to 0 to have no
+ ;reflection. Defaults to 0.
+intensity = 0
+
+;--------------------------------------------------------
+[Music]
+bgmusic = sound/MKWORLD XIV.mp3
+bgvolume = 255
+
+;========================================================
+;--------------------------------------------------------
+------------------------
+
+;-------------------------------------
+; Main background definition
+[BGdef]
+ ;Filename of sprite data
+spr = stages/MKSM_PORTAL.sff
+
+
+debugbg = 0
+
+;----------
+[BG Wall]
+type  = anim
+actionno = 0
+spriteno = 0,32
+start = 0, 74
+delta = .2, .2
+velocity = 0,0
+mask = 0
+tile = 0, 0
+
+
+
+[BG Wall]
+type  = anim
+actionno = 4
+spriteno = 2,18
+start = 1500, 74
+delta = .2, .2
+velocity = 0,0
+mask = 1
+tile = 0, 0
+
+
+[BG Wall]
+type  = anim
+actionno = 34
+spriteno = 2,18
+start = 500, 74
+delta = .2, .2
+velocity = 0,0
+mask = 1
+tile = 0, 0
+
+
+
+[BG Wall]
+type  = anim
+actionno = 33
+spriteno = 0,0
+start = 900, 74
+delta = .2, .2
+velocity = 0,0
+mask = 0
+tile = 0, 0
+
+
+[BG 2]
+type  = normal
+start = 16,0
+;type  = parallax
+spriteno = 2,61
+delta = .8, 1
+xscale = .8, 1.05
+yscalestart = 100
+mask = 1
+
+
+[BG 2]
+type  = normal
+start = 16,0
+;type  = parallax
+spriteno = 2,17
+delta = .8, 1
+xscale = .8, 1.05
+yscalestart = 100
+mask = 1
+
+[BG rayos]
+type  = anim
+actionno = 3
+start = 2000,90
+mask = 0
+tile = 0, 0
+
+
+[BG rayos]
+type  = anim
+spriteno = 2,18
+actionno = 4
+start = 2600,90
+delta = .2, .2
+mask = 0
+
+[BG rayos]
+type  = anim
+actionno = 5
+spriteno = 2,18
+start = 2700,90
+delta = .2, .2
+mask = 0
+
+
+[BG Wall]
+type  = anim
+actionno = 7
+start = 0,74
+mask = 0
+
+
+
+[BG craneo]
+type  = normal
+spriteno = 2,28
+start = -172, 3
+delta = .7,1
+mask  = 1
+;layerno = 1
+
+
+[BG Monje2]
+type  = anim
+actionno = 51
+start = 0,-5
+mask = 0
+tile = 0, 0
+
+
+[BG Monje1]
+type  = anim
+actionno = 41
+start = -220,-5
+mask = 0
+tile = 0, 0
+
+
+[BG Monje1]
+type  = anim
+actionno = 41
+start = 4455,-5
+mask = 0
+tile = 0, 0
+
+[BG Monje2]
+type  = anim
+actionno = 51
+start = 4255,-5
+mask = 0
+tile = 0, 0
+
+
+
+
+
+[Begin action 41]
+13,0, 0,0, 8
+13,1, 0,-1, 8
+13,2, 0,-2, 8
+13,3, 0,-3, 8
+13,4, 0,-4, 8
+13,5, 0,-5, 8
+13,6, 0,-6, 8
+13,0, 0,-7, 8
+13,1, 0,-8, 8
+13,2, 0,-9, 8
+13,3, 0,-10, 8
+13,4, 0,-10, 8
+13,5, 0,-9, 8
+13,6, 0,-8, 8
+13,0, 0,-7, 8
+13,1, 0,-6, 8
+13,2, 0,-5, 8
+13,3, 0,-4, 8
+13,4, 0,-3, 8
+13,5, 0,-2, 8
+13,6, 0,-1, 8
+13,0, 0,0, 8
+13,1, 0,1, 8
+13,2, 0,2, 8
+13,3, 0,3, 8
+13,4, 0,4, 8
+13,5, 0,5, 8
+13,6, 0,6, 8
+13,0, 0,7, 8
+13,1, 0,8, 8
+13,2, 0,9, 8
+13,3, 0,10, 8
+13,4, 0,10, 8
+13,5, 0,9, 8
+13,6, 0,8, 8
+13,0, 0,7, 8
+13,1, 0,6, 8
+13,2, 0,5, 8
+13,3, 0,4, 8
+13,4, 0,3, 8
+13,5, 0,2, 8
+13,6, 0,1, 8
+
+[Begin action 51]
+13,0, 0,0, 8
+13,1, 0,-1, 8
+13,2, 0,-2, 8
+13,3, 0,-3, 8
+13,4, 0,-4, 8
+13,5, 0,-5, 8
+13,6, 0,-6, 8
+13,0, 0,-7, 8
+13,1, 0,-8, 8
+13,2, 0,-9, 8
+13,3, 0,-10, 8
+13,4, 0,-10, 8
+13,5, 0,-9, 8
+13,6, 0,-8, 8
+13,0, 0,-7, 8
+13,1, 0,-6, 8
+13,2, 0,-5, 8
+13,3, 0,-4, 8
+13,4, 0,-3, 8
+13,5, 0,-2, 8
+13,6, 0,-1, 8
+13,0, 0,0, 8
+13,1, 0,1, 8
+13,2, 0,2, 8
+13,3, 0,3, 8
+13,4, 0,4, 8
+13,5, 0,5, 8
+13,6, 0,6, 8
+13,0, 0,7, 8
+13,1, 0,8, 8
+13,2, 0,9, 8
+13,3, 0,10, 8
+13,4, 0,10, 8
+13,5, 0,9, 8
+13,6, 0,8, 8
+13,0, 0,7, 8
+13,1, 0,6, 8
+13,2, 0,5, 8
+13,3, 0,4, 8
+13,4, 0,3, 8
+13,5, 0,2, 8
+13,6, 0,1, 8
+
+;--------------
+[Begin Action 0]
+
+0, 32, 0, 0, 4,H
+
+0, 30, 0, 0, 4,H
+0, 29, 0, 0, 4,H
+0, 28, 0, 0, 4,H
+0, 27, 0, 0, 4,H
+0, 26, 0, 0, 4,H
+0, 25, 0, 0, 4,H
+0, 24, 0, 0, 4,H
+0, 23, 0, 0, 4,H
+0, 22, 0, 0, 4,H
+0, 21, 0, 0, 4,H
+0, 20, 0, 0, 4,H
+0, 19, 0, 0, 4,H
+0, 18, 0, 0, 4,H
+0, 17, 0, 0, 4,H
+0, 16, 0, 0, 4,H
+0, 15, 0, 0, 4,H
+0, 14, 0, 0, 4,H
+0, 13, 0, 0, 4,H
+0, 12, 0, 0, 4,H
+0, 11, 0, 0, 4,H
+0, 10, 0, 0, 4,H
+0, 9, 0, 0, 4,H
+0, 8, 0, 0, 4,H
+0, 7, 0, 0, 4,H
+0, 6, 0, 0, 4,H
+0, 5, 0, 0, 4,H
+0, 4, 0, 0, 4,H
+0, 3, 0, 0, 4,H
+0, 2, 0, 0, 4,H
+0, 1, 0, 0, 4,H
+0, 0, 0, 0, 2,H
+
+
+
+
+[Begin Action 33]
+0, 1, 0, 0, 4
+0, 2, 0, 0, 4
+0, 3, 0, 0, 4
+0, 4, 0, 0, 4
+0, 5, 0, 0, 4
+0, 6, 0, 0, 4
+0, 7, 0, 0, 4
+0, 8, 0, 0, 4
+0, 9, 0, 0, 4
+0, 10, 0, 0, 4
+0, 11, 0, 0, 4
+0, 12, 0, 0, 4
+0, 13, 0, 0, 4
+0, 14, 0, 0, 4
+0, 15, 0, 0, 4
+0, 16, 0, 0, 4
+0, 17, 0, 0, 4
+0, 18, 0, 0, 4
+0, 19, 0, 0, 4
+0, 20, 0, 0, 4
+0, 21, 0, 0, 4
+0, 22, 0, 0, 4
+0, 23, 0, 0, 4
+0, 24, 0, 0, 4
+0, 25, 0, 0, 4
+0, 26, 0, 0, 4
+0, 27, 0, 0, 4
+0, 28, 0, 0, 4
+0, 29, 0, 0, 4
+0, 30, 0, 0, 4
+0, 31, 0, 0, 4
+0, 32, 0, 0, 4
+
+
+
+[Begin Action 34]
+2, 18, 0, 0, 1
+
+
+[Begin Action 35]
+2, 33, 0, 0, 1
+
+[Begin Action 3]
+888, 0, 0, 0, 70
+2, 19, 112, 0, 15,H,  A
+888, 0, 0, 0, 65
+2, 20, -194, 0, 18,H,  A
+
+[Begin Action 4]
+888, 0, 0, 0, 90
+2, 19, -110, 0, 18,  A
+888, 0, 0, 0, 80
+2, 20, 176, 1, 17,H,  A
+
+[Begin Action 5]
+888, 0, 0, 0, 30
+2, 20, 0, 0, 16,H , A
+888, 0, 0, 0, 120
+2, 19, 0, 0, 15, H, A
+888, 0, 0, 0, 60
+
+
+
+[Begin Action 7]
+
+2, 21, 0, 0, 5
+
+2, 22, 0, 0, 5
+2, 21, 0, 0, 5
+
+2, 22, 0, 0, 5
+2, 21, 0, 0, 5
+
+2, 22, 0, 0, 5
+2, 21, 0, 0, 5
+
+2, 22, 0, 0, 5
+2, 21, 0, 0, 5
+
+2, 22, 0, 0, 5
+2, 21, 0, 0, 5
+
+2, 22, 0, 0, 5
+2, 21, 0, 0, 5
+
+2, 22, 0, 0, 5
+2, 21, 0, 0, 5
+2, 22, 0, 0, 5
+2, 21, 0, 0, 5
+
+2, 22, 0, 0, 5
+2, 21, 0, 0, 5
+
+2, 22, 0, 0, 5
+2, 21, 0, 0, 5
+
+2, 22, 0, 0, 5
+2, 21, 0, 0, 5
+
+2, 23, 0, 0, 5
+
+2, 24, 0, 0, 3
+2, 21, 0, 0, 3
+
+2, 25, 0, 0, 3
+2, 26, 0, 0, 3
+
+2, 27, 0, 0, 3
+2, 55, 176, 1, 17,H,  A
+
+888, 22, 0, 0, -1

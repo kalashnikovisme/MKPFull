@@ -1,0 +1,198 @@
+;________________________________________________________
+; Stage   : The Bank - The Rooftop_mk3
+; Author  : Le@n
+; Web     : www.rulezzgames.mybb.ru
+; Version : 1.0
+;________________________________________________________
+
+[Info]
+name = "MKIII The Bank"
+;________________________________________________________
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -373
+boundright = 380
+boundhigh = -330
+boundlow = 0
+verticalfollow = .2
+;floortension = 50
+tension = 50
+;________________________________________________________
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound = 1000
+topbound  = 0
+botbound  = 0
+;________________________________________________________
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+;________________________________________________________
+
+[Bound]
+screenleft = 35
+screenright = 35
+;________________________________________________________
+
+[StageInfo]
+zoffset     = 0
+zoffsetlink = 1
+autoturn    = 1
+resetBG     = 1
+;________________________________________________________
+
+[Shadow]
+color = 120,120,120
+yscale = -.2
+reflect = 0
+;________________________________________________________
+
+[Music]
+bgmusic = sound\MKIII The Bank.mp3
+bgvolume = 255
+;________________________________________________________
+
+[BGdef]
+spr = stages/MKIII The Bank.sff
+debugbg = 0
+;________________________________________________________
+
+[BG z]
+type  = dummy
+start = 0, 10321
+id    = 1
+
+[BGCtrl stageID 2]
+type   = PosSet
+time   = 4
+y      = -10106
+ctrlID = 1
+;________________________________________________________
+
+[bg Fondo]
+type  = normal
+spriteno = 5, 1
+start = 0,-310
+delta = 0, 1
+
+[bg Portal]
+type  = anim
+actionno = 0
+start = 0,-310
+delta = .3, 1
+
+[bg Kahn's Tower]
+type  = normal
+spriteno = 5, 2
+start = 0,-310
+delta = .3, 1
+mask  = 1
+
+[bg Fire]
+type  = anim
+actionno = 1
+start = 0,-310
+delta = .3, 1
+
+[bg Buildings]
+type     = normal
+spriteno = 5, 3
+start = 0,-310
+delta = .6,1
+mask     = 1
+
+[bg Piso]
+type  = normal
+spriteno = 5, 4
+start = 0,-310
+delta = .85,1
+mask  = 1
+
+[bg Floor]
+type  = parallax
+spriteno = 5, 5
+start = 0,-310
+mask  = 1
+xscale = .75, 1
+yscalestart = 100
+delta = .85, 1
+
+[bg Statue1]
+type  = normal
+spriteno = 5, 6
+start = 0,-310
+delta = 1,1
+mask  = 1
+
+[bg Statue2]
+type  = normal
+spriteno = 5, 7
+start = 0,-310
+delta = 1,1
+mask  = 1
+;________________________________________________________
+
+[bg Cielo]
+type  = Normal
+spriteno = 4,3
+delta = 0,1
+
+[bg Floor]
+type  = parallax
+spriteno = 4, 1
+xscale = .73, 1
+yscalestart = 100
+delta = .85, 1
+
+[bg Pared1]
+type  = normal
+spriteno = 4,2
+delta = .85, 1
+mask = 1
+
+[bg Pared2]
+type     = normal
+spriteno = 4,0
+delta    = 1, 1
+start    = 0,48
+;________________________________________________________
+
+[Begin Action 0]
+6,0, 0,0, 6
+6,1, 0,0, 6
+6,2, 0,0, 6
+6,3, 0,0, 6
+6,4, 0,0, 6
+6,5, 0,0, 6
+6,6, 0,0, 6
+6,7, 0,0, 6
+6,8, 0,0, 6
+6,9, 0,0, 6
+6,10, 0,0, 6
+6,11, 0,0, 6
+
+[Begin Action 1]
+7,0, 0,0, 6
+7,1, 0,0, 6
+7,2, 0,0, 6
+7,3, 0,0, 6
+7,4, 0,0, 6
+7,5, 0,0, 6
+7,6, 0,0, 6
+7,7, 0,0, 6

@@ -1,0 +1,282 @@
+;--------------------------------------------------------
+; Stage      : Throne Room MK1
+; Version    : 1.5b
+; Autor      : RatonMalo
+; Mail       : elratonmalo@hotmail.com
+; Web        : http://www.geocities.jp/ratonmalo_ar/
+; Updated by : BlackJack
+; Stage      : Goro lair
+; BY         : Doorhenge
+; EMAIL      : doorhenge@hotmail.com
+; WEB        : http://members.citynet.net/doorhenge/
+; Re elavorado: "Goro lair - Throne Room" by RAM
+;--------------------------------------------------------
+[Info]
+name = "MKI Goro Lair"
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft      = -375
+boundright     = 375
+boundhigh      = -320
+boundlow       = 0
+verticalfollow = .2
+;floortension  = 50
+tension        = 100
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound = 1000
+topbound   = 0
+botbound   = 0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft  = 35
+screenright = 35
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset     = 0
+zoffsetlink = 1
+autoturn    = 1
+resetBG     = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+color   = 100,100,100
+yscale  = -.2
+reflect = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic  = sound/MK 3.mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+
+[BGdef]
+spr     = MKI_Goro_Lair.sff
+debugbg = 0
+
+;--------------------------------------------------------
+[BG z]
+type  = dummy
+start = 0, 10300
+id    = 1
+
+[BGCtrl stageID 2]
+type   = PosSet
+time   = 4
+y      = -10075
+ctrlID = 1
+;---------------Goro
+[bg black]
+type     = normal
+spriteno = 1, 1
+delta    = 1,1
+tile     = 1, 1
+start    = -100,0
+
+[bg floor]
+type        = parallax
+spriteno    = 2, 0
+tile        = 1, 0
+width       = 70, 110
+start       = -132,191
+delta       = .72, .9
+yscaledelta = .2
+
+[bg backwall]
+type     = normal
+spriteno = 1, 0
+layerno  = 0
+start    = -212,45
+delta    = .76,.92
+mask     = 1
+tile     = 1, 0
+
+[bg eye1]
+type     = anim
+actionno = 1
+layerno  = 0
+start    = -162,125
+delta    = .7, .8
+
+[bg eye2]
+type     = anim
+actionno = 2
+layerno  = 0
+start    = -202,130
+delta    = .7, .8
+
+[bg eye3]
+type     = anim
+actionno = 3
+layerno  = 0
+start    = -252,120
+delta    = .7, .8
+
+[bg eye4]
+type     = anim
+actionno = 1
+layerno  = 0
+start    = 248,125
+delta    = .7, .8
+
+[bg eye5]
+type     = anim
+actionno = 2
+layerno  = 0
+start    = 60,130
+delta    = .7, .8
+
+[bg eye6]
+type     = anim
+actionno = 3
+layerno  = 0
+start    = 108,120
+delta    = .7, .8
+
+[bg frontwall]
+type     = normal
+spriteno = 3, 0
+layerno  = 0
+start    = -102,57
+delta    = .86, .9
+mask     = 1
+tile     = 1, 0
+
+[bg foreground]
+type     = normal
+spriteno = 5, 0
+layerno  = 0
+start    = 98,232
+delta    = 1.12, 1.13
+mask     = 1
+
+;-----------------Trono
+[BG Cielo]
+type     = Normal
+spriteno = 0,11
+delta    = 0,1
+mask     = 0
+start    = 0,-300
+
+[BG nubes]
+type     = Normal
+spriteno = 0,12
+tile     = 1,0
+velocity = .500, 0
+mask     = 1
+start    = -2,-300
+
+[BG Piso]
+type     = normal
+spriteno = 0,5
+start    = -7, -300
+delta    = .89, 1
+mask     = 1
+
+[BG Pared]
+type     = normal
+spriteno = 0, 4
+delta    = .89, 1
+mask     = 1
+start    = -2,-300
+
+[BG Rui]
+start    = 0, -300
+type     = normal
+spriteno = 0,6
+delta    = .97, 1
+mask     = 1
+
+[BG Shang]
+type     = Normal
+spriteno = 0,7
+delta    = 1, 1
+mask     = 1
+start    = -2,-300
+
+[BG Cuadros]
+type     = normal
+spriteno = 0, 1
+delta    = 1, 1
+mask     = 1
+start    = -2,-300
+
+[BG Dragones]
+type     = normal
+spriteno = 0, 2
+delta    = .97, 1
+mask     = 1
+start    = -2,-300
+
+[BG Columnas]
+type     = normal
+spriteno = 0,0
+delta    = .99, 1
+mask     = 1
+start    = -2,-300
+;---------------------
+[BG P];entrepiso
+type     = normal
+spriteno = 7,0
+delta    = 1, 1
+mask     = 1
+start    = 0,51
+tile     = 1,0
+;---------------------------------
+;eye1
+[Begin Action 1]
+4,0, 0,0, 110
+4,1, 0,0, 10
+4,2, 0,0, 110
+4,3, 0,0, 100
+4,2, 0,0, 100
+4,1, 0,0, 10
+
+;eye2
+[Begin Action 2]
+4,2, 0,0, 100
+4,3, 0,0, 120
+4,2, 0,0, 100
+4,1, 0,0, 10
+4,0, 0,0, 100
+4,1, 0,0, 10
+
+;eye3
+[Begin Action 3]
+4,3, 0,0, 100
+4,2, 0,0, 140
+4,1, 0,0, 10
+4,0, 0,0, 100
+4,1, 0,0, 10
+4,2, 0,0, 110

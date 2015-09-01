@@ -1,0 +1,179 @@
+; ========================================
+; Stage:         Japan Temple (Round 4)
+; Jogo Original: The King Of Fighters '98
+; Plataforma:    Neo Geo
+; Autor:         Death Smile
+; ========================================
+
+[Info]
+name = "MKP Japan Temple"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -217
+boundright = 215
+boundhigh = -8
+boundlow = 0
+verticalfollow = .3
+floortension = 0
+tension = 50
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound  = -1000
+rightbound =  1000
+topbound =  0
+botbound =  0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 16
+screenright = 16
+
+[StageInfo]
+zoffset = 210
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+color = 200,200,200
+yscale = .2
+
+[Music]
+bgmusic = sound/MKWORLD XVI.mp3
+bgvolume = 
+
+[BGdef]
+spr = stages/MKP Japan Temple.sff
+debugbg = 0
+
+; Fundo
+[BG 0]
+type = anim
+actionno = 0
+spriteno = 0, 0
+start = 0, 0
+delta = 0.4, 0.4
+mask  = 1
+
+; Frente
+[BG 1]
+type = normal
+spriteno = 1, 0
+start = 0, 240
+delta = 1, 1
+mask  = 1
+
+; Matinhos Esquerda
+[BG 2]
+type = anim
+actionno = 1
+spriteno = 2, 0
+start = -377, 102
+delta = 1, 1
+mask  = 1
+
+; Matinhos Meio
+[BG 3]
+type = anim
+actionno = 2
+spriteno = 3, 0
+start = -80, 89
+delta = 1, 1
+mask  = 1
+
+; Matinhos Esquerda
+[BG 4]
+type = anim
+actionno = 3
+spriteno = 4, 0
+start = 90, 103
+delta = 1, 1
+mask  = 1
+
+; Destroço Esquerda
+[BG 5]
+type = anim
+actionno = 4
+spriteno = 5, 0
+start = -377, 177
+delta = 1, 1
+mask  = 1
+layerno = 1
+
+; Destroço Direita
+[BG 5]
+type = normal
+spriteno = 6, 0
+start = 327, 177
+delta = 1, 1
+mask  = 1
+layerno = 1
+
+; ===============
+; =- Animações -=
+; ===============
+
+; Fundo
+[Begin Action 0]
+0,0, 0,0, 6
+0,1, 0,0, 6
+0,2, 0,0, 6
+0,3, 0,0, 6
+0,4, 0,0, 6
+0,5, 0,0, 6
+0,6, 0,0, 6
+0,7, 0,0, 6
+
+; Matinhos Esquerda
+[Begin Action 1]
+2,0, 0,0, 6
+2,1, 0,0, 6
+2,2, 0,0, 6
+2,3, 0,0, 6
+2,4, 0,0, 6
+2,5, 0,0, 6
+2,6, 0,0, 6
+2,7, 0,0, 6
+
+; Matinhos Meio
+[Begin Action 2]
+3,0, 0,0, 6
+3,1, 0,0, 6
+3,2, 0,0, 6
+3,3, 0,0, 6
+3,4, 0,0, 6
+3,5, 0,0, 6
+3,6, 0,0, 6
+3,7, 0,0, 6
+
+; Matinhos Direita
+[Begin Action 3]
+4,0, 0,0, 6
+4,1, 0,0, 6
+4,2, 0,0, 6
+4,3, 0,0, 6
+4,4, 0,0, 6
+4,5, 0,0, 6
+4,6, 0,0, 6
+4,7, 0,0, 6
+
+; Destroços Esquerda
+[Begin Action 4]
+5,0, 0,0, 6
+5,1, 0,0, 6
+5,2, 0,0, 6
+5,3, 0,0, 6

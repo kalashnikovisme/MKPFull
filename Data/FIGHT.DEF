@@ -1,0 +1,464 @@
+; Definition of fight screen
+
+; *** DO NOT MODIFY OR OVERWRITE THIS FILE ***
+; To customize, make a copy of this file in a subdirectory of your
+; motif's name. See readme.txt for details on motifs.
+
+; Notes about fonts:
+;   - do not index fonts greater than 9 (crash)
+;   - fonts indexed here do not refer to the ones in
+;     system.def
+;
+; See the section "How to Customize" at the end of
+; this file.
+
+;-----------------------------------------------------------
+;Directories are checked in this order:
+;1. current directory fight.def is in
+;2. data/
+;3. your MUGEN directory
+
+[Files]
+sff =fight.sff
+snd =fight.snd
+font1 =font/MKOMBO.FNT
+font2 =font/F-6X9.FNT
+font3 =font/big.fnt
+font4 =font/F-4X6.FNT
+font5 =font/kombat-zone.fnt
+font6 =font/kombat-zone_gris.fnt
+font7 =font/kombat-zone.fnt
+fightfx.sff =fightfx.sff
+fightfx.air =fightfx.air
+common.snd =common.snd
+
+;-----------------------------------------------------------
+[Lifebar]
+
+;Player 1
+p1.pos    = 160,21
+p1.bg1.spr = 11,0
+p1.mid.spr = 12,0
+p1.front.spr = 13,0
+p1.range.x  = -19,-144
+p1.bg1.layerno = 2
+p1.mid.layerno = 2
+p1.front.layerno = 2
+
+;Player 2
+p2.pos    = 159,21
+p2.bg1.spr = 11,0
+p2.mid.spr = 12,0
+p2.front.spr = 13,0
+p2.range.x = 19,144
+p2.bg1.facing = -1
+p2.mid.facing = -1
+p2.front.facing = -1
+p2.bg1.layerno = 2
+p2.mid.layerno = 2
+p2.front.layerno = 2
+
+
+[Simul Lifebar]
+;Player 1
+p1.pos    = 160,21
+p1.bg1.spr = 11,0
+p1.mid.spr = 12,0
+p1.front.spr = 13,0
+p1.range.x  = -19,-144
+p1.bg1.layerno = 2
+p1.mid.layerno = 2
+p1.front.layerno = 2
+
+;Player 2
+p2.pos    = 159,21
+p2.bg1.spr = 11,0
+p2.mid.spr = 12,0
+p2.front.spr = 13,0
+p2.range.x = 19,144
+p2.bg1.facing = -1
+p2.mid.facing = -1
+p2.front.facing = -1
+p2.bg1.layerno = 2
+p2.mid.layerno = 2
+p2.front.layerno = 2
+
+;Player 3
+p3.pos    = 160,21
+p3.bg1.spr = 11,1
+p3.mid.spr = 12,1
+p3.front.spr = 13,1
+p3.range.x  = -10,-135
+p3.bg1.layerno = 2
+p3.mid.layerno = 2
+p3.front.layerno = 2
+
+;Player 4
+p4.pos    = 159,21
+p4.bg1.spr = 11,1
+p4.mid.spr = 12,1
+p4.front.spr = 13,1
+p4.range.x = 10,135
+p4.bg1.facing = -1
+p4.mid.facing = -1
+p4.front.facing = -1
+p4.bg1.layerno = 2
+p4.mid.layerno = 2
+p4.front.layerno = 2
+
+
+[Turns Lifebar]
+p1.pos    = 160,21
+p1.bg1.spr = 11,0
+p1.mid.spr = 12,0
+p1.front.spr = 13,0
+p1.range.x  = -19,-144
+p1.bg1.layerno = 2
+p1.mid.layerno = 2
+p1.front.layerno = 2
+
+;Player 2
+p2.pos    = 159,21
+p2.bg1.spr = 11,0
+p2.mid.spr = 12,0
+p2.front.spr = 13,0
+p2.range.x = 19,144
+p2.bg1.facing = -1
+p2.mid.facing = -1
+p2.front.facing = -1
+p2.bg1.layerno = 2
+p2.mid.layerno = 2
+p2.front.layerno = 2
+
+;-----------------------------------------------------------
+[Powerbar]
+p1.pos    = 160,21
+p1.front.spr = 14,0
+p1.range.x = -20,-60
+p1.front.layerno = 2
+
+;Player 2
+p2.pos    = 159,21
+p2.front.spr = 14,0
+p2.front.facing = -1
+p2.range.x = 20,60
+p2.front.layerno = 2
+
+; --level sounds---
+level1.snd = 21,1
+level2.snd = 21,1
+level3.snd = 21,1
+
+
+;-----------------------------------------------------------
+[Face]
+;Player 1
+p1.pos    = 1,1 ;2,6
+p1.face.spr = 9000,3
+p1.face.scale = 1.1,1.2
+p1.face.facing = 1
+p1.face.offset = 990,910
+;Player 2
+p2.pos    = 317,1 ;316,6
+p2.face.spr = 9000,3
+p2.face.scale = 1.15,1.2
+p2.face.facing = -1
+p2.face.offset = 990,910
+
+[Simul Face]
+;Player 1
+p1.pos    = 1,1
+p1.bg.spr = 60,0
+p1.face.spr = 9000,3
+p1.face.scale = 0.8,0.8
+p1.face.facing = 1
+p1.face.offset = 990,910
+;Player 2
+p2.pos    = 318,1
+p2.bg.spr = 60,0
+p2.bg.facing = -1
+p2.face.spr = 9000,3
+p2.face.scale = 0.8,0.8
+p2.face.facing = -1
+p2.face.offset = 990,910
+;Player 3
+p3.pos    = -2,11
+p3.face.spr = 9000,3
+p3.face.scale = 0.8,0.8
+p3.face.facing = 1
+p3.face.offset = 911,910
+;Player 4
+p4.pos    = 321,11
+p4.bg.facing = -1
+p4.face.spr = 9000,3
+p4.face.scale = 0.8,0.8
+p4.face.facing = -1
+p4.face.offset = -911,910
+
+[Turns Face]
+;Player 1
+p1.pos    = 991,991
+p1.face.spr = 9000,3
+p1.face.scale = 1.1,1.2
+p1.face.facing = 1
+p1.face.offset = 990,910
+p1.teammate.pos = 991,951
+p1.teammate.spacing = 14,0
+p1.teammate.bg.spr = 70,0
+p1.teammate.ko.spr = 71,0
+p1.teammate.face.spr = 9000,3
+p1.teammate.face.scale = 0.5,0.53
+p1.teammate.face.facing = 1
+p1.teammate.face.offset = 990,990
+;Player 2
+p2.pos    = 999,991
+p2.bg.facing = -1
+p2.face.spr = 9000,3
+p2.face.scale = 1.15,1.2
+p2.face.facing = -1
+p2.face.offset = 990,910
+p2.teammate.pos = 999,999
+p2.teammate.spacing = -14,0
+p2.teammate.bg.spr = 70,0
+p2.teammate.bg.facing = -1
+p2.teammate.ko.spr = 71,0
+p2.teammate.ko.facing = -1
+p2.teammate.face.spr = 9000,3
+p2.teammate.face.scale = 0.54,0.53
+p2.teammate.face.facing = -1
+p2.teammate.face.offset = 999,990
+
+;-----------------------------------------------------------
+[Name]
+p1.pos = 20,23
+p1.name.font = 2,0, 1
+p2.pos = 300,23
+p2.name.font = 2,0, -1
+p1.name.layerno = 2
+p2.name.layerno = 2
+
+[Simul Name]
+p1.pos = 20,23
+p1.name.font = 2,0, 1
+p2.pos = 300,23
+p2.name.font = 2,0, -1
+p3.pos = 29,39
+p3.name.font = 2,0, 1
+p4.pos = 291,39
+p4.name.font = 2,0, -1
+p1.name.layerno = 2
+p2.name.layerno = 2
+p3.name.layerno = 2
+p4.name.layerno = 2
+
+[Turns Name]
+p1.pos = 20,23
+p1.name.font = 2,0, 1
+p2.pos = 300,23
+p2.name.font = 2,0, -1
+p1.name.layerno = 2
+p2.name.layerno = 2
+;-----------------------------------------------------------
+[Time]
+pos = 160,30
+bg.spr = 10,0
+bg.offset = 0,-9
+bg.layerno = 2
+counter.layerno = 2
+counter.font = 4,0
+framespercount = 60
+
+;-----------------------------------------------------------
+[Combo]
+pos = 80,80         ;Coords to show
+start.x = -90       ;Starting x-coords
+counter.font = 1,0
+counter.shake = 1   ;Set to 1 to shake count on hit
+text.text = HITS;<- stands for hits frame
+text.font = 1,0
+text.offset = 3,0   ;Offset of text
+displaytime = 8
+
+;-----------------------------------------------------------
+[Round]
+match.wins = 2
+start.waittime = 30
+
+round.time = 0
+round.default.offset = 160, 85
+round.default.font = 6,0
+round.default.text = Round %i
+round.default.displaytime = 60
+round1.snd = 1000,0
+round2.snd = 1000,1
+round3.snd = 1000,2
+round4.snd = 1000,3
+;round.sndtime = 0
+
+fight.time = 15
+fight.offset = 160, 75
+fight.anim = 80
+fight.snd = 1000,5
+fight.sndtime = 30
+ctrl.time = 50
+
+; KO
+KO.time    = 0              ;Time to show KO component
+;KO.offset  = 160, 0        ;Component for KO display
+;KO.anim    = 200            ;.
+KO.snd     = 1000,4            ;Sound to play for KO announcement
+; Double KO
+DKO.offset = 160, 50
+DKO.font   = 6,0
+DKO.text   = Double K.O.
+DKO.displaytime = 60
+DKO.snd    = 1000,4
+
+TO.offset  = 160, 90
+;TO.anim    = 40
+TO.font = 6,0
+TO.text = 	TIME OVER	
+TO.displaytime = 350
+TO.snd     = 2,2
+KO.sndtime = 1      ;(Applies to DKO and TO as well)
+
+slow.time  = 0
+over.waittime = 20
+over.hittime = 20
+over.wintime = 20
+over.time = 210
+; Time to wait before showing win/draw message
+win.time = 20
+; Win text
+win.offset = 160, 70
+win.font = 6,0
+win.text = %s Wins
+win.displaytime = -1
+; 2-player win text
+win2.offset = 160, 70
+win2.font = 6,0
+win2.text = Team %s Wins
+win2.displaytime = -1
+; Draw text
+draw.offset = 160, 70
+draw.font = 6,0
+draw.text = Draw Game...
+draw.displaytime = -1
+
+;"Fight!" Animation
+[Begin Action 80]
+80, 0, 0, 0, 1
+80, 1, 0, 0, 1
+80, 2, 0, 0, 1
+80, 3, 0, 0, 1
+80, 4, 0, 0, 1
+80, 5, 0, 0, 1
+80, 6, 0, 0, 1
+80, 7, 0, 0, 1
+80, 8, 0, 0, 1
+80, 9, 0, 0, 1
+80, 10, 0, 0, 1
+80, 11, 0, 0, 1
+80, 12, 0, 0, 1
+80, 13, 0, 0, 1
+80, 14, 0, 0, 1
+80, 15, 0, 0, 2
+80, 16, 0, 0, 2
+80, 15, 0, 0, 2
+80, 16, 0, 0, 2
+80, 15, 0, 0, 2
+80, 16, 0, 0, 2
+80, 15, 0, 0, 2
+80, 16, 0, 0, 10
+80, 17, 0, 0, 3
+80, 18, 0, 0, 3
+80, 19, 0, 0, 3
+80, 20, 0, 0, 3
+80, 21, 0, 0, 3
+80, 22, 0, 0, 3
+80, 23, 0, 0, 3
+80, 24, 0, 0, 3
+80, 25, 0, 0, 3
+80, 26, 0, 0, 3
+80, 27, 0, 0, 3
+80, 28, 0, 0, 3
+80, 29, 0, 0, 3
+80, 30, 0, 0, 3
+80, 31, 0, 0, 3
+80, 32, 0, 0, 3
+80, 33, 0, 0, 3
+
+
+;-----------------------------------------------------------
+[WinIcon]
+;p1.pos = 15,50    ;33,43
+;p2.pos = 305,50   ;286,43
+p1.pos = 10,1
+p2.pos = 310,1
+; Offset for next icon (x,y)
+p1.iconoffset = 12,0  
+p2.iconoffset = -12,0
+
+; Counter text font and offset for representing wins
+p1.counter.offset = 10,9
+p1.counter.font = 2,0,1
+p1.counter.layerno = 2
+p2.counter.offset = -10,9
+p2.counter.font = 2,0,-1
+p2.counter.layerno = 2
+; Win by normal
+p1.n.spr = 100,0
+p1.n.layerno = 2
+p2.n.spr = 100,0
+p2.n.layerno = 2
+p2.n.facing = -1
+; Win by special
+p1.s.spr = 100,0
+p1.s.layerno = 2
+p2.s.spr = 100,0
+p2.s.layerno = 2
+p2.s.facing = -1
+; Win by hyper (super)
+p1.h.spr = 100,0
+p1.h.layerno = 2
+p2.h.spr = 100,0
+p2.h.layerno = 2
+p2.h.facing = -1
+; Win by normal throw
+p1.throw.spr = 100,0
+p1.throw.layerno = 2
+p2.throw.spr = 100,0
+p2.throw.layerno = 2
+p2.throw.facing = -1
+; Win by cheese
+p1.c.spr = 100,0
+p1.c.layerno = 2
+p2.c.spr = 100,0
+p2.c.layerno = 2
+p2.c.facing = -1
+; Win by time over
+p1.t.spr = 100,0
+p1.t.layerno = 2
+p2.t.spr = 100,0
+p2.t.layerno = 2
+p2.t.facing = -1
+; Win by suicide (here's a fun one)
+p1.suicide.spr = 100,0
+p1.suicide.layerno = 2
+p2.suicide.spr = 100,0
+p2.suicide.layerno = 2
+p2.suicide.facing = -1
+; Opponent beaten by his own teammate (another fun one)
+p1.teammate.spr = 100,0
+p1.teammate.layerno = 2
+p2.teammate.spr = 100,0
+p2.teammate.layerno = 2
+p2.teammate.facing = -1
+; Win by perfect (overlay icon)
+p1.perfect.spr = 100,1
+p1.perfect.layerno = 2
+p2.perfect.spr = 100,1
+p2.perfect.layerno = 2
+p2.perfect.facing = -1
+; Use icons up until this number of wins
+useiconupto = 9

@@ -1,0 +1,501 @@
+;--------------------------------------------------------
+REALM OF RAIN by atheis
+;--------------------------------------------------------
+
+[Info]
+name = "MKP Realm of rain I"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -300
+boundright = 300
+boundhigh = -400
+boundlow = 0
+verticalfollow = .4;3
+floortension = 80
+tension = 60
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -10500
+rightbound =  10500
+topbound  = 0
+botbound  = 0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft = 22
+screenright = 22
+
+;--------------------------------------------------------
+
+[StageInfo]
+
+zoffset = 217
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+
+color = 100,100,100
+yscale = -.2
+reflect = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound/RAIN.mp3 
+bgvolume = 255
+
+;--------------------------------------------------------
+
+[BGdef]
+spr = MKP_Realm_of_rain_I.sff
+debugbg = 0
+
+;--------------------------------------------------------
+
+[BG stars]
+type  = normal
+spriteno = 5, 0
+delta = .3, .3
+tile = 1, 1
+
+[bg moon]
+type  = normal
+spriteno = 5, 1
+mask = 1
+
+[bg man]
+type  = normal
+spriteno = 12,0
+mask = 1
+
+[bg moon]
+type  = normal
+spriteno = 5, 1
+mask = 1
+
+[BG splash1]
+type  = anim
+actionno = 10            
+start = -183, -60
+mask = 0
+
+[BG splash2]
+type  = anim
+actionno = 10            
+start = -360, -70
+mask = 0
+
+[BG splash3]
+type  = anim
+actionno = 10            
+start = -580, -80
+mask = 0
+
+[BG splash4]
+type  = anim
+actionno = 10            
+start = -670, -60
+mask = 0
+
+[BG splash5]
+type  = anim
+actionno = 10            
+start = -50, -70
+mask = 0
+
+[BG splash4]
+type  = anim
+actionno = 10            
+start = 120, -80
+mask = 0
+
+[BG lightning strikes]
+type = anim
+actionno = 8               
+start = 10, 200
+delta = -.001,-.001
+mask = 1
+
+[BG cloud]
+type  = normal
+spriteno = 6,6
+layerno = 0
+start = 0, 181
+delta = 1, 1
+velocity = 1
+trans = add
+xscale = 1, 0
+yscalestart = 100
+yscaledelta = 3
+tile = 1,0
+
+[BG rain7]
+type  = anim
+actionno = 1
+start = -400,10
+delta = 1.1, 1.1
+mask = 1
+layerno = 1
+
+[BG rain8]
+type  = anim
+actionno = 1
+start = 150,10
+delta = 1.1, 1.1
+mask = 1
+layerno = 1
+
+[BG rain9]
+type  = anim
+actionno = 1
+layerno = 0
+start = -450, -25
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain10]
+type  = anim
+actionno = 1
+layerno = 0
+start = 150, -25
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain11]
+type  = anim
+actionno = 1
+layerno = 1
+start = -500, -10
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain12]
+type  = anim
+actionno = 1
+layerno = 1
+start = 50, -10
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain13]
+type  = anim
+actionno = 1
+layerno = 1
+start = -300, 0
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain14]
+type  = anim
+actionno = 1
+layerno = 1
+start = 200, 0
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain15]
+type  = anim
+actionno = 1
+start = -400, 10
+delta = 1.1, 1.1
+mask = 1
+layerno = 1
+
+[BG rain16]
+type  = anim
+actionno = 1
+start = 150, 10
+delta = 1.1, 1.1
+mask = 1
+layerno = 1
+
+[BG rain1]
+type  = anim
+actionno = 1
+layerno = 0
+start = -450, -75
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain2]
+type  = anim
+actionno = 1
+layerno = 0
+start = 150, -75
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain3]
+type  = anim
+actionno = 1
+layerno = 1
+start = -500, 20
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain4]
+type  = anim
+actionno = 1
+layerno = 1
+start = 50, 20
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain5]
+type  = anim
+actionno = 1
+layerno = 1
+start = -300, 20
+delta = 1.1, 1.1
+mask = 1
+
+[BG rain6]
+type  = anim
+actionno = 1
+layerno = 1
+start = 200, 20
+delta = 1.1, 1.1
+mask = 1
+
+[BG Floor Smoke1]
+type  = normal
+spriteno = 6,5
+layerno = 1
+start = 0, 181
+delta = 1, 1
+velocity = 1,0
+trans = add
+xscale = 1, 0
+yscalestart = 100
+yscaledelta = 3
+tile = 1,0
+
+[BG rocks]
+type  = normal
+spriteno = 5,3               
+delta = 1,1
+trans = none
+mask  = 1
+
+[BG rocks1]
+type  = normal
+spriteno = 10,0               
+delta = 1,1
+trans = none
+mask  = 1
+
+[BG rocks2]
+type  = normal
+spriteno = 10,1               
+delta = 1,1
+trans = none
+mask  = 1
+
+[BG piso]
+type  = normal
+spriteno = 5, 4
+delta = 1,1
+mask  = 1
+
+[bg sat]
+type  = normal
+spriteno = 6, 7
+mask = 1
+
+[bg sat1]
+type  = normal
+spriteno = 6, 8
+mask = 1
+
+[BG bolt]
+type  = anim
+actionno = 4               
+delta = 1,1
+trans = none
+mask  = 1
+
+;------------------------ controls
+[BGCtrlDef 1] ;morcego 1
+CtrlID = 7   
+looptime = 1000
+
+[BGCtrl 1.2]
+type = Enable
+time = 0
+value = 1
+
+[BGCtrl 1.3]
+type = PosSet
+time = 0
+x = -2000
+y = 80
+
+[BGCtrl 1.3]
+type = VelSet
+time >= 1
+x = 6.2
+
+;--------------------------------------------------------
+
+[Begin action 4] ;morcego 1
+7,4, 0,0, 3,,S
+7,5, 0,0, 3,,S
+7,6, 0,0, 3,,S
+
+[Begin Action 8]
+Loopstart
+11111, 5, 0, 0, 100
+7, 11, 0, 0, 3, , a
+7, 12, 0, 0, 3, , a
+7, 13, 0, 0, 3, , a
+7, 14, 0, 0, 3, , a
+7, 15, 0, 0, 3, , a
+7, 16, 0, 0, 3, , a
+7, 17, 0, 0, 3, , a
+1111, 0, 0, 0, 200
+7, 18, 0, 0, 3, , a
+7, 19, 0, 0, 3, , a
+7, 20, 0, 0, 3, , a
+7, 21, 0, 0, 3, , a
+7, 22, 0, 0, 3, , a
+7, 23, 0, 0, 3, , a
+11111, 5, 0, 0, 170
+
+[Begin Action 1] 
+8,0, 0,0, 1,,A
+8,1, 0,0, 1,,A
+8,2, 0,0, 1,,A
+8,3, 0,0, 1,,A
+8,4, 0,0, 1,,A
+8,5, 0,0, 1,,A
+8,6, 0,0, 1,,A
+8,7, 0,0, 1,,A
+
+[Begin Action 10]
+11111, 1, 1, 1, 500, , a
+9, 0, 0, 0, 3, , a
+9, 0, 0, 0, 3, , a
+9, 1, 0, 0, 3, , a
+9, 2, 0, 0, 3, , a
+9, 3, 0, 0, 3, , a
+9, 4, 0, 0, 3, , a
+9, 5, 0, 0, 3, , a
+9, 6, 0, 0, 3, , a
+9, 7, 0, 0, 3, , a
+9, 8, 0, 0, 3, , a
+9, 9, 0, 0, 3, , a
+9, 10, 0, 0, 3, , a
+9, 11, 0, 0, 3, , a
+9, 12, 0, 0, 3, , a
+9, 13, 0, 0, 3, , a
+9, 14, 0, 0, 3, , a
+9, 15, 0, 0, 3, , a
+9, 16, 0, 0, 3, , a
+9, 17, 0, 0, 3, , a
+9, 18, 0, 0, 3, , a
+9, 19, 0, 0, 3, , a
+9, 20, 0, 0, 3, , a
+9, 21, 0, 0, 3, , a
+9, 22, 0, 0, 3, , a
+9, 23, 0, 0, 3, , a
+9, 24, 0, 0, 3, , a
+9, 25, 0, 0, 3, , a
+9, 26, 0, 0, 3, , a
+9, 27, 0, 0, 3, , a
+9, 28, 0, 0, 3, , a
+9, 29, 0, 0, 3, , a
+9, 30, 0, 0, 3, , a
+9, 31, 0, 0, 3, , a
+9, 32, 0, 0, 3, , a
+9, 33, 0, 0, 3, , a
+9, 34, 0, 0, 3, , a
+9, 35, 0, 0, 3, , a
+9, 36, 0, 0, 3, , a
+9, 37, 0, 0, 3, , a
+9, 38, 0, 0, 3, , a
+9, 39, 0, 0, 3, , a
+9, 40, 0, 0, 3, , a
+9, 41, 0, 0, 3, , a
+9, 42, 0, 0, 3, , a
+9, 43, 0, 0, 3, , a
+9, 44, 0, 0, 3, , a
+9, 45, 0, 0, 3, , a
+9, 46, 0, 0, 3, , a
+9, 47, 0, 0, 3, , a
+9, 48, 0, 0, 3, , a
+9, 49, 0, 0, 3, , a
+9, 50, 0, 0, 3, , a
+9, 51, 0, 0, 3, , a
+9, 52, 0, 0, 3, , a
+9, 53, 0, 0, 3, , a
+9, 54, 0, 0, 3, , a
+9, 55, 0, 0, 3, , a
+9, 56, 0, 0, 3, , a
+9, 57, 0, 0, 3, , a
+9, 58, 0, 0, 3, , a
+9, 59, 0, 0, 3, , a
+9, 60, 0, 0, 3, , a
+9, 61, 0, 0, 3, , a
+9, 62, 0, 0, 3, , a
+9, 63, 0, 0, 3, , a
+9, 64, 0, 0, 3, , a
+9, 65, 0, 0, 3, , a
+9, 66, 0, 0, 3, , a
+9, 67, 0, 0, 3, , a
+9, 68, 0, 0, 3, , a
+9, 69, 0, 0, 3, , a
+9, 70, 0, 0, 3, , a
+9, 71, 0, 0, 3, , a
+9, 72, 0, 0, 3, , a
+9, 73, 0, 0, 3, , a
+9, 74, 0, 0, 3, , a
+9, 75, 0, 0, 3, , a
+9, 76, 0, 0, 3, , a
+9, 77, 0, 0, 3, , a
+9, 78, 0, 0, 3, , a
+9, 79, 0, 0, 3, , a
+9, 80, 0, 0, 3, , a
+9, 81, 0, 0, 3, , a
+9, 82, 0, 0, 3, , a
+9, 83, 0, 0, 3, , a
+9, 84, 0, 0, 3, , a
+9, 85, 0, 0, 3, , a
+9, 86, 0, 0, 3, , a
+9, 87, 0, 0, 3, , a
+9, 88, 0, 0, 3, , a
+9, 89, 0, 0, 3, , a
+9, 90, 0, 0, 3, , a
+9, 91, 0, 0, 3, , a
+9, 92, 0, 0, 3, , a
+9, 93, 0, 0, 3, , a
+11111, 1, 1, 1, 600, , a
+
+;--------------------------------------------------------

@@ -1,0 +1,222 @@
+;--------------------------------------------------------
+; Original
+; Stage      : UMK3 - Scorpion's Lair ; The Cavern UMK3
+; Version    : 1.0
+; Autor      : RatonMalo
+; Sprite RiP : RatonMalo
+; Mail       : elratonmalo@hotmail.com
+; Web        : http://www.geocities.jp/ratonmalo_ar/
+;
+; Re elavorado: "UMKIII Scorpions Lair" by RAM
+
+;--------------------------------------------------------
+
+[Info]
+name = "UMKIII Scorpions Lair"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft      = -380
+boundright     = 350
+boundhigh      = -330
+boundlow       =  0
+verticalfollow = .2
+floortension   = 0
+tension        = 80
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -600
+rightbound = 840
+topbound   =  0
+botbound   =  0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0       
+botz     = 50     
+topscale = 1       
+botscale = 1.2     
+
+[Bound]
+screenleft  = 50
+screenright = 50
+
+[StageInfo]
+zoffset     = 0
+zoffsetlink = 1
+autoturn    = 1
+resetBG     = 1
+
+[Shadow]
+color   = 100,100,100
+yscale  = -.2
+reflect = 0
+
+
+[Music]
+bgmusic  = sound/UMKIII Scorpions Lair.mp3
+bgvolume = 255
+
+[BGdef]
+spr     = UMKIII Scorpions Lair.sff
+debugbg = 0
+;--------------------------------------------------------
+[BG z]
+type  = dummy
+start = 0, 10323
+id    = 1
+
+[BGCtrl stageID 2]
+type   = PosSet
+time   = 4
+y      = -10107
+ctrlID = 1
+;--------------------------------------------------------
+[BG back]
+type        = normal
+spriteno    = 0,7
+delta       = 0,0
+mask        = 0
+
+[BG wall]
+type        = normal
+spriteno    = 0,6
+delta       = 0,1
+mask        = 0
+
+[BG lava]
+type        = normal
+spriteno    = 0,5
+tile        = 1,0
+delta       = .1,1
+mask        = 1
+
+[BG col 1]
+type        = Normal
+spriteno    = 0,4
+tile        = 1,0
+delta       = .4,1
+mask        = 1
+
+[BG col 2]
+type        = Normal
+spriteno    = 0,1
+tile        = 1,0
+delta       = .6,1
+mask        = 1
+
+[BG col 3]
+type        = Normal
+spriteno    = 0,2
+tile        = 1,0
+start       = 100, 0
+delta       = 0.9,1
+mask        = 1
+
+[BG fire der]
+type        = anim
+actionno    = 5
+delta       = .9,1
+start       = 100, 0
+mask        = 1
+
+[BG fire izq]
+type        = anim
+actionno    = 5
+delta       = .9,1
+start       = -416, 0
+mask        = 1
+
+[BG floor]
+type        = parallax
+spriteno    = 0,0
+xscale      = .8,1
+start       = 18,2
+mask        = 0
+
+[BG craneo]
+type        = normal
+spriteno    = 0,3
+start       = -120,3
+mask        = 1
+
+[BG craneo superpuesto]
+type        = normal
+spriteno    = 0,8
+start       = -120,3
+mask        = 1
+layerno     = 1
+
+[BG craneo der]
+type        = anim
+actionno    = 0
+start       = 508, 55
+mask        = 1
+
+[BG craneo der superpuesto]
+type        = anim
+actionno    = 1
+start       = 508, 55
+mask        = 1
+layerno     = 1
+
+[BG entrepiso]
+type        = normal
+spriteno    = 3,0
+delta       = 1, 1
+mask        = 0
+start       = -37,48
+
+[BG Fondo]
+type        = norm
+spriteno    = 2,0
+delta       = 1,1
+mask        = 1
+start       = 0, -300
+
+[BG escalera]
+type        = norm
+spriteno    = 2,1
+delta       = .93,1
+mask        = 1
+start       = 0, -300
+
+[BG Piso]
+type        = parallax
+spriteno    = 2,2
+delta       = 1, 1
+xscale      = .8, .7
+yscalestart = 100
+mask        = 0
+start       = 0, -300
+
+;--------------------------------------------------------
+[Begin Action 0]
+0, 3, -417, -52, -1, H
+
+[Begin Action 1]
+0, 8, -417, -52, -1, H
+
+[Begin action 5]
+1,5, 0,0, 5
+1,4, 0,0, 5
+1,3, 0,0, 5
+1,2, 0,0, 5
+1,1, 0,0, 5
+1,0, 0,0, 5

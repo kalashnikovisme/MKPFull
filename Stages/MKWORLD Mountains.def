@@ -1,0 +1,79 @@
+[Info]
+name = "MKWORLD Mountains"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -94
+boundright = 580
+boundhigh = -138
+boundlow = 0
+verticalfollow = 1
+floortension = 90
+tension = 150
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 223
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 90,90,255
+yscale = .2
+
+[Music]
+bgmusic = sound/MKWORLD Tibet's Mountains.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/MKWORLD Mountains.sff
+debugbg = 0
+
+[BG MAIN]
+type = anim
+spriteno = 1,0
+start = -240,-138
+delta = .85,1
+mask = 1
+actionno = 2
+
+[BG WATER]
+type = anim
+spriteno = 1,0
+layerno = 1
+start = -240,-138
+delta = .85,1
+mask = 1
+actionno = 3
+
+[Begin Action 2]
+1,1,0,0,1
+
+[Begin Action 3]
+1,3,0,0,1,,s

@@ -1,0 +1,44 @@
+;________________________________________________
+[Info]
+;________________________________________________
+
+name ="Liu Kang"
+displayname ="Liu Kang MKIII"
+developed by = Le@N
+versiondate =29,04,2008
+mugenversion =04,01,2001
+pal.defaults =1,2
+author=""
+;________________________________________________
+
+[Files]
+cmd      =Liu_Kang_mk3.cmd
+cns      =Liu_Kang_mk3.cns
+st       =Liu_Kang_mk3.cns
+stcommon =Common1.cns
+sprite   =Liu_Kang_mk3.sff
+anim     =Liu_Kang_mk3.air
+sound    =Liu_Kang_mk3.snd
+pal1=Liu_Kang_mk3_pal_1.act
+pal2=Liu_Kang_mk3_pal_2.act
+pal3=Liu_Kang_mk3_pal_3.act
+pal4=Liu_Kang_mk3_pal_4.act
+pal5=Liu_Kang_mk3_pal_5.act
+pal6=Liu_Kang_mk3_pal_6.act
+pal7=Liu_Kang_mk3_pal_7.act
+pal8=Liu_Kang_mk3_pal_8.act
+pal9=Liu_Kang_mk3_pal_9.act
+pal10=Liu_Kang_mk3_pal_10.act
+st1=Special_Punches.st
+st2=Basic_Moves.st
+st3=Stage_Finishers.st
+st4=Fatality.st
+st5=Finishers.st
+st6=Brutality.st
+;________________________________________________
+[Arcade]
+;________________________________________________
+
+intro.storyboard  = mk3kangintro\mk3kangintro.def
+ending.storyboard = mk3liukangend\mk3liukangend.def
+;________________________________________________

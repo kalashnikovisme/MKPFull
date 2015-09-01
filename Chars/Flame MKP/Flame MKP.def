@@ -1,0 +1,33 @@
+
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="flame"
+displayname  ="Flame MKP"
+versiondate  =06,03,2005
+mugenversion =04,01,2001
+pal.defaults =1,2
+author =""
+;-------------------------------------------
+
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =flame.sff
+anim     =flame.air
+sound    =1.snd
+pal1=flame_pal_1.act
+pal2=flame_pal_2.act
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Finishers.st
+
+;-------------------------------------------
+[Arcade]
+ending.storyboard=mkend\mkend.def
+

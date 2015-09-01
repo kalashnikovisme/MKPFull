@@ -1,0 +1,202 @@
+;--------------------------------------------------------
+; Stage      : Living Forest 3
+; Version    : 1.0
+; Author     : Reptile
+; Release    : Public
+;--------------------------------------------------------
+
+[Info]
+name   = "MKP living forest II"
+author = "reptile"
+
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -640
+boundright = 640
+boundhigh = -20
+boundlow =  0
+verticalfollow = .30
+floortension = 0
+tension = 50
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000 
+rightbound = 1000
+topbound  =  0
+botbound  =  0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0       
+botz     = 50     
+topscale = 1       
+botscale = 1.2     
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft = 40
+screenright = 40
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+color = 100,100,100
+yscale = -.2
+reflect = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound\MKP 2.mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+
+[BGdef]
+spr = stages/MKP living forest II.sff
+debugbg = 0
+
+;--------------------------------------------------------
+
+[BG back]
+type  = normal
+spriteno = 0,5
+delta = 0,1
+mask  = 0
+
+[BG 02]
+type  = normal
+spriteno = 0,1
+delta = 0.7,1
+mask  = 1
+
+;[BG 00]
+;type  = normal
+;spriteno = 0,0
+;tile = 1,0
+;delta = .25,1
+;mask  = 1
+
+;[BG smoke]
+;type = anim
+;actionno = 5
+;delta = .77,1
+;mask  = 1
+
+;[BG raiden]
+;type  = normal
+;spriteno = 0,6
+;delta = .70,1
+;mask  = 1
+
+;[BG raiden2]
+;type  = normal
+;spriteno = 0,9
+;delta = .70,1
+;mask  = 1
+
+[BG wall]
+type = normal
+spriteno = 5,0
+delta = .5, 1
+mask = 1
+tile = 1,0
+
+[BG light1]
+type = normal
+spriteno = 5,2
+delta = .5, 1
+mask = 1
+start = 280, 0
+
+[BG light2]
+type = normal
+spriteno = 5,2
+delta = .5, 1
+mask = 1
+start = 140, 0
+
+[BG light3]
+type = normal
+spriteno = 5,2
+delta = .5, 1
+mask = 1
+
+[BG light4]
+type = normal
+spriteno = 5,2
+delta = .5, 1
+mask = 1
+start = -140, 0
+
+[BG light5]
+type = normal
+spriteno = 5,2
+delta = .5, 1
+mask = 1
+start = -280, 0
+
+[BG light6]
+type = normal
+spriteno = 5,2
+delta = .5, 1
+mask = 1
+start = -420, 0
+
+[BG light7]
+type = normal
+spriteno = 5,2
+delta = .5, 1
+mask = 1
+start = -560, 0
+
+[BG center hole]
+type = normal
+spriteno = 5,1
+delta = .6333, 1
+mask = 1
+
+[BG 02]
+type  = normal
+spriteno = 0,2
+delta = .5,1
+mask  = 1
+tile = 1,0
+
+[BG 01]
+type  = normal
+spriteno = 0,4
+delta = 1,1
+mask  = 1
+tile = 1,0
+
+[BG floor]
+type  = normal
+spriteno = 0,1
+delta = 1, 1
+mask = 1
+tile = 1, 0

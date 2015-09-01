@@ -1,0 +1,150 @@
+;MKP
+;Sprites:      Markoss <markossokram3@hotmail.com>
+;Programación: RAM     <driverram@hotmail.com>   
+;--------------------------------------------------------
+[Info]
+name = "MKIV The Well I"
+
+;--------------------------------------------------------
+[Camera]
+
+startx = 0
+starty = 0
+
+boundleft = -176
+boundright = 176
+boundhigh = -42
+boundlow = 0
+tension = 50
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+;--- Player 2 ---
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+
+leftbound  = -1000
+rightbound =  1000
+topbound  =  0
+botbound  =  0
+
+;--------------------------------------------------------
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+[Bound]
+screenleft = 40
+screenright = 40
+
+;--------------------------------------------------------
+[StageInfo]
+
+zoffset = 210;225
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+
+color = 99,99,99
+yscale = -.1
+
+;--------------------------------------------------------
+[Music]
+bgmusic =sound/Good (7).mp3
+bgvolume = 255
+
+;-------------------------------------
+; Main background definition
+[BGdef]
+
+spr = MKIV.sff
+debugbg = 0
+
+;----------
+
+[BG Floor]
+type        = parallax
+type = normal
+spriteno = 40,0
+start = 20, 134
+mask = 1
+xscale      = .6,1;7
+yscalestart = 100
+
+[BG fondo negro] 
+type     = normal
+spriteno = 2,0
+start    = -180,-180
+delta    = 0,1
+
+[BG fuego centro]
+type  = anim
+actionno = 0
+start = -47,3;0
+mask = 1
+delta = .93,1
+
+[BG fuego poko izq]
+type  = anim
+actionno = 0
+start = -175,0
+mask = 1
+delta = .93,1
+
+[BG fuego muy izq]
+type  = anim
+actionno = 0
+start = -300,0
+mask = 1
+delta = .93,1
+
+[BG fuego poko der]
+type  = anim
+actionno = 0
+start = 100,0
+mask = 1
+delta = .93,1
+
+[BG fuego muy der]
+type  = anim
+actionno = 0
+start = 248,15
+mask = 1
+delta = .93,1
+
+[BG pared]
+type = normal
+spriteno = 41,0
+start = 6, 73;2
+mask = 1
+
+;========[ Animaciones ]=========
+
+[Begin Action 0]
+45, 0, 0, 0, 5
+45, 1, 0, 0, 5
+45, 2, 0, 0, 5
+45, 3, 0, 0, 5
+45, 4, 0, 0, 5
+45, 5, 0, 0, 5
+45, 6, 0, 0, 5
+45, 7, 0, 0, 5
+45, 8, 0, 0, 5
+45, 9, 0, 0, 5
+
+

@@ -1,0 +1,37 @@
+;Edited by PhoboSS
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+name         ="Scorpion"
+displayname  ="Scorpion MKIV"
+versiondate  =06,03,2001
+mugenversion =04,01,2001
+pal.defaults =1,2
+author=""
+
+;-------------------------------------------
+
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =scorpion.sff
+anim     =scorpion.air
+sound    =1.snd
+pal1=scorpion_pal_1.act
+pal2=scorpion_pal_2.act
+st1=sp.st
+st2=Finishers.st
+st3=Fatality.st
+st4=Basic_Moves.st
+st5=Stage_Finishers.st
+st6=Combos.st
+st7=Brutality.st
+
+;-------------------------------------------
+[Arcade]
+
+
+intro.storyboard= intro\intro.def
+ending.storyboard=mkend\mkend.def

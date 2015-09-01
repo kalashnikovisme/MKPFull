@@ -1,0 +1,105 @@
+;--------------------------------------------------------
+;--------------------------------------------------------
+
+[Info]
+
+name="MKIV ice pit"
+
+;By Markos -----------markossokram3@hotmail.com
+
+;----------------------------------------------
+
+[Camera]
+startx=0
+starty=0
+boundleft=-179
+boundright=148
+boundhigh=-15
+boundlow=0
+verticalfollow=.20
+floortension=20
+tension=60
+
+;----------------------------------------------
+
+[PlayerInfo]
+p1startx=-80
+p1starty=0
+p1startz=0
+p1facing=1
+p2startx=80
+p2starty=0
+p2startz=0
+p2facing=-1
+
+leftbound=-1000
+rightbound=1000
+topbound=0
+botbound=0
+
+;----------------------------------------------
+
+[Scaling]
+topz=0
+botz=50
+topscale=1
+botscale=1.2
+
+;----------------------------------------------
+
+[Bound]
+screenleft = 42    ;Dist from left of screen that player can move to
+screenright = 42   ;Right edge
+
+;----------------------------------------------
+
+[StageInfo]
+zoffset=220
+autoturn=1
+resetBG=0
+
+;----------------------------------------------
+
+[Shadow]
+color = 100,100,100
+yscale = -.2
+;reflect = 1
+
+;----------------------------------------------
+
+[Music]
+bgmusic=sound/Good (11).mp3
+bgvolume=255
+
+;----------------------------------------------
+
+[BGdef]
+spr=stages/MKIV ice pit.sff
+debugbg=0
+
+;----------------------------------------------
+
+
+[BG mk4floor] ;
+type=normal
+spriteno=0,0
+layerno = 0
+start=0,0
+delta=1,1
+mask=0
+
+[BG Anim A] ;icepit
+type  = anim
+actionno = 0
+start = 0, 0
+delta = 1,1
+mask = 0
+
+;-------------------------------------
+; Put animation data here:
+
+;Anim A (icepit)
+[Begin Action 0]
+0,01, 0,0, -1
+
+

@@ -1,0 +1,45 @@
+
+Originally by Midway
+Made for MKP 4.x by MKP Team
+Upgrade by MKP4.3
+Upgrade 2 by Reptile (some ideas by Simpliband)
+
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="kabal"
+displayname  ="Kabal MKIII"
+versiondate  =06,03,2001
+mugenversion =04,01,2001
+pal.defaults =1,2
+author=""
+
+;-------------------------------------------
+[Files]
+;-------------------------------------------
+
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =kabal.sff
+anim     =kabal.air
+sound    =1.snd
+pal1=kabal_pal_1.act
+pal2=kabal_pal_2.act
+pal3=kabal_pal_3.act
+pal4=kabal_pal_4.act 
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Finishers.st
+st6=Finishers.st
+
+;-------------------------------------------
+
+[Arcade]
+intro.storyboard  = mk3kabalintro\mk3kabalintro.def
+ending.storyboard = mk3kabalend\mk3kabalend.def
+

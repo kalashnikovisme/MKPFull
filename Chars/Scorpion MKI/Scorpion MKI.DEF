@@ -1,0 +1,36 @@
+
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="scorpion"
+displayname  ="Scorpion MKI"
+versiondate  =06,03,2001
+mugenversion =04,01,2001
+pal.defaults =1,2
+author="Minakata Moriya"
+
+;-------------------------------------------
+
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+stcommon =common1.cns
+sprite   =ScorpionMK1.sff
+anim     =ScorpionMK1.air
+sound    =1.snd
+pal1=scorp1.act
+pal2=
+st1=sp.st
+st2=bmoves.st
+st3=Pit.st
+st4=Fatality.st
+st5=Finishers.st
+st6=Finishers.st
+
+;-------------------------------------------
+[Arcade]
+intro.storyboard= intro\intro.def
+ending.storyboard= end\end.def 
+

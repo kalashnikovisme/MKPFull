@@ -1,0 +1,235 @@
+[Info]
+name = "MKD Prison"
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -350
+boundright = 350
+boundhigh = -320
+boundlow = 0
+verticalfollow = .2
+;floortension = 50
+tension = 100;50
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound = 1000
+topbound  = 0
+botbound  = 0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft = 35
+screenright = 35
+
+;--------------------------------------------------------
+
+[StageInfo]
+
+zoffset = 216
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+color = 100,100,100
+yscale = -.2
+reflect = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic = sound/Prison.mp3
+bgvolume = 255
+
+;--------------------------------------------------------
+
+[BGdef]
+spr = MKD Prison.sff
+debugbg = 0
+
+;--------------------------------------------------------
+;[BG z]
+;type  = dummy
+;start = 0, 10104
+;id = 1
+
+;[BGCtrl stageID 2]
+;type = PosSet
+;time = 4
+;y = -9886
+;ctrlID = 1
+;---------------Goro
+[bg black]
+type  = normal
+spriteno = 3,0
+delta = 1,1
+start = 8,20;160
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;[bg prision]
+;type  = normal
+;spriteno = 3, 0
+;delta = 1,1
+;start = 00,40
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;[bg floor]
+;type  = parallax
+;spriteno = 2, 0
+;tile = 1, 0
+;width = 70, 110
+;start = -132,191
+;delta = .72, .9
+;yscaledelta = .2
+
+;[bg backwall]
+;type  = normal
+;spriteno = 1, 0
+;layerno = 0
+;start = -212,45
+;delta = .76,.92
+;mask  = 1
+;tile  = 1, 0
+
+;[bg eye1]
+;type  = anim
+;actionno = 1
+;layerno = 0
+;start = -162,125
+;delta = .7, .8
+
+;[bg eye2]
+;type  = anim
+;actionno = 2
+;layerno = 0
+;start = -202,130
+;delta = .7, .8
+
+;[bg eye3]
+;type  = anim
+;actionno = 3
+;layerno = 0
+;start = -252,120
+;delta = .7, .8
+
+;[bg eye4]
+;type  = anim
+;actionno = 1
+;layerno = 0
+;start = 248,125
+;delta = .7, .8
+
+;[bg eye5]
+;type  = anim
+;actionno = 2
+;layerno = 0
+;start = 60,130
+;delta = .7, .8
+
+;[bg eye6]
+;type  = anim
+;actionno = 3
+;layerno = 0
+;start = 108,120
+;delta = .7, .8
+
+;[bg frontwall]
+;type  = normal
+;spriteno = 3, 0
+;layerno = 0
+;start = -102,57
+;delta = .86, .9
+;mask  = 1
+;tile  = 1, 0
+
+;[bg foreground]
+;type  = normal
+;spriteno = 5, 0
+;layerno = 0
+;start = 98,232
+;delta = 1.12, 1.13
+;mask  = 1
+
+
+;---------------------------------
+;eye1
+[Begin Action 1]
+4,0, 0,0, 110
+4,1, 0,0, 10
+4,2, 0,0, 110
+4,3, 0,0, 100
+4,2, 0,0, 100
+4,1, 0,0, 10
+
+;eye2
+[Begin Action 2]
+4,2, 0,0, 100
+4,3, 0,0, 120
+4,2, 0,0, 100
+4,1, 0,0, 10
+4,0, 0,0, 100
+4,1, 0,0, 10
+
+;eye3
+[Begin Action 3]
+4,3, 0,0, 100
+4,2, 0,0, 140
+4,1, 0,0, 10
+4,0, 0,0, 100
+4,1, 0,0, 10
+4,2, 0,0, 110

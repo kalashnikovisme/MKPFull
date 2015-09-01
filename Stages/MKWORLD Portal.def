@@ -1,0 +1,299 @@
+;--------------------------------------------------------
+[Info]
+ ;Name of the stage.
+name = "MKWORLD Portal"
+;--------------------------------------------------------
+;Black Dahlia's stages (DBI Tower and the Final Fantasy shrine) did influence me in some areas.
+;This stage is edited from Kain's Palace from the game Garou Motw
+;with many extra elements that set thiis stage aside from the original
+;Much thanks to Outcast and Aztec Soldier for point out some flaws while this 
+;stage was in development.
+;Much Thanks to DJ-Van for the hot music track to use with this stage
+;Thanks also goes out to Black Dahlia Isis for allowing me to use the fog layer from one of his earlier works
+;Also thanks to the rest of the 1mugen staff for their support.
+;--------------------------------------------------------
+[Camera]
+startx = 15
+starty = 0
+boundleft = -130
+boundright = 167
+boundhigh = -96
+boundlow = 0
+verticalfollow = .4
+floortension = 0
+tension = 60
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+ ;Player 1 starting coordinates.
+ ;p1startx is typically -70 and p2startx is 70.
+ ;p1starty and p1startz should be 0.
+p1startx = -70          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1startz = 0            ;Starting z coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 99
+p2starty =0
+p2startz = 0
+p2facing = -1
+
+;--- Common ---
+ ;Don't change these values.
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+topbound  =  0     ;Top bound (z-movement)
+botbound  =  0     ;Bottom bound
+
+;--------------------------------------------------------
+[Scaling]
+ ;No need to change these values
+topz     = 0       ;Top z-coordinate for scaling
+botz     = 50      ;Bottom z-coordinate for scaling
+topscale = 1       ;Scale to use at top
+botscale = 1.2     ;Scale to use at bottom
+
+;--------------------------------------------------------
+[Bound]
+ ;Distance from left/right edge of screen that player can move to
+ ;Typically 15
+screenleft = 15    ;Dist from left of screen that player can move to
+screenright = 15   ;Right edge
+
+;--------------------------------------------------------
+[StageInfo]
+zoffset = 225
+autoturn = 1
+resetBG = 1
+
+;--------------------------------------------------------
+[Shadow]
+intensity = 64
+color = 0,0,0
+yscale = -.1
+fade.range = -400,-100
+;--------------------------------------------------------
+[Reflection]
+intensity = 100
+
+;--------------------------------------------------------
+[Music]
+bgmusic = sound/MKA Battle Arena.mp3
+bgvolume = +500
+
+;========================================================
+;--------------------------------------------------------
+; Background definition
+; ***
+;-------------------------------------
+; [BG x]
+; type = ?       "Normal"/"Parallax"  (def: "normal")
+; spriteno = ?, ? Sprite group and number: groupno, imgno  (req'd)
+; start = ?, ?   Starting location (integer)  (def: 0, 0)
+; delta = ?, ?   Change in location per camera unit moved (float)  (def: 1,1)
+; trans = ?      Transparency settings: "none"/"add"/"add1"/"sub"/"addalpha" (def: "none")
+; alpha = ?, ?   (only for trans=addalpha) Source,dest alpha (def: 256,0)
+; mask = ?       Masking (int): 0 - off, 1 - on  (def: 0)
+; velocity = ?, ? Velocity: x, y (float): speed background moves (def: 0, 0)
+; tile = ?, ?    Tiling: xtile, ytile (int): 0 - off, 1 - infinite,
+;                        >1 - tile that number of times  (def: 0, 0) - only for Normal BG
+; tilespacing = ?, ? Tiling: x, y (int) : space between tiles (def: 0, 0)
+;  Parallax-only:
+; xscale = ?, ?    Top xscale, bottom xscale (float)
+; width = ?, ?     Top width, bottom width (int)  (use either this or above, but not both)
+; yscalestart = ?  Starting y-scale (float, in percent)  (def: 100)
+; yscaledelta = ?  Change in y-scale per unit (float, in percent)  (def: 0)
+;-------------------------------------
+
+;-------------------------------------
+; Main background definition
+[BGdef]
+spr =MKWORLD Portal.sff
+debugbg = 0
+
+[BG Glowing Moon]
+type = normal
+start = -30,120
+spriteno = 4,0
+mask = 0
+delta = .5,.5
+trans = none
+mask = 0
+
+[BG Paranormal_Clouds]
+type = normal
+start = 0,78
+spriteno = 3,0
+mask = 0
+delta = 1,1
+trans = add
+mask = 1
+velocity = 2,0
+tile = 1,0
+;tilespacing = -7,0
+
+[BG Paranormal_Clouds]
+type = normal
+start = 0,78
+spriteno = 3,0
+mask = 0
+delta = 1,1
+trans = add
+mask = 1
+velocity = -1.7,0
+tile = 1,0
+;tilespacing = -7,0
+
+[BG Vortex]
+type = anim
+start = 13,170
+actionno = 0
+spriteno = 1,0
+mask = 0
+delta = 1,1
+trans = add
+
+[BG electricity]
+type = anim
+start = 0,110
+actionno = 1
+spriteno = 5,0
+mask = 0
+delta = 1,1
+;----------
+[BG Palace]
+type  = normal
+spriteno = 0, 0
+layerno = 0                
+start = -100, 120
+delta = 1,1
+trans = none
+mask  = 1
+
+[BG Left Flag Anim]
+type = anim
+actionno = 2
+start = -100, 120
+spriteno = 0,1
+mask = 1
+delta = 1,1
+trans = none
+
+[BG Right Flag Anim]
+type = anim
+actionno = 3
+start = -100, 120
+spriteno = 0,12
+mask = 1
+delta = 1,1
+trans = none
+
+[BG Window Glow]
+type = normal
+start = 15,39
+spriteno = 6,1
+mask = 1
+delta = 1,1
+trans = add
+
+[BG Doorway Glow]
+type = normal
+start = -112,115
+spriteno = 6,0
+mask = 1
+delta = 1,1
+trans = add
+
+;----------
+[BG Lights]
+type  = normal
+spriteno = 0, 20
+layerno = 0                
+start = -100, 120
+delta = 1,1
+trans = add
+mask  = 1
+
+[BG Fog]
+type = normal
+start = -150,280
+spriteno = 2,0
+mask = 1
+delta = 1,1
+trans = add
+tile = 1,0
+layerno = 1
+velocity = 1.5,0
+
+[Begin Action 0]
+Loopstart
+1, 0, 0, 0, 1, ,A
+1, 1, 0, 0, 1, ,A
+1, 2, 0, 0, 1, ,A
+1, 3, 0, 0, 1, ,A
+1, 4, 0, 0, 1, ,A
+1, 5, 0, 0, 1, ,A
+1, 6, 0, 0, 1, ,A
+1, 7, 0, 0, 1, ,A
+1, 8, 0, 0, 1, ,A
+1, 9, 0, 0, 1, ,A
+1, 10, 0, 0, 1, ,A
+1, 11, 0, 0, 1, ,A
+1, 12, 5, 0, 1, ,A
+1, 13, 6, 0, 1, ,A
+1, 14, 0, 0, 1, ,A
+1, 15, 0, 0, 1, ,A
+1, 16, 0, 0, 1, ,A
+1, 17, 0, 0, 1, ,A
+1, 18, 0, 0, 1, ,A
+1, 19, 0, 0, 1, ,A
+1, 20, 0, 0, 1, ,A
+1, 21, 0, 0, 1, ,A
+1, 22, 0, 0, 1, ,A
+1, 23, 0, 0, 1, ,A
+1, 24, 0, 0, 1, ,A
+1, 25, 0, 0, 1, ,A
+1, 26, 0, 0, 1, ,A
+1, 27, 0, 0, 1, ,A
+1, 28, 0, 0, 1, ,A
+1, 29, 0, 0, 1, ,A
+1, 30, 0, 0, 1, ,A
+1, 31, 0, 0, 1, ,A
+1, 32, 0, 0, 1, ,A
+
+[Begin Action 1]
+Loopstart
+11111, 7, 0, 0, 280
+5, 0, 0, 0, 4,,a
+5, 0, 0, 0, 4,,a
+5, 1, 0, 0, 4,,a
+5, 2, 0, 0, 4,,a
+5, 3, 0, 0, 4,,a
+5, 4, 0, 0, 4,,a
+5, 5, 0, 0, 4,,a
+5, 6, 0, 0, 4,,a
+5, 7, 0, 0, 4,,a
+
+[Begin Action 2]
+Loopstart
+0, 1, 0, 0, 2
+0, 2, 0, 0, 2
+0, 3, 0, 0, 2
+0, 4, 0, 0, 2
+0, 5, 0, 0, 2
+0, 6, 0, 0, 2
+0, 7, 0, 0, 2
+0, 8, 0, 0, 2
+
+[Begin Action 3]
+Loopstart
+0, 12, 0, 0, 2
+0, 13, 0, 0, 2
+0, 14, 0, 0, 2
+0, 15, 0, 0, 2
+0, 16, 0, 0, 2
+0, 17, 0, 0, 2
+0, 18, 0, 0, 2
+0, 19, 0, 0, 2
+

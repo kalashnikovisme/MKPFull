@@ -1,0 +1,135 @@
+;--------------------------------------------------------
+; Stage   : The Pit MKT
+; Author  : Le@n
+; Web     : www.rulezzgames.mybb.ru
+;--------------------------------------------------------
+
+[Info]
+name           = "MKT The Pit I"
+
+;--------------------------------------------------------
+
+[Camera]
+startx         = 0
+starty         = 0
+boundleft      = -353
+boundright     =  413
+boundhigh      = -15
+boundlow       =  0
+verticalfollow = .1
+;floortension  = 50
+tension        = 50
+
+;--------------------------------------------------------
+
+[PlayerInfo]
+p1startx       = -80
+p1starty       = 0
+p1startz       = 0
+p1facing       = 1
+
+p2startx       = 80
+p2starty       = 0
+p2startz       = 0
+p2facing       = -1
+
+leftbound  = -1000 
+rightbound = 1000
+topbound       =  0
+botbound       =  0
+
+;--------------------------------------------------------
+
+[Scaling]
+topz           = 0       
+botz           = 50     
+topscale       = 1       
+botscale       = 1.2     
+
+;--------------------------------------------------------
+
+[Bound]
+screenleft     = 35
+screenright    = 35
+
+;--------------------------------------------------------
+
+[StageInfo]
+zoffset        = 0
+zoffsetlink    = 1
+autoturn       = 1
+resetBG        = 1
+
+;--------------------------------------------------------
+
+[Shadow]
+color          = 0,0,0
+yscale         = 0
+reflect        = 0
+
+;--------------------------------------------------------
+
+[Music]
+bgmusic        = sound\Good.mp3
+bgvolume       = 255
+loop = 1
+
+;--------------------------------------------------------
+
+[BGdef]
+spr            = stages/MKT The Pit I.sff
+debugbg        = 0
+
+;--------------------------------------------------------
+[BG z]
+type  = dummy
+start = 0, 224     ; <-------- initial Z-Offset = 220
+id = 1
+
+[BGCtrl stageID 1]
+type = PosSet
+time = 1
+y = 9776
+ctrlID = 1
+
+; Back to normal
+[BGCtrl stageID 2]
+type = PosSet
+time = 4
+y = -13
+ctrlID = 1
+
+[BG Fondo]
+type  = normal
+spriteno = 1,0
+delta = 0,0
+mask  = 0
+
+[BG Fondo1]
+type  = normal
+spriteno = 1,3
+delta = .10,0
+start = 0,30
+mask  = 1
+
+[BG Fondo]
+type  = normal
+spriteno = 1,1
+delta = .10,0
+start = 0,30
+mask  = 1
+
+;[BG Puente]
+;type  = normal
+;spriteno = 1,7
+;delta = 1,1
+;mask  = 1
+
+;[BG Puente]
+;type  = normal
+;spriteno = 1,6
+;delta = 1,1
+;mask  = 1
+;layerno = 1
+
+;--------------------------------------------------------

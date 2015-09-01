@@ -1,0 +1,45 @@
+HORNBUCKLE MORTAL KOMBAT                 
+MADE BY FIREBOY
+
+HOME PAGE
+
+http://fireboymugen.webs.com/
+
+http://www.fireboymugen.rg3.net/
+
+http://fireboymugen.zip.net/
+;-------------------------------------------
+[Info]
+;-------------------------------------------
+
+name         ="Hornbuckle mkIII"
+displayname  ="Hornbuckle MKIII"
+versiondate  =24,02,2008
+mugenversion =04,01,2001
+pal.defaults =1,2
+author="FIRE BOY"
+
+;-------------------------------------------
+
+[Files]
+cmd      =1.cmd
+cns      =1.cns
+st       =1.cns
+st2      =bmoves.st
+st3      =Pit.st
+st4      =Fatality.st
+st5      =Fatality.st
+stcommon =common1.cns
+sprite   =Hornbuckle.sff
+anim     =Hornbuckle.air
+sound    =1.snd
+pal1     =Hornbuckle.act
+pal2     =Hornbuckle2.act
+st1=sp.st
+st6=Fatality.st
+st7= Finishers.st
+;-------------------------------------------
+
+[Arcade]
+ending.storyboard=end\end.def
+

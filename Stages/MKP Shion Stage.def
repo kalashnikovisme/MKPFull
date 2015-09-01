@@ -1,0 +1,287 @@
+[Info]
+name = "MKP Shion Stage"
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -224
+boundright = 224
+boundhigh = -112
+boundlow = 0
+verticalfollow = .3
+tension = 60
+floortenstion = 30
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound = -1000
+rightbound = 1000
+topbound = 0
+botbound = 0
+
+[Scaling]
+topz = 0
+botz = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+color = 128,128,128    
+yscale = .8
+reflect = 0
+
+[Music]
+bgmusic = sound/MKWORLD XI.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/MKP Shion Stage.sff
+debugbg = 0
+
+[BG Sky1]
+
+type = normal
+spriteno =6,0
+start = -381, -112
+trans = none
+mask  = 1
+delta = .60
+
+[BG Sky2]
+
+type = normal
+spriteno =8,0
+start = 3, -112
+trans = none
+mask  = 1
+delta = .60
+
+[BG Thunder1]
+type = anim
+actionno = 4
+start = -289, 24
+trans = none
+mask  = 1
+delta = .60
+
+[Begin Action 4]
+0,0, 0,0, 8
+99,0, 0,0, 15
+0,0, 0,0, 25
+99,0, 0,0, 1
+0,0, 0,0, 1
+99,0, 0,0, 1
+0,0, 0,0, 1
+99,0, 0,0, 1
+0,0, 0,0, 1
+99,0, 0,0, 1
+0,0, 0,0, 1
+99,0, 0,0, 400
+0,0, 0,0, 25
+99,0, 0,0, 1
+0,0, 0,0, 1
+99,0, 0,0, 1
+0,0, 0,0, 1
+99,0, 0,0, 1
+0,0, 0,0, 1
+99,0, 0,0, 1
+0,0, 0,0, 1
+99,0, 0,0, 300
+0,0, 0,0, 8
+99,0, 0,0, 10
+0,0, 0,0, 25
+99,0, 0,0, 1
+0,0, 0,0, 1
+99,0, 0,0, 1
+0,0, 0,0, 1
+99,0, 0,0, 1
+0,0, 0,0, 1
+99,0, 0,0, 1
+0,0, 0,0, 1
+99,0, 0,0, 500
+
+[BG Thunder2]
+type = anim
+actionno = 5
+start = 3, 24
+trans = none
+mask  = 1
+delta = .60
+
+[Begin Action 5]
+99,0, 0,0, 600
+10,0, 0,0, 8
+99,0, 0,0, 10
+10,0, 0,0, 25
+99,0, 0,0, 1
+10,0, 0,0, 1
+99,0, 0,0, 1
+10,0, 0,0, 1
+99,0, 0,0, 1
+10,0, 0,0, 1
+99,0, 0,0, 1
+10,0, 0,0, 1
+99,0, 0,0, 400
+10,0, 0,0, 25
+99,0, 0,0, 1
+10,0, 0,0, 1
+99,0, 0,0, 1
+10,0, 0,0, 1
+99,0, 0,0, 1
+10,0, 0,0, 1
+99,0, 0,0, 1
+10,0, 0,0, 1
+
+[BG BG Temple]
+
+type = normal
+spriteno =9,0
+start = -359, 47
+trans = none
+mask  = 1
+delta = .70
+
+[BG Temple Floor]
+
+type = normal
+spriteno =7,0
+start = -384, -112
+trans = none
+mask  = 1
+
+[BG Flame heat]
+
+type = anim
+actionno = 1
+start = -68, 138
+trans = none
+mask  = 1
+
+[Begin Action 1]
+3,0, 0,0, 15
+99,0, 0,0, 40
+
+[BG Flame Ashes]
+
+type = anim
+actionno = 6
+mask = 1
+start = -42, 170
+
+[Begin Action 6]
+11,0, 0,0, 7
+11,1, 0,0, 7
+11,2, 0,0, 7
+11,3, 0,0, 7
+11,4, 0,0, 7
+11,5, 0,0, 7
+
+[BG Flame]
+
+type = anim
+actionno = 2
+mask = 1
+start = -52, 175
+
+[Begin Action 2]
+13,0, 0,0, 7
+13,1, 0,0, 7
+13,2, 0,0, 7
+13,3, 0,0, 7
+13,4, 0,0, 7
+13,5, 0,0, 7
+13,6, 0,0, 7
+13,7, 0,0, 7
+
+[BG Broken Pilar]
+
+type = normal
+spriteno =4,0
+start = -113, 211
+trans = none
+mask  = 1
+
+[BG Candle Light]
+
+type = anim
+actionno = 3
+start = -249, 61
+trans = none
+mask  = 1
+
+[Begin Action 3]
+14,0, 0,0, 3,,AS25D256
+14,0, 0,0, 3,,AS20D256
+14,0, 0,0, 3,,AS15D256
+14,0, 0,0, 3,,AS10D256
+14,0, 0,0, 3,,AS5D256
+14,0, 0,0, 3,,AS0D256
+14,0, 0,0, 3,,AS5D256
+14,0, 0,0, 3,,AS10D256
+14,0, 0,0, 3,,AS15D256
+14,0, 0,0, 3,,AS20D256
+
+
+[BG Candle Light2]
+
+type = anim
+actionno = 3
+start = -366, 52
+trans = none
+mask  = 1
+
+[BG Candle Light3]
+
+type = anim
+actionno = 3
+start = 229, 85
+trans = none
+mask  = 1
+
+[BG Candle Light4]
+
+type = anim
+actionno = 3
+start = 319, 73
+trans = none
+mask  = 1
+
+[BG Wood Ornament1]
+
+type = normal
+spriteno =1,0
+start = -218, 110
+trans = none
+mask  = 1
+
+[BG Wood Ornament2]
+
+type = normal
+spriteno =2,0
+start = -354, 40
+trans = none
+mask  = 1
+
+[BG Stone]
+
+type = normal
+spriteno =5,0
+start = -351, 104
+trans = none
+mask  = 1
